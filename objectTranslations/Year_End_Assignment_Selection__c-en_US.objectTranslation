@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Year-End Assignment Selection</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Year-End Assignment Selections</value>
+    </caseValues>
+    <fields>
+        <label><!-- AH EmpID --></label>
+        <name>AH_EmpID__c</name>
+    </fields>
+    <fields>
+        <label><!-- AH : Is my team --></label>
+        <name>AH_Is_my_team__c</name>
+    </fields>
+    <fields>
+        <label><!-- AH Name --></label>
+        <name>AH_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional or Refer out --></label>
+        <name>Additional_or_Refer_out__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Code --></label>
+        <name>Business_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Desc --></label>
+        <name>Business_Desc__c</name>
+    </fields>
+    <fields>
+        <label><!-- CIS ID --></label>
+        <name>CIS_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Court Case 12M --></label>
+        <name>Court_Case_12M__c</name>
+    </fields>
+    <fields>
+        <label><!-- Court Case Current Year --></label>
+        <name>Court_Case_Current_Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Flag --></label>
+        <name>Credit_Flag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Status --></label>
+        <name>Credit_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Name --></label>
+        <name>Customer_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- DPD6M --></label>
+        <name>DPD6M__c</name>
+    </fields>
+    <fields>
+        <label><!-- District --></label>
+        <name>District__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dummy 2 --></label>
+        <name>Dummy_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dummy 3 --></label>
+        <name>Dummy_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dummy 4 --></label>
+        <name>Dummy_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dummy 5 --></label>
+        <name>Dummy_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Final Assigned EMPID --></label>
+        <name>Final_Assigned_EMPID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Final Assigned RC Code --></label>
+        <name>Final_Assigned_RC_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Final Assigned/SelectedBy --></label>
+        <name>Final_Assigned_RM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Final Port/Pool --></label>
+        <name>Final_Port_Pool__c</name>
+    </fields>
+    <fields>
+        <label><!-- Final Refer Out Reason Detail --></label>
+        <name>Final_Refer_Out_Reason_Detail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Final Refer Out Reason --></label>
+        <name>Final_Refer_Out_Reason__c</name>
+    </fields>
+    <fields>
+        <label><!-- Final Refer Out --></label>
+        <name>Final_Refer_Out__c</name>
+    </fields>
+    <fields>
+        <label><!-- Final Service RM --></label>
+        <name>Final_Service_RM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Final Team --></label>
+        <name>Final_Team__c</name>
+    </fields>
+    <fields>
+        <label><!-- Group --></label>
+        <name>Group__c</name>
+    </fields>
+    <fields>
+        <label><!-- High Value Flag --></label>
+        <name>High_Value_Flag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Income 1M --></label>
+        <name>Income_1M__c</name>
+    </fields>
+    <fields>
+        <label><!-- NH EmpID --></label>
+        <name>NH_EmpID__c</name>
+    </fields>
+    <fields>
+        <label><!-- NH : Is my team --></label>
+        <name>NH_Is_my_team__c</name>
+    </fields>
+    <fields>
+        <label><!-- NH Name --></label>
+        <name>NH_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- NPL12M --></label>
+        <name>NPL12M__c</name>
+    </fields>
+    <fields>
+        <label><!-- %OD Utilization 6M --></label>
+        <name>OD_Utilization_6M__c</name>
+    </fields>
+    <fields>
+        <label><!-- %PN Utilization 6M --></label>
+        <name>PN_Utilization_6M__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pool --></label>
+        <name>Pool__c</name>
+    </fields>
+    <fields>
+        <label><!-- Port / Pool --></label>
+        <name>Port_Pool__c</name>
+    </fields>
+    <fields>
+        <label><!-- Port --></label>
+        <name>Port__c</name>
+    </fields>
+    <fields>
+        <label><!-- Province --></label>
+        <name>Province__c</name>
+    </fields>
+    <fields>
+        <label><!-- RM EmpID --></label>
+        <name>RM_EmpID__c</name>
+    </fields>
+    <fields>
+        <label><!-- RM Last Visited --></label>
+        <name>RM_Last_Visited__c</name>
+    </fields>
+    <fields>
+        <label><!-- RM Name --></label>
+        <name>RM_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Refer District --></label>
+        <name>Refer_District__c</name>
+    </fields>
+    <fields>
+        <label><!-- Refer Out: Amphur --></label>
+        <name>Refer_Out_Amphur__c</name>
+        <picklistValues>
+            <masterLabel>A</masterLabel>
+            <translation><!-- A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B</masterLabel>
+            <translation><!-- B --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C</masterLabel>
+            <translation><!-- C --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Refer Out By Team --></label>
+        <name>Refer_Out_By_Team__c</name>
+    </fields>
+    <fields>
+        <label><!-- Refer Out Detail --></label>
+        <name>Refer_Out_Detail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Refer Out: Province --></label>
+        <name>Refer_Out_Province__c</name>
+        <picklistValues>
+            <masterLabel>A</masterLabel>
+            <translation><!-- A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B</masterLabel>
+            <translation><!-- B --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C</masterLabel>
+            <translation><!-- C --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Refer Out Reason --></label>
+        <name>Refer_Out_Reason__c</name>
+        <picklistValues>
+            <masterLabel>AMLO List</masterLabel>
+            <translation><!-- AMLO List --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bad</masterLabel>
+            <translation><!-- Bad --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed Business</masterLabel>
+            <translation><!-- Closed Business --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Criminal Offense</masterLabel>
+            <translation><!-- Criminal Offense --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dead</masterLabel>
+            <translation><!-- Dead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exit Plan</masterLabel>
+            <translation><!-- Exit Plan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Segment</masterLabel>
+            <translation><!-- Other Segment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Team</masterLabel>
+            <translation><!-- Other Team --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reject</masterLabel>
+            <translation><!-- Reject --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wrong Area</masterLabel>
+            <translation><!-- Wrong Area --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Refer Out Reason from other --></label>
+        <name>Refer_Out_Reason_fr_other__c</name>
+    </fields>
+    <fields>
+        <label><!-- Refer Out Segment --></label>
+        <name>Refer_Out_Segment__c</name>
+        <picklistValues>
+            <masterLabel>CB</masterLabel>
+            <translation><!-- CB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LM</masterLabel>
+            <translation><!-- LM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MB</masterLabel>
+            <translation><!-- MB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RBS</masterLabel>
+            <translation><!-- RBS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SM</masterLabel>
+            <translation><!-- SM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UM</masterLabel>
+            <translation><!-- UM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>XS</masterLabel>
+            <translation><!-- XS --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Refer Out Team --></label>
+        <name>Refer_Out_Team__c</name>
+    </fields>
+    <fields>
+        <label><!-- Refer Out: Tumbon --></label>
+        <name>Refer_Out_Tumbon__c</name>
+        <picklistValues>
+            <masterLabel>A</masterLabel>
+            <translation><!-- A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B</masterLabel>
+            <translation><!-- B --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C</masterLabel>
+            <translation><!-- C --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Refer Out --></label>
+        <name>Refer_Out__c</name>
+    </fields>
+    <fields>
+        <label><!-- Refer Province --></label>
+        <name>Refer_Province__c</name>
+    </fields>
+    <fields>
+        <label><!-- Refer Sub District --></label>
+        <name>Refer_Sub_District__c</name>
+    </fields>
+    <fields>
+        <label><!-- Refer To Team --></label>
+        <name>Refer_To_Team__c</name>
+    </fields>
+    <fields>
+        <label><!-- ความสัมพันธ์: บ.ในเครือ --></label>
+        <name>Relationship_Affiliate__c</name>
+    </fields>
+    <fields>
+        <label><!-- ความสัมพันธ์: กรรมการมีอำนาจลงนาม --></label>
+        <name>Relationship_Authorized_Director__c</name>
+    </fields>
+    <fields>
+        <label><!-- ความสัมพันธ์: กู้ร่วม --></label>
+        <name>Relationship_Joint_Obligor__c</name>
+    </fields>
+    <fields>
+        <label><!-- ความสัมพันธ์: คู่สมรส --></label>
+        <name>Relationship_Spouse__c</name>
+    </fields>
+    <fields>
+        <label><!-- ความสัมพันธ์: ผู้ถือหุ้น --></label>
+        <name>Relationship_Stockholder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Restriction --></label>
+        <name>Restriction__c</name>
+    </fields>
+    <fields>
+        <label><!-- SME BSCORE 1M --></label>
+        <name>SME_BSCORE_1M__c</name>
+    </fields>
+    <fields>
+        <label><!-- SME BSCORE 2M --></label>
+        <name>SME_BSCORE_2M__c</name>
+    </fields>
+    <fields>
+        <label><!-- SME BSCORE 3M --></label>
+        <name>SME_BSCORE_3M__c</name>
+    </fields>
+    <fields>
+        <label><!-- SME Limit - LI --></label>
+        <name>SME_Limit_LI__c</name>
+    </fields>
+    <fields>
+        <label><!-- SME Limit - TF --></label>
+        <name>SME_Limit_TF__c</name>
+    </fields>
+    <fields>
+        <label><!-- SME Wallet Size --></label>
+        <name>SME_Wallet_Size__c</name>
+    </fields>
+    <fields>
+        <label><!-- %SOW (SME Exposure) --></label>
+        <name>SOW_SME_Exposure__c</name>
+    </fields>
+    <fields>
+        <label><!-- SVM ID --></label>
+        <name>SVM_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- SVM Name --></label>
+        <name>SVM_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Segment (Original) --></label>
+        <name>Segment_Original__c</name>
+    </fields>
+    <fields>
+        <label><!-- Segment (Proposed) --></label>
+        <name>Segment_Proposed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Selected By Area Name --></label>
+        <name>Selected_By_Area_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Selected By Name --></label>
+        <name>Selected_By_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Selected By Team --></label>
+        <name>Selected_By_Team__c</name>
+    </fields>
+    <fields>
+        <label><!-- Selected By --></label>
+        <name>Selected_By__c</name>
+        <relationshipLabel><!-- Year-End Assignment Selections (Selected By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Selected Count --></label>
+        <name>Selected_Count_Report__c</name>
+    </fields>
+    <fields>
+        <label><!-- Selected Count --></label>
+        <name>Selected_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Selected Port Pool --></label>
+        <name>Selected_Port_Pool__c</name>
+    </fields>
+    <fields>
+        <label><!-- Selected Service RM Name Text --></label>
+        <name>Selected_Service_RM_Name_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Selected Service RM Name --></label>
+        <name>Selected_Service_RM_Name__c</name>
+        <relationshipLabel><!-- Year-End Assignment Selections (Selected Service RM Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Selected by EmpID --></label>
+        <name>Selected_by_EmpID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Selected by Network Name --></label>
+        <name>Selected_by_Network_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service RM Name --></label>
+        <name>Service_RM_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sub District --></label>
+        <name>Sub_District__c</name>
+    </fields>
+    <fields>
+        <label><!-- TDR 12M --></label>
+        <name>TDR_12M__c</name>
+    </fields>
+    <fields>
+        <label><!-- %TF Utilization 6M --></label>
+        <name>TF_Utilization_6M__c</name>
+    </fields>
+    <fields>
+        <label><!-- TM EmpID --></label>
+        <name>TM_EmpID__c</name>
+    </fields>
+    <fields>
+        <label><!-- TM : Is my team --></label>
+        <name>TM_Is_my_team__c</name>
+    </fields>
+    <fields>
+        <label><!-- TM Name --></label>
+        <name>TM_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Team --></label>
+        <name>Team__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Income --></label>
+        <name>Total_Income__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total SME Exposure --></label>
+        <name>Total_SME_Exposure__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total SME Limit --></label>
+        <name>Total_SME_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total SME Out --></label>
+        <name>Total_SME_Out__c</name>
+    </fields>
+    <fields>
+        <label><!-- UW Color Group --></label>
+        <name>UW_Color_Group__c</name>
+    </fields>
+    <fields>
+        <label><!-- Visited Count --></label>
+        <name>Visited_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Year-End Assignment --></label>
+        <name>Year_End_Assignment__c</name>
+        <relationshipLabel><!-- Year-End Assignment Selections --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Year-End Assignment Selection Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Final Assigned / Refer Out Info --></label>
+            <section>Final Assigned / Refer Out Info</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

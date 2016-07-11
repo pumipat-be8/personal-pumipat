@@ -1,0 +1,2043 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>This object tracks the list of Targeted Lead and Campaign Member list</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Approved_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Approved Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Borrower_CIS_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Borrower CIS ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Borrower_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Borrower Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CASA__c</fullName>
+        <externalId>false</externalId>
+        <label>CASA</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>CIS_ID_Prospect_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>CIS ID / Prospect Name</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipName>Campaign_Members_Leads</relationshipName>
+        <relationshipOrder>1</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>CIS_ID_Search__c</fullName>
+        <externalId>false</externalId>
+        <formula>CIS_ID_Prospect_Name__r.CIS__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>CIS ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Call_Result__c</fullName>
+        <externalId>false</externalId>
+        <label>Call Result</label>
+        <picklist>
+            <picklistValues>
+                <fullName>1. ลูกค้าสนใจและขอสินเชื่อในครั้งนี้</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2. ลูกค้าสนใจแต่ติดเงื่อนไข</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3. ลูกค้าไม่สนใจ</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>4. ติดปัญหาเรื่องการดำเนินการ</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>5. เก็บไว้เป็น Lead ในครั้งหน้า</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>6. ตัดออกจากรายชื่อ Lead (ระยะเวลา 6 เดือน)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Campaign_Lead_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Campaign Lead Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Register</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Not Register</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Not Interested This Time</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Campaign_Reward_Calc__c</fullName>
+        <externalId>false</externalId>
+        <label>Campaign Reward Calc</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Campaign_Reward__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( OR (Lead_Campaign__r.Lead_Campaign_Event_Code__c =   $Setup.Campaign_Setting__c.NewBooking_Code__c, Lead_Campaign__r.Lead_Campaign_Event_Code__c  =  $Setup.Campaign_Setting__c.ThankYou_Code__c), 
+IF( AND( ISPICKVAL(Status__c, &quot;Registered&quot;), OR( ISPICKVAL(Opportunity__r.StageName, &quot;All Loan Setup&quot;) ,ISPICKVAL(Opportunity__r.StageName, &quot;Partial Loan Setup&quot;))) , Campaign_Reward_Calc__c , 
+&quot;-&quot;),  
+&quot;-&quot; )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Campaign Reward</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Chain_Name__c</fullName>
+        <description>Value Chain Name</description>
+        <externalId>false</externalId>
+        <label>Chain Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Chain_Sponsor__c</fullName>
+        <externalId>false</externalId>
+        <label>Chain Sponsor</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact_Channel__c</fullName>
+        <externalId>false</externalId>
+        <label>Contact Channel</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Phone Call</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Face to Face</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Customer_Contact_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Customer Contact Number</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Customer_Owner__c</fullName>
+        <externalId>false</externalId>
+        <formula>CIS_ID_Prospect_Name__r.Owner.FirstName &amp; &quot; &quot; &amp;  CIS_ID_Prospect_Name__r.Owner.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Customer Owner</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>End_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>Lead_Campaign__r.EndDate</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>End Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>External_ID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>External_ID</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>In_Call_Plan__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>In Call Plan</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IsInterested__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE( Status__c,
+&apos;New&apos;,0,
+&apos;Done&apos;,0,
+&apos;Registered&apos;,0,
+&apos;Not interested&apos;,0,
+&apos;Interested&apos;,1,
+&apos;Not Interested This Time&apos;,0,
+&apos;Customer Interested&apos;,1,
+&apos;App In&apos;,1,
+&apos;Approved&apos;,1,
+&apos;Loan Setup&apos;,1,
+&apos;Cancel Lead&apos;,0,
+&apos;Interested but not register&apos;,1,
+&apos;Lead Expired&apos;,0,
+0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>IsInterested</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IsMyTargetList__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF ( OR ( 
+CIS_ID_Prospect_Name__r.Owner.NH_Employee_ID__c = $User.Employee_ID__c,
+CIS_ID_Prospect_Name__r.Owner.AH_Employee_ID__c = $User.Employee_ID__c,
+CIS_ID_Prospect_Name__r.Owner.TM_Employee_ID__c = $User.Employee_ID__c,
+ CIS_ID_Prospect_Name__r.Owner.Employee_ID__c = $User.Employee_ID__c),1,0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>IsMyTargetList</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IsNoTouch__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF (  TEXT(Status__c) = &quot;NEW&quot;, 1,IF(  TEXT(Status__c) = &quot;Lead Expired&quot;,1,0))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>IsNoTouch</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IsNotInterested__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE( Status__c,
+&apos;New&apos;,0,
+&apos;Done&apos;,0,
+&apos;Registered&apos;,0,
+&apos;Not interested&apos;,1,
+&apos;Interested&apos;,0,
+&apos;Not Interested This Time&apos;,1,
+&apos;Customer Interested&apos;,0,
+&apos;App In&apos;,0,
+&apos;Approved&apos;,0,
+&apos;Loan Setup&apos;,0,
+&apos;Cancel Lead&apos;,0,
+&apos;Interested but not register&apos;,0,
+&apos;Lead Expired&apos;,0,
+0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>IsNotInterested</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IsTouch__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF (  TEXT(Status__c) = &quot;NEW&quot;, 0,IF(  TEXT(Status__c) = &quot;Lead Expired&quot;,0,1))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>IsTouch</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lead_Campaign__c</fullName>
+        <externalId>false</externalId>
+        <label>Lead/Campaign</label>
+        <referenceTo>Campaign</referenceTo>
+        <relationshipLabel>Target Lists</relationshipLabel>
+        <relationshipName>Campaign_Members_Leads</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Lead_Response__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF (  TEXT(Status__c) = &quot;NEW&quot;, &quot;ยังไม่ได้ดำเนินการ&quot;,IF(  TEXT(Status__c) = &quot;Lead Expired&quot;,&quot;ยังไม่ได้ดำเนินการ&quot;,&quot;ดำเนินการแล้ว&quot;))</formula>
+        <label>Lead Response</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lead_Subtype__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Lead_Campaign__r.Sub_Type__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Lead Subtype</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Lead_To_Inform__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Lead To Inform</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Lead_Type__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT( Lead_Campaign__r.Type__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Lead Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Main_Customer__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Main Customer</label>
+        <referenceTo>Target_List__c</referenceTo>
+        <relationshipLabel>Associate Customer</relationshipLabel>
+        <relationshipName>Target_Lists</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Mobile_No__c</fullName>
+        <externalId>false</externalId>
+        <label>Mobile No.</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Number_of_Lead__c</fullName>
+        <externalId>false</externalId>
+        <formula>1</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Number of Lead</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Opportunity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Target Lists</relationshipLabel>
+        <relationshipName>Target_Lists</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Option__c</fullName>
+        <externalId>false</externalId>
+        <label>Reward New Booking Option</label>
+        <picklist>
+            <picklistValues>
+                <fullName>A</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Owner_AH__c</fullName>
+        <externalId>false</externalId>
+        <formula>SUBSTITUTE(SUBSTITUTE( CIS_ID_Prospect_Name__r.Owner.Area_Name__c , &quot;ผู้บริหารธุรกิจ คป.1-&quot;, &quot;ME เขต &quot;) ,&quot;เขตธุรกิจลูกค้าผู้ประกอบการ 2&quot;, &quot;SE&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Owner AH</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Owner_NH__c</fullName>
+        <externalId>false</externalId>
+        <formula>SUBSTITUTE(SUBSTITUTE(SUBSTITUTE(CIS_ID_Prospect_Name__r.Owner.Network_Name__c , &quot;เครือข่ายลูกค้าผู้ประกอบการ 1&quot;, &quot;ME&quot;) ,&quot;เครือข่ายลูกค้าผู้ประกอบการ 2&quot;, &quot;SE&quot;),&quot;ตะวันออกเฉียงเหนือ&quot;,&quot;อีสาน&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Owner NH</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Owner_Team__c</fullName>
+        <externalId>false</externalId>
+        <formula>SUBSTITUTE(SUBSTITUTE( CIS_ID_Prospect_Name__r.Owner.Team_Name__c , &quot;ทีมลูกค้าผู้ประกอบการ 1&quot;, &quot;ME&quot;) ,&quot;ทีมลูกค้าผู้ประกอบการ 2&quot;, &quot;SE&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Owner Team</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Personalised_Message__c</fullName>
+        <externalId>false</externalId>
+        <label>Personalised Message</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Re_assign_To__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Re-assign To</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>User.Profile.Name</field>
+                <operation>equals</operation>
+                <value>SME-TM</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Target_Lists</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>Reason</label>
+        <picklist>
+            <controllingField>Call_Result__c</controllingField>
+            <picklistValues>
+                <fullName>1.1 อยู่ระหว่างจัดเตรียมเอกสาร / รอเอกสารเพิ่มเติม</fullName>
+                <default>false</default>
+                <controllingFieldValues>1. ลูกค้าสนใจและขอสินเชื่อในครั้งนี้</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1.2 ส่ง Opp แล้วรอการอนุมัติ</fullName>
+                <default>false</default>
+                <controllingFieldValues>1. ลูกค้าสนใจและขอสินเชื่อในครั้งนี้</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>1.3 ได้ผลการอนุมัติแล้ว</fullName>
+                <default>false</default>
+                <controllingFieldValues>1. ลูกค้าสนใจและขอสินเชื่อในครั้งนี้</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2.1 รอตัดสินใจ/รอปรึกษาครอบครัว</fullName>
+                <default>false</default>
+                <controllingFieldValues>2. ลูกค้าสนใจแต่ติดเงื่อนไข</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2.2 ลูกค้าคุณสมบัติไม่ดี / ไม่ผ่านหลักเกณฑ์ธนาคาร</fullName>
+                <default>false</default>
+                <controllingFieldValues>2. ลูกค้าสนใจแต่ติดเงื่อนไข</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2.3 สนใจแต่ติดปัญหาเรื่องหลักประกัน</fullName>
+                <default>false</default>
+                <controllingFieldValues>2. ลูกค้าสนใจแต่ติดเงื่อนไข</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2.4 สนใจแต่มีประเด็นต่อรองเกี่ยวกับดอกเบี้ย / ค่าธรรมเนียม / ประกันชีวิต</fullName>
+                <default>false</default>
+                <controllingFieldValues>2. ลูกค้าสนใจแต่ติดเงื่อนไข</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2.5 สนใจแต่ไม่ใช่ในช่วงเดือนนี้</fullName>
+                <default>false</default>
+                <controllingFieldValues>2. ลูกค้าสนใจแต่ติดเงื่อนไข</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2.6 สนใจแต่วงเงินที่ลูกค้าต้องการไม่สอดคล้องกับ Source &amp; Use</fullName>
+                <default>false</default>
+                <controllingFieldValues>2. ลูกค้าสนใจแต่ติดเงื่อนไข</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2.7 สนใจแต่วงเงินที่เสนอไม่เพียงพอ</fullName>
+                <default>false</default>
+                <controllingFieldValues>2. ลูกค้าสนใจแต่ติดเงื่อนไข</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2.8 อื่น ๆ (ระบุในหมายเหตุ)</fullName>
+                <default>false</default>
+                <controllingFieldValues>2. ลูกค้าสนใจแต่ติดเงื่อนไข</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3.1 มีเงินคงเหลือในบัญชีสูงหรือวงเงินเป็นตัวดำ</fullName>
+                <default>false</default>
+                <controllingFieldValues>3. ลูกค้าไม่สนใจ</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3.2 ไม่สนใจติดเรื่องหลักประกัน หรือค่าใช้จ่าย</fullName>
+                <default>false</default>
+                <controllingFieldValues>3. ลูกค้าไม่สนใจ</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3.3 ยอดขายกิจการลดลง</fullName>
+                <default>false</default>
+                <controllingFieldValues>3. ลูกค้าไม่สนใจ</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3.4 ยังไม่มีแผนขยายธุรกิจ / วงเงินเดิมเพียงพอแล้ว</fullName>
+                <default>false</default>
+                <controllingFieldValues>3. ลูกค้าไม่สนใจ</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3.5 ลูกค้าคุณสมบัติไม่ดี / ไม่ผ่านหลักเกณฑ์ธนาคาร (ระบุในหมายเหตุ)</fullName>
+                <default>false</default>
+                <controllingFieldValues>3. ลูกค้าไม่สนใจ</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3.6 หลักประกันมีมูลค่าคงเหลือไม่เพียงพอ / ไม่ผ่านเกณฑ์</fullName>
+                <default>false</default>
+                <controllingFieldValues>3. ลูกค้าไม่สนใจ</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3.7 อื่น ๆ (ระบุในหมายเหตุ)</fullName>
+                <default>false</default>
+                <controllingFieldValues>3. ลูกค้าไม่สนใจ</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>4.1 Refer ให้ผู้อื่นดำเนินการ (ระบุในหมายเหตุ)</fullName>
+                <default>false</default>
+                <controllingFieldValues>4. ติดปัญหาเรื่องการดำเนินการ</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>4.2 ที่อยู่ และเบอร์โทรศัพท์ไม่ถูกต้อง / ไม่มีข้อมูล</fullName>
+                <default>false</default>
+                <controllingFieldValues>4. ติดปัญหาเรื่องการดำเนินการ</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>4.3 เพิ่งขอสินเชื่อไม่ถึง 3 เดือน</fullName>
+                <default>false</default>
+                <controllingFieldValues>4. ติดปัญหาเรื่องการดำเนินการ</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>4.4 ลูกค้าคุณสมบัติไม่ดี / ไม่ผ่านหลักเกณฑ์ธนาคาร (ระบุในหมายเหตุ)</fullName>
+                <default>false</default>
+                <controllingFieldValues>4. ติดปัญหาเรื่องการดำเนินการ</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>4.5 ไม่สามารถติดต่อลูกค้าได้</fullName>
+                <default>false</default>
+                <controllingFieldValues>4. ติดปัญหาเรื่องการดำเนินการ</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>4.6 เสียชีวิต / เลิกกิจการ</fullName>
+                <default>false</default>
+                <controllingFieldValues>4. ติดปัญหาเรื่องการดำเนินการ</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>4.7 หลักประกันมีมูลค่าคงเหลือไม่เพียงพอ / ไม่ผ่านเกณฑ์</fullName>
+                <default>false</default>
+                <controllingFieldValues>4. ติดปัญหาเรื่องการดำเนินการ</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>4.8 อื่น ๆ (ระบุในหมายเหตุ)</fullName>
+                <default>false</default>
+                <controllingFieldValues>4. ติดปัญหาเรื่องการดำเนินการ</controllingFieldValues>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Refer_or_Not__c</fullName>
+        <externalId>false</externalId>
+        <label>Refer or Not ?</label>
+        <picklist>
+            <picklistValues>
+                <fullName>ดูแลเอง</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Refer-คุยกันเองแล้ว</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Refer-ยังไม่ได้คุยกัน</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Referred_Segment__c</fullName>
+        <externalId>false</externalId>
+        <label>Referred Segment</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Micro</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Small</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Medium</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>CB</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MB</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Register__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Register</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Registered_DateTime__c</fullName>
+        <externalId>false</externalId>
+        <label>Registered DateTime</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Remark__c</fullName>
+        <externalId>false</externalId>
+        <label>Remark</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Reward__c</fullName>
+        <externalId>false</externalId>
+        <label>Reward</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Cashback</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>บัตรเติมน้ำมัน ปตท</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>บัตรเงินสด Central</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Voucher ห้างทอง Aurora</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Setup_Amount_1__c</fullName>
+        <externalId>false</externalId>
+        <formula>Opportunity__r.Setup_Amount_s__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Setup Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Setup_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Setup Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>Lead_Campaign__r.StartDate</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Status_Order_Flag__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE( Status__c,
+&apos;New&apos;,1,
+&apos;Done&apos;,2,
+&apos;Registered&apos;,3,
+&apos;Not Register&apos;,4,
+&apos;Not interested&apos;,5,
+&apos;Interested&apos;,6,
+&apos;Not Interested This Time&apos;,7,
+&apos;Customer Interested&apos;,8,
+&apos;App In&apos;,9,
+&apos;Approved&apos;,10,
+&apos;Loan Setup&apos;,11,
+&apos;Cancel Lead&apos;,12,
+&apos;Interested but not register&apos;,13,
+&apos;Lead Expired&apos;,14,
+99)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Status Order Flag</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>New</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Done</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Registered</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Not interested</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Interested</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Not Interested This Time</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Customer Interested</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>App In</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Loan Setup</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cancel Lead</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Lead Expired</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Interested but not register</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Stock Negotiation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Create Write Up</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Waiting for Credit Approval</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Case is Rejected</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Waiting for Credit Setup</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Partial Loan Setup</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>All Loan Setup</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Closed Lost</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Auto Closed</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Team_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>CIS_ID_Prospect_Name__r.Owner.Team_Name__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Team Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Visit_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Visit Date</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <label>Target List</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>Lead_Campaign__c</columns>
+        <columns>Lead_Type__c</columns>
+        <columns>CIS_ID_Prospect_Name__c</columns>
+        <columns>Status__c</columns>
+        <columns>Personalised_Message__c</columns>
+        <columns>Lead_To_Inform__c</columns>
+        <columns>Start_Date__c</columns>
+        <columns>End_Date__c</columns>
+        <columns>NAME</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <displayFormat>R-{000000}</displayFormat>
+        <label>REF#</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Target Lists</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Standard</fullName>
+        <active>true</active>
+        <description>For standard type of Campaign / Lead</description>
+        <label>Standard</label>
+        <picklistValues>
+            <picklist>CASA__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Call_Result__c</picklist>
+            <values>
+                <fullName>1%2E ล%E0%B8%B9กค%E0%B9%89าสนใจและขอส%E0%B8%B4นเช%E0%B8%B7%E0%B9%88อในคร%E0%B8%B1%E0%B9%89งน%E0%B8%B5%E0%B9%89</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2%2E ล%E0%B8%B9กค%E0%B9%89าสนใจแต%E0%B9%88ต%E0%B8%B4ดเง%E0%B8%B7%E0%B9%88อนไข</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3%2E ล%E0%B8%B9กค%E0%B9%89าไม%E0%B9%88สนใจ</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4%2E ต%E0%B8%B4ดป%E0%B8%B1ญหาเร%E0%B8%B7%E0%B9%88องการดำเน%E0%B8%B4นการ</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5%2E เก%E0%B9%87บไว%E0%B9%89เป%E0%B9%87น Lead ในคร%E0%B8%B1%E0%B9%89งหน%E0%B9%89า</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6%2E ต%E0%B8%B1ดออกจากรายช%E0%B8%B7%E0%B9%88อ Lead %28ระยะเวลา 6 เด%E0%B8%B7อน%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Campaign_Lead_Status__c</picklist>
+            <values>
+                <fullName>Not Interested This Time</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Register</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Register</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Contact_Channel__c</picklist>
+            <values>
+                <fullName>Face to Face</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone Call</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason__c</picklist>
+            <values>
+                <fullName>1%2E1 อย%E0%B8%B9%E0%B9%88ระหว%E0%B9%88างจ%E0%B8%B1ดเตร%E0%B8%B5ยมเอกสาร %2F รอเอกสารเพ%E0%B8%B4%E0%B9%88มเต%E0%B8%B4ม</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1%2E2 ส%E0%B9%88ง Opp แล%E0%B9%89วรอการอน%E0%B8%B8ม%E0%B8%B1ต%E0%B8%B4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1%2E3 ได%E0%B9%89ผลการอน%E0%B8%B8ม%E0%B8%B1ต%E0%B8%B4แล%E0%B9%89ว</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2%2E1 รอต%E0%B8%B1ดส%E0%B8%B4นใจ%2Fรอปร%E0%B8%B6กษาครอบคร%E0%B8%B1ว</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2%2E2 ล%E0%B8%B9กค%E0%B9%89าค%E0%B8%B8ณสมบ%E0%B8%B1ต%E0%B8%B4ไม%E0%B9%88ด%E0%B8%B5 %2F ไม%E0%B9%88ผ%E0%B9%88านหล%E0%B8%B1กเกณฑ%E0%B9%8Cธนาคาร</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2%2E3 สนใจแต%E0%B9%88ต%E0%B8%B4ดป%E0%B8%B1ญหาเร%E0%B8%B7%E0%B9%88องหล%E0%B8%B1กประก%E0%B8%B1น</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2%2E4 สนใจแต%E0%B9%88ม%E0%B8%B5ประเด%E0%B9%87นต%E0%B9%88อรองเก%E0%B8%B5%E0%B9%88ยวก%E0%B8%B1บดอกเบ%E0%B8%B5%E0%B9%89ย %2F ค%E0%B9%88าธรรมเน%E0%B8%B5ยม %2F ประก%E0%B8%B1นช%E0%B8%B5ว%E0%B8%B4ต</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2%2E5 สนใจแต%E0%B9%88ไม%E0%B9%88ใช%E0%B9%88ในช%E0%B9%88วงเด%E0%B8%B7อนน%E0%B8%B5%E0%B9%89</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2%2E6 สนใจแต%E0%B9%88วงเง%E0%B8%B4นท%E0%B8%B5%E0%B9%88ล%E0%B8%B9กค%E0%B9%89าต%E0%B9%89องการไม%E0%B9%88สอดคล%E0%B9%89องก%E0%B8%B1บ Source %26 Use</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2%2E7 สนใจแต%E0%B9%88วงเง%E0%B8%B4นท%E0%B8%B5%E0%B9%88เสนอไม%E0%B9%88เพ%E0%B8%B5ยงพอ</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2%2E8 อ%E0%B8%B7%E0%B9%88น ๆ %28ระบ%E0%B8%B8ในหมายเหต%E0%B8%B8%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3%2E1 ม%E0%B8%B5เง%E0%B8%B4นคงเหล%E0%B8%B7อในบ%E0%B8%B1ญช%E0%B8%B5ส%E0%B8%B9งหร%E0%B8%B7อวงเง%E0%B8%B4นเป%E0%B9%87นต%E0%B8%B1วดำ</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3%2E2 ไม%E0%B9%88สนใจต%E0%B8%B4ดเร%E0%B8%B7%E0%B9%88องหล%E0%B8%B1กประก%E0%B8%B1น หร%E0%B8%B7อค%E0%B9%88าใช%E0%B9%89จ%E0%B9%88าย</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3%2E3 ยอดขายก%E0%B8%B4จการลดลง</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3%2E4 ย%E0%B8%B1งไม%E0%B9%88ม%E0%B8%B5แผนขยายธ%E0%B8%B8รก%E0%B8%B4จ %2F วงเง%E0%B8%B4นเด%E0%B8%B4มเพ%E0%B8%B5ยงพอแล%E0%B9%89ว</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3%2E5 ล%E0%B8%B9กค%E0%B9%89าค%E0%B8%B8ณสมบ%E0%B8%B1ต%E0%B8%B4ไม%E0%B9%88ด%E0%B8%B5 %2F ไม%E0%B9%88ผ%E0%B9%88านหล%E0%B8%B1กเกณฑ%E0%B9%8Cธนาคาร %28ระบ%E0%B8%B8ในหมายเหต%E0%B8%B8%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3%2E6 หล%E0%B8%B1กประก%E0%B8%B1นม%E0%B8%B5ม%E0%B8%B9ลค%E0%B9%88าคงเหล%E0%B8%B7อไม%E0%B9%88เพ%E0%B8%B5ยงพอ %2F ไม%E0%B9%88ผ%E0%B9%88านเกณฑ%E0%B9%8C</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3%2E7 อ%E0%B8%B7%E0%B9%88น ๆ %28ระบ%E0%B8%B8ในหมายเหต%E0%B8%B8%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4%2E1 Refer ให%E0%B9%89ผ%E0%B8%B9%E0%B9%89อ%E0%B8%B7%E0%B9%88นดำเน%E0%B8%B4นการ %28ระบ%E0%B8%B8ในหมายเหต%E0%B8%B8%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4%2E2 ท%E0%B8%B5%E0%B9%88อย%E0%B8%B9%E0%B9%88 และเบอร%E0%B9%8Cโทรศ%E0%B8%B1พท%E0%B9%8Cไม%E0%B9%88ถ%E0%B8%B9กต%E0%B9%89อง %2F ไม%E0%B9%88ม%E0%B8%B5ข%E0%B9%89อม%E0%B8%B9ล</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4%2E3 เพ%E0%B8%B4%E0%B9%88งขอส%E0%B8%B4นเช%E0%B8%B7%E0%B9%88อไม%E0%B9%88ถ%E0%B8%B6ง 3 เด%E0%B8%B7อน</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4%2E4 ล%E0%B8%B9กค%E0%B9%89าค%E0%B8%B8ณสมบ%E0%B8%B1ต%E0%B8%B4ไม%E0%B9%88ด%E0%B8%B5 %2F ไม%E0%B9%88ผ%E0%B9%88านหล%E0%B8%B1กเกณฑ%E0%B9%8Cธนาคาร %28ระบ%E0%B8%B8ในหมายเหต%E0%B8%B8%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4%2E5 ไม%E0%B9%88สามารถต%E0%B8%B4ดต%E0%B9%88อล%E0%B8%B9กค%E0%B9%89าได%E0%B9%89</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4%2E6 เส%E0%B8%B5ยช%E0%B8%B5ว%E0%B8%B4ต %2F เล%E0%B8%B4กก%E0%B8%B4จการ</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4%2E7 หล%E0%B8%B1กประก%E0%B8%B1นม%E0%B8%B5ม%E0%B8%B9ลค%E0%B9%88าคงเหล%E0%B8%B7อไม%E0%B9%88เพ%E0%B8%B5ยงพอ %2F ไม%E0%B9%88ผ%E0%B9%88านเกณฑ%E0%B9%8C</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4%2E8 อ%E0%B8%B7%E0%B9%88น ๆ %28ระบ%E0%B8%B8ในหมายเหต%E0%B8%B8%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Refer_or_Not__c</picklist>
+            <values>
+                <fullName>Refer-ค%E0%B8%B8ยก%E0%B8%B1นเองแล%E0%B9%89ว</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refer-ย%E0%B8%B1งไม%E0%B9%88ได%E0%B9%89ค%E0%B8%B8ยก%E0%B8%B1น</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ด%E0%B8%B9แลเอง</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Referred_Segment__c</picklist>
+            <values>
+                <fullName>CB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Micro</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Small</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>All Loan Setup</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>App In</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Auto Closed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancel Lead</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Case is Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed Lost</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Create Write Up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Done</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Interested</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Interested but not register</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lead Expired</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Loan Setup</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Not interested</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partial Loan Setup</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Registered</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Stock Negotiation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting for Credit Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting for Credit Setup</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>value_chain</fullName>
+        <active>true</active>
+        <description>Only use for Lead For Sales that subtype equal to Value Chain</description>
+        <label>Value Chain</label>
+        <picklistValues>
+            <picklist>CASA__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Call_Result__c</picklist>
+            <values>
+                <fullName>1%2E ล%E0%B8%B9กค%E0%B9%89าสนใจและขอส%E0%B8%B4นเช%E0%B8%B7%E0%B9%88อในคร%E0%B8%B1%E0%B9%89งน%E0%B8%B5%E0%B9%89</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2%2E ล%E0%B8%B9กค%E0%B9%89าสนใจแต%E0%B9%88ต%E0%B8%B4ดเง%E0%B8%B7%E0%B9%88อนไข</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3%2E ล%E0%B8%B9กค%E0%B9%89าไม%E0%B9%88สนใจ</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4%2E ต%E0%B8%B4ดป%E0%B8%B1ญหาเร%E0%B8%B7%E0%B9%88องการดำเน%E0%B8%B4นการ</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5%2E เก%E0%B9%87บไว%E0%B9%89เป%E0%B9%87น Lead ในคร%E0%B8%B1%E0%B9%89งหน%E0%B9%89า</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>6%2E ต%E0%B8%B1ดออกจากรายช%E0%B8%B7%E0%B9%88อ Lead %28ระยะเวลา 6 เด%E0%B8%B7อน%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Campaign_Lead_Status__c</picklist>
+            <values>
+                <fullName>Not Interested This Time</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Register</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Register</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Contact_Channel__c</picklist>
+            <values>
+                <fullName>Face to Face</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone Call</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reason__c</picklist>
+            <values>
+                <fullName>1%2E1 อย%E0%B8%B9%E0%B9%88ระหว%E0%B9%88างจ%E0%B8%B1ดเตร%E0%B8%B5ยมเอกสาร %2F รอเอกสารเพ%E0%B8%B4%E0%B9%88มเต%E0%B8%B4ม</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1%2E2 ส%E0%B9%88ง Opp แล%E0%B9%89วรอการอน%E0%B8%B8ม%E0%B8%B1ต%E0%B8%B4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>1%2E3 ได%E0%B9%89ผลการอน%E0%B8%B8ม%E0%B8%B1ต%E0%B8%B4แล%E0%B9%89ว</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2%2E1 รอต%E0%B8%B1ดส%E0%B8%B4นใจ%2Fรอปร%E0%B8%B6กษาครอบคร%E0%B8%B1ว</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2%2E2 ล%E0%B8%B9กค%E0%B9%89าค%E0%B8%B8ณสมบ%E0%B8%B1ต%E0%B8%B4ไม%E0%B9%88ด%E0%B8%B5 %2F ไม%E0%B9%88ผ%E0%B9%88านหล%E0%B8%B1กเกณฑ%E0%B9%8Cธนาคาร</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2%2E3 สนใจแต%E0%B9%88ต%E0%B8%B4ดป%E0%B8%B1ญหาเร%E0%B8%B7%E0%B9%88องหล%E0%B8%B1กประก%E0%B8%B1น</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2%2E4 สนใจแต%E0%B9%88ม%E0%B8%B5ประเด%E0%B9%87นต%E0%B9%88อรองเก%E0%B8%B5%E0%B9%88ยวก%E0%B8%B1บดอกเบ%E0%B8%B5%E0%B9%89ย %2F ค%E0%B9%88าธรรมเน%E0%B8%B5ยม %2F ประก%E0%B8%B1นช%E0%B8%B5ว%E0%B8%B4ต</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2%2E5 สนใจแต%E0%B9%88ไม%E0%B9%88ใช%E0%B9%88ในช%E0%B9%88วงเด%E0%B8%B7อนน%E0%B8%B5%E0%B9%89</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2%2E6 สนใจแต%E0%B9%88วงเง%E0%B8%B4นท%E0%B8%B5%E0%B9%88ล%E0%B8%B9กค%E0%B9%89าต%E0%B9%89องการไม%E0%B9%88สอดคล%E0%B9%89องก%E0%B8%B1บ Source %26 Use</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2%2E7 สนใจแต%E0%B9%88วงเง%E0%B8%B4นท%E0%B8%B5%E0%B9%88เสนอไม%E0%B9%88เพ%E0%B8%B5ยงพอ</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2%2E8 อ%E0%B8%B7%E0%B9%88น ๆ %28ระบ%E0%B8%B8ในหมายเหต%E0%B8%B8%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3%2E1 ม%E0%B8%B5เง%E0%B8%B4นคงเหล%E0%B8%B7อในบ%E0%B8%B1ญช%E0%B8%B5ส%E0%B8%B9งหร%E0%B8%B7อวงเง%E0%B8%B4นเป%E0%B9%87นต%E0%B8%B1วดำ</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3%2E2 ไม%E0%B9%88สนใจต%E0%B8%B4ดเร%E0%B8%B7%E0%B9%88องหล%E0%B8%B1กประก%E0%B8%B1น หร%E0%B8%B7อค%E0%B9%88าใช%E0%B9%89จ%E0%B9%88าย</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3%2E3 ยอดขายก%E0%B8%B4จการลดลง</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3%2E4 ย%E0%B8%B1งไม%E0%B9%88ม%E0%B8%B5แผนขยายธ%E0%B8%B8รก%E0%B8%B4จ %2F วงเง%E0%B8%B4นเด%E0%B8%B4มเพ%E0%B8%B5ยงพอแล%E0%B9%89ว</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3%2E5 ล%E0%B8%B9กค%E0%B9%89าค%E0%B8%B8ณสมบ%E0%B8%B1ต%E0%B8%B4ไม%E0%B9%88ด%E0%B8%B5 %2F ไม%E0%B9%88ผ%E0%B9%88านหล%E0%B8%B1กเกณฑ%E0%B9%8Cธนาคาร %28ระบ%E0%B8%B8ในหมายเหต%E0%B8%B8%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3%2E6 หล%E0%B8%B1กประก%E0%B8%B1นม%E0%B8%B5ม%E0%B8%B9ลค%E0%B9%88าคงเหล%E0%B8%B7อไม%E0%B9%88เพ%E0%B8%B5ยงพอ %2F ไม%E0%B9%88ผ%E0%B9%88านเกณฑ%E0%B9%8C</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3%2E7 อ%E0%B8%B7%E0%B9%88น ๆ %28ระบ%E0%B8%B8ในหมายเหต%E0%B8%B8%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4%2E1 Refer ให%E0%B9%89ผ%E0%B8%B9%E0%B9%89อ%E0%B8%B7%E0%B9%88นดำเน%E0%B8%B4นการ %28ระบ%E0%B8%B8ในหมายเหต%E0%B8%B8%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4%2E2 ท%E0%B8%B5%E0%B9%88อย%E0%B8%B9%E0%B9%88 และเบอร%E0%B9%8Cโทรศ%E0%B8%B1พท%E0%B9%8Cไม%E0%B9%88ถ%E0%B8%B9กต%E0%B9%89อง %2F ไม%E0%B9%88ม%E0%B8%B5ข%E0%B9%89อม%E0%B8%B9ล</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4%2E3 เพ%E0%B8%B4%E0%B9%88งขอส%E0%B8%B4นเช%E0%B8%B7%E0%B9%88อไม%E0%B9%88ถ%E0%B8%B6ง 3 เด%E0%B8%B7อน</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4%2E4 ล%E0%B8%B9กค%E0%B9%89าค%E0%B8%B8ณสมบ%E0%B8%B1ต%E0%B8%B4ไม%E0%B9%88ด%E0%B8%B5 %2F ไม%E0%B9%88ผ%E0%B9%88านหล%E0%B8%B1กเกณฑ%E0%B9%8Cธนาคาร %28ระบ%E0%B8%B8ในหมายเหต%E0%B8%B8%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4%2E5 ไม%E0%B9%88สามารถต%E0%B8%B4ดต%E0%B9%88อล%E0%B8%B9กค%E0%B9%89าได%E0%B9%89</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4%2E6 เส%E0%B8%B5ยช%E0%B8%B5ว%E0%B8%B4ต %2F เล%E0%B8%B4กก%E0%B8%B4จการ</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4%2E7 หล%E0%B8%B1กประก%E0%B8%B1นม%E0%B8%B5ม%E0%B8%B9ลค%E0%B9%88าคงเหล%E0%B8%B7อไม%E0%B9%88เพ%E0%B8%B5ยงพอ %2F ไม%E0%B9%88ผ%E0%B9%88านเกณฑ%E0%B9%8C</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4%2E8 อ%E0%B8%B7%E0%B9%88น ๆ %28ระบ%E0%B8%B8ในหมายเหต%E0%B8%B8%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Refer_or_Not__c</picklist>
+            <values>
+                <fullName>Refer-ค%E0%B8%B8ยก%E0%B8%B1นเองแล%E0%B9%89ว</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Refer-ย%E0%B8%B1งไม%E0%B9%88ได%E0%B9%89ค%E0%B8%B8ยก%E0%B8%B1น</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ด%E0%B8%B9แลเอง</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Referred_Segment__c</picklist>
+            <values>
+                <fullName>CB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Medium</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Micro</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Small</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>All Loan Setup</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Auto Closed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Case is Rejected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed Lost</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Create Write Up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Done</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Partial Loan Setup</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Stock Negotiation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting for Credit Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Waiting for Credit Setup</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <excludedStandardButtons>New</excludedStandardButtons>
+        <excludedStandardButtons>Accept</excludedStandardButtons>
+        <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
+        <lookupDialogsAdditionalFields>CIS_ID_Prospect_Name__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Lead_Campaign__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Lead_Type__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Status__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Personalised_Message__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Start_Date__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>End_Date__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CIS_ID_Search__c</lookupDialogsAdditionalFields>
+        <lookupFilterFields>CIS_ID_Prospect_Name__c</lookupFilterFields>
+        <searchResultsAdditionalFields>CIS_ID_Prospect_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CIS_ID_Search__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>Validate_Status_backward</fullName>
+        <active>true</active>
+        <description>Prevent user to change the status of the event record backward</description>
+        <errorConditionFormula>ISCHANGED(Status__c) &amp;&amp; OR(Lead_Campaign__r.Lead_Campaign_Event_Code__c =  
+$Setup.Campaign_Setting__c.NewBooking_Code__c,Lead_Campaign__r.Lead_Campaign_Event_Code__c =  $Setup.Campaign_Setting__c.ThankYou_Code__c) &amp;&amp; PRIORVALUE(Status_Order_Flag__c) &gt; Status_Order_Flag__c</errorConditionFormula>
+        <errorDisplayField>Status__c</errorDisplayField>
+        <errorMessage>ไม่อนุญาตให้เปลี่ยนสถานะย้อนกลับได้</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Validate_change_status_period</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISCHANGED(Status__c) &amp;&amp; OR(Lead_Campaign__r.Lead_Campaign_Event_Code__c =  
+$Setup.Campaign_Setting__c.NewBooking_Code__c,Lead_Campaign__r.Lead_Campaign_Event_Code__c =  $Setup.Campaign_Setting__c.ThankYou_Code__c) &amp;&amp; DATEVALUE(CreatedDate) +  $Setup.Campaign_Setting__c.Register_Period__c  &lt; TODAY()</errorConditionFormula>
+        <errorDisplayField>Status__c</errorDisplayField>
+        <errorMessage>ไม่สามารถเปลี่ยนสถานะได้หลังจากช่วงเวลาที่กำหนด</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>Interest_with_Mobile_No</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>ลงทะเบียนแคมเปญ</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/32.0/connection.js&quot;)} 
+
+var element = document.getElementById(&apos;valuechain_id&apos;); 
+if (typeof(element) === &quot;undefined&quot; || element == null){ 
+
+document.body.innerHTML += &apos;&lt;div id=&quot;valuechain_id&quot; style=&quot; background: #fff none repeat scroll 0 0;border-radius: 5px;box-shadow: 0 0 4px rgba(0, 0, 0, 0.7);display: none;padding: 20px;&quot;&gt;&lt;iframe id=&quot;value_frame&quot; src=&quot;&quot; width=&quot;350&quot; height=&quot;250&quot; scrolling=&quot;yes&quot; style=&quot;border:0;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;div id=&quot;lean_overlay&quot; style=&quot;position: fixed;z-index:100;top: 0px;left: 0px;height:150%;width:150%;background: #000;display: none;&quot;&gt;&lt;/div&gt;&apos;; 
+
+window.addEventListener(&quot;message&quot;, function(ev){ 
+try { 
+var objectJson = JSON.parse(ev.data); 
+if (objectJson &amp;&amp; typeof objectJson === &quot;object&quot; &amp;&amp; objectJson !== null) { 
+if(objectJson.success){ 
+var event; 
+if (document.createEvent) { 
+event = document.createEvent(&quot;HTMLEvents&quot;); 
+event.initEvent(&quot;click&quot;, true, true); 
+} else { 
+event = document.createEventObject(); 
+event.eventType = &quot;click&quot;; 
+} 
+event.eventName = &quot;click&quot;; 
+
+if (document.createEvent) { 
+
+document.getElementById(&apos;lean_overlay&apos;).dispatchEvent(event); 
+} else { 
+document.getElementById(&apos;lean_overlay&apos;).fireEvent(&quot;on&quot; + event.eventType, event); 
+} 
+location.reload();
+} 
+} 
+}catch (e) { console.log(e); } 
+}, false); 
+
+document.getElementById(&apos;lean_overlay&apos;).addEventListener(&quot;click&quot;, function(e) { 
+document.getElementById(&apos;lean_overlay&apos;).style.display = &quot;none&quot;; 
+document.getElementById(&apos;valuechain_id&apos;).style.display = &quot;none&quot;; 
+}); 
+} 
+
+var records = {!GETRECORDIDS($ObjectType.Target_List__c)}; 
+if(records.length == 0){ 
+alert(&apos;Please select at least one target.&apos;); 
+}else{ 
+
+var update_list = []; 
+
+var query_result = sforce.connection.query(&quot;SELECT Id,Status__c,Lead_Type__c FROM Target_List__c WHERE Id in (\&apos;&quot;+records.join(&quot;\&apos;,\&apos;&quot;)+&quot;\&apos;)&quot;).getArray(&quot;records&quot;); 
+var haveDone = false;
+for (var i = -1; ++i &lt; query_result.length;) { 
+if(query_result[i].Lead_Type__c==&apos;Campaign&apos;){ 
+update_list.push(query_result[i].Id); 
+}else { 
+update_list.length = 0; 
+break; 
+}
+if(query_result[i].Status__c==&apos;Registered&apos;) {
+haveDone=true;
+break;
+}
+}
+if(!haveDone){
+if(update_list.length ==0){
+alert(&quot;Subtype mismatch.&quot;); 
+}else{ 
+document.getElementById(&apos;value_frame&apos;).src = &apos;/apex/Mobile_No?valuelist=&apos;+update_list.join(&apos;,&apos;); 
+var confirmation = window.confirm(&quot;ต้องการลงทะเบียนแคมเปญหรือไม่ ?&quot;); 
+
+
+if (confirmation == true){ 
+
+var modal_id = &apos;valuechain_id&apos;; 
+
+var modal_width = 250; 
+document.getElementById(&apos;lean_overlay&apos;).style.display = &apos;block&apos;; 
+document.getElementById(&apos;lean_overlay&apos;).style.opacity = &apos;0.5&apos;; 
+
+document.getElementById(&apos;valuechain_id&apos;).style.display = &apos;block&apos;; 
+document.getElementById(&apos;valuechain_id&apos;).style.position = &apos;fixed&apos;; 
+document.getElementById(&apos;valuechain_id&apos;).style.opacity = &apos;1&apos;; 
+document.getElementById(&apos;valuechain_id&apos;).style.zIndex = &apos;500&apos;; 
+document.getElementById(&apos;valuechain_id&apos;).style.left = &apos;50%&apos;; 
+document.getElementById(&apos;valuechain_id&apos;).style.marginLeft = &apos;-&apos;+(modal_width/2)+&quot;px&quot;; 
+document.getElementById(&apos;valuechain_id&apos;).style.top = &apos;120px&apos;; 
+} 
+} 
+}else alert(&quot;ลูกค้าได้ทำการลงทะเบียนแล้ว&quot;);
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Lead_Value_Chain</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Lead Value Chain</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/32.0/connection.js&quot;)} 
+
+var element = document.getElementById(&apos;valuechain_id&apos;); 
+if (typeof(element) === &quot;undefined&quot; || element == null){ 
+
+document.body.innerHTML += &apos;&lt;div id=&quot;valuechain_id&quot; style=&quot; background: #fff none repeat scroll 0 0;border-radius: 5px;box-shadow: 0 0 4px rgba(0, 0, 0, 0.7);display: none;padding: 30px;&quot;&gt;&lt;iframe id=&quot;value_frame&quot; src=&quot;&quot; width=&quot;500&quot; height=&quot;470&quot; scrolling=&quot;yes&quot; style=&quot;border:0;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;div id=&quot;lean_overlay&quot; style=&quot;position: fixed;z-index:100;top: 0px;left: 0px;height:100%;width:100%;background: #000;display: none;&quot;&gt;&lt;/div&gt;&apos;; 
+
+window.addEventListener(&quot;message&quot;, function(ev){ 
+try { 
+var objectJson = JSON.parse(ev.data); 
+if (objectJson &amp;&amp; typeof objectJson === &quot;object&quot; &amp;&amp; objectJson !== null) { 
+if(objectJson.success){ 
+var event; 
+if (document.createEvent) { 
+event = document.createEvent(&quot;HTMLEvents&quot;); 
+event.initEvent(&quot;click&quot;, true, true); 
+} else { 
+event = document.createEventObject(); 
+event.eventType = &quot;click&quot;; 
+} 
+event.eventName = &quot;click&quot;; 
+
+if (document.createEvent) { 
+
+document.getElementById(&apos;lean_overlay&apos;).dispatchEvent(event); 
+} else { 
+document.getElementById(&apos;lean_overlay&apos;).fireEvent(&quot;on&quot; + event.eventType, event); 
+} 
+location.reload();
+} 
+} 
+}catch (e) { console.log(e); } 
+}, false); 
+
+document.getElementById(&apos;lean_overlay&apos;).addEventListener(&quot;click&quot;, function(e) { 
+document.getElementById(&apos;lean_overlay&apos;).style.display = &quot;none&quot;; 
+document.getElementById(&apos;valuechain_id&apos;).style.display = &quot;none&quot;; 
+}); 
+} 
+
+var records = {!GETRECORDIDS($ObjectType.Target_List__c)}; 
+if(records.length == 0){ 
+alert(&apos;Please select at least one target.&apos;); 
+}else{ 
+
+var update_list = []; 
+
+var query_result = sforce.connection.query(&quot;SELECT Id,Status__c,Lead_Subtype__c FROM Target_List__c WHERE Id in (\&apos;&quot;+records.join(&quot;\&apos;,\&apos;&quot;)+&quot;\&apos;)&quot;).getArray(&quot;records&quot;); 
+var haveDone = false;
+for (var i = -1; ++i &lt; query_result.length;) { 
+if(query_result[i].Lead_Subtype__c==&apos;Value Chain&apos;){ 
+update_list.push(query_result[i].Id); 
+}else { 
+update_list.length = 0; 
+break; 
+}
+if(query_result[i].Status__c==&apos;Done&apos;) {
+	haveDone=true;
+	break;
+}
+}
+if(!haveDone){
+if(update_list.length ==0){
+alert(&quot;Subtype mismatch.&quot;); 
+}else{ 
+document.getElementById(&apos;value_frame&apos;).src = &apos;/apex/ValueChain?valuelist=&apos;+update_list.join(&apos;,&apos;); 
+var confirmation = window.confirm(&quot;Do you want to input Value Chain?&quot;); 
+
+if (confirmation == true){ 
+
+var modal_id = &apos;valuechain_id&apos;; 
+
+var modal_width = 560; 
+document.getElementById(&apos;lean_overlay&apos;).style.display = &apos;block&apos;; 
+document.getElementById(&apos;lean_overlay&apos;).style.opacity = &apos;0.5&apos;; 
+
+document.getElementById(&apos;valuechain_id&apos;).style.display = &apos;block&apos;; 
+document.getElementById(&apos;valuechain_id&apos;).style.position = &apos;fixed&apos;; 
+document.getElementById(&apos;valuechain_id&apos;).style.opacity = &apos;1&apos;; 
+document.getElementById(&apos;valuechain_id&apos;).style.zIndex = &apos;11000&apos;; 
+document.getElementById(&apos;valuechain_id&apos;).style.left = &apos;50%&apos;; 
+document.getElementById(&apos;valuechain_id&apos;).style.marginLeft = &apos;-&apos;+(modal_width/2)+&quot;px&quot;; 
+document.getElementById(&apos;valuechain_id&apos;).style.top = &apos;100px&apos;; 
+} 
+} 
+}else alert(&quot;Some Records already have done status&quot;);
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Not_Interested_This_Time</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>ยังไม่สนใจลงทะเบียนตอนนี้</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/34.0/connection.js&quot;)}
+
+var records = {!GETRECORDIDS($ObjectType.Target_List__c)};
+if(records.length == 0){
+alert(&apos;โปรดเลือกอย่างน้อย 1 แคมเปญ&apos;);
+}else{
+var confirmation = window.confirm(&quot;คุณต้องการเปลี่ยนสถานะเป็น ยังไม่สนใจลงทะเบียนในตอนนี้ ใช่หรือไม่&quot;); 
+
+if (confirmation == true){ 
+var update_list = [];
+
+var query_result = sforce.connection.query(&quot;SELECT Id,Lead_Type__c FROM Target_List__c WHERE Id in (\&apos;&quot;+records.join(&quot;\&apos;,\&apos;&quot;)+&quot;\&apos;)&quot;).getArray(&quot;records&quot;);
+
+for (var i = -1; ++i &lt; query_result.length;) {
+if(query_result[i].Lead_Type__c==&apos;Campaign&apos;){
+var target = new sforce.SObject(&quot;Target_List__c&quot;);
+target.Id = query_result[i].Id;
+target.Register__c = &quot;TRUE&quot;;
+target.Status__c = &quot;Not Interested This Time&quot;;
+update_list.push(target);
+}
+}
+if(update_list.length ==0){
+alert(&quot;Can only registered for Campaign.&quot;);
+}
+else{
+var result = sforce.connection.update(update_list);
+var errors = []; 
+if (result &amp;&amp; result.length){ 
+var numFailed = 0; 
+var numSucceeded = 0; 
+for (var i = 0; i &lt; result.length; i++){ 
+var res = result[i]; 
+if (res &amp;&amp; res.success == &apos;true&apos;){ 
+numSucceeded++; 
+} else { 
+var es = res.getArray(&quot;errors&quot;); 
+if (es.length &gt; 0) { 
+errors.push(es[0].message); 
+} 
+numFailed++; 
+} 
+} 
+if (numFailed &gt; 0){ 
+alert(&quot;Failed: &quot; + numFailed + &quot;\nSucceeded: &quot; + numSucceeded + &quot; \n Due to: &quot; + errors.join(&quot;\n&quot;)); 
+} else { 
+alert(&quot;Number of records registered: &quot; + numSucceeded); 
+} 
+} 
+}
+window.location.reload(); 
+
+}
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Not_Register</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>ไม่ต้องการลงทะเบียน</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/34.0/connection.js&quot;)}
+
+var records = {!GETRECORDIDS($ObjectType.Target_List__c)};
+if(records.length == 0){
+alert(&apos;โปรดเลือกอย่างน้อย 1 แคมเปญ&apos;);
+}else{
+var confirmation = window.confirm(&quot;คุณต้องการยืนยันสถานะว่า ไม่ต้องการลงทะเบียน ใช่หรือไม่&quot;); 
+
+if (confirmation == true){ 
+var update_list = [];
+
+var query_result = sforce.connection.query(&quot;SELECT Id,Lead_Type__c FROM Target_List__c WHERE Id in (\&apos;&quot;+records.join(&quot;\&apos;,\&apos;&quot;)+&quot;\&apos;)&quot;).getArray(&quot;records&quot;);
+
+for (var i = -1; ++i &lt; query_result.length;) {
+if(query_result[i].Lead_Type__c==&apos;Campaign&apos;){
+var target = new sforce.SObject(&quot;Target_List__c&quot;);
+target.Id = query_result[i].Id;
+target.Register__c = &quot;TRUE&quot;;
+target.Status__c = &quot;Not Register&quot;;
+update_list.push(target);
+}
+}
+if(update_list.length ==0){
+alert(&quot;Can only registered for Campaign.&quot;);
+}
+else{
+var result = sforce.connection.update(update_list);
+var errors = []; 
+if (result &amp;&amp; result.length){ 
+var numFailed = 0; 
+var numSucceeded = 0; 
+for (var i = 0; i &lt; result.length; i++){ 
+var res = result[i]; 
+if (res &amp;&amp; res.success == &apos;true&apos;){ 
+numSucceeded++; 
+} else { 
+var es = res.getArray(&quot;errors&quot;); 
+if (es.length &gt; 0) { 
+errors.push(es[0].message); 
+} 
+numFailed++; 
+} 
+} 
+if (numFailed &gt; 0){ 
+alert(&quot;Failed: &quot; + numFailed + &quot;\nSucceeded: &quot; + numSucceeded + &quot; \n Due to: &quot; + errors.join(&quot;\n&quot;)); 
+} else { 
+alert(&quot;Number of records registered: &quot; + numSucceeded); 
+} 
+} 
+}
+window.location.reload(); 
+
+}
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Register</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Register</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/34.0/connection.js&quot;)}
+
+var records = {!GETRECORDIDS($ObjectType.Target_List__c)};
+if(records.length == 0){
+alert(&apos;Please select at least one target.&apos;);
+}else{
+var confirmation = window.confirm(&quot;Do you want to Register?&quot;); 
+
+if (confirmation == true){ 
+var update_list = [];
+
+var query_result = sforce.connection.query(&quot;SELECT Id,Lead_Type__c FROM Target_List__c WHERE Id in (\&apos;&quot;+records.join(&quot;\&apos;,\&apos;&quot;)+&quot;\&apos;)&quot;).getArray(&quot;records&quot;);
+
+for (var i = -1; ++i &lt; query_result.length;) {
+if(query_result[i].Lead_Type__c==&apos;Campaign&apos;){
+var target = new sforce.SObject(&quot;Target_List__c&quot;);
+target.Id = query_result[i].Id;
+target.Register__c = &quot;TRUE&quot;;
+target.Status__c = &quot;Registered&quot;;
+update_list.push(target);
+}
+}
+if(update_list.length ==0){
+alert(&quot;Can only registered for Campaign.&quot;);
+}
+else{
+var result = sforce.connection.update(update_list);
+var errors = []; 
+if (result &amp;&amp; result.length){ 
+var numFailed = 0; 
+var numSucceeded = 0; 
+for (var i = 0; i &lt; result.length; i++){ 
+var res = result[i]; 
+if (res &amp;&amp; res.success == &apos;true&apos;){ 
+numSucceeded++; 
+} else { 
+var es = res.getArray(&quot;errors&quot;); 
+if (es.length &gt; 0) { 
+errors.push(es[0].message); 
+} 
+numFailed++; 
+} 
+} 
+if (numFailed &gt; 0){ 
+alert(&quot;Failed: &quot; + numFailed + &quot;\nSucceeded: &quot; + numSucceeded + &quot; \n Due to: &quot; + errors.join(&quot;\n&quot;)); 
+} else { 
+alert(&quot;Number of records registered: &quot; + numSucceeded); 
+} 
+} 
+}
+window.location.reload(); 
+
+}
+}</url>
+    </webLinks>
+</CustomObject>

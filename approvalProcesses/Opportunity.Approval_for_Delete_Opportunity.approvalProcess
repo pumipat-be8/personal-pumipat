@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <allowRecall>true</allowRecall>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>Name</field>
+        <field>Owner</field>
+        <field>Account</field>
+        <field>StageName</field>
+        <field>Approval_Status__c</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <approvalActions>
+            <action>
+                <name>Send_Email_Request_for_Delete_Opportunity_Approval_Approved</name>
+                <type>Alert</type>
+            </action>
+            <action>
+                <name>Send_Email_Request_for_Delete_Opportunity_Approval_Approved_NH</name>
+                <type>Alert</type>
+            </action>
+            <action>
+                <name>Update_Stage_to_Delete_Opp</name>
+                <type>FieldUpdate</type>
+            </action>
+        </approvalActions>
+        <assignedApprover>
+            <approver>
+                <type>userHierarchyField</type>
+            </approver>
+        </assignedApprover>
+        <entryCriteria>
+            <criteriaItems>
+                <field>Opportunity.Current_AH__c</field>
+                <operation>notEqual</operation>
+            </criteriaItems>
+        </entryCriteria>
+        <ifCriteriaNotMet>RejectRecord</ifCriteriaNotMet>
+        <label>Approval Request to AH</label>
+        <name>Approval_Request_to_AH</name>
+        <rejectionActions>
+            <action>
+                <name>Send_Email_Request_for_Delete_Opportunity_Approval_Rejected_AH</name>
+                <type>Alert</type>
+            </action>
+            <action>
+                <name>Send_Email_Request_for_Delete_Opportunity_Approval_Rejected_NH</name>
+                <type>Alert</type>
+            </action>
+        </rejectionActions>
+    </approvalStep>
+    <description>Ability RM to request for Delete Opportunity. In case that the Opportunity has been closed or mistake on create new opportunity, RM will need the approval from AH or NH (in case of no AH) to delete opportunity.</description>
+    <emailTemplate>SME_Email_Templates/Request_for_Delete_Opportunity_Approval_AH</emailTemplate>
+    <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <entryCriteria>
+        <booleanFilter>1 AND 2 AND 3</booleanFilter>
+        <criteriaItems>
+            <field>Opportunity.Has_been_approved__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.RecordType</field>
+            <operation>equals</operation>
+            <value>Closed - Credit Oppotunity</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Opportunity.StageName</field>
+            <operation>equals</operation>
+            <value>Deleted Opportunity</value>
+        </criteriaItems>
+    </entryCriteria>
+    <finalApprovalRecordLock>true</finalApprovalRecordLock>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <label>Approval for Delete Opportunity</label>
+    <nextAutomatedApprover>
+        <useApproverFieldOfRecordOwner>true</useApproverFieldOfRecordOwner>
+        <userHierarchyField>current_ah__c</userHierarchyField>
+    </nextAutomatedApprover>
+    <recordEditability>AdminOnly</recordEditability>
+    <showApprovalHistory>false</showApprovalHistory>
+</ApprovalProcess>

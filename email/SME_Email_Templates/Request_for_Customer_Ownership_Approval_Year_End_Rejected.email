@@ -1,0 +1,17 @@
+เรียน ผู้เกี่ยวข้อง <br/>
+<br/>
+ปฎิเสธการเลือก Port ของลูกค้าดังต่อไปนี้: <br/>
+<br/>
+CIS ID: {!Customer_Ownership_Request__c.CIS_ID__c} <br/>
+ชื่อลูกค้า: {!Customer_Ownership_Request__c.Customer_Name__c} <br/>
+Port / Pool: {!Customer_Ownership_Request__c.Port_Pool__c} <br/>
+<br/>
+ผู้ขอ: {!Customer_Ownership_Request__c.Requestor_Name__c} <br/>
+ผู้จัดการทีมของผู้ขอr: {!Customer_Ownership_Request__c.Requestor_TM__c} <br/>
+ชื่อทีมของผู้ขอ: {!Customer_Ownership_Request__c.Requestor_Team_Name__c} <br/>
+ผู้จัดการเขตปัจจุบัน: {!Customer_Ownership_Request__c.Current_Owner_AH__c} <br/>
+<br/>
+<br/>
+รายละเอียดเพิ่มเติม <br/>
+<br/>
+{!Customer_Ownership_Request__c.Link} <br/>

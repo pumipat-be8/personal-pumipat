@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>CHILD_NAME</field>
+    </columns>
+    <columns>
+        <field>Year_End_Assignment__c.CIS_ID__c</field>
+    </columns>
+    <columns>
+        <field>Year_End_Assignment__c.AH_Name__c</field>
+    </columns>
+    <columns>
+        <field>Year_End_Assignment__c.Status__c</field>
+    </columns>
+    <columns>
+        <field>Year_End_Assignment__c.Final_Port_Pool__c</field>
+    </columns>
+    <columns>
+        <field>Year_End_Assignment__c.Final_Selected_Refer_Out__c</field>
+    </columns>
+    <columns>
+        <field>Year_End_Assignment__c.Final_Team__c</field>
+    </columns>
+    <format>Tabular</format>
+    <name>Year End Selection</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntityCustomEntity$Year_End_Assignment__c$Year_End_Assignment_Selection__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Year_End_Assignment__c.AH_Name__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

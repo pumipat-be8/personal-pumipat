@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact.CIS_ID__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Contact_Position__c</field>
+    </columns>
+    <columns>
+        <field>TITLE</field>
+    </columns>
+    <columns>
+        <field>Contact.Contact_Firstname__c</field>
+    </columns>
+    <columns>
+        <field>LAST_NAME</field>
+    </columns>
+    <columns>
+        <field>Contact.Contact_Representative_Type__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Phone_Number__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Personal_Email__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Business_Email__c</field>
+    </columns>
+    <columns>
+        <field>Contact.Primary_Contact__c</field>
+    </columns>
+    <description>Contact Person Information with Customer CIS ID</description>
+    <format>Tabular</format>
+    <name>Contact Person Information</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ContactList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

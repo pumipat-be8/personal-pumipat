@@ -1,0 +1,3 @@
+<apex:page showHeader="true" sidebar="true" standardController="Call_Report__c" extensions="CallReport_OverrideEdit_Controller" action="{!redirectToNewPage}">
+    
+</apex:page>

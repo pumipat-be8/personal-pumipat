@@ -1,0 +1,4131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Customer</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Customers</value>
+    </caseValues>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer Access</value>
+        </caseValues>
+        <name>account_access</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer Access Level</value>
+        </caseValues>
+        <name>account_access_level</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer Contact Role</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Customer Contact Roles</value>
+        </caseValues>
+        <name>account_contact_role</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer Creator</value>
+        </caseValues>
+        <name>account_creator</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer Currency</value>
+        </caseValues>
+        <name>account_currency</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer Description</value>
+        </caseValues>
+        <name>account_description</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer Detail Page</value>
+        </caseValues>
+        <name>account_detail_page</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer Division</value>
+        </caseValues>
+        <name>account_division</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer Edit</value>
+        </caseValues>
+        <name>account_edit</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer Fax</value>
+        </caseValues>
+        <name>account_fax</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer Field</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Customer Fields</value>
+        </caseValues>
+        <name>account_field</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer General</value>
+        </caseValues>
+        <name>account_general</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer Hierarchy</value>
+        </caseValues>
+        <name>account_hierarchy</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer History</value>
+        </caseValues>
+        <name>account_history</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer History Archive</value>
+        </caseValues>
+        <name>account_history_archive</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer History Report</value>
+        </caseValues>
+        <name>account_history_report</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer ID</value>
+        </caseValues>
+        <name>account_id</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer Information</value>
+        </caseValues>
+        <name>account_information</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>CIS/ Prospect Name</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>CIS/ Prospect Names</value>
+        </caseValues>
+        <name>account_name</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer Number</value>
+        </caseValues>
+        <name>account_number</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer Owner</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Customer Owners</value>
+        </caseValues>
+        <name>account_owner</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer Owner Alias</value>
+        </caseValues>
+        <name>account_owner_alias</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer Owner Report</value>
+        </caseValues>
+        <name>account_owner_report</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer Owner Role</value>
+        </caseValues>
+        <name>account_owner_role</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer Ownership</value>
+        </caseValues>
+        <name>account_ownership</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer Phone</value>
+        </caseValues>
+        <name>account_phone</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer Rating</value>
+        </caseValues>
+        <name>account_rating</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer Record</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Customer Records</value>
+        </caseValues>
+        <name>account_record</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer Record Type</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Customer Record Types</value>
+        </caseValues>
+        <name>account_record_type</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer Report</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Customer Reports</value>
+        </caseValues>
+        <name>account_report</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer Sharing</value>
+        </caseValues>
+        <name>account_sharing</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer Site</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Customer Sites</value>
+        </caseValues>
+        <name>account_site</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer Source</value>
+        </caseValues>
+        <name>account_source</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer Stage ID</value>
+        </caseValues>
+        <name>account_stage_id</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer Team</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Customer Teams</value>
+        </caseValues>
+        <name>account_team</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer Team Member</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Customer Team Members</value>
+        </caseValues>
+        <name>account_team_member</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer Team Member ID</value>
+        </caseValues>
+        <name>account_team_member_id</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer Team Report</value>
+        </caseValues>
+        <name>account_team_report</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer Territory</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Customer Territories</value>
+        </caseValues>
+        <name>account_territory</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer Tool</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Customer Tools</value>
+        </caseValues>
+        <name>account_tool</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer Type</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Customer Types</value>
+        </caseValues>
+        <name>account_type</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Customer View</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Customer Views</value>
+        </caseValues>
+        <name>account_view</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Address</value>
+        </caseValues>
+        <name>billing_address_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>District</value>
+        </caseValues>
+        <name>billing_city_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Country</value>
+        </caseValues>
+        <name>billing_country_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Country Code</value>
+        </caseValues>
+        <name>billing_country_code_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Latitude</value>
+        </caseValues>
+        <name>billing_latitude_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Longitude</value>
+        </caseValues>
+        <name>billing_longitude_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Province</value>
+        </caseValues>
+        <name>billing_state_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Province Code</value>
+        </caseValues>
+        <name>billing_state_code_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Street</value>
+        </caseValues>
+        <name>billing_street_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Postal Code</value>
+        </caseValues>
+        <name>billing_zip_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>No. of Employee</value>
+        </caseValues>
+        <name>employees_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Parent Customer</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Parent Customers</value>
+        </caseValues>
+        <name>parent_account</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Parent Customer Division</value>
+        </caseValues>
+        <name>parent_account_division</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Parent Customer ID</value>
+        </caseValues>
+        <name>parent_account_id</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Parent Customer Site</value>
+        </caseValues>
+        <name>parent_account_site</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Person Customer Record</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Person Customer Records</value>
+        </caseValues>
+        <name>person_account_record</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <label><!-- AH Emp ID --></label>
+        <name>AH_Emp_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- AH Name --></label>
+        <name>AH_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- AH RC Code --></label>
+        <name>AH_RC_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- AH --></label>
+        <name>AH__c</name>
+    </fields>
+    <fields>
+        <label><!-- AMLO List --></label>
+        <name>AMLO_List_Symbol__c</name>
+    </fields>
+    <fields>
+        <label><!-- AMLO List --></label>
+        <name>AMLO_List__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <name>AccountSource</name>
+        <picklistValues>
+            <masterLabel>Advertisement</masterLabel>
+            <translation><!-- Advertisement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employee Referral</masterLabel>
+            <translation><!-- Employee Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>External Referral</masterLabel>
+            <translation><!-- External Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner</masterLabel>
+            <translation><!-- Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public Relations</masterLabel>
+            <translation><!-- Public Relations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Seminar - Internal</masterLabel>
+            <translation><!-- Seminar - Internal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Seminar - Partner</masterLabel>
+            <translation><!-- Seminar - Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trade Show</masterLabel>
+            <translation><!-- Trade Show --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web</masterLabel>
+            <translation><!-- Web --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Word of mouth</masterLabel>
+            <translation><!-- Word of mouth --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agricultural Retailer --></label>
+        <name>Agricultural_Retailer__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- All Customer of user login --></label>
+        <name>All_Customer_of_user_login__c</name>
+    </fields>
+    <fields>
+        <label><!-- Allow Request Ownership --></label>
+        <name>Allow_Request_Ownership__c</name>
+    </fields>
+    <fields>
+        <label><!-- Area Name --></label>
+        <name>Area_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Asset - Account Receivable --></label>
+        <name>AssetAccountReceivable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Asset - Cash --></label>
+        <name>AssetCash__c</name>
+    </fields>
+    <fields>
+        <label><!-- Asset - Current Asset --></label>
+        <name>AssetCurrentAsset__c</name>
+    </fields>
+    <fields>
+        <label><!-- Asset - Etc. --></label>
+        <name>AssetEtc2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Asset - Etc. --></label>
+        <name>AssetEtc__c</name>
+    </fields>
+    <fields>
+        <label><!-- Asset - Inventory --></label>
+        <name>AssetInventory__c</name>
+    </fields>
+    <fields>
+        <label><!-- Asset - Non-Current Asset --></label>
+        <name>AssetNonCurrentAsset__c</name>
+    </fields>
+    <fields>
+        <label><!-- Asset - Property, Plant and Equipment --></label>
+        <name>AssetPropertyPlantAndEquipment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Asset - Total Asset --></label>
+        <name>AssetTotalAsset__c</name>
+    </fields>
+    <fields>
+        <label><!-- Benefit Spent --></label>
+        <name>Benefit_Spent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Birthdate / Registration Date --></label>
+        <name>Birthdate_Registration_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Award --></label>
+        <name>Business_Award__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Code Name (EN) --></label>
+        <name>Business_Code_Name_EN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Code Name (TH) --></label>
+        <name>Business_Code_Name_TH__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Details --></label>
+        <name>Business_Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Email --></label>
+        <name>Business_Email_MashUp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Email --></label>
+        <name>Business_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Standard Certificate --></label>
+        <name>Business_Standard_Certificate__c</name>
+    </fields>
+    <fields>
+        <label><!-- CIS Number --></label>
+        <name>CIS_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- CIS ID --></label>
+        <name>CIS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Convert Prospect Date --></label>
+        <name>Convert_Prospect_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Count RM Call Report --></label>
+        <name>Count_Call_Report_RM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Count Contacted Call Report --></label>
+        <name>Count_Contacted_Call_Report__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Flag --></label>
+        <name>Credit_Flag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Status --></label>
+        <name>Credit_Status_Symbol__c</name>
+    </fields>
+    <fields>
+        <label><!-- Criminal Offense --></label>
+        <name>Criminal_Offense_Symbol__c</name>
+    </fields>
+    <fields>
+        <label><!-- Criminal Offense --></label>
+        <name>Criminal_Offense__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Current AH Name --></label>
+        <name>Current_AH_Name__c</name>
+        <relationshipLabel><!-- Accounts (Current AH Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Current Activity By --></label>
+        <name>Current_Activity_By__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Activity --></label>
+        <name>Current_Activity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current NH Name --></label>
+        <name>Current_NH_Name__c</name>
+        <relationshipLabel><!-- Accounts (Current NH Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Current Owner Extension --></label>
+        <name>Current_Owner_Extension__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Current Owner --></label>
+        <name>Current_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Ratio --></label>
+        <name>Current_Ratio__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Team Name --></label>
+        <name>Current_Team_Name__c</name>
+        <relationshipLabel><!-- Accounts (Current Team Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- 360° --></label>
+        <name>Customer_360__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Importance Note --></label>
+        <name>Customer_Importance_Note__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Insight Last Modified By --></label>
+        <name>Customer_Insight_Last_Modified_By__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Insight Last Modified Date --></label>
+        <name>Customer_Insight_Updated_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Owner --></label>
+        <name>Customer_Owner2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Owner Changed Date --></label>
+        <name>Customer_Owner_Changed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Owner Release Flag --></label>
+        <name>Customer_Owner_Release_Flag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Status --></label>
+        <name>Customer_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Type Code --></label>
+        <name>Customer_Type_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Type --></label>
+        <name>Customer_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Visit This Year --></label>
+        <name>Customer_Visit_This_Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Visited --></label>
+        <name>Customer_Visited__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer&apos;s Business Code --></label>
+        <name>Customer_s_Business_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- DE Ratio --></label>
+        <name>DE_Ratio__c</name>
+    </fields>
+    <fields>
+        <label><!-- Debt Restructuring --></label>
+        <name>Debt_Restructuring_Symbol__c</name>
+    </fields>
+    <fields>
+        <label><!-- Debt Restructuring --></label>
+        <name>Debt_Restructuring__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Delete Flag --></label>
+        <name>Delete_Flag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description_Lead_Inform__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description_Lead_Sales__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description_Lead_ToDo__c</name>
+    </fields>
+    <fields>
+        <label><!-- Document Type Code --></label>
+        <name>Document_Type_Code__c</name>
+        <picklistValues>
+            <masterLabel>11</masterLabel>
+            <translation><!-- 11 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12</masterLabel>
+            <translation><!-- 12 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>13</masterLabel>
+            <translation><!-- 13 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>21</masterLabel>
+            <translation><!-- 21 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>22</masterLabel>
+            <translation><!-- 22 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>23</masterLabel>
+            <translation><!-- 23 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>99</masterLabel>
+            <translation><!-- 99 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Document Type --></label>
+        <name>Document_Type_Prospect__c</name>
+        <picklistValues>
+            <masterLabel>SWIFT BIC CODE</masterLabel>
+            <translation><!-- SWIFT BIC CODE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>บัตรประชาชน</masterLabel>
+            <translation><!-- บัตรประชาชน --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>หนังสือเดินทาง</masterLabel>
+            <translation><!-- หนังสือเดินทาง --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>เลขที่จดทะเบียนบริษัท</masterLabel>
+            <translation><!-- เลขที่จดทะเบียนบริษัท --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>เลขที่ผู้เสียภาษี</masterLabel>
+            <translation><!-- เลขที่ผู้เสียภาษี --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>เอกสารอื่นๆ</masterLabel>
+            <translation><!-- เอกสารอื่นๆ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ใบต่างด้าว</masterLabel>
+            <translation><!-- ใบต่างด้าว --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Document Type --></label>
+        <name>Document_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dual Segment Code --></label>
+        <name>Dual_Segment_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dual Segment Date --></label>
+        <name>Dual_Segment_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dual Sub Segment Code --></label>
+        <name>Dual_Sub_Segment_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- EDC/MPOS - Main Bank --></label>
+        <name>EDC_MPOS_Main_Bank__c</name>
+        <picklistValues>
+            <masterLabel>BAY</masterLabel>
+            <translation><!-- BAY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BBL</masterLabel>
+            <translation><!-- BBL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CIMB</masterLabel>
+            <translation><!-- CIMB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EXIMBank</masterLabel>
+            <translation><!-- EXIMBank --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HSBC</masterLabel>
+            <translation><!-- HSBC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ICBC</masterLabel>
+            <translation><!-- ICBC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KBANK</masterLabel>
+            <translation><!-- KBANK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KTB</masterLabel>
+            <translation><!-- KTB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LHBank</masterLabel>
+            <translation><!-- LHBank --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SCB</masterLabel>
+            <translation><!-- SCB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TISCO</masterLabel>
+            <translation><!-- TISCO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TMB</masterLabel>
+            <translation><!-- TMB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UOB</masterLabel>
+            <translation><!-- UOB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ธ.ก.ส.</masterLabel>
+            <translation><!-- ธ.ก.ส. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ธ.ธนชาติ</masterLabel>
+            <translation><!-- ธ.ธนชาติ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ธ.อ.ส.</masterLabel>
+            <translation><!-- ธ.อ.ส. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ธ.ออมสิน</masterLabel>
+            <translation><!-- ธ.ออมสิน --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ธ.อิสลาม</masterLabel>
+            <translation><!-- ธ.อิสลาม --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ธ.เกียรตินาคิน</masterLabel>
+            <translation><!-- ธ.เกียรตินาคิน --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- EDC/MPOS- Other Reason for not use KBank --></label>
+        <name>EDC_MPOS_Other_Reason_for_not_use_KBank__c</name>
+    </fields>
+    <fields>
+        <label><!-- EDC/MPOS - Other Reason for using Main --></label>
+        <name>EDC_MPOS_Other_Reason_for_using_Main__c</name>
+    </fields>
+    <fields>
+        <label><!-- EDC/MPOS - Reason for not use KBank --></label>
+        <name>EDC_MPOS_Reason_for_not_use_KBank__c</name>
+        <picklistValues>
+            <masterLabel>บริการหลังการขายไม่ดี</masterLabel>
+            <translation><!-- บริการหลังการขายไม่ดี --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ระบบขัดข้องบ่อย</masterLabel>
+            <translation><!-- ระบบขัดข้องบ่อย --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>อัตราค่าธรรมเนียมแพง</masterLabel>
+            <translation><!-- อัตราค่าธรรมเนียมแพง --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>อื่นๆ</masterLabel>
+            <translation><!-- อื่นๆ --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- EDC/MPOS - Reason for  using Main Bank --></label>
+        <name>EDC_MPOS_Reason_for_using_Main_Bank__c</name>
+        <picklistValues>
+            <masterLabel>พึงพอใจในอัตราค่าธรรมเนียม</masterLabel>
+            <translation><!-- พึงพอใจในอัตราค่าธรรมเนียม --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>มีบริการหลังการขายที่ดี</masterLabel>
+            <translation><!-- มีบริการหลังการขายที่ดี --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ระบบใช้งานดี ไม่มีปัญหาขัดข้อง</masterLabel>
+            <translation><!-- ระบบใช้งานดี ไม่มีปัญหาขัดข้อง --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>อื่นๆ</masterLabel>
+            <translation><!-- อื่นๆ --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Encrypt Fullname EN --></label>
+        <name>Encrypt_Fullname_EN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Encrypt Fullname TH --></label>
+        <name>Encrypt_Fullname_TH__c</name>
+    </fields>
+    <fields>
+        <label><!-- Encrypt Identification No --></label>
+        <name>Encrypt_Identification_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Encrypt Middle Name (EN) --></label>
+        <name>Encrypt_Middle_Name_EN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Encrypt Middle Name (TH) --></label>
+        <name>Encrypt_Middle_Name_TH__c</name>
+    </fields>
+    <fields>
+        <label><!-- Encrypt Name (EN) --></label>
+        <name>Encrypt_Name_EN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Encrypt Name (TH) --></label>
+        <name>Encrypt_Name_TH__c</name>
+    </fields>
+    <fields>
+        <label><!-- Encrypt Surname (EN) --></label>
+        <name>Encrypt_Surname_EN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Encrypt Surname (TH) --></label>
+        <name>Encrypt_Surname_TH__c</name>
+    </fields>
+    <fields>
+        <label><!-- Encrypt Title EN --></label>
+        <name>Encrypt_Title_EN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Encrypt Title TH --></label>
+        <name>Encrypt_Title_TH__c</name>
+    </fields>
+    <fields>
+        <label><!-- FX&amp;TT - Main Bank --></label>
+        <name>FX_TT_Main_Bank__c</name>
+        <picklistValues>
+            <masterLabel>BAY</masterLabel>
+            <translation><!-- BAY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BBL</masterLabel>
+            <translation><!-- BBL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CIMB</masterLabel>
+            <translation><!-- CIMB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EXIMBank</masterLabel>
+            <translation><!-- EXIMBank --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HSBC</masterLabel>
+            <translation><!-- HSBC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ICBC</masterLabel>
+            <translation><!-- ICBC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KBANK</masterLabel>
+            <translation><!-- KBANK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KTB</masterLabel>
+            <translation><!-- KTB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LHBank</masterLabel>
+            <translation><!-- LHBank --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SCB</masterLabel>
+            <translation><!-- SCB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TISCO</masterLabel>
+            <translation><!-- TISCO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TMB</masterLabel>
+            <translation><!-- TMB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UOB</masterLabel>
+            <translation><!-- UOB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ธ.ก.ส.</masterLabel>
+            <translation><!-- ธ.ก.ส. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ธ.ธนชาติ</masterLabel>
+            <translation><!-- ธ.ธนชาติ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ธ.อ.ส.</masterLabel>
+            <translation><!-- ธ.อ.ส. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ธ.ออมสิน</masterLabel>
+            <translation><!-- ธ.ออมสิน --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ธ.อิสลาม</masterLabel>
+            <translation><!-- ธ.อิสลาม --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ธ.เกียรตินาคิน</masterLabel>
+            <translation><!-- ธ.เกียรตินาคิน --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- FX&amp;TT - Other Reason for not use KBank --></label>
+        <name>FX_TT_Other_Reason_for_not_use_KBank__c</name>
+    </fields>
+    <fields>
+        <label><!-- FX&amp;TT - Other Reason for using Main Bank --></label>
+        <name>FX_TT_Other_Reason_for_using_Main_Bank__c</name>
+    </fields>
+    <fields>
+        <label><!-- FX&amp;TT - Reason for not use KBank --></label>
+        <name>FX_TT_Reason_for_not_use_KBank__c</name>
+        <picklistValues>
+            <masterLabel>บริการไม่ดี</masterLabel>
+            <translation><!-- บริการไม่ดี --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ระบบไม่สะดวกต่อการใช้บริการ</masterLabel>
+            <translation><!-- ระบบไม่สะดวกต่อการใช้บริการ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>อัตราค่าธรรมเนียมแพง</masterLabel>
+            <translation><!-- อัตราค่าธรรมเนียมแพง --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>อื่นๆ</masterLabel>
+            <translation><!-- อื่นๆ --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- FX&amp;TT - Reason for  using Main Bank --></label>
+        <name>FX_TT_Reason_for_using_Main_Bank__c</name>
+        <picklistValues>
+            <masterLabel>พึงพอใจในอัตราค่าธรรมเนียม</masterLabel>
+            <translation><!-- พึงพอใจในอัตราค่าธรรมเนียม --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>มีบริการที่ดี</masterLabel>
+            <translation><!-- มีบริการที่ดี --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ระบบใช้งานดี ไม่มีปัญหาขัดข้อง</masterLabel>
+            <translation><!-- ระบบใช้งานดี ไม่มีปัญหาขัดข้อง --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>อื่นๆ</masterLabel>
+            <translation><!-- อื่นๆ --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- First Visited Date --></label>
+        <name>First_Visited_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flag to Inidcate Latest Version --></label>
+        <name>Flag_to_Inidcate_Latest_Version__c</name>
+    </fields>
+    <fields>
+        <label><!-- High Value --></label>
+        <name>High_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Home Ext. --></label>
+        <name>Home_Ext_MashUp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Home Fax --></label>
+        <name>Home_Fax_MashUp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Home Phone --></label>
+        <name>Home_Phone_MashUp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Home Phone --></label>
+        <name>Home_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- ICR Ratio --></label>
+        <name>ICR_Ratio__c</name>
+    </fields>
+    <fields>
+        <help><!-- Identification Number or Registration Number --></help>
+        <label><!-- Identification No. --></label>
+        <name>Identification_No_Prospect__c</name>
+    </fields>
+    <fields>
+        <label><!-- Identification No. --></label>
+        <name>Identification_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Income To Bank (Last 1 Month) --></label>
+        <name>Income_To_Bank_Last_1_Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- Income to Bank (Last Year) --></label>
+        <name>Income_to_Bank_Last_Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- Income to Bank (This Year) --></label>
+        <name>Income_to_Bank_This_Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- Income to SME --></label>
+        <name>Income_to_SME__c</name>
+    </fields>
+    <fields>
+        <name>Industry</name>
+        <picklistValues>
+            <masterLabel>Agriculture</masterLabel>
+            <translation><!-- Agriculture --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Automotive and Parts</masterLabel>
+            <translation><!-- Automotive and Parts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chemicals and Chemical Products</masterLabel>
+            <translation><!-- Chemicals and Chemical Products --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commerce</masterLabel>
+            <translation><!-- Commerce --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Communication</masterLabel>
+            <translation><!-- Communication --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Construction</masterLabel>
+            <translation><!-- Construction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Construction Materials</masterLabel>
+            <translation><!-- Construction Materials --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Electronics &amp; Appliances</masterLabel>
+            <translation><!-- Electronics &amp; Appliances --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Entertainment and Services</masterLabel>
+            <translation><!-- Entertainment and Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Financial Institute</masterLabel>
+            <translation><!-- Financial Institute --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Food &amp; Beverage</masterLabel>
+            <translation><!-- Food &amp; Beverage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Furniture &amp; Wood</masterLabel>
+            <translation><!-- Furniture &amp; Wood --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gems and Jewelry</masterLabel>
+            <translation><!-- Gems and Jewelry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hardware</masterLabel>
+            <translation><!-- Hardware --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hotels and Restaurants</masterLabel>
+            <translation><!-- Hotels and Restaurants --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Industrial Agriculture</masterLabel>
+            <translation><!-- Industrial Agriculture --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others</masterLabel>
+            <translation><!-- Others --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Petroleum &amp; Petrochemical Products</masterLabel>
+            <translation><!-- Petroleum &amp; Petrochemical Products --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pharmaceutical &amp; Hospital</masterLabel>
+            <translation><!-- Pharmaceutical &amp; Hospital --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plastic</masterLabel>
+            <translation><!-- Plastic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pulp &amp; Paper / Printing</masterLabel>
+            <translation><!-- Pulp &amp; Paper / Printing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Real Estate</masterLabel>
+            <translation><!-- Real Estate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rice</masterLabel>
+            <translation><!-- Rice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Textile</masterLabel>
+            <translation><!-- Textile --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transportation</masterLabel>
+            <translation><!-- Transportation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Utilities</masterLabel>
+            <translation><!-- Utilities --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Industry Classification Code --></label>
+        <name>Industry_Classification_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Industry Risk --></label>
+        <name>Industry_Risk_Symbol__c</name>
+    </fields>
+    <fields>
+        <label><!-- Industry Risk --></label>
+        <name>Industry_Risk__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Info for PR - Interesting Point --></label>
+        <name>Info_for_PR_Interesting_Point__c</name>
+        <picklistValues>
+            <masterLabel>การตลาดเฉพาะกลุ่ม (Niche Market)</masterLabel>
+            <translation><!-- การตลาดเฉพาะกลุ่ม (Niche Market) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>การบริหารต้นทุนที่ต่ำ</masterLabel>
+            <translation><!-- การบริหารต้นทุนที่ต่ำ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>คัดวัตถุดิบคุณภาพสูงเมื่อเทียบกับคู่แข่ง</masterLabel>
+            <translation><!-- คัดวัตถุดิบคุณภาพสูงเมื่อเทียบกับคู่แข่ง --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ช่องทางการจำหน่ายที่ครอบคลุม</masterLabel>
+            <translation><!-- ช่องทางการจำหน่ายที่ครอบคลุม --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>บริการที่โดดเด่น</masterLabel>
+            <translation><!-- บริการที่โดดเด่น --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>มีการออกแบบที่โดดเด่น ดึงดูดความสนใจ</masterLabel>
+            <translation><!-- มีการออกแบบที่โดดเด่น ดึงดูดความสนใจ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>มีนวัตกรรมด้านเทคโนโลยีการผลิต</masterLabel>
+            <translation><!-- มีนวัตกรรมด้านเทคโนโลยีการผลิต --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ยึดหลักธรรมาภิบาล</masterLabel>
+            <translation><!-- ยึดหลักธรรมาภิบาล --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>อื่นๆ</masterLabel>
+            <translation><!-- อื่นๆ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>เป็นสินค้าที่มีนวัตกรรม</masterLabel>
+            <translation><!-- เป็นสินค้าที่มีนวัตกรรม --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>แบรนด์เป็นที่รู้จัก</masterLabel>
+            <translation><!-- แบรนด์เป็นที่รู้จัก --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Info for PR - Interesting --></label>
+        <name>Info_for_PR_Interesting__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Interesting Story/Topic --></label>
+        <name>Interesting_Story_Topic__c</name>
+    </fields>
+    <fields>
+        <label><!-- International Experience Type --></label>
+        <name>International_Experience_Type__c</name>
+        <picklistValues>
+            <masterLabel>Both - ExIm</masterLabel>
+            <translation><!-- Both - ExIm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Export</masterLabel>
+            <translation><!-- Export --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Import</masterLabel>
+            <translation><!-- Import --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Investment</masterLabel>
+            <translation><!-- Investment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Via agent - Export</masterLabel>
+            <translation><!-- Via agent - Export --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Via agent - Import</masterLabel>
+            <translation><!-- Via agent - Import --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- International Experience --></label>
+        <name>International_Experience__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Inventory --></label>
+        <name>Inventory__c</name>
+    </fields>
+    <fields>
+        <label><!-- IsConverted --></label>
+        <name>IsConverted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is SME Customer? --></label>
+        <name>Is_SME_Customer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Issued and Paid-Up --></label>
+        <name>IssuedAndPaidUp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Knowledge about Business --></label>
+        <name>Knowledge_about_Business__c</name>
+    </fields>
+    <fields>
+        <label><!-- L/I (BG) - Main Bank --></label>
+        <name>LI_BG_Main_Bank__c</name>
+        <picklistValues>
+            <masterLabel>BAY</masterLabel>
+            <translation><!-- BAY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BBL</masterLabel>
+            <translation><!-- BBL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CIMB</masterLabel>
+            <translation><!-- CIMB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EXIMBank</masterLabel>
+            <translation><!-- EXIMBank --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HSBC</masterLabel>
+            <translation><!-- HSBC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ICBC</masterLabel>
+            <translation><!-- ICBC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KBANK</masterLabel>
+            <translation><!-- KBANK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KTB</masterLabel>
+            <translation><!-- KTB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LHBank</masterLabel>
+            <translation><!-- LHBank --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SCB</masterLabel>
+            <translation><!-- SCB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TISCO</masterLabel>
+            <translation><!-- TISCO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TMB</masterLabel>
+            <translation><!-- TMB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UOB</masterLabel>
+            <translation><!-- UOB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ธ.ก.ส.</masterLabel>
+            <translation><!-- ธ.ก.ส. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ธ.ธนชาติ</masterLabel>
+            <translation><!-- ธ.ธนชาติ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ธ.อ.ส.</masterLabel>
+            <translation><!-- ธ.อ.ส. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ธ.ออมสิน</masterLabel>
+            <translation><!-- ธ.ออมสิน --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ธ.อิสลาม</masterLabel>
+            <translation><!-- ธ.อิสลาม --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ธ.เกียรตินาคิน</masterLabel>
+            <translation><!-- ธ.เกียรตินาคิน --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- L/I (BG)- Other Reason for not use KBank --></label>
+        <name>LI_BG_Other_Reason_for_not_use_KBank__c</name>
+    </fields>
+    <fields>
+        <label><!-- L/I (BG) - Other Reason for using Main --></label>
+        <name>LI_BG_Other_Reason_for_using_Main__c</name>
+    </fields>
+    <fields>
+        <label><!-- L/I (BG) - Other Reason for using Second --></label>
+        <name>LI_BG_Other_Reason_for_using_Second__c</name>
+    </fields>
+    <fields>
+        <label><!-- L/I (BG) - Reason for not use KBank --></label>
+        <name>LI_BG_Reason_for_not_use_KBank__c</name>
+        <picklistValues>
+            <masterLabel>RM/Sale ไม่สามารถให้คำแนะนำ/แก้ปัญหาได้</masterLabel>
+            <translation><!-- RM/Sale ไม่สามารถให้คำแนะนำ/แก้ปัญหาได้ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ติดปัญหาเรื่องหลักประกัน</masterLabel>
+            <translation><!-- ติดปัญหาเรื่องหลักประกัน --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ติดเงื่อนไขสินเชื่อตามบริษัทในเครือ</masterLabel>
+            <translation><!-- ติดเงื่อนไขสินเชื่อตามบริษัทในเครือ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ผลิตภัณฑ์ไม่ตรงกับความต้องการ</masterLabel>
+            <translation><!-- ผลิตภัณฑ์ไม่ตรงกับความต้องการ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>อนุมัติช้า ไม่ทันต่อความต้องการ</masterLabel>
+            <translation><!-- อนุมัติช้า ไม่ทันต่อความต้องการ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>อัตราค่าธรรมเนียมและดอกเบี้ยแพง</masterLabel>
+            <translation><!-- อัตราค่าธรรมเนียมและดอกเบี้ยแพง --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>อื่นๆ</masterLabel>
+            <translation><!-- อื่นๆ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ใช้ตั้งแต่รุ่นพ่อแม่ / ตั้งแต่เปิดกิจการ</masterLabel>
+            <translation><!-- ใช้ตั้งแต่รุ่นพ่อแม่ / ตั้งแต่เปิดกิจการ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ได้วงเงินน้อย แตกต่างจากจำนวนที่ต้องการ</masterLabel>
+            <translation><!-- ได้วงเงินน้อย แตกต่างจากจำนวนที่ต้องการ --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- L/I (BG) - Reason for using Main Bank --></label>
+        <name>LI_BG_Reason_for_using_Main_Bank__c</name>
+        <picklistValues>
+            <masterLabel>RM/Sale สามารถให้คำแนะนำ/แก้ปัญหาให้ได้</masterLabel>
+            <translation><!-- RM/Sale สามารถให้คำแนะนำ/แก้ปัญหาให้ได้ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ติดเงื่อนไขสินเชื่อตามบริษัทในเครือ</masterLabel>
+            <translation><!-- ติดเงื่อนไขสินเชื่อตามบริษัทในเครือ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ผลิตภัณฑ์ตรงกับความต้องการ</masterLabel>
+            <translation><!-- ผลิตภัณฑ์ตรงกับความต้องการ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>พอใจการประเมินหลักประกัน</masterLabel>
+            <translation><!-- พอใจการประเมินหลักประกัน --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>พึงพอใจในจำนวนวงเงินที่ได้รับ</masterLabel>
+            <translation><!-- พึงพอใจในจำนวนวงเงินที่ได้รับ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>พึงพอใจในอัตราค่าธรรมเนียมและดอกเบี้ย</masterLabel>
+            <translation><!-- พึงพอใจในอัตราค่าธรรมเนียมและดอกเบี้ย --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>อนุมัติรวดเร็วได้ทันตามความต้องการ</masterLabel>
+            <translation><!-- อนุมัติรวดเร็วได้ทันตามความต้องการ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>อื่นๆ</masterLabel>
+            <translation><!-- อื่นๆ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ใช้ตั้งแต่รุ่นพ่อแม่ / ตั้งแต่เปิดกิจการ</masterLabel>
+            <translation><!-- ใช้ตั้งแต่รุ่นพ่อแม่ / ตั้งแต่เปิดกิจการ --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- L/I (BG) - Reason for  using Second Bank --></label>
+        <name>LI_BG_Reason_for_using_Second_Bank__c</name>
+        <picklistValues>
+            <masterLabel>RM/Sale สามารถให้คำแนะนำ/แก้ปัญหาให้ได้</masterLabel>
+            <translation><!-- RM/Sale สามารถให้คำแนะนำ/แก้ปัญหาให้ได้ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ติดเงื่อนไขสินเชื่อตามบริษัทในเครือ</masterLabel>
+            <translation><!-- ติดเงื่อนไขสินเชื่อตามบริษัทในเครือ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ผลิตภัณฑ์ตรงกับความต้องการ</masterLabel>
+            <translation><!-- ผลิตภัณฑ์ตรงกับความต้องการ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>พอใจการประเมินหลักประกัน</masterLabel>
+            <translation><!-- พอใจการประเมินหลักประกัน --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>พึงพอใจในจำนวนวงเงินที่ได้รับ</masterLabel>
+            <translation><!-- พึงพอใจในจำนวนวงเงินที่ได้รับ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>พึงพอใจในอัตราค่าธรรมเนียมและดอกเบี้ย</masterLabel>
+            <translation><!-- พึงพอใจในอัตราค่าธรรมเนียมและดอกเบี้ย --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>อนุมัติรวดเร็วได้ทันตามความต้องการ</masterLabel>
+            <translation><!-- อนุมัติรวดเร็วได้ทันตามความต้องการ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>อื่นๆ</masterLabel>
+            <translation><!-- อื่นๆ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ใช้ตั้งแต่รุ่นพ่อแม่ / ตั้งแต่เปิดกิจการ</masterLabel>
+            <translation><!-- ใช้ตั้งแต่รุ่นพ่อแม่ / ตั้งแต่เปิดกิจการ --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- L/I (BG) - Second Bank --></label>
+        <name>LI_BG_Second_Bank__c</name>
+        <picklistValues>
+            <masterLabel>BAY</masterLabel>
+            <translation><!-- BAY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BBL</masterLabel>
+            <translation><!-- BBL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CIMB</masterLabel>
+            <translation><!-- CIMB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EXIMBank</masterLabel>
+            <translation><!-- EXIMBank --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HSBC</masterLabel>
+            <translation><!-- HSBC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ICBC</masterLabel>
+            <translation><!-- ICBC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KBANK</masterLabel>
+            <translation><!-- KBANK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KTB</masterLabel>
+            <translation><!-- KTB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LHBank</masterLabel>
+            <translation><!-- LHBank --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SCB</masterLabel>
+            <translation><!-- SCB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TISCO</masterLabel>
+            <translation><!-- TISCO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TMB</masterLabel>
+            <translation><!-- TMB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UOB</masterLabel>
+            <translation><!-- UOB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ธ.ก.ส.</masterLabel>
+            <translation><!-- ธ.ก.ส. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ธ.ธนชาติ</masterLabel>
+            <translation><!-- ธ.ธนชาติ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ธ.อ.ส.</masterLabel>
+            <translation><!-- ธ.อ.ส. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ธ.ออมสิน</masterLabel>
+            <translation><!-- ธ.ออมสิน --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ธ.อิสลาม</masterLabel>
+            <translation><!-- ธ.อิสลาม --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ธ.เกียรตินาคิน</masterLabel>
+            <translation><!-- ธ.เกียรตินาคิน --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Last CallReprt/Opty Updated Date --></label>
+        <name>Last_CallReprt_Opty_Updated_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Setup By --></label>
+        <name>Last_Setup_By__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Setup Date --></label>
+        <name>Last_Setup_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Visited By --></label>
+        <name>Last_Visited_By__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Visited Date Is Null --></label>
+        <name>Last_Visited_Date_Is_Null__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Visited Date --></label>
+        <name>Last_Visited_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead To Do --></label>
+        <name>Lead_To_Do__c</name>
+    </fields>
+    <fields>
+        <label><!-- Campaign/Event --></label>
+        <name>Lead_To_Inform__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead for Sales --></label>
+        <name>Lead_for_Sales__c</name>
+    </fields>
+    <fields>
+        <label><!-- Liabilities - Account Payable --></label>
+        <name>LiabilitiesAccountPayable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Liabilities - Current Liability --></label>
+        <name>LiabilitiesCurrentLiability__c</name>
+    </fields>
+    <fields>
+        <label><!-- Liabilities - Etc. --></label>
+        <name>LiabilitiesEtc2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Liabilities - Etc. --></label>
+        <name>LiabilitiesEtc__c</name>
+    </fields>
+    <fields>
+        <label><!-- Liabilities - Long-Term Loan --></label>
+        <name>LiabilitiesLongTermLoan__c</name>
+    </fields>
+    <fields>
+        <label><!-- Liabilities - Non-Current Liabilities --></label>
+        <name>LiabilitiesNonCurrentLiabilites__c</name>
+    </fields>
+    <fields>
+        <label><!-- Liabilities - O/D --></label>
+        <name>LiabilitiesOD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Liabilities - Short-Term Loan --></label>
+        <name>LiabilitiesShortTermLoan__c</name>
+    </fields>
+    <fields>
+        <label><!-- Liabilities - Total Liability --></label>
+        <name>LiabilitiesTotalLiability__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan&amp;OD - Main Bank --></label>
+        <name>Loan_OD_Main_Bank__c</name>
+        <picklistValues>
+            <masterLabel>BAY</masterLabel>
+            <translation><!-- BAY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BBL</masterLabel>
+            <translation><!-- BBL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CIMB</masterLabel>
+            <translation><!-- CIMB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EXIMBank</masterLabel>
+            <translation><!-- EXIMBank --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HSBC</masterLabel>
+            <translation><!-- HSBC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ICBC</masterLabel>
+            <translation><!-- ICBC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KBANK</masterLabel>
+            <translation><!-- KBANK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KTB</masterLabel>
+            <translation><!-- KTB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LHBank</masterLabel>
+            <translation><!-- LHBank --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SCB</masterLabel>
+            <translation><!-- SCB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TISCO</masterLabel>
+            <translation><!-- TISCO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TMB</masterLabel>
+            <translation><!-- TMB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UOB</masterLabel>
+            <translation><!-- UOB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ธ.ก.ส.</masterLabel>
+            <translation><!-- ธ.ก.ส. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ธ.ธนชาติ</masterLabel>
+            <translation><!-- ธ.ธนชาติ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ธ.อ.ส.</masterLabel>
+            <translation><!-- ธ.อ.ส. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ธ.ออมสิน</masterLabel>
+            <translation><!-- ธ.ออมสิน --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ธ.อิสลาม</masterLabel>
+            <translation><!-- ธ.อิสลาม --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ธ.เกียรตินาคิน</masterLabel>
+            <translation><!-- ธ.เกียรตินาคิน --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Loan&amp;OD - Other Reason for not use KBank --></label>
+        <name>Loan_OD_Other_Reason_for_not_use_KBank__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan&amp;OD - Other Reason for using Main --></label>
+        <name>Loan_OD_Other_Reason_for_using_Main__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan&amp;OD - Other Reason for using Second --></label>
+        <name>Loan_OD_Other_Reason_for_using_Second__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loan&amp;OD - Reason for not use KBank --></label>
+        <name>Loan_OD_Reason_for_not_use_KBank__c</name>
+        <picklistValues>
+            <masterLabel>RM/Sale ไม่สามารถให้คำแนะนำ/แก้ปัญหาได้</masterLabel>
+            <translation><!-- RM/Sale ไม่สามารถให้คำแนะนำ/แก้ปัญหาได้ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ติดปัญหาเรื่องหลักประกัน</masterLabel>
+            <translation><!-- ติดปัญหาเรื่องหลักประกัน --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ติดเงื่อนไขสินเชื่อตามบริษัทในเครือ</masterLabel>
+            <translation><!-- ติดเงื่อนไขสินเชื่อตามบริษัทในเครือ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ผลิตภัณฑ์ไม่ตรงกับความต้องการ</masterLabel>
+            <translation><!-- ผลิตภัณฑ์ไม่ตรงกับความต้องการ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>อนุมัติช้า ไม่ทันต่อความต้องการ</masterLabel>
+            <translation><!-- อนุมัติช้า ไม่ทันต่อความต้องการ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>อัตราค่าธรรมเนียมและดอกเบี้ยแพง</masterLabel>
+            <translation><!-- อัตราค่าธรรมเนียมและดอกเบี้ยแพง --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>อื่นๆ</masterLabel>
+            <translation><!-- อื่นๆ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ใช้ตั้งแต่รุ่นพ่อแม่ / ตั้งแต่เปิดกิจการ</masterLabel>
+            <translation><!-- ใช้ตั้งแต่รุ่นพ่อแม่ / ตั้งแต่เปิดกิจการ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ได้วงเงินน้อย แตกต่างจากจำนวนที่ต้องการ</masterLabel>
+            <translation><!-- ได้วงเงินน้อย แตกต่างจากจำนวนที่ต้องการ --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Loan&amp;OD - Reason for  using Main Bank --></label>
+        <name>Loan_OD_Reason_for_using_Main_Bank__c</name>
+        <picklistValues>
+            <masterLabel>RM/Sale สามารถให้คำแนะนำ/แก้ปัญหาให้ได้</masterLabel>
+            <translation><!-- RM/Sale สามารถให้คำแนะนำ/แก้ปัญหาให้ได้ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ติดเงื่อนไขสินเชื่อตามบริษัทในเครือ</masterLabel>
+            <translation><!-- ติดเงื่อนไขสินเชื่อตามบริษัทในเครือ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ผลิตภัณฑ์ตรงกับความต้องการ</masterLabel>
+            <translation><!-- ผลิตภัณฑ์ตรงกับความต้องการ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>พอใจการประเมินหลักประกัน</masterLabel>
+            <translation><!-- พอใจการประเมินหลักประกัน --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>พึงพอใจในจำนวนวงเงินที่ได้รับ</masterLabel>
+            <translation><!-- พึงพอใจในจำนวนวงเงินที่ได้รับ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>พึงพอใจในอัตราค่าธรรมเนียมและดอกเบี้ย</masterLabel>
+            <translation><!-- พึงพอใจในอัตราค่าธรรมเนียมและดอกเบี้ย --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>อนุมัติรวดเร็วได้ทันตามความต้องการ</masterLabel>
+            <translation><!-- อนุมัติรวดเร็วได้ทันตามความต้องการ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>อื่นๆ</masterLabel>
+            <translation><!-- อื่นๆ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ใช้ตั้งแต่รุ่นพ่อแม่ / ตั้งแต่เปิดกิจการ</masterLabel>
+            <translation><!-- ใช้ตั้งแต่รุ่นพ่อแม่ / ตั้งแต่เปิดกิจการ --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Loan&amp;OD - Reason for  using Second Bank --></label>
+        <name>Loan_OD_Reason_for_using_Second_Bank__c</name>
+        <picklistValues>
+            <masterLabel>RM/Sale สามารถให้คำแนะนำ/แก้ปัญหาให้ได้</masterLabel>
+            <translation><!-- RM/Sale สามารถให้คำแนะนำ/แก้ปัญหาให้ได้ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ติดเงื่อนไขสินเชื่อตามบริษัทในเครือ</masterLabel>
+            <translation><!-- ติดเงื่อนไขสินเชื่อตามบริษัทในเครือ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ผลิตภัณฑ์ตรงกับความต้องการ</masterLabel>
+            <translation><!-- ผลิตภัณฑ์ตรงกับความต้องการ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>พอใจการประเมินหลักประกัน</masterLabel>
+            <translation><!-- พอใจการประเมินหลักประกัน --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>พึงพอใจในจำนวนวงเงินที่ได้รับ</masterLabel>
+            <translation><!-- พึงพอใจในจำนวนวงเงินที่ได้รับ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>พึงพอใจในอัตราค่าธรรมเนียมและดอกเบี้ย</masterLabel>
+            <translation><!-- พึงพอใจในอัตราค่าธรรมเนียมและดอกเบี้ย --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>อนุมัติรวดเร็วได้ทันตามความต้องการ</masterLabel>
+            <translation><!-- อนุมัติรวดเร็วได้ทันตามความต้องการ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>อื่นๆ</masterLabel>
+            <translation><!-- อื่นๆ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ใช้ตั้งแต่รุ่นพ่อแม่ / ตั้งแต่เปิดกิจการ</masterLabel>
+            <translation><!-- ใช้ตั้งแต่รุ่นพ่อแม่ / ตั้งแต่เปิดกิจการ --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Loan&amp;OD - Second Bank --></label>
+        <name>Loan_OD_Second_Bank__c</name>
+        <picklistValues>
+            <masterLabel>BAY</masterLabel>
+            <translation><!-- BAY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BBL</masterLabel>
+            <translation><!-- BBL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CIMB</masterLabel>
+            <translation><!-- CIMB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EXIMBank</masterLabel>
+            <translation><!-- EXIMBank --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HSBC</masterLabel>
+            <translation><!-- HSBC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ICBC</masterLabel>
+            <translation><!-- ICBC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KBANK</masterLabel>
+            <translation><!-- KBANK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KTB</masterLabel>
+            <translation><!-- KTB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LHBank</masterLabel>
+            <translation><!-- LHBank --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SCB</masterLabel>
+            <translation><!-- SCB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TISCO</masterLabel>
+            <translation><!-- TISCO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TMB</masterLabel>
+            <translation><!-- TMB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UOB</masterLabel>
+            <translation><!-- UOB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ธ.ก.ส.</masterLabel>
+            <translation><!-- ธ.ก.ส. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ธ.ธนชาติ</masterLabel>
+            <translation><!-- ธ.ธนชาติ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ธ.อ.ส.</masterLabel>
+            <translation><!-- ธ.อ.ส. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ธ.ออมสิน</masterLabel>
+            <translation><!-- ธ.ออมสิน --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ธ.อิสลาม</masterLabel>
+            <translation><!-- ธ.อิสลาม --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ธ.เกียรตินาคิน</masterLabel>
+            <translation><!-- ธ.เกียรตินาคิน --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- MBB --></label>
+        <name>MBB_Symbol__c</name>
+    </fields>
+    <fields>
+        <label><!-- MBB --></label>
+        <name>MBB__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- MOB --></label>
+        <name>MOB_Symbol__c</name>
+    </fields>
+    <fields>
+        <label><!-- MOB --></label>
+        <name>MOB__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Main Bank --></label>
+        <name>Main_Bank_Symbol__c</name>
+    </fields>
+    <fields>
+        <label><!-- Main Bank --></label>
+        <name>Main_Bank__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Merge Status Code --></label>
+        <name>Merge_Status_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merge Status --></label>
+        <name>Merge_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Middle Name (EN) --></label>
+        <name>Middle_Name_EN_Prospect__c</name>
+    </fields>
+    <fields>
+        <label><!-- Middle Name (EN) --></label>
+        <name>Middle_Name_EN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Middle Name (TH) --></label>
+        <name>Middle_Name_TH_Prospect__c</name>
+    </fields>
+    <fields>
+        <label><!-- Middle Name (TH) --></label>
+        <name>Middle_Name_TH__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mobile Phone 2 --></label>
+        <name>Mobile_Phone_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mobile Phone --></label>
+        <name>Mobile_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- My AH Pool --></label>
+        <name>My_AH_Pool__c</name>
+    </fields>
+    <fields>
+        <label><!-- My Customer (SVM) --></label>
+        <name>My_Customer_SVM__c</name>
+    </fields>
+    <fields>
+        <label><!-- My Customer --></label>
+        <name>My_Customer__c</name>
+    </fields>
+    <fields>
+        <label><!-- My TM Pool --></label>
+        <name>My_TM_Pool__c</name>
+    </fields>
+    <fields>
+        <label><!-- My Team --></label>
+        <name>My_Team__c</name>
+    </fields>
+    <fields>
+        <label><!-- NH Emp ID --></label>
+        <name>NH_Emp_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- NH Name --></label>
+        <name>NH_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- NH RC Code --></label>
+        <name>NH_RC_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- NH --></label>
+        <name>NH__c</name>
+    </fields>
+    <fields>
+        <label><!-- NPL --></label>
+        <name>NPL_Symbol__c</name>
+    </fields>
+    <fields>
+        <label><!-- NPL --></label>
+        <name>NPL__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Name (EN) --></label>
+        <name>Name_EN_Prospect__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name (EN) --></label>
+        <name>Name_EN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Name --></label>
+        <name>Name_Report__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name, Surname (EN) --></label>
+        <name>Name_Surname_EN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name, Surname (TH) --></label>
+        <name>Name_Surname_TH__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name (TH) --></label>
+        <name>Name_TH__c</name>
+    </fields>
+    <fields>
+        <label><!-- Network Name --></label>
+        <name>Network_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Call Plan/Call Report --></label>
+        <name>Number_of_Call_Plan_Call_Report__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Customer --></label>
+        <name>Number_of_Customer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Opp --></label>
+        <name>Number_of_Opp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Product Holding --></label>
+        <name>Number_of_Product_Holding__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Reschedule --></label>
+        <name>Number_of_Reschedule__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Visited --></label>
+        <name>Number_of_Visited__c</name>
+    </fields>
+    <fields>
+        <label><!-- Office Ext. --></label>
+        <name>Office_Ext_MashUp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Office Fax --></label>
+        <name>Office_Fax_MashUp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Office Mobile --></label>
+        <name>Office_Mobile_MashUp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Office Phone --></label>
+        <name>Office_Phone_MashUp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Operation --></label>
+        <name>Operation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Business Info --></label>
+        <name>Other_Business_Info__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Product Related --></label>
+        <name>Other_Product_Related__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Segment --></label>
+        <name>Other_Segment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other System --></label>
+        <name>Other_System__c</name>
+    </fields>
+    <fields>
+        <label><!-- OwnerChangeExecutedByTrigger --></label>
+        <name>OwnerChangeExecutedByTrigger__c</name>
+    </fields>
+    <fields>
+        <label><!-- OwnerChangeExecutedFrUI --></label>
+        <name>OwnerChangeExecutedFrUI__c</name>
+    </fields>
+    <fields>
+        <label><!-- OwnerID_Text --></label>
+        <name>OwnerID_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Owner Emp ID --></label>
+        <name>Owner_Emp_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Owner Name --></label>
+        <name>Owner_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Owner is SME-Admin --></label>
+        <name>Owner_is_SME_Admin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Owner or Servicing --></label>
+        <name>Owner_or_Servicing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Owner team name or Servicing team name --></label>
+        <name>Owner_team_name_or_Servicing_team_name__c</name>
+    </fields>
+    <fields>
+        <name>Ownership</name>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Private</masterLabel>
+            <translation><!-- Private --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public</masterLabel>
+            <translation><!-- Public --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Subsidiary</masterLabel>
+            <translation><!-- Subsidiary --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Ownership --></label>
+        <name>Ownership_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ownership --></label>
+        <name>Ownership__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payroll - Main Bank --></label>
+        <name>Payroll_Main_Bank__c</name>
+        <picklistValues>
+            <masterLabel>BAY</masterLabel>
+            <translation><!-- BAY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BBL</masterLabel>
+            <translation><!-- BBL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CIMB</masterLabel>
+            <translation><!-- CIMB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EXIM Bank</masterLabel>
+            <translation><!-- EXIM Bank --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HSBC</masterLabel>
+            <translation><!-- HSBC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ICBC</masterLabel>
+            <translation><!-- ICBC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KBANK</masterLabel>
+            <translation><!-- KBANK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KTB</masterLabel>
+            <translation><!-- KTB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LH Bank</masterLabel>
+            <translation><!-- LH Bank --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SCB</masterLabel>
+            <translation><!-- SCB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TISCO</masterLabel>
+            <translation><!-- TISCO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TMB</masterLabel>
+            <translation><!-- TMB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UOB</masterLabel>
+            <translation><!-- UOB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ธ.ก.ส.</masterLabel>
+            <translation><!-- ธ.ก.ส. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ธ.ธนชาติ</masterLabel>
+            <translation><!-- ธ.ธนชาติ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ธ.อ.ส.</masterLabel>
+            <translation><!-- ธ.อ.ส. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ธ.ออมสิน</masterLabel>
+            <translation><!-- ธ.ออมสิน --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ธ.อิสลาม</masterLabel>
+            <translation><!-- ธ.อิสลาม --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ธ.เกียรตินาคิน</masterLabel>
+            <translation><!-- ธ.เกียรตินาคิน --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Payroll - Other Reason for not use KBank --></label>
+        <name>Payroll_Other_Reason_for_not_use_KBank__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payroll - Other Reason for using Main --></label>
+        <name>Payroll_Other_Reason_for_using_Main__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payroll - Reason for not use KBank --></label>
+        <name>Payroll_Reason_for_not_use_KBank__c</name>
+        <picklistValues>
+            <masterLabel>อื่นๆ</masterLabel>
+            <translation><!-- อื่นๆ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ไม่พอใจในอัตราค่าธรรมเนียม</masterLabel>
+            <translation><!-- ไม่พอใจในอัตราค่าธรรมเนียม --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ไม่มีบริการมาเปิดบัญชีให้ที่บริษัท</masterLabel>
+            <translation><!-- ไม่มีบริการมาเปิดบัญชีให้ที่บริษัท --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ไม่สะดวกต่อพนักงาน/ไม่มีตู้ใกล้บริษัท</masterLabel>
+            <translation><!-- ไม่สะดวกต่อพนักงาน/ไม่มีตู้ใกล้บริษัท --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ไม่ได้เป็นธนาคารที่เดินบัญชีหลักอยู่</masterLabel>
+            <translation><!-- ไม่ได้เป็นธนาคารที่เดินบัญชีหลักอยู่ --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Payroll - Reason for  using Main Bank --></label>
+        <name>Payroll_Reason_for_using_Main_Bank__c</name>
+        <picklistValues>
+            <masterLabel>พึงพอใจในอัตราค่าธรรมเนียม</masterLabel>
+            <translation><!-- พึงพอใจในอัตราค่าธรรมเนียม --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>มีบริการมาเปิดบัญชีให้ที่บริษัท</masterLabel>
+            <translation><!-- มีบริการมาเปิดบัญชีให้ที่บริษัท --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>สะดวก มีตู้อยู่ใกล้บริษัท</masterLabel>
+            <translation><!-- สะดวก มีตู้อยู่ใกล้บริษัท --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>อื่นๆ</masterLabel>
+            <translation><!-- อื่นๆ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>เป็นธนาคารที่เดินบัญชีหลักอยู่</masterLabel>
+            <translation><!-- เป็นธนาคารที่เดินบัญชีหลักอยู่ --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Permanent AH Name --></label>
+        <name>Permanent_AH_Name__c</name>
+        <relationshipLabel><!-- Accounts (Permanent AH Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Permanent NH Name --></label>
+        <name>Permanent_NH_Name__c</name>
+        <relationshipLabel><!-- Accounts (Permanent NH Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Permanent Owner Extension --></label>
+        <name>Permanent_Owner_Extension__c</name>
+        <relationshipLabel><!-- Accounts (Permanent Owner Extension) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Permanent Owner --></label>
+        <name>Permanent_Owner__c</name>
+        <relationshipLabel><!-- Customers (Permanent Owner) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Permanent Team Name --></label>
+        <name>Permanent_Team_Name__c</name>
+        <relationshipLabel><!-- Accounts (Permanent Team Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Personal Email --></label>
+        <name>Personal_Email_MashUp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Personal Email --></label>
+        <name>Personal_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Personal Mobile --></label>
+        <name>Personal_Mobile_MashUp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Point of Sale --></label>
+        <name>Point_of_Sale__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pool_1 --></label>
+        <name>Pool_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Port / Pool Flag (Previous Owner) --></label>
+        <name>Port_Pool_Flag_Previous_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Port_1 --></label>
+        <name>Port_Pool_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Port/ Pool/ Other --></label>
+        <name>Port_Pool_Other__c</name>
+    </fields>
+    <fields>
+        <label><!-- Port / Pool --></label>
+        <name>Port_Pool__c</name>
+    </fields>
+    <fields>
+        <label><!-- Port_Pool_blank --></label>
+        <name>Port_Pool_blank__c</name>
+    </fields>
+    <fields>
+        <label><!-- Previous AH Name --></label>
+        <name>Previous_AH_Name__c</name>
+        <relationshipLabel><!-- Accounts (Previous AH Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Previous NH Name --></label>
+        <name>Previous_NH_Name__c</name>
+        <relationshipLabel><!-- Accounts (Previous NH Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Previous Owner Emp ID --></label>
+        <name>Previous_Owner_Emp_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Previous Owner Extension --></label>
+        <name>Previous_Owner_Extension__c</name>
+        <relationshipLabel><!-- Accounts (Previous Owner Extension) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Previous Owner Segment Code --></label>
+        <name>Previous_Owner_Segment_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Previous Owner --></label>
+        <name>Previous_Owner__c</name>
+        <relationshipLabel><!-- Customers (Previous Owner) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Previous Team Name --></label>
+        <name>Previous_Team_Name__c</name>
+        <relationshipLabel><!-- Accounts (Previous Team Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Primary Segment Code --></label>
+        <name>Primary_Segment_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Segment Desc --></label>
+        <name>Primary_Segment_Desc__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Sub Segment Code --></label>
+        <name>Primary_Sub_Segment_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prospect Create Duration (Number) --></label>
+        <name>Prospect_Create_Duration_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prospect Create Duration --></label>
+        <name>Prospect_Create_Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- RC Code --></label>
+        <name>RC_Code__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of Contact Visit by RM --></help>
+        <label><!-- RM Contact --></label>
+        <name>RM_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- RM Name --></label>
+        <name>RM_Name__c</name>
+    </fields>
+    <fields>
+        <name>Rating</name>
+        <picklistValues>
+            <masterLabel>Cold</masterLabel>
+            <translation><!-- Cold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hot</masterLabel>
+            <translation><!-- Hot --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warm</masterLabel>
+            <translation><!-- Warm --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>Region__c</name>
+        <picklistValues>
+            <masterLabel>ASEAN</masterLabel>
+            <translation><!-- ASEAN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ASIA</masterLabel>
+            <translation><!-- ASIA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Africa</masterLabel>
+            <translation><!-- Africa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>America</masterLabel>
+            <translation><!-- America --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Australia</masterLabel>
+            <translation><!-- Australia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CLMV</masterLabel>
+            <translation><!-- CLMV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Europe</masterLabel>
+            <translation><!-- Europe --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Middle East</masterLabel>
+            <translation><!-- Middle East --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Worldwide</masterLabel>
+            <translation><!-- Worldwide --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Registered Capital --></label>
+        <name>RegisteredCapital__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remaining Benefit --></label>
+        <name>Remaining_Benefit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Request Ownership in Progress --></label>
+        <name>Request_Ownership_in_Progress__c</name>
+    </fields>
+    <fields>
+        <label><!-- Retained Earning --></label>
+        <name>RetainedEarning__c</name>
+    </fields>
+    <fields>
+        <label><!-- Risk --></label>
+        <name>Risk_Symbol__c</name>
+    </fields>
+    <fields>
+        <label><!-- Risk --></label>
+        <name>Risk__c</name>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation><!-- High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation><!-- Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation><!-- Medium --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- % ภาระหนี้ของ KBank เทียบทุก Bank --></help>
+        <label><!-- %SOW Exposure --></label>
+        <name>SOW_Exposure_Per__c</name>
+    </fields>
+    <fields>
+        <help><!-- % ภาระหนี้ของ KBank เทียบทุก Bank --></help>
+        <label><!-- SOW Exposure --></label>
+        <name>SOW_Exposure__c</name>
+    </fields>
+    <fields>
+        <label><!-- %SOW Limit --></label>
+        <name>SOW_Limit_Per__c</name>
+    </fields>
+    <fields>
+        <label><!-- SOW Limit --></label>
+        <name>SOW_Limit__c</name>
+    </fields>
+    <fields>
+        <help><!-- % การใช้วงเงิน KBank เทียบทุก Bank --></help>
+        <label><!-- %SOW Outstanding --></label>
+        <name>SOW_Outstanding_Per__c</name>
+    </fields>
+    <fields>
+        <help><!-- % การใช้วงเงิน KBank เทียบทุก Bank --></help>
+        <label><!-- SOW Outstanding --></label>
+        <name>SOW_Outstanding__c</name>
+    </fields>
+    <fields>
+        <label><!-- SVM AH Emp ID --></label>
+        <name>SVM_AH_Emp_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- SVM AH Name --></label>
+        <name>SVM_AH_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- SVM Emp ID --></label>
+        <name>SVM_Emp_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- SVM In Charge --></label>
+        <name>SVM_In_Charge__c</name>
+        <relationshipLabel><!-- Customers (SVM In Charge) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- SVM NH Emp ID --></label>
+        <name>SVM_NH_Emp_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- SVM NH Name --></label>
+        <name>SVM_NH_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- SVM Name --></label>
+        <name>SVM_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- SVM RC Code --></label>
+        <name>SVM_RC_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- SVM TM Emp ID --></label>
+        <name>SVM_TM_Emp_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- SVM TM Name --></label>
+        <name>SVM_TM_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Salesforce ID --></label>
+        <name>Salesforce_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Segment --></label>
+        <name>Segment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service RM Emp ID --></label>
+        <name>Service_RM_Emp_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service RM Flag --></label>
+        <name>Service_RM_Flag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service RM - Valid --></label>
+        <name>Service_RM_Valid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service RM --></label>
+        <name>Service_RM__c</name>
+        <relationshipLabel><!-- Customers (Service RM) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Source System Id --></label>
+        <name>Source_System_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Bad Customer</masterLabel>
+            <translation><!-- Bad Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Good Customer</masterLabel>
+            <translation><!-- Good Customer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Stock Day on Hand (Days) --></label>
+        <name>Stock_Day_on_Hand_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Surname (EN) --></label>
+        <name>Surname_EN_Prospect__c</name>
+    </fields>
+    <fields>
+        <label><!-- Surname (EN) --></label>
+        <name>Surname_EN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Surname (TH) --></label>
+        <name>Surname_TH_Prospect__c</name>
+    </fields>
+    <fields>
+        <label><!-- Surname (TH) --></label>
+        <name>Surname_TH__c</name>
+    </fields>
+    <fields>
+        <label><!-- TF - Main Bank --></label>
+        <name>TF_Main_Bank__c</name>
+        <picklistValues>
+            <masterLabel>BAY</masterLabel>
+            <translation><!-- BAY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BBL</masterLabel>
+            <translation><!-- BBL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CIMB</masterLabel>
+            <translation><!-- CIMB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EXIMBank</masterLabel>
+            <translation><!-- EXIMBank --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HSBC</masterLabel>
+            <translation><!-- HSBC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ICBC</masterLabel>
+            <translation><!-- ICBC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KBANK</masterLabel>
+            <translation><!-- KBANK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KTB</masterLabel>
+            <translation><!-- KTB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LHBank</masterLabel>
+            <translation><!-- LHBank --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SCB</masterLabel>
+            <translation><!-- SCB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TISCO</masterLabel>
+            <translation><!-- TISCO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TMB</masterLabel>
+            <translation><!-- TMB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UOB</masterLabel>
+            <translation><!-- UOB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ธ.ก.ส.</masterLabel>
+            <translation><!-- ธ.ก.ส. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ธ.ธนชาติ</masterLabel>
+            <translation><!-- ธ.ธนชาติ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ธ.อ.ส.</masterLabel>
+            <translation><!-- ธ.อ.ส. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ธ.ออมสิน</masterLabel>
+            <translation><!-- ธ.ออมสิน --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ธ.อิสลาม</masterLabel>
+            <translation><!-- ธ.อิสลาม --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ธ.เกียรตินาคิน</masterLabel>
+            <translation><!-- ธ.เกียรตินาคิน --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- TF - Other Reason for not use KBank --></label>
+        <name>TF_Other_Reason_for_not_use_KBank__c</name>
+    </fields>
+    <fields>
+        <label><!-- TF - Other Reason for using Main Bank --></label>
+        <name>TF_Other_Reason_for_using_Main_Bank__c</name>
+    </fields>
+    <fields>
+        <label><!-- TF - Other Reason for using Second Bank --></label>
+        <name>TF_Other_Reason_for_using_Second_Bank__c</name>
+    </fields>
+    <fields>
+        <label><!-- TF - Reason for not use KBank --></label>
+        <name>TF_Reason_for_not_use_KBank__c</name>
+        <picklistValues>
+            <masterLabel>RM/Sale ไม่สามารถให้คำแนะนำ/แก้ปัญหาได้</masterLabel>
+            <translation><!-- RM/Sale ไม่สามารถให้คำแนะนำ/แก้ปัญหาได้ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ติดปัญหาเรื่องหลักประกัน</masterLabel>
+            <translation><!-- ติดปัญหาเรื่องหลักประกัน --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ติดเงื่อนไขสินเชื่อตามบริษัทในเครือ</masterLabel>
+            <translation><!-- ติดเงื่อนไขสินเชื่อตามบริษัทในเครือ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ผลิตภัณฑ์ไม่ตรงกับความต้องการ</masterLabel>
+            <translation><!-- ผลิตภัณฑ์ไม่ตรงกับความต้องการ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>อนุมัติช้า ไม่ทันต่อความต้องการ</masterLabel>
+            <translation><!-- อนุมัติช้า ไม่ทันต่อความต้องการ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>อัตราค่าธรรมเนียมและดอกเบี้ยแพง</masterLabel>
+            <translation><!-- อัตราค่าธรรมเนียมและดอกเบี้ยแพง --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>อื่นๆ</masterLabel>
+            <translation><!-- อื่นๆ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ใช้ตั้งแต่รุ่นพ่อแม่ / ตั้งแต่เปิดกิจการ</masterLabel>
+            <translation><!-- ใช้ตั้งแต่รุ่นพ่อแม่ / ตั้งแต่เปิดกิจการ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ได้วงเงินน้อย แตกต่างจากจำนวนที่ต้องการ</masterLabel>
+            <translation><!-- ได้วงเงินน้อย แตกต่างจากจำนวนที่ต้องการ --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- TF - Reason for  using Main Bank --></label>
+        <name>TF_Reason_for_using_Main_Bank__c</name>
+        <picklistValues>
+            <masterLabel>RM/Sale สามารถให้คำแนะนำ/แก้ปัญหาให้ได้</masterLabel>
+            <translation><!-- RM/Sale สามารถให้คำแนะนำ/แก้ปัญหาให้ได้ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ติดเงื่อนไขสินเชื่อตามบริษัทในเครือ</masterLabel>
+            <translation><!-- ติดเงื่อนไขสินเชื่อตามบริษัทในเครือ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ผลิตภัณฑ์ตรงกับความต้องการ</masterLabel>
+            <translation><!-- ผลิตภัณฑ์ตรงกับความต้องการ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>พอใจการประเมินหลักประกัน</masterLabel>
+            <translation><!-- พอใจการประเมินหลักประกัน --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>พึงพอใจในจำนวนวงเงินที่ได้รับ</masterLabel>
+            <translation><!-- พึงพอใจในจำนวนวงเงินที่ได้รับ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>พึงพอใจในอัตราค่าธรรมเนียมและดอกเบี้ย</masterLabel>
+            <translation><!-- พึงพอใจในอัตราค่าธรรมเนียมและดอกเบี้ย --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>อนุมัติรวดเร็วได้ทันตามความต้องการ</masterLabel>
+            <translation><!-- อนุมัติรวดเร็วได้ทันตามความต้องการ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>อื่นๆ</masterLabel>
+            <translation><!-- อื่นๆ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ใช้ตั้งแต่รุ่นพ่อแม่ / ตั้งแต่เปิดกิจการ</masterLabel>
+            <translation><!-- ใช้ตั้งแต่รุ่นพ่อแม่ / ตั้งแต่เปิดกิจการ --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- TF - Reason for  using Second Bank --></label>
+        <name>TF_Reason_for_using_Second_Bank__c</name>
+        <picklistValues>
+            <masterLabel>RM/Sale สามารถให้คำแนะนำ/แก้ปัญหาให้ได้</masterLabel>
+            <translation><!-- RM/Sale สามารถให้คำแนะนำ/แก้ปัญหาให้ได้ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ติดเงื่อนไขสินเชื่อตามบริษัทในเครือ</masterLabel>
+            <translation><!-- ติดเงื่อนไขสินเชื่อตามบริษัทในเครือ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ผลิตภัณฑ์ตรงกับความต้องการ</masterLabel>
+            <translation><!-- ผลิตภัณฑ์ตรงกับความต้องการ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>พอใจการประเมินหลักประกัน</masterLabel>
+            <translation><!-- พอใจการประเมินหลักประกัน --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>พึงพอใจในจำนวนวงเงินที่ได้รับ</masterLabel>
+            <translation><!-- พึงพอใจในจำนวนวงเงินที่ได้รับ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>พึงพอใจในอัตราค่าธรรมเนียมและดอกเบี้ย</masterLabel>
+            <translation><!-- พึงพอใจในอัตราค่าธรรมเนียมและดอกเบี้ย --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>อนุมัติรวดเร็วได้ทันตามความต้องการ</masterLabel>
+            <translation><!-- อนุมัติรวดเร็วได้ทันตามความต้องการ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>อื่นๆ</masterLabel>
+            <translation><!-- อื่นๆ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ใช้ตั้งแต่รุ่นพ่อแม่ / ตั้งแต่เปิดกิจการ</masterLabel>
+            <translation><!-- ใช้ตั้งแต่รุ่นพ่อแม่ / ตั้งแต่เปิดกิจการ --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- TF - Second Bank --></label>
+        <name>TF_Second_Bank__c</name>
+        <picklistValues>
+            <masterLabel>BAY</masterLabel>
+            <translation><!-- BAY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BBL</masterLabel>
+            <translation><!-- BBL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CIMB</masterLabel>
+            <translation><!-- CIMB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EXIMBank</masterLabel>
+            <translation><!-- EXIMBank --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HSBC</masterLabel>
+            <translation><!-- HSBC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ICBC</masterLabel>
+            <translation><!-- ICBC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KBANK</masterLabel>
+            <translation><!-- KBANK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KTB</masterLabel>
+            <translation><!-- KTB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LHBank</masterLabel>
+            <translation><!-- LHBank --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SCB</masterLabel>
+            <translation><!-- SCB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TISCO</masterLabel>
+            <translation><!-- TISCO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TMB</masterLabel>
+            <translation><!-- TMB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UOB</masterLabel>
+            <translation><!-- UOB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ธ.ก.ส.</masterLabel>
+            <translation><!-- ธ.ก.ส. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ธ.ธนชาติ</masterLabel>
+            <translation><!-- ธ.ธนชาติ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ธ.อ.ส.</masterLabel>
+            <translation><!-- ธ.อ.ส. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ธ.ออมสิน</masterLabel>
+            <translation><!-- ธ.ออมสิน --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ธ.อิสลาม</masterLabel>
+            <translation><!-- ธ.อิสลาม --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ธ.เกียรตินาคิน</masterLabel>
+            <translation><!-- ธ.เกียรตินาคิน --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- TM Emp ID --></label>
+        <name>TM_Emp_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- TM Name --></label>
+        <name>TM_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Team Name --></label>
+        <name>Team_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Temp Owner Changed Date --></label>
+        <name>Temp_Owner_Changed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Temporary Ownership Flag --></label>
+        <name>Temporary_Ownership_Flag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Title (EN) --></label>
+        <name>Title_EN_Mashup__c</name>
+    </fields>
+    <fields>
+        <label><!-- Title (TH) --></label>
+        <name>Title_TH_Mashup__c</name>
+    </fields>
+    <fields>
+        <label><!-- Title --></label>
+        <name>Title__c</name>
+        <picklistValues>
+            <masterLabel>Co.,Ltd.</masterLabel>
+            <translation><!-- Co.,Ltd. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mr.</masterLabel>
+            <translation><!-- Mr. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mrs.</masterLabel>
+            <translation><!-- Mrs. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ms.</masterLabel>
+            <translation><!-- Ms. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PCL</masterLabel>
+            <translation><!-- PCL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Part., Ltd.</masterLabel>
+            <translation><!-- Part., Ltd. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ROP</masterLabel>
+            <translation><!-- ROP --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Tools --></label>
+        <name>Tools__c</name>
+        <picklistValues>
+            <masterLabel>Excel/Microsoft</masterLabel>
+            <translation><!-- Excel/Microsoft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manual</masterLabel>
+            <translation><!-- Manual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Record</masterLabel>
+            <translation><!-- No Record --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>System</masterLabel>
+            <translation><!-- System --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Tools for Sale --></label>
+        <name>Tools_for_Sale__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Liabilities and Shareholders --></label>
+        <name>TotalLiabilitiesAndShareholders__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Shareholders’ Equity --></label>
+        <name>TotalShareholdersEquity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Benefit Contact --></label>
+        <name>Total_Benefit_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Contact of Customers --></label>
+        <name>Total_Contact_of_Customers__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total SME Exposure --></label>
+        <name>Total_SME_Exposure__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total SME Limit --></label>
+        <name>Total_SME_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total SME Out --></label>
+        <name>Total_SME_Out__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transact - Main Bank --></label>
+        <name>Transact_Main_Bank__c</name>
+        <picklistValues>
+            <masterLabel>BAY</masterLabel>
+            <translation><!-- BAY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BBL</masterLabel>
+            <translation><!-- BBL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CIMB</masterLabel>
+            <translation><!-- CIMB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EXIM Bank</masterLabel>
+            <translation><!-- EXIM Bank --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HSBC</masterLabel>
+            <translation><!-- HSBC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ICBC</masterLabel>
+            <translation><!-- ICBC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KBANK</masterLabel>
+            <translation><!-- KBANK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KTB</masterLabel>
+            <translation><!-- KTB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LH Bank</masterLabel>
+            <translation><!-- LH Bank --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SCB</masterLabel>
+            <translation><!-- SCB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TISCO</masterLabel>
+            <translation><!-- TISCO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TMB</masterLabel>
+            <translation><!-- TMB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UOB</masterLabel>
+            <translation><!-- UOB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ธ.ก.ส.</masterLabel>
+            <translation><!-- ธ.ก.ส. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ธ.ธนชาติ</masterLabel>
+            <translation><!-- ธ.ธนชาติ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ธ.อ.ส.</masterLabel>
+            <translation><!-- ธ.อ.ส. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ธ.ออมสิน</masterLabel>
+            <translation><!-- ธ.ออมสิน --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ธ.อิสลาม</masterLabel>
+            <translation><!-- ธ.อิสลาม --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ธ.เกียรตินาคิน</masterLabel>
+            <translation><!-- ธ.เกียรตินาคิน --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Transact- Other Reason for not use KBank --></label>
+        <name>Transact_Other_Reason_for_not_use_KBank__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transact - Other Reason for using Main --></label>
+        <name>Transact_Other_Reason_for_using_Main__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transact - Other Reason for using Second --></label>
+        <name>Transact_Other_Reason_for_using_Second__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transact - Reason for not use KBank --></label>
+        <name>Transact_Reason_for_not_use_KBank__c</name>
+        <picklistValues>
+            <masterLabel>คู่ค้าใช้บริการน้อย</masterLabel>
+            <translation><!-- คู่ค้าใช้บริการน้อย --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>จำนวนสาขาและตู้อัตโนมัติมีน้อย/รอคิวนาน</masterLabel>
+            <translation><!-- จำนวนสาขาและตู้อัตโนมัติมีน้อย/รอคิวนาน --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ผลิตภัณฑ์ไม่ตรงกับความต้องการ</masterLabel>
+            <translation><!-- ผลิตภัณฑ์ไม่ตรงกับความต้องการ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>มีเงินกู้หลักอยู่ที่ธนาคารอื่น</masterLabel>
+            <translation><!-- มีเงินกู้หลักอยู่ที่ธนาคารอื่น --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>อัตราค่าธรรมเนียมและค่าบริการต่างๆแพง</masterLabel>
+            <translation><!-- อัตราค่าธรรมเนียมและค่าบริการต่างๆแพง --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>อื่นๆ</masterLabel>
+            <translation><!-- อื่นๆ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ใช้ตั้งแต่รุ่นพ่อแม่ / ตั้งแต่เปิดกิจการ</masterLabel>
+            <translation><!-- ใช้ตั้งแต่รุ่นพ่อแม่ / ตั้งแต่เปิดกิจการ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ไม่ประทับใจในการบริการของพนักงาน</masterLabel>
+            <translation><!-- ไม่ประทับใจในการบริการของพนักงาน --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ไม่สะดวกในการเดินทาง/ที่จอดรถไม่เพียงพอ</masterLabel>
+            <translation><!-- ไม่สะดวกในการเดินทาง/ที่จอดรถไม่เพียงพอ --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Transact - Reason for using Main Bank --></label>
+        <name>Transact_Reason_for_using_Main_Bank__c</name>
+        <picklistValues>
+            <masterLabel>ความสะดวกในการเดินทางไปสาขา/ที่จอดรถ</masterLabel>
+            <translation><!-- ความสะดวกในการเดินทางไปสาขา/ที่จอดรถ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>คู่ค้าใช้บริการจำนวนมาก</masterLabel>
+            <translation><!-- คู่ค้าใช้บริการจำนวนมาก --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>จำนวนสาขาและตู้อัตโนมัติมีจำนวนมาก</masterLabel>
+            <translation><!-- จำนวนสาขาและตู้อัตโนมัติมีจำนวนมาก --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ผลิตภัณฑ์ตรงกับความต้องการ</masterLabel>
+            <translation><!-- ผลิตภัณฑ์ตรงกับความต้องการ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>พนักงานให้บริการดี/รวดเร็ว/ให้คำแนะนำได้</masterLabel>
+            <translation><!-- พนักงานให้บริการดี/รวดเร็ว/ให้คำแนะนำได้ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>พอใจในอัตราค่าธรรมเนียมและค่าบริการต่างๆ</masterLabel>
+            <translation><!-- พอใจในอัตราค่าธรรมเนียมและค่าบริการต่างๆ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>มีเงินกู้หลักอยู่ที่นี่</masterLabel>
+            <translation><!-- มีเงินกู้หลักอยู่ที่นี่ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>อื่นๆ</masterLabel>
+            <translation><!-- อื่นๆ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ใช้ตั้งแต่รุ่นพ่อแม่ / ตั้งแต่เปิดกิจการ</masterLabel>
+            <translation><!-- ใช้ตั้งแต่รุ่นพ่อแม่ / ตั้งแต่เปิดกิจการ --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Transact - Reason for using Second Bank --></label>
+        <name>Transact_Reason_for_using_Second_Bank__c</name>
+        <picklistValues>
+            <masterLabel>ความสะดวกในการเดินทางไปสาขา/ที่จอดรถ</masterLabel>
+            <translation><!-- ความสะดวกในการเดินทางไปสาขา/ที่จอดรถ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>คู่ค้าใช้บริการจำนวนมาก</masterLabel>
+            <translation><!-- คู่ค้าใช้บริการจำนวนมาก --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>จำนวนสาขาและตู้อัตโนมัติมีจำนวนมาก</masterLabel>
+            <translation><!-- จำนวนสาขาและตู้อัตโนมัติมีจำนวนมาก --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ผลิตภัณฑ์ตรงกับความต้องการ</masterLabel>
+            <translation><!-- ผลิตภัณฑ์ตรงกับความต้องการ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>พนักงานให้บริการดี/รวดเร็ว/ให้คำแนะนำได้</masterLabel>
+            <translation><!-- พนักงานให้บริการดี/รวดเร็ว/ให้คำแนะนำได้ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>พอใจในอัตราค่าธรรมเนียมและค่าบริการต่างๆ</masterLabel>
+            <translation><!-- พอใจในอัตราค่าธรรมเนียมและค่าบริการต่างๆ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>มีเงินกู้หลักอยู่ที่นี่</masterLabel>
+            <translation><!-- มีเงินกู้หลักอยู่ที่นี่ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>อื่นๆ</masterLabel>
+            <translation><!-- อื่นๆ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ใช้ตั้งแต่รุ่นพ่อแม่ / ตั้งแต่เปิดกิจการ</masterLabel>
+            <translation><!-- ใช้ตั้งแต่รุ่นพ่อแม่ / ตั้งแต่เปิดกิจการ --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Transact - Second Bank --></label>
+        <name>Transact_Second_Bank__c</name>
+        <picklistValues>
+            <masterLabel>BAY</masterLabel>
+            <translation><!-- BAY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BBL</masterLabel>
+            <translation><!-- BBL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CIMB</masterLabel>
+            <translation><!-- CIMB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EXIM Bank</masterLabel>
+            <translation><!-- EXIM Bank --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HSBC</masterLabel>
+            <translation><!-- HSBC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ICBC</masterLabel>
+            <translation><!-- ICBC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KBANK</masterLabel>
+            <translation><!-- KBANK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KTB</masterLabel>
+            <translation><!-- KTB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LH Bank</masterLabel>
+            <translation><!-- LH Bank --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SCB</masterLabel>
+            <translation><!-- SCB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TISCO</masterLabel>
+            <translation><!-- TISCO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TMB</masterLabel>
+            <translation><!-- TMB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UOB</masterLabel>
+            <translation><!-- UOB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ธ.ก.ส.</masterLabel>
+            <translation><!-- ธ.ก.ส. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ธ.ธนชาติ</masterLabel>
+            <translation><!-- ธ.ธนชาติ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ธ.อ.ส.</masterLabel>
+            <translation><!-- ธ.อ.ส. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ธ.ออมสิน</masterLabel>
+            <translation><!-- ธ.ออมสิน --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ธ.อิสลาม</masterLabel>
+            <translation><!-- ธ.อิสลาม --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ธ.เกียรตินาคิน</masterLabel>
+            <translation><!-- ธ.เกียรตินาคิน --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Trash Pool Flag --></label>
+        <name>Trash_Pool_Flag__c</name>
+    </fields>
+    <fields>
+        <label><!-- TriggerExecuted --></label>
+        <name>TriggerExecuted__c</name>
+    </fields>
+    <fields>
+        <name>Type</name>
+        <picklistValues>
+            <masterLabel>Analyst</masterLabel>
+            <translation><!-- Analyst --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitor</masterLabel>
+            <translation><!-- Competitor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer</masterLabel>
+            <translation><!-- Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Integrator</masterLabel>
+            <translation><!-- Integrator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Investor</masterLabel>
+            <translation><!-- Investor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner</masterLabel>
+            <translation><!-- Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Press</masterLabel>
+            <translation><!-- Press --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prospect</masterLabel>
+            <translation><!-- Prospect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reseller</masterLabel>
+            <translation><!-- Reseller --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- UW Group --></label>
+        <name>UW_Group_Symbol__c</name>
+    </fields>
+    <fields>
+        <label><!-- UW Group --></label>
+        <name>UW_Group__c</name>
+    </fields>
+    <fields>
+        <label><!-- Version Valid Until --></label>
+        <name>Version_Valid_Until__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vlink Emp ID --></label>
+        <name>Vlink_Emp_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- วงเงินรวมทุก Bank ของลูกค้า --></help>
+        <label><!-- Wallet Size (Exposure) --></label>
+        <name>Wallet_Size_Exposure__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wallet Size (Limit) --></label>
+        <name>Wallet_Size_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wallet Size (Outstanding) --></label>
+        <name>Wallet_Size_Outstanding__c</name>
+    </fields>
+    <fields>
+        <label><!-- Watch List --></label>
+        <name>Watch_List_Symbol__c</name>
+    </fields>
+    <fields>
+        <label><!-- Watch List --></label>
+        <name>Watch_List__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- With / Without Pains --></label>
+        <name>With_Without_Pains__c</name>
+    </fields>
+    <fields>
+        <label><!-- is from Bulk Reassign? --></label>
+        <name>is_from_Bulk_Reassign__c</name>
+    </fields>
+    <layouts>
+        <layout>SME-Customer Layout</layout>
+        <sections>
+            <label><!-- Additional Info --></label>
+            <section>Additional Info</section>
+        </sections>
+        <sections>
+            <label><!-- Balance Sheet --></label>
+            <section>Balance Sheet</section>
+        </sections>
+        <sections>
+            <label><!-- Business Information --></label>
+            <section>Business Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom VF Section --></label>
+            <section>Custom VF Section</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Insight - Business Insight &amp; Info for PR --></label>
+            <section>Customer Insight - Business Insight &amp; Info for PR</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Insight - Financial Information - EDC / mPOS --></label>
+            <section>Customer Insight - Financial Information - EDC / mPOS</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Insight - Financial Information - FX &amp; T/T --></label>
+            <section>Customer Insight - Financial Information - FX &amp; T/T</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Insight - Financial Information - L/I (BG) --></label>
+            <section>Customer Insight - Financial Information - L/I (BG)</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Insight - Financial Information - LOAN &amp; O/D --></label>
+            <section>Customer Insight - Financial Information - LOAN &amp; O/D</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Insight - Financial Information - PAYROLL --></label>
+            <section>Customer Insight - Financial Information - PAYROLL</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Insight - Financial Information - Trade Finance --></label>
+            <section>Customer Insight - Financial Information - Trade Finance</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Insight - Financial Information - Transaction --></label>
+            <section>Customer Insight - Financial Information - Transaction</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Insight - INTER_TRADE Information --></label>
+            <section>Customer Insight - INTER_TRADE Information</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Insight Information --></label>
+            <section>Customer Insight Information</section>
+        </sections>
+        <sections>
+            <label><!-- Event Infomation --></label>
+            <section>Event Infomation</section>
+        </sections>
+        <sections>
+            <label><!-- Financial Information --></label>
+            <section>Financial Information</section>
+        </sections>
+        <sections>
+            <label><!-- Lead Information --></label>
+            <section>Lead Information</section>
+        </sections>
+        <sections>
+            <label><!-- Segment Information --></label>
+            <section>Segment Information</section>
+        </sections>
+        <sections>
+            <label><!-- Shareholders&apos; Equity --></label>
+            <section>Shareholders&apos; Equity</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+        <sections>
+            <label><!-- Test --></label>
+            <section>Test</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SME-Customer Layout (Non-Sales)</layout>
+        <sections>
+            <label><!-- Additional Info --></label>
+            <section>Additional Info</section>
+        </sections>
+        <sections>
+            <label><!-- Balance Sheet --></label>
+            <section>Balance Sheet</section>
+        </sections>
+        <sections>
+            <label><!-- Business Information --></label>
+            <section>Business Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom VF Section --></label>
+            <section>Custom VF Section</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Insight - Business Insight &amp; Info for PR --></label>
+            <section>Customer Insight - Business Insight &amp; Info for PR</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Insight - Financial Information - EDC / mPOS --></label>
+            <section>Customer Insight - Financial Information - EDC / mPOS</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Insight - Financial Information - FX &amp; T/T --></label>
+            <section>Customer Insight - Financial Information - FX &amp; T/T</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Insight - Financial Information - L/I (BG) --></label>
+            <section>Customer Insight - Financial Information - L/I (BG)</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Insight - Financial Information - LOAN &amp; O/D --></label>
+            <section>Customer Insight - Financial Information - LOAN &amp; O/D</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Insight - Financial Information - PAYROLL --></label>
+            <section>Customer Insight - Financial Information - PAYROLL</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Insight - Financial Information - Trade Finance --></label>
+            <section>Customer Insight - Financial Information - Trade Finance</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Insight - Financial Information - Transaction --></label>
+            <section>Customer Insight - Financial Information - Transaction</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Insight - INTER_TRADE Information --></label>
+            <section>Customer Insight - INTER_TRADE Information</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Insight Information --></label>
+            <section>Customer Insight Information</section>
+        </sections>
+        <sections>
+            <label><!-- Event Infomation --></label>
+            <section>Event Infomation</section>
+        </sections>
+        <sections>
+            <label><!-- Financial Information --></label>
+            <section>Financial Information</section>
+        </sections>
+        <sections>
+            <label><!-- Lead Information --></label>
+            <section>Lead Information</section>
+        </sections>
+        <sections>
+            <label><!-- Segment Information --></label>
+            <section>Segment Information</section>
+        </sections>
+        <sections>
+            <label><!-- Shareholders&apos; Equity --></label>
+            <section>Shareholders&apos; Equity</section>
+        </sections>
+        <sections>
+            <label><!-- System Information --></label>
+            <section>System Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SME-Prospect Layout</layout>
+        <sections>
+            <label><!-- Customer Visit Information --></label>
+            <section>Customer Visit Information</section>
+        </sections>
+        <sections>
+            <label><!-- Event Infomation --></label>
+            <section>Event Infomation</section>
+        </sections>
+        <sections>
+            <label><!-- Owner Information --></label>
+            <section>Owner Information</section>
+        </sections>
+        <sections>
+            <label><!-- Prospect Information --></label>
+            <section>Prospect Information</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- New Call Plan --></label>
+        <name>New_Call_Plan</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Call Report --></label>
+        <name>New_Call_Report</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Contact --></label>
+        <name>New_Contact</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Release Ownership --></label>
+        <name>Release_Ownership</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Release Ownership --></label>
+        <name>Release_Ownership_Redirect</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Release Temporary Ownership --></label>
+        <name>Release_Temporary_Ownership</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Request Ownership --></label>
+        <name>Request_Ownership</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- SME-Customer --></label>
+        <name>SME_Customer</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SME-Prospect --></label>
+        <name>SME_Prospect</name>
+    </recordTypes>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- กรุณาระบุตัวเลขน้อยกว่า 16 หลัก --></errorMessage>
+        <name>Check_CIS_ID_digit</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Invalid data of Owner and Port / Pool --></errorMessage>
+        <name>Check_Non_SME_Admin_Port_Pool_Field</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Invalid data of Owner and Port / Pool --></errorMessage>
+        <name>Check_SME_Admin_Port_Pool_Field</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>วดป เกิด ต้องน้อยกว่าวันปัจจุบัน</errorMessage>
+        <name>Invalid_Prospect_Birthdate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Unable to change the customer owner --></errorMessage>
+        <name>PreventTMChangeOwnerToAnotherTeam</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Other fields must be blank if CIS ID is provided for Prospect record --></errorMessage>
+        <name>Prospect_with_CIS_ID_other_field_blank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- ไม่สามารถทำรายการได้ กรุณากรอกนามสกุล --></errorMessage>
+        <name>Require_Surame_for_Individual_Prospect</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Unable to change the customer owner --></errorMessage>
+        <name>Restrict_Change_Owner_of_NonSME_Customer</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Owner Field can only be change by authorized user --></errorMessage>
+        <name>Restrict_Change_Owner_of_Prospect</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Unable to change the customer owner --></errorMessage>
+        <name>Restrict_Change_Owner_of_SME_Customer</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- No permission to change prospect information --></errorMessage>
+        <name>Restrict_Change_Prospect_Record</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Customer Name cannot be changed --></errorMessage>
+        <name>Restrict_Change_of_NameCIS_ID</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Service Manager can only be enter if the Customer is in TM Pool --></errorMessage>
+        <name>Service_RM_only_for_TM_Pool</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please input 13 digits in number only --></errorMessage>
+        <name>Validate_Identification_Number_Format</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- AltavistaNews --></label>
+        <name>AltavistaNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- HooversProfile --></label>
+        <name>HooversProfile</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Release_Ownership --></label>
+        <name>Release_Ownership</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Release_Temporary_Ownership --></label>
+        <name>Release_Temporary_Ownership</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Request_Ownership --></label>
+        <name>Request_Ownership</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooMaps --></label>
+        <name>YahooMaps</name>
+    </webLinks>
+</CustomObjectTranslation>

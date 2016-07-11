@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Cancellation CEM/Exective accompanied</name>
+    <style>none</style>
+    <subject>แจ้งยกเลิกการเข้าเยี่ยมลูกค้าราย CIS: {!Call_Report__c.CIS_ID__c} ของ {!Call_Report__c.Accompanied_By_Names__c}  พร้อมทีมขาย</subject>
+    <type>text</type>
+</EmailTemplate>

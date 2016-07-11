@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Team Province Master Data</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Team Province Master Datas</value>
+    </caseValues>
+    <fields>
+        <label><!-- Province Name --></label>
+        <name>Province_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Segment --></label>
+        <name>Segment__c</name>
+        <picklistValues>
+            <masterLabel>ME</masterLabel>
+            <translation><!-- ME --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SE</masterLabel>
+            <translation><!-- SE --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Team Structure --></label>
+        <name>Team_Structure__c</name>
+        <relationshipLabel><!-- Team Province Master Datas --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Team Province Master Data Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- On-Going --></label>
+        <name>On_Going</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Year-End --></label>
+        <name>Year_End</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

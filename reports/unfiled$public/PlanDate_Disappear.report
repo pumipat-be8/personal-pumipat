@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Call_Report__c$Id</field>
+    </columns>
+    <columns>
+        <field>Call_Report__c$Name</field>
+    </columns>
+    <columns>
+        <field>Call_Report__c$CIS_ID__c</field>
+    </columns>
+    <columns>
+        <field>Call_Report__c$CreatedBy</field>
+    </columns>
+    <columns>
+        <field>Call_Report__c$CreatedDate</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Call_Report__c$Plan_Date__c</column>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Call_Report__c$RecordType</column>
+            <operator>equals</operator>
+            <value>Call_Report__c.CallPlan,Call_Report__c.ClosedCancelledCallPlan,Call_Report__c.ClosedCancelledCallReport,Call_Report__c.Closed_Contacted_Call_Report_Editable_Lead,Call_Report__c.New_Call_Plan</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Plan Date หายไป</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>All_Call_Plans_Call_Reports_with_Opportunities__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Call_Report__c$CreatedBy</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Call_Report__c.Call_Report_Opportunity__r$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

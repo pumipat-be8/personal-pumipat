@@ -1,0 +1,193 @@
+<!--/*------------------------------------------------------------
+Author: Sorravit Bunjongpean
+Company : Beryl8
+Description:   customer search
+Test Class:    
+History : 
+<Date>      <Authors Name>     <Brief Description of Change> 
+06/23/2015  Sorravit.B          Create
+
+------------------------------------------------------------*-->
+
+<apex:page tabStyle="CustomerSearch__tab" showHeader="true" sidebar="true" controller="CustomerSearch_Controller" docType="html-5.0">
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <!--<apex:stylesheet value="{!URLFOR($Resource.foundation, '/css/foundation.min.css')}"/>
+    <apex:stylesheet value="{!URLFOR($Resource.c3, '/c3-master/c3.min.css')}"/>
+    <apex:stylesheet value="{!URLFOR($Resource.foundation_icon3, '/foundation-icons/foundation-icons.css')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.jquery, '')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.foundation, '/js/foundation.min.js')}"/>-->
+    <apex:includeScript value="{!$Resource.jquery}"/>
+    <style>
+        .overlay {
+            display: none;
+            height: 100%;
+            left: 0;
+            position: fixed;
+            top: 0;
+            opacity: 0.3;
+            -moz-opacity: 0.3;
+            width: 100%;
+            -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+            filter: alpha(opacity=30);
+            background: #000;
+            -khtml-opacity: 0.3;
+            z-index: 1000;
+        }
+        .loader {
+            background: url('/img/loading32.gif') scroll no-repeat 0 0;
+            width: 32px;
+            height: 32px;
+            position: absolute;
+            left: 50%;
+        }
+    </style>
+<script type='text/javascript'>
+    function createProspect() {
+            if( (typeof sforce != 'undefined') && (sforce != null) ) {
+                // do your SF1 mobile button stuff
+                sforce.one.navigateToURL("/001/e?retURL=%2F001%2Fo&RecordType={!prospectRecordTypeIdString}&ent=Account");
+            } else {
+                // do your desktop stuff
+                window.location = '/001/e?retURL=%2F001%2Fo&RecordType={!prospectRecordTypeIdString}&ent=Account';
+            }
+        };
+
+    function noenter(ev)  {
+        if (window.event && window.event.keyCode == 13 || ev.which == 13) {
+            doCustomSearch();
+            //startLoading();
+            buttonsEnabled(false);
+            return false;
+        } else {
+            return true;
+        }
+    }
+    function buttonsEnabled(enable) {
+        var buttonElem = $('.btn');
+        if (enable === false) {
+            buttonElem.toggleClass('btnDisabled', true).attr('disabled', 'disabled');
+            $("[id$=accountTable]").hide();
+            $("[id$=accountTotalRecords]").hide();
+            $("[id$=accountNoResult]").show();
+        } else {
+            buttonElem.toggleClass('btnDisabled', false).attr('disabled', null);
+        } 
+    }
+
+    function startLoading(){
+        $('#load_scrl').css('top', $(document).scrollTop() + 200);
+        $('.loadingBox').show();
+    }
+    function endLoading(){
+        $('.loadingBox').hide();
+    }
+</script>
+</head>
+<body>
+    <apex:sectionHeader title="Account" subtitle="Customer Search" />
+    <apex:pageMessages id="errorMsg"></apex:pageMessages>
+    <apex:form id="searchForm" > 
+        <apex:actionFunction name="doCustomSearch" action="{!searchData}"/>
+        <apex:pageBlock id="thePBlock" title="Customer Search" >
+            <apex:pageBlockButtons location="bottom" >
+                <apex:outputPanel id="buttonPanel">
+                    <apex:commandButton value="Search" action="{!searchData}" status="showStatus" onclick="buttonsEnabled(false);" reRender="accountpanel,callreportpanel,buttonPanel,errorMsg"/>
+                    <apex:commandButton rendered="{!showProspectButton}" onclick="createProspect();return false;" value="Create Prospect" />
+                </apex:outputPanel>
+                <apex:actionStatus id="showStatus" onstart="startLoading();" onstop="endLoading();" />
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection showHeader="false" columns="2">
+                <apex:inputText value="{!cis}" label="CIS ID" />
+                <apex:inputText value="{!id}" label="Identification No." />
+                <apex:inputText value="{!firstname}" label="First Name / Company Name" />
+                <apex:inputText value="{!lastname}" label="Last Name" />
+                <!--apex:inputText value="{!cis}" label="CIS ID" onkeypress="return noenter(event);"/>
+                <apex:inputText value="{!id}" label="Identification No." onkeypress="return noenter(event);"/>
+                <apex:inputText value="{!firstname}" label="First Name / Company Name" onkeypress="return noenter(event);"/>
+                <apex:inputText value="{!lastname}" label="Last Name" onkeypress="return noenter(event);"/-->
+            </apex:pageBlockSection>
+                
+        </apex:pageBlock>
+    
+    
+        <apex:pageBlock id="accountpanel" title="Account">
+            <apex:pageBlockTable id="accountTable" rendered="{!finalCustomerList.size > 0}" value="{!finalCustomerList}" var="customer" >
+                <apex:column headerValue="Graph">
+                    <apex:outputText value="{!customer.accountObj.Customer_360__c}" escape="false" />
+                </apex:column>
+                <apex:column headerValue="CIS ID">
+                    <apex:outputLink value="/{!customer.accountObj.Id}" target="_blank">{!customer.accountObj.CIS__c}</apex:outputLink>
+                </apex:column>
+                <apex:column headerValue="Name">
+                     <apex:facet name="header">   
+                       <apex:commandLink action="{!sortData}" value="Name{!IF(sortExpression=='name',IF(sortDirection='ASC','▲','▼'),'')}" id="cmdSort">
+                         <apex:param value="name" name="column" assignTo="{!sortExpression}" ></apex:param>
+                       </apex:commandLink>
+                     </apex:facet>
+                    <apex:outputLink value="/{!customer.accountObj.Id}" Rendered="{!customer.isProspect}" target="_blank" >{!customer.accountObj.Title__c} {!customer.firstNameTH} {!customer.surNameTH}</apex:outputLink>
+                    <apex:image value="{!customer.fullName}" Rendered="{!!customer.isProspect}" />
+                </apex:column>
+                <apex:column headerValue="Identification no.">
+                    <apex:image value="{!customer.identificationNo}" Rendered="{!!customer.isProspect}"/>
+                    <apex:outputText value="{!customer.identificationNo}" Rendered="{!customer.isProspect}" escape="false" />
+                </apex:column>
+                <apex:column headerValue="Birthdate/Registraton Date">
+                    <apex:outputText value="{!customer.birthdateRegistrationDate}" escape="false" />
+                </apex:column>
+                <apex:column headerValue="Segment">
+                    <apex:outputText value="{!customer.accountObj.Primary_Segment_Code__c}" escape="false" />
+                </apex:column>
+                <apex:column headerValue="Dual Segment">
+                    <apex:outputText value="{!customer.accountObj.Dual_Segment_Code__c}" escape="false" />
+                </apex:column>
+                <apex:column headerValue="District">
+                    <apex:outputText value="{!customer.district}" escape="false" />
+                </apex:column>
+                <apex:column headerValue="Province">
+                    <apex:outputText value="{!customer.province}" escape="false" />
+                </apex:column>
+                
+                <apex:column headerValue="Customer Status">
+                    <apex:outputText value="{!customer.accountObj.Customer_Status__c}" escape="false" />
+                </apex:column>
+                <apex:column headerValue="Credit Status">
+                    <apex:outputText value="{!customer.accountObj.Status__c}" escape="false" />
+                </apex:column>
+                <apex:column headerValue="Owner">
+                    <apex:outputText value="{!customer.accountObj.Owner.Name}" escape="false" />
+                </apex:column>
+                <apex:column headerValue="Port/Pool">
+                    <apex:outputText value="{!customer.accountObj.Port_Pool__c}" escape="false" />
+                </apex:column>
+                <apex:column headerValue="Request Ownership">
+                    <apex:outputPanel id="RID">
+                        <apex:commandButton value="Request Ownership" action="{!requestOwnership}" reRender="RID,errorMsg" Rendered="{!customer.showRequestOwnershipButton}">
+                            <apex:param name="requestOwnershipValue" value="{!customer.accountObj.Id}" assignTo="{!requestOwnershipValue}" />
+                        </apex:commandButton>
+                        <!--<button type="button">Reject</button> --> 
+                    </apex:outputPanel>
+                </apex:column>
+            </apex:pageBlockTable>
+            <br/>
+                
+            <apex:outputPanel id="accountTotalRecords" rendered="{!finalCustomerList.size > 0}">
+                <apex:commandLink action="{!doPrevious}" rendered="{!hasPrevious}" value="Previous" />
+                <apex:outputLabel rendered="{!NOT(hasPrevious)}" value="Previous" />
+                
+                <apex:outputLabel value=" (page {!page} of {!totalPages}) | showing {!startIdx} to {!endIdx} of {!totalRecords} " />    
+                <apex:commandLink action="{!doNext}" rendered="{!hasNext}" value="Next" />
+                <apex:outputLabel rendered="{!NOT(hasNext)}" value="Next" />
+            </apex:outputPanel> 
+                
+            <apex:outputPanel id="accountNoResult" rendered="{!finalCustomerList.size = 0}">
+                <i>No Result.</i>
+            </apex:outputPanel> 
+        </apex:pageBlock>
+    </apex:form>
+    <div id="load_scrl" class="loadingBox loader" style="display:none"> </div>
+    </body>
+    </html>
+</apex:page>

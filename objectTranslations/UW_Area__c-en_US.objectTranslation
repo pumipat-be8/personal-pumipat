@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>UW Area</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>UW Areas</value>
+    </caseValues>
+    <fields>
+        <label><!-- Head of UW Name --></label>
+        <name>Head_of_UW_Name__c</name>
+        <relationshipLabel><!-- UW Areas (Head of UW Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- RC Code --></label>
+        <name>RC_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Senior UW Name --></label>
+        <name>Senior_UW_Name__c</name>
+        <relationshipLabel><!-- UW Areas (Senior UW Name) --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>UW Area Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

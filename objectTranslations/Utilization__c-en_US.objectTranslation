@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Utilization</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Utilizations</value>
+    </caseValues>
+    <fields>
+        <label><!-- As of Date --></label>
+        <name>As_of_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- CIS ID --></label>
+        <name>CIS_ID__c</name>
+        <relationshipLabel><!-- Ultilizations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- OD AVG OUT --></label>
+        <name>OD_AVG_OUT__c</name>
+    </fields>
+    <fields>
+        <label><!-- OD Limit --></label>
+        <name>OD_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- OD %Utilization --></label>
+        <name>OD_Utilization__c</name>
+    </fields>
+    <fields>
+        <label><!-- PN AVG OUT --></label>
+        <name>PN_AVG_OUT__c</name>
+    </fields>
+    <fields>
+        <label><!-- PN Limit --></label>
+        <name>PN_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- PN %Utilization --></label>
+        <name>PN_Utilization__c</name>
+    </fields>
+    <fields>
+        <label><!-- TF AVG OUT --></label>
+        <name>TF_AVG_OUT__c</name>
+    </fields>
+    <fields>
+        <label><!-- TF Limit --></label>
+        <name>TF_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- TF %Utilization --></label>
+        <name>TF_Utilization__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

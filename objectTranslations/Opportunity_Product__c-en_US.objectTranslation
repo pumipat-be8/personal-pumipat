@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Opportunity Product</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Opportunity Products</value>
+    </caseValues>
+    <fields>
+        <label><!-- Application Number --></label>
+        <name>Application_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approved Amount --></label>
+        <name>Approved_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- BA Prosaving --></label>
+        <name>BA_Prosaving__c</name>
+    </fields>
+    <fields>
+        <label><!-- BA Protection --></label>
+        <name>BA_Protection__c</name>
+    </fields>
+    <fields>
+        <label>Front End Fee (Baht)</label>
+        <name>Front_End_Fee__c</name>
+    </fields>
+    <fields>
+        <label>Opportunity Name</label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Opportunity Products --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>Product__c</name>
+        <picklistValues>
+            <masterLabel>ตั้งวงเงินทั้งหมดในครั้งแรก</masterLabel>
+            <translation><!-- ตั้งวงเงินทั้งหมดในครั้งแรก --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>แยกตั้งครั้งที่ 1</masterLabel>
+            <translation><!-- แยกตั้งครั้งที่ 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>แยกตั้งครั้งที่ 2</masterLabel>
+            <translation><!-- แยกตั้งครั้งที่ 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>แยกตั้งครั้งที่ 3</masterLabel>
+            <translation><!-- แยกตั้งครั้งที่ 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>แยกตั้งครั้งที่ 4</masterLabel>
+            <translation><!-- แยกตั้งครั้งที่ 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>แยกตั้งครั้งที่ 5</masterLabel>
+            <translation><!-- แยกตั้งครั้งที่ 5 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Requested Amount --></label>
+        <name>Requested_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Setup Amount --></label>
+        <name>Setup_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Setup Date --></label>
+        <name>Setup_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Setup</masterLabel>
+            <translation><!-- Setup --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Opportunity Product Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Closed Opp Product --></label>
+        <name>Closed_Opp_Product</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Open Opp Product --></label>
+        <name>Open_Opp_Product</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- กรอก BA ได้เฉพาะตอนตั้งวงเงินครั้งแรกเท่านั้น --></errorMessage>
+        <name>Can_Input_BA_at_First_Setup_Only</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot Create Product. Stage need to be in: &apos;Waiting for Credit Setup&apos; or &apos;Partial Loan Setup&apos; --></errorMessage>
+        <name>Cannot_Create_Opportunity_Product</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please input Setup Amount and Setup Date --></errorMessage>
+        <name>Cannot_change_status_to_Setup</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- ไม่สามารถตั้งวงเงินล่วงหน้าได้ --></errorMessage>
+        <name>Cannot_setup_future_date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Unable to edit Opportunity Product if the related Opportunity was closed --></errorMessage>
+        <name>Not_Allow_Edit_Product_of_Closed_Opp</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Setup Amount cannot be more than Approved Amount --></errorMessage>
+        <name>Setup_Amount_more_than_Approved_Amount</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- วงเงินที่ตั้งห้ามเป็น 0 --></errorMessage>
+        <name>Setup_Amount_must_be_not_zero</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- กรุณากรอก  Front End Fee และ เบี้ย BA Prosaving / BA Protection หากไม่มีการเก็บให้ใส่ 0
+*** เบี้ย BA Prosaving and BA Protection ให้กรอกเฉพาะตอนตั้งวงเงินครั้งแรกเท่านั้น --></errorMessage>
+        <name>Status_Setup_FrontEndFee_BA_NotNull</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- New --></label>
+        <name>New</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Setup_All --></label>
+        <name>Setup_All</name>
+    </webLinks>
+</CustomObjectTranslation>

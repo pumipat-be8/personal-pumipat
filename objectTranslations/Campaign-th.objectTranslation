@@ -1,0 +1,1046 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>ลีด / แคมเปญ / กิจกรรม</value>
+    </caseValues>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>งบประมาณรวม</value>
+        </caseValues>
+        <name>budgeted_cost_campaign</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>การเข้าถึงลีด / แคมเปญ / กิจกรรม</value>
+        </caseValues>
+        <name>campaign_access</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>ระดับการเข้าถึงลีด / แคมเปญ / กิจกรรม</value>
+        </caseValues>
+        <name>campaign_access_level</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>จำนวนลีด / แคมเปญ / กิจกรรม</value>
+        </caseValues>
+        <name>campaign_amount</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>หมวดหมู่ของลีด / แคมเปญ / กิจกรรม</value>
+        </caseValues>
+        <name>campaign_category</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>ผู้ติดต่อลีด / แคมเปญ / กิจกรรม</value>
+        </caseValues>
+        <name>campaign_contact</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>ลีด / แคมเปญ / กิจกรรมที่สร้าง</value>
+        </caseValues>
+        <name>campaign_created</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>สกุลเงินของลีด / แคมเปญ / กิจกรรม</value>
+        </caseValues>
+        <name>campaign_currency</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>คำอธิบายของลีด / แคมเปญ / กิจกรรม</value>
+        </caseValues>
+        <name>campaign_description</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>รายงานเกี่ยวกับรายละเอียดของลีด / แคมเปญ / กิจกรรม</value>
+        </caseValues>
+        <name>campaign_detail_report</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>แก้ไขลีด / แคมเปญ / กิจกรรม</value>
+        </caseValues>
+        <name>campaign_edit</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>ฟิลด์ลีด / แคมเปญ / กิจกรรม</value>
+        </caseValues>
+        <name>campaign_field</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>ลีด / แคมเปญ / กิจกรรมทั่วไป</value>
+        </caseValues>
+        <name>campaign_general</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>ลำดับชั้นลีด / แคมเปญ / กิจกรรม</value>
+        </caseValues>
+        <name>campaign_hierarchy</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>ประวัติของลีด / แคมเปญ / กิจกรรม</value>
+        </caseValues>
+        <name>campaign_history</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>รหัสประจำลีด / แคมเปญ / กิจกรรม</value>
+        </caseValues>
+        <name>campaign_id</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>ผลกระทบกับลีด / แคมเปญ / กิจกรรม</value>
+        </caseValues>
+        <name>campaign_influence</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>การปรับที่มีผลกระทบกับลีด / แคมเปญ / กิจกรรม</value>
+        </caseValues>
+        <name>campaign_influence_adjustment</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>รหัสประจำการปรับที่มีผลกระทบกับลีด / แคมเปญ / กิจกรรม</value>
+        </caseValues>
+        <name>campaign_influence_adjustment_id</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>ข้อมูลเกี่ยวกับลีด / แคมเปญ / กิจกรรม</value>
+        </caseValues>
+        <name>campaign_information</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>ลีด / แคมเปญ / กิจกรรมที่มีกิจกรรมล่าสุด</value>
+        </caseValues>
+        <name>campaign_last_activity</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>ลีด / แคมเปญ / กิจกรรมที่แก้ไขล่าสุด</value>
+        </caseValues>
+        <name>campaign_last_modified</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>ลีด / แคมเปญ / กิจกรรมลูกค้าเป้าหมาย</value>
+        </caseValues>
+        <name>campaign_lead</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>ช่วงอายุของลีด / แคมเปญ / กิจกรรมลูกค้าเป้าหมาย</value>
+        </caseValues>
+        <name>campaign_lead_lifetime</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>สมาชิกของกิจกรรม</value>
+        </caseValues>
+        <name>campaign_member</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>สกุลเงินของสมาชิกลีด / แคมเปญ / กิจกรรม</value>
+        </caseValues>
+        <name>campaign_member_currency</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>ฟิลด์สมาชิกลีด / แคมเปญ / กิจกรรม</value>
+        </caseValues>
+        <name>campaign_member_field</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>รหัสประจำสมาชิกของลีด / แคมเปญ / กิจกรรม</value>
+        </caseValues>
+        <name>campaign_member_id</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>นำเข้าลีด / แคมเปญ / กิจกรรมสำหรับสมาชิก</value>
+        </caseValues>
+        <name>campaign_member_import</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>ข้อมูลของสมาชิกลีด / แคมเปญ / กิจกรรม</value>
+        </caseValues>
+        <name>campaign_member_information</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>กฎของสมาชิกลีด / แคมเปญ / กิจกรรม</value>
+        </caseValues>
+        <name>campaign_member_rule</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>สถานะของสมาชิกของลีด / แคมเปญ / กิจกรรม</value>
+        </caseValues>
+        <name>campaign_member_status</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>รหัสประจำสถานะของสมาชิกของลีด / แคมเปญ / กิจกรรม</value>
+        </caseValues>
+        <name>campaign_member_status_id</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>ชนิดของสมาชิกลีด / แคมเปญ / กิจกรรม</value>
+        </caseValues>
+        <name>campaign_member_type</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>ชื่อลีด / แคมเปญ / กิจกรรม</value>
+        </caseValues>
+        <name>campaign_name</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>หมายเลขลีด / แคมเปญ / กิจกรรม</value>
+        </caseValues>
+        <name>campaign_number</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>โอกาสของลีด / แคมเปญ / กิจกรรม</value>
+        </caseValues>
+        <name>campaign_opportunity</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>ภาพรวมเกี่ยวกับลีด / แคมเปญ / กิจกรรม</value>
+        </caseValues>
+        <name>campaign_overview</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>เจ้าของลีด / แคมเปญ / กิจกรรม</value>
+        </caseValues>
+        <name>campaign_owner</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>ชื่อย่อของเจ้าของลีด / แคมเปญ / กิจกรรม</value>
+        </caseValues>
+        <name>campaign_owner_alias</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>กระบวนการของลีด / แคมเปญ / กิจกรรม</value>
+        </caseValues>
+        <name>campaign_process</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>ประเภทเร็กคอร์ดของลีด / แคมเปญ / กิจกรรม</value>
+        </caseValues>
+        <name>campaign_record_type</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>รหัสประจำประเภทเร็กคอร์ดของลีด / แคมเปญ / กิจกรรม</value>
+        </caseValues>
+        <name>campaign_record_type_id</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>รายงานเกี่ยวกับลีด / แคมเปญ / กิจกรรม</value>
+        </caseValues>
+        <name>campaign_report</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>รายงานเกี่ยวกับรายได้จากลีด / แคมเปญ / กิจกรรม</value>
+        </caseValues>
+        <name>campaign_revenue_report</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>สถานะของลีด / แคมเปญ / กิจกรรม</value>
+        </caseValues>
+        <name>campaign_status</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>ประเภทลีด / แคมเปญ / กิจกรรม</value>
+        </caseValues>
+        <name>campaign_type</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>อัพเดตลีด / แคมเปญ / กิจกรรม</value>
+        </caseValues>
+        <name>campaign_update</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>ตัวช่วยอัพเดตลีด / แคมเปญ / กิจกรรม</value>
+        </caseValues>
+        <name>campaign_update_wizard</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>มุมมองลีด / แคมเปญ / กิจกรรม</value>
+        </caseValues>
+        <name>campaign_view</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>คาดการณ์รายได้</value>
+        </caseValues>
+        <name>expected_revenue_campaign</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>ลีด / แคมเปญ / กิจกรรมหลัก</value>
+        </caseValues>
+        <name>parent_campaign</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>ID ของลีด / แคมเปญ / กิจกรรมหลัก</value>
+        </caseValues>
+        <name>parent_campaign_id</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>ประเภท</value>
+        </caseValues>
+        <name>type_campaign</name>
+    </fields>
+    <fields>
+        <label><!-- Attendee Confirmation Date --></label>
+        <name>Attendee_Confirmation_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Campaign Type --></label>
+        <name>Campaign_Type__c</name>
+        <picklistValues>
+            <masterLabel>Non-Targeted</masterLabel>
+            <translation><!-- Non-Targeted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Targeted</masterLabel>
+            <translation><!-- Targeted --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Cancellation Date --></label>
+        <name>Cancellation_Date__c</name>
+    </fields>
+    <fields>
+        <label>ค่าใช้จ่าย/คน</label>
+        <name>Cost_per_Person__c</name>
+    </fields>
+    <fields>
+        <label><!-- DB Campaign Tactic --></label>
+        <name>DB_Campaign_Tactic__c</name>
+        <picklistValues>
+            <masterLabel>Direct Mail</masterLabel>
+            <translation><!-- Direct Mail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employment Seminars</masterLabel>
+            <translation><!-- Employment Seminars --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal Website</masterLabel>
+            <translation><!-- Internal Website --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lunches</masterLabel>
+            <translation><!-- Lunches --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Online Banners/Ads</masterLabel>
+            <translation><!-- Online Banners/Ads --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partners</masterLabel>
+            <translation><!-- Partners --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Print Advertisement</masterLabel>
+            <translation><!-- Print Advertisement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public Relations</masterLabel>
+            <translation><!-- Public Relations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referral Program</masterLabel>
+            <translation><!-- Referral Program --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Call Down</masterLabel>
+            <translation><!-- Sales Call Down --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Webinars</masterLabel>
+            <translation><!-- Webinars --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>รูปแบบการแต่งกาย</label>
+        <name>Dress_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Effective Date --></label>
+        <name>Effective_Date__c</name>
+    </fields>
+    <fields>
+        <label>วัน/เวลาสิ้นสุด</label>
+        <name>End_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label>ค่าใช้จ่ายจริง</label>
+        <name>Event_Actual_Cost__c</name>
+    </fields>
+    <fields>
+        <label>คาดการณ์รายได้</label>
+        <name>Event_Expected_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Food Service Style --></label>
+        <name>Food_Service_Style__c</name>
+        <picklistValues>
+            <masterLabel>Buffet</masterLabel>
+            <translation><!-- Buffet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Heavy Cocktail</masterLabel>
+            <translation><!-- Heavy Cocktail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Individual</masterLabel>
+            <translation><!-- Individual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sharing</masterLabel>
+            <translation><!-- Sharing --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>รูปแบบอาหาร</label>
+        <name>Food__c</name>
+        <picklistValues>
+            <masterLabel>Chinese</masterLabel>
+            <translation><!-- Chinese --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Coffee Break</masterLabel>
+            <translation><!-- Coffee Break --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>European</masterLabel>
+            <translation><!-- European --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>International</masterLabel>
+            <translation><!-- International --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Japan</masterLabel>
+            <translation><!-- Japan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Thai</masterLabel>
+            <translation><!-- Thai --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>รหัสแคมเปญ / กิจกรรม</label>
+        <name>Lead_Campaign_Event_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Non-Targeted Event --></label>
+        <name>Non_Targeted_Event__c</name>
+    </fields>
+    <fields>
+        <label>จำนวนลูกค้าที่ลงทะเบียน</label>
+        <name>Number_of_Customer_Registered__c</name>
+    </fields>
+    <fields>
+        <label>วัตถุประสงค์ของกิจกรรม</label>
+        <name>Objective__c</name>
+        <picklistValues>
+            <masterLabel>Branding</masterLabel>
+            <translation><!-- Branding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Network</masterLabel>
+            <translation><!-- Network --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others</masterLabel>
+            <translation><!-- Others --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partnership</masterLabel>
+            <translation><!-- Partnership --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retention</masterLabel>
+            <translation><!-- Retention --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Selling</masterLabel>
+            <translation><!-- Selling --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Previous Dress Code --></label>
+        <name>Previous_Dress_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Previous End Date/Time --></label>
+        <name>Previous_End_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Previous Food --></label>
+        <name>Previous_Food__c</name>
+    </fields>
+    <fields>
+        <label><!-- Previous Name --></label>
+        <name>Previous_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Previous Start Date/Time --></label>
+        <name>Previous_Start_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Previous Venue --></label>
+        <name>Previous_Venue__c</name>
+    </fields>
+    <fields>
+        <label>โปรโมชัน</label>
+        <name>Promotion__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reason for Cancellation --></label>
+        <name>Reason_for_Cancellation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reason for Change --></label>
+        <name>Reason_for_Change__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sent Email to Teams --></label>
+        <name>Sent_Email_to_Team__c</name>
+        <picklistValues>
+            <masterLabel>BIU</masterLabel>
+            <translation><!-- BIU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CEM</masterLabel>
+            <translation><!-- CEM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CRM</masterLabel>
+            <translation><!-- CRM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event</masterLabel>
+            <translation><!-- Event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IMC</masterLabel>
+            <translation><!-- IMC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MS</masterLabel>
+            <translation><!-- MS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others</masterLabel>
+            <translation><!-- Others --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PR</masterLabel>
+            <translation><!-- PR --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>วัน/เวลาเริ่มต้น</label>
+        <name>Start_Date_Time__c</name>
+    </fields>
+    <fields>
+        <name>Status</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancel</masterLabel>
+            <translation><!-- Cancel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancelling Process</masterLabel>
+            <translation><!-- Cancelling Process --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expiry Process</masterLabel>
+            <translation><!-- Expiry Process --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Planned</masterLabel>
+            <translation><!-- Planned --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Status Order Flag --></label>
+        <name>Status_Order_Flag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sub Type --></label>
+        <name>Sub_Type__c</name>
+        <picklistValues>
+            <masterLabel>Account Plan</masterLabel>
+            <translation><!-- Account Plan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BA</masterLabel>
+            <translation><!-- BA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cheque</masterLabel>
+            <translation><!-- Cheque --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LI</masterLabel>
+            <translation><!-- LI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refer</masterLabel>
+            <translation><!-- Refer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refinance</masterLabel>
+            <translation><!-- Refinance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Strong Formula</masterLabel>
+            <translation><!-- Strong Formula --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Strong Hybrid</masterLabel>
+            <translation><!-- Strong Hybrid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Value Chain</masterLabel>
+            <translation><!-- Value Chain --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Summary : All Loan Setup --></label>
+        <name>Summary_All_Loan_Setup__c</name>
+    </fields>
+    <fields>
+        <label><!-- Summary : App-In --></label>
+        <name>Summary_App_In__c</name>
+    </fields>
+    <fields>
+        <label><!-- Summary : Approved Amount --></label>
+        <name>Summary_Approved_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Summary : Approved --></label>
+        <name>Summary_Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Summary : Auto Closed --></label>
+        <name>Summary_Auto_Closed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Summary : Case is Rejected --></label>
+        <name>Summary_Case_is_Rejected__c</name>
+    </fields>
+    <fields>
+        <label><!-- Summary : Closed Lost --></label>
+        <name>Summary_Closed_Lost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Summary : Create Write Up --></label>
+        <name>Summary_Create_Write_Up__c</name>
+    </fields>
+    <fields>
+        <label><!-- Summary : Done --></label>
+        <name>Summary_Done__c</name>
+    </fields>
+    <fields>
+        <label><!-- Summary : Interested --></label>
+        <name>Summary_Interested__c</name>
+    </fields>
+    <fields>
+        <label><!-- Summary : Loan Setup --></label>
+        <name>Summary_Loan_Setup__c</name>
+    </fields>
+    <fields>
+        <label><!-- Summary : New --></label>
+        <name>Summary_New__c</name>
+    </fields>
+    <fields>
+        <label><!-- Summary : Not Interest This Time --></label>
+        <name>Summary_Not_Interest_This_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Summary : Not Interested --></label>
+        <name>Summary_Not_Interested__c</name>
+    </fields>
+    <fields>
+        <label><!-- Summary : Partial Loan Setup --></label>
+        <name>Summary_Partial_Loan_Setup__c</name>
+    </fields>
+    <fields>
+        <label><!-- Summary : Setup Amount --></label>
+        <name>Summary_Setup_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Summary : Stock Negotiation --></label>
+        <name>Summary_Stock_Negotiation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Summary : Waiting for Credit Approval --></label>
+        <name>Summary_Waiting_for_Credit_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Summary : Waiting for Credit Setup --></label>
+        <name>Summary_Waiting_for_Credit_Setup__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target Group --></label>
+        <name>Target_Group__c</name>
+    </fields>
+    <fields>
+        <label>งบประมาณรวม</label>
+        <name>Total_Budget__c</name>
+    </fields>
+    <fields>
+        <name>Type</name>
+        <picklistValues>
+            <masterLabel>Advertisement</masterLabel>
+            <translation><!-- Advertisement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Banner Ads</masterLabel>
+            <translation><!-- Banner Ads --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partners</masterLabel>
+            <translation><!-- Partners --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public Relations</masterLabel>
+            <translation><!-- Public Relations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Referral Program</masterLabel>
+            <translation><!-- Referral Program --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Seminar / Conference</masterLabel>
+            <translation><!-- Seminar / Conference --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Telemarketing</masterLabel>
+            <translation><!-- Telemarketing --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>ประเภท Lead</label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Campaign</masterLabel>
+            <translation><!-- Campaign --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead For Sales</masterLabel>
+            <translation><!-- Lead For Sales --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead To Do</masterLabel>
+            <translation><!-- Lead To Do --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead To Inform</masterLabel>
+            <translation><!-- Lead To Inform --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>ประเภทกิจกรรม</label>
+        <name>Type_of_Event__c</name>
+        <picklistValues>
+            <masterLabel>Booth / Expo</masterLabel>
+            <translation><!-- Booth / Expo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business matching</masterLabel>
+            <translation><!-- Business matching --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business solutions</masterLabel>
+            <translation><!-- Business solutions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business support</masterLabel>
+            <translation><!-- Business support --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exclusive party</masterLabel>
+            <translation><!-- Exclusive party --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exclusive trip</masterLabel>
+            <translation><!-- Exclusive trip --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exclusive visit</masterLabel>
+            <translation><!-- Exclusive visit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FX</masterLabel>
+            <translation><!-- FX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal event</masterLabel>
+            <translation><!-- Internal event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>K SME Care</masterLabel>
+            <translation><!-- K SME Care --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Knowledge seminar</masterLabel>
+            <translation><!-- Knowledge seminar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LI</masterLabel>
+            <translation><!-- LI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Network project</masterLabel>
+            <translation><!-- Network project --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Press Conference</masterLabel>
+            <translation><!-- Press Conference --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Signing</masterLabel>
+            <translation><!-- Signing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SolarRooftop</masterLabel>
+            <translation><!-- SolarRooftop --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sponsorship event</masterLabel>
+            <translation><!-- Sponsorship event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trade/FX</masterLabel>
+            <translation><!-- Trade/FX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Value Chain</masterLabel>
+            <translation><!-- Value Chain --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>สถานที่จัดงาน</label>
+        <name>Venue__c</name>
+    </fields>
+    <layouts>
+        <layout>SME-Event (Non-Targeted)</layout>
+        <sections>
+            <label><!-- Budget &amp; Revenue Information --></label>
+            <section>Budget &amp; Revenue Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SME-Event (Non-Targeted) for RM</layout>
+        <sections>
+            <label><!-- Budget &amp; Revenue Information --></label>
+            <section>Budget &amp; Revenue Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SME-Event Layout</layout>
+        <sections>
+            <label>ข้อมูลงบประมาณ &amp; รายได้</label>
+            <section>Budget &amp; Revenue Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SME-Event Layout (Read Only)</layout>
+        <sections>
+            <label>ข้อมูลงบประมาณ &amp; รายได้</label>
+            <section>Budget &amp; Revenue Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SME-Event Layout for RM</layout>
+        <sections>
+            <label><!-- Budget &amp; Revenue Information --></label>
+            <section>Budget &amp; Revenue Information</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- SME-Event --></label>
+        <name>SME_Event</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SME-Event (Non-Targeted) --></label>
+        <name>SME_Event_Non_Targeted</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- SME- Lead / Campaign --></label>
+        <name>SME_Lead_Campaign</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>วันที่ยืนยันการเข้าร่วมกิจกรรมต้องเป็นวันก่อนกิจกรรม</errorMessage>
+        <name>AttendeeConfirmationDate_must_be_earlier</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>ไม่สามารถ Active ได้จนกว่าจะถึงวันเริ่มกิจกรรม</errorMessage>
+        <name>Check_Active_and_Start_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Effective Date Cannot Backward More Than 1 Year --></errorMessage>
+        <name>Effective_Date_Cannot_Less_Than_1_Year</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>เวลาสิ้นสุดของกิจกรรมต้องเกิดขึ้นหลังจากเวลาเริ่มกิจกรรม</errorMessage>
+        <name>End_Date_Time_must_be_later</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>วันสิ้นสุดของ Lead และรายการส่งเสริมการขาย ต้องเกิดขึ้นหลังจากวันเริ่มต้น</errorMessage>
+        <name>End_Date_must_be_later_than_Start_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>โปรดระบุเหตุผลการยกเลิก</errorMessage>
+        <name>Please_select_Reason_for_Cancellation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>โปรดระบุเหตุผลที่เปลี่ยนวันที่</errorMessage>
+        <name>Please_select_Reason_for_Change</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>ไม่สามารถเปลี่ยนแปลงสถานะย้อนกลับ</errorMessage>
+        <name>PreventChangeEventStatusBwd</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>บังคับใส่ค่า</errorMessage>
+        <name>Required_LeadType</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>ชื่อกิจกรรมสามารถแก้ไขโดยผู้ใช้ที่มีสิทธิ์เท่านั้น</errorMessage>
+        <name>Restrict_Change_of_Event_Name</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>วันเริ่มกิจกรรมต้องเกิดขึ้นหลังจากวันปัจจุบัน</errorMessage>
+        <name>Start_Date_Time_Cannot_Less_Than_Today</name>
+    </validationRules>
+    <webLinks>
+        <label>กิจกรรมต่างๆของธนาคาร</label>
+        <name>Event_Sharing</name>
+    </webLinks>
+    <webLinks>
+        <label>จำนวนลูกค้าทั้งหมดที่เข้าร่วมแคมเปญ</label>
+        <name>ViewAllCampaignMembers</name>
+    </webLinks>
+    <webLinks>
+        <label>รายงานอิทธิพลของแคมเปญ</label>
+        <name>ViewCampaignInfluenceReport</name>
+    </webLinks>
+</CustomObjectTranslation>

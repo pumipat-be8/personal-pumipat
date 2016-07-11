@@ -1,0 +1,2 @@
+<apex:page standardController="Call_Report__c" extensions="CallReport_OverrideEdit_Controller" action="{!redirect}">
+</apex:page>

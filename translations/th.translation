@@ -1,0 +1,1573 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Translations xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customApplications>
+        <label>KBank SME</label>
+        <name>KBANK_SME</name>
+    </customApplications>
+    <customApplications>
+        <label><!-- KBank Admin --></label>
+        <name>KBank_Admin</name>
+    </customApplications>
+    <customLabels>
+        <label><!-- ADDRESS_INFORMATION_IS_NULL --></label>
+        <name>ADDRESS_INFORMATION_IS_NULL</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- All Loan Setup --></label>
+        <name>All_Loan_Setup</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Apply All Area --></label>
+        <name>Apply_All_Area</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- BACKEND_ERROR --></label>
+        <name>BACKEND_ERROR</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- BulkAssign AHLevelName --></label>
+        <name>BulkAssign_AHLevelName</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Permanent --></label>
+        <name>BulkAssign_CustomerList</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- BulkAssign Invalid Fields --></label>
+        <name>BulkAssign_Invalid_Fields</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Bulk Mirror User --></label>
+        <name>BulkAssign_MirrorUser</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- BulkAssign NHLevelName --></label>
+        <name>BulkAssign_NHLevelName</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- No Assignment Selected --></label>
+        <name>BulkAssign_NoAssignmentSelected</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- No RM/TM User Assignment --></label>
+        <name>BulkAssign_NoRM_TM_UserAssignment</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- OwnedByOtherList --></label>
+        <name>BulkAssign_OwnerByOtherList</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- BulkAssign RMLevelName --></label>
+        <name>BulkAssign_RMLevelName</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Select RM/TM --></label>
+        <name>BulkAssign_SelectRM_TM</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- BulkAssign Servererror --></label>
+        <name>BulkAssign_Servererror</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Submit Customer --></label>
+        <name>BulkAssign_Submit</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- BulkAssign TMLevelName --></label>
+        <name>BulkAssign_TMLevelName</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Temporary --></label>
+        <name>BulkAssign_TempOwnerList</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- BulkAssign Thefollowingfieldsareinvalid --></label>
+        <name>BulkAssign_Thefollowingfieldsareinvalid</name>
+    </customLabels>
+    <customLabels>
+        <label>ไม่สามารถกด Close Won ได้... ต้องอยู่ในสถานะรอตั้งวงเงิน แล้วค่อยไปแก้ไข Opportunity Product (ด้านล่างของโอกาส) ให้เป็น Setup ทั้งหมดแล้วกรอกรายละเอียดการตั้งวงเงินก่อน</label>
+        <name>CANNOT_CLOSE_WON_OPP</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CANNOT_DELETE_TRANSACTION --></label>
+        <name>CANNOT_DELETE_TRANSACTION</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CANNOT_INSERT_TRANSACTION --></label>
+        <name>CANNOT_INSERT_TRANSACTION</name>
+    </customLabels>
+    <customLabels>
+        <label>ท่านเคยส่งคำขอเปลี่ยนชื่อผู้ดูแลสำหรับลูกค้ารายนี้ไปแล้ว ไม่สามารถทำรายการอีกครั้งได้</label>
+        <name>CANNOT_REQUEST_OWNERSHIP</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CANNOT_ROLLBACK_TRANSACTION --></label>
+        <name>CANNOT_ROLLBACK_TRANSACTION</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CANNOT_UPDATE_TRANSACTION --></label>
+        <name>CANNOT_UPDATE_TRANSACTION</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CANNOT_UPSERT_TRANSACTION --></label>
+        <name>CANNOT_UPSERT_TRANSACTION</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CI_RESPONSE_ERROR --></label>
+        <name>CI_RESPONSE_ERROR</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- COMPANY_CODE_IS_NULL --></label>
+        <name>COMPANY_CODE_IS_NULL</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- CAMPAIGN_LEAD_BATCH_SIZE --></label>
+        <name>Campaign_Lead_Batch_Size</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Cannot Refer Out to this Province --></label>
+        <name>Cannot_Refer_Out_to_this_Province</name>
+    </customLabels>
+    <customLabels>
+        <label>ท่านไม่สามารถดำเนินการตามคำขอได้เนื่องจากรายการบางส่วนถูกอัพเดทโดยผู้ใช้คนอื่น โปรด Refresh ข้อมูล</label>
+        <name>Cannotprocessyourrequest</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Chatter Group Owner --></label>
+        <name>Chatter_Group_Owner</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Default Opportunity Close Date --></label>
+        <name>Default_Opportunity_Close_Date</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Filter ME Team --></label>
+        <name>Filter_ME_Team</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Filter SE Team --></label>
+        <name>Filter_SE_Team</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- HTTP_CONNECTION_FAILED --></label>
+        <name>HTTP_CONNECTION_FAILED</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- INVALID_RESPONSE --></label>
+        <name>INVALID_RESPONSE</name>
+    </customLabels>
+    <customLabels>
+        <label>ข้อมูล</label>
+        <name>Information_Section</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- LICENSE_EXCEED --></label>
+        <name>LICENSE_EXCEED</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Manual Batch Size --></label>
+        <name>MANUAL_BATCH_SIZE</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- ME Lead URL --></label>
+        <name>ME_Lead_URL</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- MashupUrl --></label>
+        <name>MashupUrl</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- NO_AUTHORIZATION_USER --></label>
+        <name>NO_AUTHORIZATION_USER</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- NO_CONTACT_WITH_THIS_PHONE --></label>
+        <name>NO_CONTACT_WITH_THIS_PHONE</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- NO_SGID_ACCOUNT --></label>
+        <name>NO_SGID_ACCOUNT</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- PARSE_FAILED --></label>
+        <name>PARSE_FAILED</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Page Size --></label>
+        <name>Page_Size</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Partial Loan Setup --></label>
+        <name>Partial_Loan_Setup</name>
+    </customLabels>
+    <customLabels>
+        <label>ลูกค้ารายนี้มีผู้ติดต่อหลักอยู่แล้ว</label>
+        <name>PrimaryContactErrorMessage</name>
+    </customLabels>
+    <customLabels>
+        <label>ยกเลิก</label>
+        <name>Refer_Out_Cancel_Button</name>
+    </customLabels>
+    <customLabels>
+        <label>เหตุผลการ Refer out</label>
+        <name>Refer_Out_Reason_Section</name>
+    </customLabels>
+    <customLabels>
+        <label>บันทึก</label>
+        <name>Refer_Out_Save_Button</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Release Customer Ownership for Call Plan / Call Report (ME) --></label>
+        <name>Release_Customer_Ownership_for_Call_Plan_Call_Report_ME</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Release Customer Ownership for Call Plan / Call Report (SE) --></label>
+        <name>Release_Customer_Ownership_for_Call_Plan_Call_Report_SE</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Release Prospect Ownership (ME) --></label>
+        <name>Release_Prospect_Ownership_ME</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Release Prospect Ownership (SE) --></label>
+        <name>Release_Prospect_Ownership_SE</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Release Prospect Ownership for Call Plan / Call Report (ME) --></label>
+        <name>Release_Prospect_Ownership_for_Call_Plan_Call_Report_ME</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Release Prospect Ownership for Call Plan / Call Report (SE) --></label>
+        <name>Release_Prospect_Ownership_for_Call_Plan_Call_Report_SE</name>
+    </customLabels>
+    <customLabels>
+        <label>ท่านไม่มีสิทธิ์ในการดำเนินการ</label>
+        <name>Release_Tempolary_Ownership</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- SE Lead URL --></label>
+        <name>SE_Lead_URL</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- SME ME Release Date --></label>
+        <name>SME_ME_Release_Date</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- SME Max Record Return --></label>
+        <name>SME_MaxRecordReturn</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- SME SE Release Date --></label>
+        <name>SME_SE_Release_Date</name>
+    </customLabels>
+    <customLabels>
+        <label>ตัวอักษรควรยาวมากกว่า 1 ตัวขึ้นไป</label>
+        <name>Search_MinChar</name>
+    </customLabels>
+    <customLabels>
+        <label>ระบุเงื่อนไขในการค้นหา</label>
+        <name>Search_MinField</name>
+    </customLabels>
+    <customLabels>
+        <label>ผลการค้นหามีมากกว่า 100 รายการ กรุณาระบุข้อมูลเพิ่มเติม</label>
+        <name>Search_More100Records</name>
+    </customLabels>
+    <customLabels>
+        <label>ไม่พบข้อมูล</label>
+        <name>Search_NoMatch</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Search_Not_SME_RM --></label>
+        <name>Search_Not_SME_RM</name>
+    </customLabels>
+    <customLabels>
+        <label>ระบุตัวเลขในการค้นหา</label>
+        <name>Search_Numeric</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Search_TimeOut --></label>
+        <name>Search_TimeOut</name>
+    </customLabels>
+    <customLabels>
+        <label>คุณแน่ใจที่จะทำการส่งยืนยันการเลือกพอร์ต RM/TM จะไม่สามารถดำเนินการแก้ไขได้อีก !!!</label>
+        <name>SubmittedAlert</name>
+    </customLabels>
+    <customLabels>
+        <label>ข้อมูลระบบ</label>
+        <name>System_Section</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- USERROLE_BLANK --></label>
+        <name>USERROLE_BLANK</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Waiting for Credit Setup --></label>
+        <name>Waiting_for_Credit_Setup</name>
+    </customLabels>
+    <customLabels>
+        <label>คุณแน่ใจหรือไม่ที่จะทำการยืนยันรายลูกค้าที่เลือก ???</label>
+        <name>YearEnd_AreYouConfirmtoConfirmation</name>
+    </customLabels>
+    <customLabels>
+        <label>คุณแน่ใจหรือไม่ที่จะทำการลบ ???</label>
+        <name>YearEnd_AreYouConfirmtoRemove</name>
+    </customLabels>
+    <customLabels>
+        <label>คุณแน่ใจหรือไม่ที่จะทำการลบรายการที่ยืนยันแล้ว ???</label>
+        <name>YearEnd_AreYouConfirmtoRemoveConfirmation</name>
+    </customLabels>
+    <customLabels>
+        <label>คุณแน่ใจหรือไม่ที่จะลบรายการที่เลือกแล้วออก ???</label>
+        <name>YearEnd_AreYouConfirmtoRemoveselected</name>
+    </customLabels>
+    <customLabels>
+        <label>คุณแน่ใจหรือไม่ที่จะยืนยันการเลือก ???</label>
+        <name>YearEnd_AreYouConfirmtoSelect</name>
+    </customLabels>
+    <customLabels>
+        <label>คุณแน่ใจหรือไม่ที่จะทำการยืนยัน ???</label>
+        <name>YearEnd_Areyousuretoconfirm</name>
+    </customLabels>
+    <customLabels>
+        <label>ยืนยันการเลือกลูกค้าโดย RM/TM &amp; การเลือกลูกค้าออก</label>
+        <name>YearEnd_ConfirmFinalRM_TM_ReferOut</name>
+    </customLabels>
+    <customLabels>
+        <label>รายชื่อลูกค้าที่ยืนยัน</label>
+        <name>YearEnd_ConfirmList</name>
+    </customLabels>
+    <customLabels>
+        <label>รายชื่อลูกค้าของ (RM/TM)</label>
+        <name>YearEnd_CustomerSelectedbyName</name>
+    </customLabels>
+    <customLabels>
+        <label>รายชื่อลูกค้ารายทีม</label>
+        <name>YearEnd_CustomerSelectedbyTeam</name>
+    </customLabels>
+    <customLabels>
+        <label>รายชื่อลูกค้าทั้งหมด</label>
+        <name>YearEnd_CustomersList</name>
+    </customLabels>
+    <customLabels>
+        <label>เลือกไม่ถูกต้อง</label>
+        <name>YearEnd_InvalidSelection</name>
+    </customLabels>
+    <customLabels>
+        <label>Fields ไม่ถูกต้อง</label>
+        <name>YearEnd_Invalid_Fields</name>
+    </customLabels>
+    <customLabels>
+        <label>รายการคำขอดูแลลูกค้า</label>
+        <name>YearEnd_ListofRequest</name>
+    </customLabels>
+    <customLabels>
+        <label>ทีมของเรา</label>
+        <name>YearEnd_MyTeam</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- YearEnd_NextPage --></label>
+        <name>YearEnd_NextPage</name>
+    </customLabels>
+    <customLabels>
+        <label>ไม่มีรายชื่อลูกค้าที่เลือก</label>
+        <name>YearEnd_NoYearendhavebeenselected</name>
+    </customLabels>
+    <customLabels>
+        <label>คำขอสิทธิ์การดูแลลูกค้า</label>
+        <name>YearEnd_OwnershipRequest</name>
+    </customLabels>
+    <customLabels>
+        <label>กรุณายืนยันข้อมูล!!!</label>
+        <name>YearEnd_PleaseConfirm</name>
+    </customLabels>
+    <customLabels>
+        <label>ยืนยันการ Refresh List !!!</label>
+        <name>YearEnd_PleaseConfirmtoRefreshList</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Pool --></label>
+        <name>YearEnd_Pool</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Port --></label>
+        <name>YearEnd_Port</name>
+    </customLabels>
+    <customLabels>
+        <label>ลูกค้าเดิมในพอร์ต</label>
+        <name>YearEnd_Previouslyownedbyme</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- YearEnd_RecordsPerPage --></label>
+        <name>YearEnd_RecordPerPage</name>
+    </customLabels>
+    <customLabels>
+        <label>รายชื่อลูกค้าที่เลือกออก</label>
+        <name>YearEnd_ReferOutCheckedCustomer</name>
+    </customLabels>
+    <customLabels>
+        <label>รายชื่อลูกค้าที่เลือกออก</label>
+        <name>YearEnd_ReferOutList</name>
+    </customLabels>
+    <customLabels>
+        <label>Segment ที่ Refer ลูกค้าไป</label>
+        <name>YearEnd_ReferOutSegment</name>
+    </customLabels>
+    <customLabels>
+        <label>Team ที่ Refer ลูกค้าออกไปให้</label>
+        <name>YearEnd_ReferOutTeam</name>
+    </customLabels>
+    <customLabels>
+        <label>ยืนยันการเลือกออก</label>
+        <name>YearEnd_ReferOut_Confirm</name>
+    </customLabels>
+    <customLabels>
+        <label>เลือกออก</label>
+        <name>YearEnd_Refer_Out</name>
+    </customLabels>
+    <customLabels>
+        <label>อำเภอ</label>
+        <name>YearEnd_Refer_Out_Aumpur</name>
+    </customLabels>
+    <customLabels>
+        <label>จังหวัด</label>
+        <name>YearEnd_Refer_Out_Province</name>
+    </customLabels>
+    <customLabels>
+        <label>เหตุผลที่เลือกออก</label>
+        <name>YearEnd_Refer_Out_Reason</name>
+    </customLabels>
+    <customLabels>
+        <label>ตำบล</label>
+        <name>YearEnd_Refer_Out_Tumbon</name>
+    </customLabels>
+    <customLabels>
+        <label>ลบข้อมูลการยืนยัน</label>
+        <name>YearEnd_RemoveConfirmation</name>
+    </customLabels>
+    <customLabels>
+        <label>ลบข้อมูลการเลือก</label>
+        <name>YearEnd_RemoveSelection</name>
+    </customLabels>
+    <customLabels>
+        <label>ลบข้อมูลที่ RM เลือกมา</label>
+        <name>YearEnd_Remove_RM_Selection</name>
+    </customLabels>
+    <customLabels>
+        <label>รายละเอียดการขอโอนลูกค้า</label>
+        <name>YearEnd_RequestInformation</name>
+    </customLabels>
+    <customLabels>
+        <label>ขอโอนลูกค้าติดผู้ดูแล</label>
+        <name>YearEnd_RequestOwnership</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Requested_RM_TM --></label>
+        <name>YearEnd_Requested</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Requested Servicing RM --></label>
+        <name>YearEnd_Requested_Servicing_RM</name>
+    </customLabels>
+    <customLabels>
+        <label>บันทึก</label>
+        <name>YearEnd_Save</name>
+    </customLabels>
+    <customLabels>
+        <label>ค้นหา</label>
+        <name>YearEnd_Search</name>
+    </customLabels>
+    <customLabels>
+        <label>ผลการค้นหา</label>
+        <name>YearEnd_SearchResult</name>
+    </customLabels>
+    <customLabels>
+        <label>เลือกลูกค้า</label>
+        <name>YearEnd_SelectCheckedCustomer</name>
+    </customLabels>
+    <customLabels>
+        <label>เลือก Port / Pool</label>
+        <name>YearEnd_SelectPort_Pool</name>
+    </customLabels>
+    <customLabels>
+        <label>เลือก RM/TM</label>
+        <name>YearEnd_SelectRM_TM</name>
+    </customLabels>
+    <customLabels>
+        <label>เลือก Servicing RM</label>
+        <name>YearEnd_SelectServicingRM</name>
+    </customLabels>
+    <customLabels>
+        <label>เลือกและยืนยัน</label>
+        <name>YearEnd_Select_Confirm</name>
+    </customLabels>
+    <customLabels>
+        <label>เลือกเหตุผล</label>
+        <name>YearEnd_Select_a_Reason</name>
+    </customLabels>
+    <customLabels>
+        <label>เลือก Segment</label>
+        <name>YearEnd_Select_a_Segment</name>
+    </customLabels>
+    <customLabels>
+        <label>อำเภอ</label>
+        <name>YearEnd_SelectaAumpur</name>
+    </customLabels>
+    <customLabels>
+        <label>จังหวัด</label>
+        <name>YearEnd_SelectaProvince</name>
+    </customLabels>
+    <customLabels>
+        <label>ตำบล</label>
+        <name>YearEnd_SelectaTumbon</name>
+    </customLabels>
+    <customLabels>
+        <label>ลูกค้าที่เราเลือก</label>
+        <name>YearEnd_SelectedByMe</name>
+    </customLabels>
+    <customLabels>
+        <label>ลูกค้าที่เลือกซ้ำกัน</label>
+        <name>YearEnd_SelectedCountMoreThanOne</name>
+    </customLabels>
+    <customLabels>
+        <label>รายชื่อลูกค้าที่เลือก</label>
+        <name>YearEnd_SelectedList</name>
+    </customLabels>
+    <customLabels>
+        <label>เลือกผู้ดูแล</label>
+        <name>YearEnd_SelectedUserinthisRecords</name>
+    </customLabels>
+    <customLabels>
+        <label>เลือก Refer Out</label>
+        <name>YearEnd_Selected_ReferOut</name>
+    </customLabels>
+    <customLabels>
+        <label>ระบบขัดข้อง</label>
+        <name>YearEnd_Servererror</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Servicing RM --></label>
+        <name>YearEnd_Servicing_RM</name>
+    </customLabels>
+    <customLabels>
+        <label>แสดงทั้งหมด</label>
+        <name>YearEnd_ShowAll</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Do you want to submit all selection --></label>
+        <name>YearEnd_Submit_All_Selection</name>
+    </customLabels>
+    <customLabels>
+        <label>ส่งอนุมัติ</label>
+        <name>YearEnd_Submitted</name>
+    </customLabels>
+    <customLabels>
+        <label>ส่งรายการเลือกทั้งหมด</label>
+        <name>YearEnd_SubmittedAllSelection</name>
+    </customLabels>
+    <customLabels>
+        <label>รายการไม่สมบูรณ์ ไม่สามารถยืนยันได้ !!!</label>
+        <name>YearEnd_TheListisnotcompleted_cannotsubmit</name>
+    </customLabels>
+    <customLabels>
+        <label>ข้อมูลในฟิลด์ด้านล่างไม่ถูกต้อง!!!</label>
+        <name>YearEnd_Thefollowingfieldsareinvalid</name>
+    </customLabels>
+    <customPageWebLinks>
+        <label><!-- CallReportContactLink --></label>
+        <name>CallReportContactLink</name>
+    </customPageWebLinks>
+    <customPageWebLinks>
+        <label>การสร้าง Password</label>
+        <name>Password_Generator</name>
+    </customPageWebLinks>
+    <customTabs>
+        <label>โอนสิทธิ์ผู้ดูแลลูกค้า</label>
+        <name>Bulk_Assignment</name>
+    </customTabs>
+    <customTabs>
+        <label><!-- Customer Search --></label>
+        <name>CustomerSearch</name>
+    </customTabs>
+    <customTabs>
+        <label>แก้ไขข้อมูลแบบกลุ่ม</label>
+        <name>Manual_Batch</name>
+    </customTabs>
+    <customTabs>
+        <label>การเลือกพอร์ตลูกค้า</label>
+        <name>Year_End_Assignment_Page</name>
+    </customTabs>
+    <quickActions>
+        <label><!-- LogACall --></label>
+        <name>LogACall</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewAccount --></label>
+        <name>NewAccount</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewCase --></label>
+        <name>NewCase</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewContact --></label>
+        <name>NewContact</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewEvent --></label>
+        <name>NewEvent</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewGroup --></label>
+        <name>NewGroup</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewLead --></label>
+        <name>NewLead</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewNote --></label>
+        <name>NewNote</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewOpportunity --></label>
+        <name>NewOpportunity</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- NewTask --></label>
+        <name>NewTask</name>
+    </quickActions>
+    <reportTypes>
+        <description><!-- Account with/without Call Report --></description>
+        <label><!-- Account with/without Call Report --></label>
+        <name>Account_with_Call_Report</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Call Reports --></label>
+            <name>Call Reports</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- All Account with Pains and Needs --></description>
+        <label><!-- All Account with Pains and Needs --></label>
+        <name>Account_with_Pains_Needs</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Pains and Needs --></label>
+            <name>Pains and Needs</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- All Call Plans/Call Reports with Opportunities --></description>
+        <label><!-- All Call Plans/Call Reports with Opportunities --></label>
+        <name>All_Call_Plans_Call_Reports_with_Opportunities</name>
+        <sections>
+            <columns>
+                <label><!-- CIS ID: Port / Pool --></label>
+                <name>CIS ID: Port / Pool</name>
+            </columns>
+            <columns>
+                <label><!-- CIS ID: Port/ Pool/ Other --></label>
+                <name>CIS ID: Port/ Pool/ Other</name>
+            </columns>
+            <columns>
+                <label><!-- Created By: Employee ID --></label>
+                <name>Created By: Employee ID</name>
+            </columns>
+            <columns>
+                <label><!-- Created By: Profile --></label>
+                <name>Created By: Profile</name>
+            </columns>
+            <columns>
+                <label><!-- Created By: Role --></label>
+                <name>Created By: Role</name>
+            </columns>
+            <columns>
+                <label><!-- Created By: Team Name --></label>
+                <name>Created By: Team Name</name>
+            </columns>
+            <label><!-- Call Plans / Call Reports --></label>
+            <name>Call Plans / Call Reports</name>
+        </sections>
+        <sections>
+            <columns>
+                <label>วันที่ส่งเคสครั้งแรก</label>
+                <name>Actual RM Submit Date</name>
+            </columns>
+            <columns>
+                <label>วันที่ Cap Front รับเคสครั้งแรก</label>
+                <name>First Application SO Receive Date</name>
+            </columns>
+            <label><!-- Call Reports / Opportunities --></label>
+            <name>Call Reports / Opportunities</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Call Plan --></description>
+        <label><!-- Call Plan --></label>
+        <name>Call_Plan</name>
+        <sections>
+            <columns>
+                <label>เขต</label>
+                <name>Creator AH Name</name>
+            </columns>
+            <columns>
+                <label>ภาค</label>
+                <name>Creator NH Name</name>
+            </columns>
+            <columns>
+                <label>ทีม</label>
+                <name>Creator Team Name</name>
+            </columns>
+            <label><!-- Call Plans / Call Reports --></label>
+            <name>Call Plans / Call Reports</name>
+        </sections>
+        <sections>
+            <label><!-- Call Reports / Opportunities --></label>
+            <name>Call Reports / Opportunities</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Call Plans / Call Reports with Pains and Needs --></description>
+        <label><!-- Call Plans / Call Reports with Pains and Needs --></label>
+        <name>Call_Plans_Call_Reports_with_Pains_and_Needs</name>
+        <sections>
+            <label><!-- Call Plans / Call Reports --></label>
+            <name>Call Plans / Call Reports</name>
+        </sections>
+        <sections>
+            <label><!-- Pains and Needs --></label>
+            <name>Pains and Needs</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Call Report --></description>
+        <label><!-- Call Report --></label>
+        <name>Call_Report</name>
+        <sections>
+            <label><!-- Call Reports --></label>
+            <name>Call Reports</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Call Report / Lead --></description>
+        <label><!-- Call Report / Lead --></label>
+        <name>Call_Report_Lead</name>
+        <sections>
+            <label><!-- Call Reports / Leads --></label>
+            <name>Call Reports / Leads</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Campaign with Customer --></description>
+        <label><!-- Campaign with Customer --></label>
+        <name>Campaign_with_Customer</name>
+        <sections>
+            <label><!-- Campaign Members / Leads --></label>
+            <name>Campaign Members / Leads</name>
+        </sections>
+        <sections>
+            <label><!-- Campaigns --></label>
+            <name>Campaigns</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Campaign with Target List --></description>
+        <label><!-- Campaign with Target List --></label>
+        <name>Campaign_with_Target_List</name>
+        <sections>
+            <label><!-- Campaigns --></label>
+            <name>Campaigns</name>
+        </sections>
+        <sections>
+            <label><!-- Target Lists --></label>
+            <name>Target Lists</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Check_Dynamic_Dashboard --></description>
+        <label><!-- Check_Dynamic_Dashboard --></label>
+        <name>Check_Dynamic_Dashboard</name>
+        <sections>
+            <label><!-- Dashboards --></label>
+            <name>Dashboards</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- ColorVsSLA --></description>
+        <label><!-- ColorVsSLA --></label>
+        <name>ColorVsSLA</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Opportunities --></label>
+            <name>Opportunities</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Customer Visit Monthly Report --></description>
+        <label><!-- Customer Visit Monthly Report --></label>
+        <name>Customer_Visit_Monthly_Report</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <columns>
+                <label>เขต</label>
+                <name>Creator Area Name</name>
+            </columns>
+            <columns>
+                <label>ภาค</label>
+                <name>Creator Network Name</name>
+            </columns>
+            <columns>
+                <label>ทีม</label>
+                <name>Creator Team Name</name>
+            </columns>
+            <label><!-- Call Plans / Call Reports --></label>
+            <name>Call Plans / Call Reports</name>
+        </sections>
+        <sections>
+            <label><!-- Call Reports / Opportunities --></label>
+            <name>Call Reports / Opportunities</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Customer With/Without Pains &amp; Needs --></description>
+        <label><!-- Customer With/Without Pains &amp; Needs --></label>
+        <name>Customer_With_Without_Pains_Needs</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Pains and Needs --></label>
+            <name>Pains and Needs</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Customer with Call Plan/Call Report/Opportunites --></description>
+        <label><!-- Customer with Call Plan/Call Report/Opportunites --></label>
+        <name>Customer_with_Call_Plan_Call_Report_Opportunities</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Call Plans / Call Reports --></label>
+            <name>Call Plans / Call Reports</name>
+        </sections>
+        <sections>
+            <columns>
+                <label><!-- จำนวนเคสที่ตั้งวงเงิน --></label>
+                <name>จำนวนเคสที่ตั้งวงเงิน</name>
+            </columns>
+            <columns>
+                <label><!-- จำนวนเคสที่ส่ง App In --></label>
+                <name>จำนวนเคสที่ส่ง App In</name>
+            </columns>
+            <columns>
+                <label><!-- จำนวนเคสที่เป็น Stock --></label>
+                <name>จำนวนเคสที่เป็น Stock</name>
+            </columns>
+            <columns>
+                <label><!-- ผลการอนุมัติ --></label>
+                <name>ผลการอนุมัติ</name>
+            </columns>
+            <columns>
+                <label><!-- วันที่ส่ง App จริง --></label>
+                <name>วันที่ส่ง App จริง</name>
+            </columns>
+            <columns>
+                <label><!-- วันที่อส./UW รับเรื่อง --></label>
+                <name>วันที่อส./UW รับเรื่อง</name>
+            </columns>
+            <columns>
+                <label><!-- สถานะที่ RM ยอมแพ้ --></label>
+                <name>สถานะที่ RM ยอมแพ้</name>
+            </columns>
+            <label><!-- Call Reports / Opportunities --></label>
+            <name>Call Reports / Opportunities</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Customer with Call Report with Opp --></description>
+        <label><!-- Customer with Call Report with Opp --></label>
+        <name>Customer_with_Call_Report_with_Opp</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <label><!-- Call Plans / Call Reports --></label>
+            <name>Call Plans / Call Reports</name>
+        </sections>
+        <sections>
+            <label><!-- Call Reports / Opportunities --></label>
+            <name>Call Reports / Opportunities</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Customer with Opportunity Products --></description>
+        <label><!-- Customer with Opportunity Products --></label>
+        <name>Customer_with_Opportunity_Products</name>
+        <sections>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <columns>
+                <label>เขต</label>
+                <name>Creator AH</name>
+            </columns>
+            <columns>
+                <label>ภาค</label>
+                <name>Creator NH</name>
+            </columns>
+            <columns>
+                <label>ทีม</label>
+                <name>Creator TM</name>
+            </columns>
+            <columns>
+                <label><!-- RM Name --></label>
+                <name>RM Name</name>
+            </columns>
+            <label><!-- Opportunities --></label>
+            <name>Opportunities</name>
+        </sections>
+        <sections>
+            <label><!-- Opportunity Products --></label>
+            <name>Opportunity Products</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Customers with Call Plans / Call Reports with Associated Customers --></description>
+        <label><!-- Customers with Call Plans / Call Reports with Associated Customers --></label>
+        <name>Customers_with_Call_Plans_Call_Reports_with_Associated_Customers</name>
+        <sections>
+            <label><!-- Associated Customers --></label>
+            <name>Associated Customers</name>
+        </sections>
+        <sections>
+            <label><!-- Call Plans / Call Reports --></label>
+            <name>Call Plans / Call Reports</name>
+        </sections>
+        <sections>
+            <label><!-- Customers --></label>
+            <name>Customers</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Customers with Call Plans / Call Reports with Associated Leads --></description>
+        <label><!-- Customers with Call Plans / Call Reports with Associated Leads --></label>
+        <name>Customers_with_Call_Plans_Call_Reports_with_Associated_Leads</name>
+        <sections>
+            <columns>
+                <label><!-- ชื่อ Lead/Campaign --></label>
+                <name>ชื่อ Lead/Campaign</name>
+            </columns>
+            <label><!-- Associated Leads --></label>
+            <name>Associated Leads</name>
+        </sections>
+        <sections>
+            <label><!-- Call Plans / Call Reports --></label>
+            <name>Call Plans / Call Reports</name>
+        </sections>
+        <sections>
+            <label><!-- Customers --></label>
+            <name>Customers</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Customers with Call Plans / Call Reports with Call Reports / Opportunities --></description>
+        <label><!-- Customers with Call Plans / Call Reports with Call Reports / Opportunities --></label>
+        <name>Customers_with_Call_Plans_Call_Reports_with_Call_Reports_Opportunities</name>
+        <sections>
+            <columns>
+                <label>เขต</label>
+                <name>Creator Area Name</name>
+            </columns>
+            <columns>
+                <label>ภาค</label>
+                <name>Creator Network Name</name>
+            </columns>
+            <columns>
+                <label>ทีม</label>
+                <name>Creator Team Name</name>
+            </columns>
+            <label><!-- Call Plans / Call Reports --></label>
+            <name>Call Plans / Call Reports</name>
+        </sections>
+        <sections>
+            <label><!-- Call Reports / Opportunities --></label>
+            <name>Call Reports / Opportunities</name>
+        </sections>
+        <sections>
+            <label><!-- Customers --></label>
+            <name>Customers</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Dashboard --></description>
+        <label><!-- Dashboard --></label>
+        <name>Dashboard</name>
+        <sections>
+            <label><!-- Dashboards --></label>
+            <name>Dashboards</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Event with Event Member Status --></description>
+        <label><!-- Event with Event Member Status --></label>
+        <name>Event_with_Event_Member_Status</name>
+        <sections>
+            <label><!-- Campaign Members --></label>
+            <name>Campaign Members</name>
+        </sections>
+        <sections>
+            <label><!-- Campaigns --></label>
+            <name>Campaigns</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Event with Event Target List --></description>
+        <label><!-- Event with Event Target List --></label>
+        <name>Event_with_Event_Target_List</name>
+        <sections>
+            <label><!-- Campaigns --></label>
+            <name>Campaigns</name>
+        </sections>
+        <sections>
+            <label><!-- Event Target Lists --></label>
+            <name>Event Target Lists</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- KBank Statement --></description>
+        <label><!-- KBank Statement --></label>
+        <name>KBANK_STM</name>
+        <sections>
+            <label><!-- KBANK STM --></label>
+            <name>KBANK STM</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Opp Field History SP --></description>
+        <label><!-- Opp Field History SP --></label>
+        <name>Opp_Field_History_SP</name>
+        <sections>
+            <label><!-- Opportunities --></label>
+            <name>Opportunities</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Opp SP --></description>
+        <label><!-- Opp SP --></label>
+        <name>Opp_SP</name>
+        <sections>
+            <label><!-- Call Reports / Opportunities --></label>
+            <name>Call Reports / Opportunities</name>
+        </sections>
+        <sections>
+            <columns>
+                <label><!-- Opportunities: Creator --></label>
+                <name>Opportunities: Creator</name>
+            </columns>
+            <columns>
+                <label>เขต</label>
+                <name>Opportunities: Creator AH Name</name>
+            </columns>
+            <columns>
+                <label><!-- Opportunities: Creator AH Role --></label>
+                <name>Opportunities: Creator AH Role</name>
+            </columns>
+            <columns>
+                <label>ภาค</label>
+                <name>Opportunities: Creator NH Name</name>
+            </columns>
+            <columns>
+                <label><!-- Opportunities: Creator NH Role --></label>
+                <name>Opportunities: Creator NH Role</name>
+            </columns>
+            <columns>
+                <label>ถาค</label>
+                <name>Opportunities: Creator Network Name</name>
+            </columns>
+            <columns>
+                <label><!-- Opportunities: Creator Role --></label>
+                <name>Opportunities: Creator Role</name>
+            </columns>
+            <columns>
+                <label><!-- Opportunities: Creator TM Role --></label>
+                <name>Opportunities: Creator TM Role</name>
+            </columns>
+            <columns>
+                <label>ทีม</label>
+                <name>Opportunities: Creator Team Name</name>
+            </columns>
+            <label><!-- Opportunities --></label>
+            <name>Opportunities</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Opp_Workshop --></description>
+        <label><!-- Opp_Workshop --></label>
+        <name>Opp_Workshop</name>
+        <sections>
+            <label><!-- Opportunities / Leads --></label>
+            <name>Opportunities / Leads</name>
+        </sections>
+        <sections>
+            <label><!-- Target Lists --></label>
+            <name>Target Lists</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Opportunity Product Custom --></description>
+        <label><!-- Opportunity Product Custom --></label>
+        <name>Opportunity_Product_Custom</name>
+        <sections>
+            <label><!-- Opportunity Products --></label>
+            <name>Opportunity Products</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Opp with Opportunity Product Custom --></description>
+        <label><!-- Opp with Opportunity Product Custom --></label>
+        <name>OppwithOpportunity_Product_Custom</name>
+        <sections>
+            <columns>
+                <label><!-- วงเงินที่ขอ --></label>
+                <name>วงเงินที่ขอ</name>
+            </columns>
+            <columns>
+                <label><!-- วงเงินอนุมัติล่าสุด --></label>
+                <name>วงเงินอนุมัติล่าสุด</name>
+            </columns>
+            <columns>
+                <label><!-- สถานะ --></label>
+                <name>สถานะ</name>
+            </columns>
+            <label><!-- Opportunities --></label>
+            <name>Opportunities</name>
+        </sections>
+        <sections>
+            <label><!-- Opportunity Products --></label>
+            <name>Opportunity Products</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Profit and Loss --></description>
+        <label><!-- Profit and Loss --></label>
+        <name>Profit_and_Loss</name>
+        <sections>
+            <label><!-- Profit and Loss --></label>
+            <name>Profit and Loss</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Report --></description>
+        <label><!-- Report --></label>
+        <name>Report</name>
+        <sections>
+            <label><!-- Dashboard Components --></label>
+            <name>Dashboard Components</name>
+        </sections>
+        <sections>
+            <label><!-- Reports --></label>
+            <name>Reports</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Stock Pipeline --></description>
+        <label><!-- Stock Pipeline --></label>
+        <name>Stock_Pipeline</name>
+        <sections>
+            <columns>
+                <label><!-- จำนวนเคส --></label>
+                <name>จำนวนเคส</name>
+            </columns>
+            <label><!-- Accounts --></label>
+            <name>Accounts</name>
+        </sections>
+        <sections>
+            <columns>
+                <label><!-- Area Creator --></label>
+                <name>Area Creator</name>
+            </columns>
+            <columns>
+                <label><!-- Network Creator --></label>
+                <name>Network Creator</name>
+            </columns>
+            <columns>
+                <label><!-- RM Name --></label>
+                <name>RM Name</name>
+            </columns>
+            <columns>
+                <label><!-- Team Creator --></label>
+                <name>Team Creator</name>
+            </columns>
+            <columns>
+                <label><!-- จำนวนวัน End-to-End --></label>
+                <name>จำนวนวัน End-to-End</name>
+            </columns>
+            <columns>
+                <label><!-- จำนวนวัน L1 --></label>
+                <name>จำนวนวัน L1</name>
+            </columns>
+            <columns>
+                <label><!-- จำนวนวัน L2 --></label>
+                <name>จำนวนวัน L2</name>
+            </columns>
+            <columns>
+                <label><!-- จำนวนวัน L3 --></label>
+                <name>จำนวนวัน L3</name>
+            </columns>
+            <columns>
+                <label><!-- จำนวนเคส --></label>
+                <name>จำนวนเคส</name>
+            </columns>
+            <columns>
+                <label><!-- ทีม --></label>
+                <name>ทีม</name>
+            </columns>
+            <columns>
+                <label><!-- ภาค --></label>
+                <name>ภาค</name>
+            </columns>
+            <columns>
+                <label><!-- ยอมแพ้ที่สถานะ --></label>
+                <name>ยอมแพ้ที่สถานะ</name>
+            </columns>
+            <columns>
+                <label><!-- รวมจำนวนเคส --></label>
+                <name>รวมจำนวนเคส</name>
+            </columns>
+            <columns>
+                <label><!-- วงเงินต่างขอ --></label>
+                <name>วงเงินต่างขอ</name>
+            </columns>
+            <columns>
+                <label><!-- วงเงินที่ขอ --></label>
+                <name>วงเงินที่ขอ</name>
+            </columns>
+            <columns>
+                <label><!-- วงเงินที่ขอ --></label>
+                <name>วงเงินที่ขอ</name>
+            </columns>
+            <columns>
+                <label><!-- วงเงินที่คาดว่าจะส่ง --></label>
+                <name>วงเงินที่คาดว่าจะส่ง</name>
+            </columns>
+            <columns>
+                <label><!-- วงเงินที่ตั้ง --></label>
+                <name>วงเงินที่ตั้ง</name>
+            </columns>
+            <columns>
+                <label><!-- วงเงินที่สนใจ --></label>
+                <name>วงเงินที่สนใจ</name>
+            </columns>
+            <columns>
+                <label><!-- วงเงินที่อนุมัติ --></label>
+                <name>วงเงินที่อนุมัติ</name>
+            </columns>
+            <columns>
+                <label><!-- วงเงินที่อนุมัติ --></label>
+                <name>วงเงินที่อนุมัติ</name>
+            </columns>
+            <columns>
+                <label><!-- วงเงินรวม --></label>
+                <name>วงเงินรวม</name>
+            </columns>
+            <columns>
+                <label><!-- วันที่คาดว่าจะส่ง App --></label>
+                <name>วันที่คาดว่าจะส่ง App</name>
+            </columns>
+            <columns>
+                <label><!-- วันที่ส่ง App จริง --></label>
+                <name>วันที่ส่ง App จริง</name>
+            </columns>
+            <columns>
+                <label><!-- วันที่อนุมัติ --></label>
+                <name>วันที่อนุมัติ</name>
+            </columns>
+            <columns>
+                <label><!-- วันที่อส./UW รับเรื่อง --></label>
+                <name>วันที่อส./UW รับเรื่อง</name>
+            </columns>
+            <columns>
+                <label><!-- วันที่เยี่ยมลูกค้า --></label>
+                <name>วันที่เยี่ยมลูกค้า</name>
+            </columns>
+            <columns>
+                <label><!-- ส่วนสูญเสีย --></label>
+                <name>ส่วนสูญเสีย</name>
+            </columns>
+            <columns>
+                <label><!-- เขต --></label>
+                <name>เขต</name>
+            </columns>
+            <columns>
+                <label><!-- เจ้าของโอกาส --></label>
+                <name>เจ้าของโอกาส</name>
+            </columns>
+            <label><!-- Opportunities --></label>
+            <name>Opportunities</name>
+        </sections>
+        <sections>
+            <columns>
+                <label><!-- วันที่ตั้งวงเงิน --></label>
+                <name>วันที่ตั้งวงเงิน</name>
+            </columns>
+            <label><!-- Opportunity Products --></label>
+            <name>Opportunity Products</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Target List with Call report2 --></description>
+        <label><!-- Target List with Call report2 --></label>
+        <name>Target_List_with_Call_report2</name>
+        <sections>
+            <label><!-- Call Reports / Leads --></label>
+            <name>Call Reports / Leads</name>
+        </sections>
+        <sections>
+            <columns>
+                <label>สถานะ</label>
+                <name>Status</name>
+            </columns>
+            <columns>
+                <label><!-- ชื่อลูกค้า --></label>
+                <name>ชื่อลูกค้า</name>
+            </columns>
+            <label><!-- Target Lists --></label>
+            <name>Target Lists</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Target List with CallReport --></description>
+        <label><!-- Target List with CallReport --></label>
+        <name>Target_List_with_Callreport</name>
+        <sections>
+            <columns>
+                <label>วันที่ติดต่อ</label>
+                <name>Actual Visit Date</name>
+            </columns>
+            <columns>
+                <label>ช่องทางการติดต่อ</label>
+                <name>Contact Channel</name>
+            </columns>
+            <columns>
+                <label>หมายเหตุความสนใจเพิ่มเติม</label>
+                <name>Memo</name>
+            </columns>
+            <columns>
+                <label>ความสนใจของลูกค้า</label>
+                <name>Offer Interest</name>
+            </columns>
+            <columns>
+                <label>หมายเหตุความสนใจ</label>
+                <name>Reason</name>
+            </columns>
+            <columns>
+                <label>เหตุผลการเข้าเยี่ยม</label>
+                <name>Reasons of Visit</name>
+            </columns>
+            <columns>
+                <label>สถานะ</label>
+                <name>Status</name>
+            </columns>
+            <columns>
+                <label>วัตถุประสงค์การติดต่อ</label>
+                <name>Visit Objective</name>
+            </columns>
+            <label><!-- Call Reports / Leads --></label>
+            <name>Call Reports / Leads</name>
+        </sections>
+        <sections>
+            <columns>
+                <label><!-- Active --></label>
+                <name>Active</name>
+            </columns>
+            <columns>
+                <label>ชื่อลูกค้า</label>
+                <name>Customer Name</name>
+            </columns>
+            <columns>
+                <label><!-- Port / Pool --></label>
+                <name>Port / Pool</name>
+            </columns>
+            <columns>
+                <label><!-- จำนวน (ราย) --></label>
+                <name>จำนวน (ราย)</name>
+            </columns>
+            <columns>
+                <label><!-- ดำเนินการแล้ว (ราย) --></label>
+                <name>ดำเนินการแล้ว (ราย)</name>
+            </columns>
+            <columns>
+                <label><!-- ยังไม่ดำเนินการ (ราย) --></label>
+                <name>ยังไม่ดำเนินการ (ราย)</name>
+            </columns>
+            <label><!-- Target Lists --></label>
+            <name>Target Lists</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Target List with Opp --></description>
+        <label><!-- Target List with Opp --></label>
+        <name>Target_List_with_Opp</name>
+        <sections>
+            <label><!-- Opportunities / Leads --></label>
+            <name>Opportunities / Leads</name>
+        </sections>
+        <sections>
+            <columns>
+                <label><!-- Active --></label>
+                <name>Active</name>
+            </columns>
+            <columns>
+                <label><!-- Port / Pool --></label>
+                <name>Port / Pool</name>
+            </columns>
+            <columns>
+                <label><!-- จำนวน (ราย) --></label>
+                <name>จำนวน (ราย)</name>
+            </columns>
+            <columns>
+                <label><!-- ชื่อลูกค้า --></label>
+                <name>ชื่อลูกค้า</name>
+            </columns>
+            <label><!-- Target Lists --></label>
+            <name>Target Lists</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Target list &amp; Call Report &amp; Campaign --></description>
+        <label><!-- Target list &amp; Call Report &amp; Campaign --></label>
+        <name>Target_list_Call_Report_Campaign</name>
+        <sections>
+            <label><!-- Call Reports / Leads --></label>
+            <name>Call Reports / Leads</name>
+        </sections>
+        <sections>
+            <label><!-- Target Lists --></label>
+            <name>Target Lists</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Team with monthly performance --></description>
+        <label><!-- Team with monthly performance --></label>
+        <name>Team_with_monthly_performance</name>
+        <sections>
+            <label><!-- Monthly Performance --></label>
+            <name>Monthly Performance</name>
+        </sections>
+        <sections>
+            <label><!-- Team Structure --></label>
+            <name>Team Structure</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- User Extension With Call Plans/Call Reports&amp; Opp --></description>
+        <label><!-- User Extension With Call Plans/Call Reports&amp; Opp --></label>
+        <name>User_Extension_With_Call_Report_Opp</name>
+        <sections>
+            <label><!-- Call Plans / Call Reports --></label>
+            <name>Call Plans / Call Reports</name>
+        </sections>
+        <sections>
+            <label><!-- Call Reports / Opportunities --></label>
+            <name>Call Reports / Opportunities</name>
+        </sections>
+        <sections>
+            <label><!-- User Extension --></label>
+            <name>User Extension</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- User Extension with Call Report --></description>
+        <label><!-- User Extension with Call Report --></label>
+        <name>User_Extension_with_Call_Report</name>
+        <sections>
+            <label><!-- Call Plans / Call Reports --></label>
+            <name>Call Plans / Call Reports</name>
+        </sections>
+        <sections>
+            <label><!-- User Extension --></label>
+            <name>User Extension</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- User Extension with Monthly Performance --></description>
+        <label><!-- User Extension with Monthly Performance --></label>
+        <name>User_Extension_with_Monthly_Performance</name>
+        <sections>
+            <label><!-- Monthly Performance --></label>
+            <name>Monthly Performance</name>
+        </sections>
+        <sections>
+            <columns>
+                <label><!-- Name --></label>
+                <name>Name</name>
+            </columns>
+            <columns>
+                <label><!-- Name obsolete --></label>
+                <name>Name obsolete</name>
+            </columns>
+            <columns>
+                <label><!-- Team --></label>
+                <name>Team</name>
+            </columns>
+            <columns>
+                <label><!-- Team Link --></label>
+                <name>Team Link</name>
+            </columns>
+            <label><!-- User Extension --></label>
+            <name>User Extension</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- User Object --></description>
+        <label><!-- User Object --></label>
+        <name>User_Object</name>
+        <sections>
+            <label><!-- Users --></label>
+            <name>Users</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- Year-End Assignment --></description>
+        <label><!-- Year-End Assignment --></label>
+        <name>Year_End_Assignment</name>
+        <sections>
+            <label><!-- Year-End Assignment --></label>
+            <name>Year-End Assignment</name>
+        </sections>
+        <sections>
+            <label><!-- Year-End Assignment Selections --></label>
+            <name>Year-End Assignment Selections</name>
+        </sections>
+    </reportTypes>
+    <reportTypes>
+        <description><!-- aa --></description>
+        <label><!-- aa --></label>
+        <name>aaaa</name>
+        <sections>
+            <label><!-- Call Reports / Leads --></label>
+            <name>Call Reports / Leads</name>
+        </sections>
+        <sections>
+            <label><!-- Target Lists --></label>
+            <name>Target Lists</name>
+        </sections>
+    </reportTypes>
+</Translations>

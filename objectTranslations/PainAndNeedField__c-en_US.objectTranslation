@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>PainAndNeedField</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>PainAndGainField</value>
+    </caseValues>
+    <fields>
+        <label><!-- CallReportCISFieldId --></label>
+        <name>CallReportCISFieldId__c</name>
+    </fields>
+    <fields>
+        <label><!-- CallReportFieldId --></label>
+        <name>CallReportFieldId__c</name>
+    </fields>
+    <fields>
+        <label><!-- PainAndNeedObjectId --></label>
+        <name>PainAndNeedObjectId__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

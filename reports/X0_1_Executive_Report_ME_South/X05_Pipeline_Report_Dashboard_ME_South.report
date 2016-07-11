@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>Opportunity.Total_Amount__c:SUM/1000000</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>วงเงินรวม (ลบ.)</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>(Opportunity.Total_Amount__c:SUM/RowCount)/1000000</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA2</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>วงเงินเฉลี่ยต่อเคส (ลบ.)</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_95756402</developerName>
+        <masterLabel>Leg</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>Account.Opportunities$StageName</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Stock Negotiation</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Create Write Up</sourceValue>
+            </sourceValues>
+            <value>L1</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Waiting for Credit Approval</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Case is Rejected</sourceValue>
+            </sourceValues>
+            <value>L2</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Waiting for Credit Setup</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Partial Loan Setup</sourceValue>
+            </sourceValues>
+            <value>L3</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Closed Lost</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Auto Closed</sourceValue>
+            </sourceValues>
+            <value>Close Lost</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>All Loan Setup</sourceValue>
+            </sourceValues>
+            <value>Close Won</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_82157145</developerName>
+        <masterLabel>Stage</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Account.Opportunities$StageName</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Stock Negotiation</sourceValue>
+            </sourceValues>
+            <value>RM เจรจากับลูกค้า</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Create Write Up</sourceValue>
+            </sourceValues>
+            <value>RM จัดทำใบเสนอเรื่อง</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Waiting for Credit Approval</sourceValue>
+            </sourceValues>
+            <value>UW พิจารณาความเสี่ยง</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Waiting for Credit Setup</sourceValue>
+            </sourceValues>
+            <value>UW อนุมัติแล้วรอ RM ดำเนินการเพื่อตั้งวงเงิน</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>All Loan Setup</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Partial Loan Setup</sourceValue>
+            </sourceValues>
+            <value>RM ดำเนินการตั้งวงเงินได้</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Closed Lost</sourceValue>
+            </sourceValues>
+            <value>RM ยอมแพ้</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Case is Rejected</sourceValue>
+            </sourceValues>
+            <value>UW ปฏิเสธ/คืนเรื่อง</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Auto Closed</sourceValue>
+            </sourceValues>
+            <value>Auto Closed</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <aggregate>Sum</aggregate>
+            <axisBinding>y</axisBinding>
+            <column>Account.Opportunities$Number_of_Opp__c</column>
+        </chartSummaries>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>FORMULA1</column>
+        </chartSummaries>
+        <chartType>VerticalColumn</chartType>
+        <enableHoverLabels>true</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>BucketField_82157145</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Tiny</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>Account.Opportunities$Name</field>
+    </columns>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account$Name_Report__c</field>
+    </columns>
+    <columns>
+        <field>BucketField_95756402</field>
+    </columns>
+    <columns>
+        <field>Account.Opportunities$L1day__c</field>
+    </columns>
+    <columns>
+        <field>Account.Opportunities$Actual_Visit_Date__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account.Opportunities$Amount_Report_s__c</field>
+    </columns>
+    <columns>
+        <field>Account.Opportunities$Tentative_Application_Submit_Date__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account.Opportunities$Opportunity_Amount_s__c</field>
+    </columns>
+    <columns>
+        <field>Account.Opportunities$L2day__c</field>
+    </columns>
+    <columns>
+        <field>Account.Opportunities$First_Application_SO_Receive_Date__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account.Opportunities$Requested_Amount_s__c</field>
+    </columns>
+    <columns>
+        <field>Account.Opportunities$L3day__c</field>
+    </columns>
+    <columns>
+        <field>Account.Opportunities$Approval_Workout_Date__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account.Opportunities$Approved_Amount_s__c</field>
+    </columns>
+    <columns>
+        <field>Account.Opportunities.Opportunity_Products__r$Setup_Date__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account.Opportunities$Setup_Amount_s__c</field>
+    </columns>
+    <columns>
+        <field>Account.Opportunities$E2Eday__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account.Opportunities$Lost_Amount_s__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account.Opportunities$Number_of_Opp__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Account.Opportunities$Is_Pipeline_This_Month__c</column>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Opportunities$Owner_NetworkName__c</column>
+            <operator>contains</operator>
+            <value>เครือข่ายลูกค้าผู้ประกอบการ 1 (กทม.4),เครือข่ายลูกค้าผู้ประกอบการ 1 (ภาคใต้</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.Opportunities$Owner_NH__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.Opportunities$Owner_AH__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_82157145</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>05. Pipeline Report - Dashboard</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Stock_Pipeline__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <sortColumn>Account.Opportunities$Actual_Visit_Date__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Account.Opportunities$Actual_Visit_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

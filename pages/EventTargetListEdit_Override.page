@@ -1,0 +1,3 @@
+<apex:page standardController="Event_Target_List__c" >
+	<apex:pageMessage summary="Event Target Lists cannot edit." severity="warning" strength="3" />
+</apex:page>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Call Report / Opportunity --></value>
+    </caseValues>
+    <fields>
+        <label>เขต</label>
+        <name>AH__c</name>
+    </fields>
+    <fields>
+        <label>วันเยี่ยมจริง</label>
+        <name>Actual_Visit_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- App No --></label>
+        <name>App_No_F__c</name>
+    </fields>
+    <fields>
+        <label><!-- Call Plan / Call Report --></label>
+        <name>Call_Plan_Call_Report__c</name>
+        <relationshipLabel><!-- Call Reports / Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>ผลการเยี่ยม</label>
+        <name>Call_Result_Activity__c</name>
+    </fields>
+    <fields>
+        <label>วันที่คาดว่าจะตั้งวงเงิน</label>
+        <name>Close_Date__c</name>
+    </fields>
+    <fields>
+        <label>ชื่อผู้ติดต่อ</label>
+        <name>Contact_Person__c</name>
+    </fields>
+    <fields>
+        <label>Flag การเอาผู้ดูแลออก</label>
+        <name>Customer_Owner_Release_Flag__c</name>
+    </fields>
+    <fields>
+        <label>บันทึก</label>
+        <name>Memo__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of App In --></label>
+        <name>Number_of_App_In__c</name>
+    </fields>
+    <fields>
+        <label>จำนวนวันที่สร้าง</label>
+        <name>Number_of_Day_Created__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Setup --></label>
+        <name>Number_of_Setup__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Stock --></label>
+        <name>Number_of_Stock__c</name>
+    </fields>
+    <fields>
+        <label>ความสนใจ</label>
+        <name>Offer_Interest__c</name>
+    </fields>
+    <fields>
+        <label>จำนวน (บาท)</label>
+        <name>Opportunity_Amount__c</name>
+    </fields>
+    <fields>
+        <label>ชื่อ Stock</label>
+        <name>Opportunity_Name__c</name>
+        <relationshipLabel><!-- Call Reports / Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>วันที่นัด</label>
+        <name>Plan_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Call Plan / Call Report --></label>
+        <name>Primary_Call_Plan_Call_Report__c</name>
+    </fields>
+    <fields>
+        <label>ช่วง</label>
+        <name>Stage__c</name>
+    </fields>
+    <fields>
+        <label>สถานะ</label>
+        <name>Status__c</name>
+    </fields>
+    <fields>
+        <label>วันที่คาดว่าจะส่ง App</label>
+        <name>Tentative_App_Submit_Date__c</name>
+    </fields>
+    <fields>
+        <label>วัตถุประสงค์การติดต่อ</label>
+        <name>Visit_Objective__c</name>
+    </fields>
+    <layouts>
+        <layout>Call Report/Opportunity Layout</layout>
+        <sections>
+            <label>ข้อมูลแผนการเยี่ยม/ข้อมูลผลการเยี่ยม</label>
+            <section>Call Plan / Report Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel><!-- REF# --></nameFieldLabel>
+</CustomObjectTranslation>

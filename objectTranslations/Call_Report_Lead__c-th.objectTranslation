@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Call Report / Lead --></value>
+    </caseValues>
+    <fields>
+        <label><!-- Call Plan / Call Report --></label>
+        <name>Call_Plan_Call_Report__c</name>
+        <relationshipLabel><!-- Call Reports / Leads --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Call Report / Lead Status --></label>
+        <name>Call_Report_Lead_Status__c</name>
+        <picklistValues>
+            <masterLabel>Customer Interested</masterLabel>
+            <translation><!-- Customer Interested --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Interested</masterLabel>
+            <translation><!-- Not Interested --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Interested This Time</masterLabel>
+            <translation><!-- Not Interested This Time --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plan</masterLabel>
+            <translation><!-- Plan --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>ชื่อแคมเปญ</label>
+        <name>Campaign_Name__c</name>
+    </fields>
+    <fields>
+        <label>เขต</label>
+        <name>Creator_AH__c</name>
+    </fields>
+    <fields>
+        <label>ภาค</label>
+        <name>Creator_NH__c</name>
+    </fields>
+    <fields>
+        <label>ทีม</label>
+        <name>Creator_Team__c</name>
+    </fields>
+    <fields>
+        <label>วันที่สิ้นสุด</label>
+        <name>End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- IsInterested --></label>
+        <name>IsInterested__c</name>
+    </fields>
+    <fields>
+        <label><!-- IsNotInterested --></label>
+        <name>IsNotInterested__c</name>
+    </fields>
+    <fields>
+        <label>วันเริ่มต้น</label>
+        <name>Start_Date__c</name>
+    </fields>
+    <fields>
+        <label>สถานะ</label>
+        <name>Status__c</name>
+    </fields>
+    <fields>
+        <label>รายชื่อกลุ่มเป้าหมาย</label>
+        <name>Target_List__c</name>
+        <relationshipLabel><!-- Call Reports / Leads --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>ประเภท</label>
+        <name>Type__c</name>
+    </fields>
+    <layouts>
+        <layout>Lead Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>ข้อมูล Lead</label>
+            <section>Lead Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel><!-- REF# --></nameFieldLabel>
+    <webLinks>
+        <label>ลงทะเบียน</label>
+        <name>Register</name>
+    </webLinks>
+</CustomObjectTranslation>

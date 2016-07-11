@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>IF( Monthly_Performance__c.Total_Face_to_Face_Call__c:SUM&gt; 0, Monthly_Performance__c.Face_to_Face__c:SUM/Monthly_Performance__c.Total_Face_to_Face_Call__c:SUM,0)</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>% Face to Face</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>IF( Monthly_Performance__c.Total_Face_to_Face_Call__c:SUM&gt; 0, Monthly_Performance__c.Phone_Call__c:SUM/Monthly_Performance__c.Total_Face_to_Face_Call__c:SUM,0)</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA2</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>% Phone Call</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>IF( Monthly_Performance__c.Total_Face_to_Face_Call__c:SUM&gt; 0, (Monthly_Performance__c.Face_to_Face__c:SUM+Monthly_Performance__c.Phone_Call__c:SUM)/Monthly_Performance__c.Total_Face_to_Face_Call__c:SUM,0)</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA4</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>% Total</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>User_Extension__c$Number_of_RM__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>User_Extension__c.Monthly_Performance__r$Face_to_Face__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>User_Extension__c.Monthly_Performance__r$Phone_Call__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>User_Extension__c.Monthly_Performance__r$Total_Face_to_Face_Call__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>User_Extension__c$Team_Structure__c</column>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>User_Extension__c$Position__c</column>
+            <operator>equals</operator>
+            <value>RM,Team Manager</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>User_Extension__c.Monthly_Performance__r$Date__c</column>
+            <operator>equals</operator>
+            <value>LAST_MONTH</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>User_Extension__c$Active__c</column>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>User_Extension__c$Area__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>User_Extension__c$Team_Report__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>User_Extension__c$Name__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>AH : Activity by Contact Type Last Month</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>User_Extension_with_Monthly_Performance__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>User_Extension__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

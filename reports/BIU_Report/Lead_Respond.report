@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_64393457</developerName>
+        <masterLabel>Status</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Target_List__c$Status__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>New</sourceValue>
+            </sourceValues>
+            <value>New</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Registered</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Done</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Interested</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>App In</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Customer Interested</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Approved</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Loan Setup</sourceValue>
+            </sourceValues>
+            <value>Registered</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Not interested</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Not Interested This Time</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Interested but not register</sourceValue>
+            </sourceValues>
+            <value>Not Interested</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>Target_List__c$Name</field>
+    </columns>
+    <columns>
+        <field>Target_List__c$CIS_ID_Prospect_Name__c</field>
+    </columns>
+    <columns>
+        <field>Target_List__c$Lead_Campaign__c.Name</field>
+    </columns>
+    <columns>
+        <field>Target_List__c$CIS_ID_Prospect_Name__c.Name_Report__c</field>
+    </columns>
+    <columns>
+        <field>Target_List__c$Customer_Owner__c</field>
+    </columns>
+    <columns>
+        <field>BucketField_64393457</field>
+    </columns>
+    <columns>
+        <field>Target_List__c.Associated_Leads__r$Call_Plan_Call_Report__c.Actual_Visit_Date__c</field>
+    </columns>
+    <columns>
+        <field>Target_List__c.Associated_Leads__r$Call_Plan_Call_Report__c.Status__c</field>
+    </columns>
+    <columns>
+        <field>Target_List__c.Associated_Leads__r$CreatedBy</field>
+    </columns>
+    <columns>
+        <field>Target_List__c$Register__c</field>
+    </columns>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Target_List__c$CIS_ID_Prospect_Name__c.Network_Name__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Target_List__c$CIS_ID_Prospect_Name__c.Area_Name__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Target_List__c$CIS_ID_Prospect_Name__c.Team_Name__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Lead Respond</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Target_list_Call_Report_Campaign__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Target_List__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

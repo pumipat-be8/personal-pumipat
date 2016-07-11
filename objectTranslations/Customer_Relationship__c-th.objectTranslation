@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Customer Relationship --></value>
+    </caseValues>
+    <fields>
+        <label>ชื่อผู้ติดต่อ</label>
+        <name>Contact_Person_Name__c</name>
+    </fields>
+    <fields>
+        <label>ผู้ติดต่อ</label>
+        <name>Contact_Person__c</name>
+        <relationshipLabel><!-- Customer Relationship --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>ลูกค้า</label>
+        <name>Customer_1Mashup__c</name>
+    </fields>
+    <fields>
+        <label>ลูกค้า</label>
+        <name>Customer_1__c</name>
+        <relationshipLabel><!-- Customer Relationship --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>ลูกค้า</label>
+        <name>Customer_2Mashup__c</name>
+    </fields>
+    <fields>
+        <label>ลูกค้า</label>
+        <name>Customer_2__c</name>
+        <relationshipLabel><!-- Customer Relationship (Customer) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>ประเภทความสัมพันธ์</label>
+        <name>Relationship_Type__c</name>
+        <picklistValues>
+            <masterLabel>Is Owner Of</masterLabel>
+            <translation><!-- Is Owner Of --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Is Parent Account Of</masterLabel>
+            <translation><!-- Is Parent Account Of --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Customer with Contact Person</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Customer with Customer</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel><!-- REF# --></nameFieldLabel>
+    <recordTypes>
+        <label>ลูกค้ากับบุคคลที่ิติดต่อ</label>
+        <name>Customer_with_Contact_Person</name>
+    </recordTypes>
+    <recordTypes>
+        <label>ลูกค้ากับลูกค้า</label>
+        <name>Customer_with_Customer</name>
+    </recordTypes>
+</CustomObjectTranslation>

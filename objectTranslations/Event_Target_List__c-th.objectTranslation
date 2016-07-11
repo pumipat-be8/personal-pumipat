@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Event Target List --></value>
+    </caseValues>
+    <fields>
+        <label><!-- Benefit Spent --></label>
+        <name>Benefit_Spent__c</name>
+    </fields>
+    <fields>
+        <label><!-- CIS ID/Prospect Name --></label>
+        <name>CIS_ID_Prospect_Name__c</name>
+        <relationshipLabel><!-- Event Target Lists --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>ชื่อลูกค้า/บริษัท</label>
+        <name>Customer_Name__c</name>
+    </fields>
+    <fields>
+        <label>ผู้ดูแล</label>
+        <name>Customer_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Cost --></label>
+        <name>Event_Cost__c</name>
+    </fields>
+    <fields>
+        <label>วันสิ้นสุดกิจกรรม</label>
+        <name>Event_End_Date__c</name>
+    </fields>
+    <fields>
+        <label>ชื่อกิจกรรม</label>
+        <name>Event_Name__c</name>
+        <relationshipLabel><!-- Event Target Lists --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Event Record Type --></label>
+        <name>Event_Record_Type__c</name>
+    </fields>
+    <fields>
+        <label>วันเริ่มกิจกรรม</label>
+        <name>Event_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Year --></label>
+        <name>Event_Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Income to SME --></label>
+        <name>Income_to_SME__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ownership --></label>
+        <name>Ownership__c</name>
+    </fields>
+    <fields>
+        <label><!-- Port/Pool --></label>
+        <name>Port_Pool__c</name>
+    </fields>
+    <fields>
+        <label><!-- RM Contact --></label>
+        <name>RM_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remaining Benefit --></label>
+        <name>Remaining_Benefit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Going</masterLabel>
+            <translation><!-- Going --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Show Up</masterLabel>
+            <translation><!-- No Show Up --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Going</masterLabel>
+            <translation><!-- Not Going --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Show Up</masterLabel>
+            <translation><!-- Show Up --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Total Benefit Contact --></label>
+        <name>Total_Benefit_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Contact of Customers --></label>
+        <name>Total_Contact_of_Customers__c</name>
+    </fields>
+    <fields>
+        <label>สถานที่</label>
+        <name>Venue__c</name>
+    </fields>
+    <layouts>
+        <layout>Event Target List Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Customer Information --></label>
+            <section>Customer Information</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel><!-- REF# --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>ไม่อนุญาตให้เปลี่ยนชื่อ Event</errorMessage>
+        <name>cannot_change_event_name</name>
+    </validationRules>
+</CustomObjectTranslation>

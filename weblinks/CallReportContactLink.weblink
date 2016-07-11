@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPageWebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <availability>online</availability>
+    <displayType>link</displayType>
+    <linkType>javascript</linkType>
+    <masterLabel>CallReportContactLink</masterLabel>
+    <openType>onClickJavaScript</openType>
+    <protected>false</protected>
+    <url>{!REQUIRESCRIPT(&apos;/resource/callreportcontact&apos;)} 
+
+var contactElm = document.getElementById(&apos;CF{!$Setup.CallPlanCallReportField__c.Contact_Person_Id__c}_lkwgt&apos;);
+var accountlkidElm = document.getElementById(&apos;{!$Setup.CallPlanCallReportField__c.AccountIdFieldId__c}_lkid&apos;);
+var saveElm = document.getElementsByName(&quot;save&quot;);
+var saveUrlElm = document.getElementById(&apos;saveURL&apos;);
+if(contactElm!==null){ 
+	var butElm = document.createElement(&quot;button&quot;);
+	butElm.innerHTML = &apos;Create New Contact&apos;;
+	butElm.onclick = function(e){
+		var accountIdFromUrl = getUrlParam(&quot;accid&quot;);
+		var accountId=&quot;&quot;; 
+
+		var param = &quot;accountId&quot;.replace(/[\[]/,&quot;\\\[&quot;).replace(/[\]]/,&quot;\\\]&quot;);
+	    var exp = &quot;[\\?&amp;]&quot;+param+&quot;=([^&amp;#]*)&quot;;
+	    var regexp = new RegExp( exp ); 
+	    var results = regexp.exec( saveUrlElm.value );
+	    if( results == null ){
+	        accountId = &quot;&quot;;
+	    } else {
+	        accountId = results[1];
+	    }
+	    accountId = ((typeof(accountlkidElm) != &apos;undefined&apos; &amp;&amp; accountlkidElm != null)?accountlkidElm.value:&quot;&quot;);
+
+		if(accountId==&quot;&quot; &amp;&amp; accountIdFromUrl!=&quot;&quot;) accountId = accountIdFromUrl;
+		
+		window.open(&quot;/003/e&quot;+((accountId!=&quot;&quot; &amp;&amp; accountId!=&quot;000000000000000&quot; &amp;&amp; typeof accountId!==&quot;undefined&quot;)?(&quot;?accid=&quot;+accountId):&quot;&quot;)); 
+
+		e.preventDefault();
+	};
+	contactElm.parentNode.insertBefore(butElm, contactElm.nextSibling);
+
+	for (var i = 0, len = saveElm.length; i &lt; len; i++) {
+		saveElm[i].onclick = function(e){
+			if(saveUrlElm.value.endsWith(&apos;=&apos;)){
+				saveUrlElm.value = saveUrlElm.value + ((typeof(accountlkidElm) != &apos;undefined&apos; &amp;&amp; accountlkidElm != null)?accountlkidElm.value:&quot;&quot;);
+			}else if(saveUrlElm.value.endsWith(&apos;undefined&apos;)){
+				saveUrlElm.value = &apos;/apex/CallReport_OverrideEdit?accountId=&apos; + ((typeof(accountlkidElm) != &apos;undefined&apos; &amp;&amp; accountlkidElm != null)?accountlkidElm.value:&quot;&quot;);
+			}
+		};
+	}
+}</url>
+</CustomPageWebLink>

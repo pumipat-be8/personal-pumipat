@@ -1,0 +1,11 @@
+Dear {!Call_Report__c.CreatedBy}
+
+ตาม Call Plan ที่ท่านระบุการออกเยี่ยมลูกค้าราย CIS:  {!Call_Report__c.CIS_ID__c} ในวันที่  {!Call_Report__c.Plan_Date__c}  ทาง 
+{!Call_Report__c.Accompanied_By_Names__c}
+ขอแจ้งเข้าร่วมลูกค้ารายดังกล่าวด้วยค่ะ หากมีการเปลี่ยนแปลงเวลานัดหมาย หรือต้องการข้อมูลเพิ่มเติม  กรุณาติดต่อ 
+{!NullValue(Call_Report__c.Accompanied_By_Names__c, "{!Call_Report__c.CEM_MS_Contact_Information__c")}
+
+
+ขอขอบคุณ
+{!Call_Report__c.Accompanied_By_Names__c}
+[อีเมลล์ฉบับนี้ถูกสร้างอัตโนมัติโดยระบบ Salesforce]

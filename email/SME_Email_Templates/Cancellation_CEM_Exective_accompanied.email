@@ -1,0 +1,9 @@
+Dear {!Call_Report__c.CreatedBy}
+
+ตามที่ {!Call_Report__c.Accompanied_By_Names__c} ได้แจ้งขอเข้าร่วมเยี่ยมลูกค้า CIS: {!Call_Report__c.CIS_ID__c}  พร้อมทีมขายในวันที่ {!Call_Report__c.Plan_Date__c}   ทาง {!Call_Report__c.Accompanied_By_Names__c}   ขออนุญาตยกเลิกการนัดหมายดังกล่าว
+สามารถสอบถามข้อมูลเพิ่มเติมได้ที่ {!Call_Report__c.Accompanied_By_Names__c} , {!Call_Report__c.CEM_MS_Contact_Information__c}
+
+ขออภัยในความไม่สะดวก
+ขอขอบคุณ
+{!Call_Report__c.Accompanied_By_Names__c} 
+[อีเมลล์ฉบับนี้ถูกสร้างอัตโนมัติโดยระบบ Salesforce]

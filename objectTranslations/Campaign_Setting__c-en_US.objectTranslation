@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Campaign Setting</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Campaign Setting</value>
+    </caseValues>
+    <fields>
+        <label><!-- NewBooking Code --></label>
+        <name>NewBooking_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Register Period --></label>
+        <name>Register_Period__c</name>
+    </fields>
+    <fields>
+        <label><!-- ThankYou Code --></label>
+        <name>ThankYou_Code__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

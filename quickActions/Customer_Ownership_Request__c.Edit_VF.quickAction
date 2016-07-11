@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This Action will open Refer Out edit page on SF1</description>
+    <height>250</height>
+    <label>Edit</label>
+    <page>Account_ReferOutInformation_Page</page>
+    <type>VisualforcePage</type>
+    <width>-100</width>
+</QuickAction>

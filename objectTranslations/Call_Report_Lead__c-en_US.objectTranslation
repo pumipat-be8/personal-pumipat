@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Call Report / Lead</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Call Reports / Leads</value>
+    </caseValues>
+    <fields>
+        <label><!-- Call Plan / Call Report --></label>
+        <name>Call_Plan_Call_Report__c</name>
+        <relationshipLabel><!-- Call Reports / Leads --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Call Report / Lead Status --></label>
+        <name>Call_Report_Lead_Status__c</name>
+        <picklistValues>
+            <masterLabel>Customer Interested</masterLabel>
+            <translation><!-- Customer Interested --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Interested</masterLabel>
+            <translation><!-- Not Interested --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Interested This Time</masterLabel>
+            <translation><!-- Not Interested This Time --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plan</masterLabel>
+            <translation><!-- Plan --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Campaign Name --></label>
+        <name>Campaign_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Creator AH --></label>
+        <name>Creator_AH__c</name>
+    </fields>
+    <fields>
+        <label><!-- Creator NH --></label>
+        <name>Creator_NH__c</name>
+    </fields>
+    <fields>
+        <label><!-- Creator Team --></label>
+        <name>Creator_Team__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- IsInterested --></label>
+        <name>IsInterested__c</name>
+    </fields>
+    <fields>
+        <label><!-- IsNotInterested --></label>
+        <name>IsNotInterested__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target List --></label>
+        <name>Target_List__c</name>
+        <relationshipLabel><!-- Call Reports / Leads --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+    </fields>
+    <layouts>
+        <layout>Lead Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Lead Information --></label>
+            <section>Lead Information</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Register --></label>
+        <name>Register</name>
+    </webLinks>
+</CustomObjectTranslation>

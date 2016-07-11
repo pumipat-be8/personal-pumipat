@@ -1,0 +1,1348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>วงเงินที่ลูกค้าต้องการ</value>
+        </caseValues>
+        <name>amount_opportunity</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>วันที่คาดว่าจะตั้งวงเงิน</value>
+        </caseValues>
+        <name>close_date_opportunity</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>ชื่อ Stock</value>
+        </caseValues>
+        <name>opportunity_name</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>สถานะ</value>
+        </caseValues>
+        <name>stage_name_opportunity</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>สถานะ</value>
+        </caseValues>
+        <name>stage_opportunity</name>
+    </fields>
+    <fields>
+        <label><!-- APP1 --></label>
+        <name>APP1__c</name>
+    </fields>
+    <fields>
+        <label><!-- APP2 --></label>
+        <name>APP2__c</name>
+    </fields>
+    <fields>
+        <label><!-- APP3 --></label>
+        <name>APP3__c</name>
+    </fields>
+    <fields>
+        <label><!-- APP4 --></label>
+        <name>APP4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Active Opportunity --></label>
+        <name>Active_Opportunity__c</name>
+        <relationshipLabel><!-- Active Opportunity --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>วันที่ Cap Front รับเคสครั้งล่าสุด</label>
+        <name>Actual_Application_Submit_Date__c</name>
+    </fields>
+    <fields>
+        <label>วันที่ส่งเคสครั้งแรก</label>
+        <name>Actual_RM_Submit_Date__c</name>
+    </fields>
+    <fields>
+        <label>วันที่ติดต่อ</label>
+        <name>Actual_Visit_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount_report --></label>
+        <name>Amount_Report__c</name>
+    </fields>
+    <fields>
+        <label>วงเงินที่คาดว่าจะได้</label>
+        <name>Amount_Report_s__c</name>
+    </fields>
+    <fields>
+        <help><!-- กรณี Non CMAS ไม่ต้องทำการกรอกเลข App --></help>
+        <label>หมายเลข App (CMAS ให้กรอกเอง)</label>
+        <name>Application_Number__c</name>
+    </fields>
+    <fields>
+        <label>สถานะการพิจารณา</label>
+        <name>Approval_Status__c</name>
+        <picklistValues>
+            <masterLabel>Decline</masterLabel>
+            <translation>ปฏิเสธ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Final Approve</masterLabel>
+            <translation>อนุมัติขั้นสุดท้าย</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lapse</masterLabel>
+            <translation>คืนเรื่อง</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pre Approve</masterLabel>
+            <translation>อนุมัติชั้นต้น</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Work in Progress</masterLabel>
+            <translation>อยู่ระหว่างพิจารณา</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>วันที่อนุมัติครั้งล่าสุด</label>
+        <name>Approval_Workout_Date__c</name>
+    </fields>
+    <fields>
+        <label>วันที่อนุมัติ</label>
+        <name>Approve_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- วงเงินที่ได้รับอนุมัติล่าสุด --></help>
+        <label>วงเงินที่อนุมัติครั้งล่าสุด (SP)</label>
+        <name>Approve_Latest_Amount_By_SP__c</name>
+    </fields>
+    <fields>
+        <label>วงเงินที่อนุมัติ (Opportunity Products)</label>
+        <name>Approved_Amount__c</name>
+    </fields>
+    <fields>
+        <label>วงเงินที่อนุมัติ</label>
+        <name>Approved_Amount_s__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approved Option --></label>
+        <name>Approved_Option__c</name>
+    </fields>
+    <fields>
+        <label><!-- Booking AHID --></label>
+        <name>Booking_AHID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Booking AHName --></label>
+        <name>Booking_AHName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Booking AH --></label>
+        <name>Booking_AH__c</name>
+    </fields>
+    <fields>
+        <label><!-- Booking AreaName --></label>
+        <name>Booking_AreaName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Booking NHID --></label>
+        <name>Booking_NHID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Booking NHName --></label>
+        <name>Booking_NHName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Booking NH --></label>
+        <name>Booking_NH__c</name>
+    </fields>
+    <fields>
+        <label><!-- Booking NetworkName --></label>
+        <name>Booking_NetworkName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Booking RCCode --></label>
+        <name>Booking_RCCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Booking RMID --></label>
+        <name>Booking_RMID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Booking RMName --></label>
+        <name>Booking_RMName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Booking Segment --></label>
+        <name>Booking_Segment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Booking TMID --></label>
+        <name>Booking_TMID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Booking TM Name --></label>
+        <name>Booking_TM_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Booking TeamName --></label>
+        <name>Booking_TeamName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Booking Team --></label>
+        <name>Booking_Team__c</name>
+    </fields>
+    <fields>
+        <help><!-- วันที่ขอเช็คบูโร --></help>
+        <label><!-- Bureau Verification Date --></label>
+        <name>Bureau_Verification_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Code --></label>
+        <name>Business_Code_Formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Code --></label>
+        <name>Business_Code__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- CIS Color Symbol --></label>
+        <name>CIS_Color_Symbol__c</name>
+    </fields>
+    <fields>
+        <label><!-- CIS Color --></label>
+        <name>CIS_Color__c</name>
+    </fields>
+    <fields>
+        <label><!-- CIS ID --></label>
+        <name>CIS_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cancel Amount --></label>
+        <name>Cancel_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Close Opp AH --></label>
+        <name>Close_Opp_AH__c</name>
+    </fields>
+    <fields>
+        <label><!-- Close Opp NH --></label>
+        <name>Close_Opp_NH__c</name>
+    </fields>
+    <fields>
+        <label><!-- Close Opp Owner --></label>
+        <name>Close_Opp_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Close Opp TM --></label>
+        <name>Close_Opp_TM__c</name>
+    </fields>
+    <fields>
+        <label>RM ยอมแพ้ที่สถานะ</label>
+        <name>Closed_Lost_Stage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Convert from Call Report --></label>
+        <name>Convert_from_Call_Report__c</name>
+    </fields>
+    <fields>
+        <label><!-- CreatedByMe --></label>
+        <name>CreatedByMe__c</name>
+    </fields>
+    <fields>
+        <label><!-- CreatedByMyArea --></label>
+        <name>CreatedByMyArea__c</name>
+    </fields>
+    <fields>
+        <label><!-- CreatedByMyNetwork --></label>
+        <name>CreatedByMyNetwork__c</name>
+    </fields>
+    <fields>
+        <label><!-- CreatedByMyTeam --></label>
+        <name>CreatedByMyTeam__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inflow AHID --></label>
+        <name>Creator_AHID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inflow AHName --></label>
+        <name>Creator_AHName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inflow AH --></label>
+        <name>Creator_AH__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inflow AreaName --></label>
+        <name>Creator_AreaName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inflow NHID --></label>
+        <name>Creator_NHID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inflow NHName --></label>
+        <name>Creator_NHName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inflow NH --></label>
+        <name>Creator_NH__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inflow NetworkName --></label>
+        <name>Creator_NetworkName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inflow RCCode --></label>
+        <name>Creator_RCCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inflow RM --></label>
+        <name>Creator_RM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inflow Segment --></label>
+        <name>Creator_Segment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inflow TMID --></label>
+        <name>Creator_TMID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inflow TM Name --></label>
+        <name>Creator_TM_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inflow TeamName --></label>
+        <name>Creator_TeamName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inflow Team --></label>
+        <name>Creator_Team__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Model Final --></label>
+        <name>Credit_Model_Final__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Model --></label>
+        <name>Credit_Model__c</name>
+        <picklistValues>
+            <masterLabel>DLA</masterLabel>
+            <translation><!-- DLA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FL</masterLabel>
+            <translation><!-- FL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HPL</masterLabel>
+            <translation><!-- HPL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PL</masterLabel>
+            <translation><!-- PL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>อนุโลมขอใช้เลขจากทะเบียนคุม</masterLabel>
+            <translation><!-- อนุโลมขอใช้เลขจากทะเบียนคุม --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Credit Model by SP --></label>
+        <name>Credit_Model_by_SP__c</name>
+        <picklistValues>
+            <masterLabel>DLA</masterLabel>
+            <translation><!-- DLA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FL</masterLabel>
+            <translation><!-- FL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HPL</masterLabel>
+            <translation><!-- HPL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PL</masterLabel>
+            <translation><!-- PL --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>วันที่ตั้งวงเงิน</label>
+        <name>Credit_Setup_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- AH Name --></label>
+        <name>Current_AH_Name__c</name>
+        <relationshipLabel><!-- Opportunities (Current AH Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Current AH --></label>
+        <name>Current_AH__c</name>
+        <relationshipLabel><!-- Opportunities (Current AH) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Current Leg --></label>
+        <name>Current_Leg__c</name>
+    </fields>
+    <fields>
+        <label><!-- NH Name --></label>
+        <name>Current_NH_Name__c</name>
+        <relationshipLabel><!-- Opportunities (Current NH Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Current NH --></label>
+        <name>Current_NH__c</name>
+        <relationshipLabel><!-- Opportunities (Current NH) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Owner Extension --></label>
+        <name>Current_Owner_Extension__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>สถานะปัจจุบัน</label>
+        <name>Current_Stage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Team Name --></label>
+        <name>Current_Team_Name__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>ชื่อลูกค้า</label>
+        <name>Customer_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- DB Competitor --></label>
+        <name>DB_Competitor__c</name>
+        <picklistValues>
+            <masterLabel>Competitor A</masterLabel>
+            <translation><!-- Competitor A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitor B</masterLabel>
+            <translation><!-- Competitor B --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitor C</masterLabel>
+            <translation><!-- Competitor C --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>จำนวนวัน End-to-End</label>
+        <name>E2Eday__c</name>
+    </fields>
+    <fields>
+        <label>วันที่ Cap Front รับเคสครั้งแรก</label>
+        <name>First_Application_SO_Receive_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Setup Date --></label>
+        <name>First_Setup_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- FlagErrDate --></label>
+        <name>FlagErrDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Has been approved --></label>
+        <name>Has_been_approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Head of UW Name --></label>
+        <name>Head_of_UW_Name__c</name>
+        <relationshipLabel><!-- Opportunities (Head of UW Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- IsCloseWon --></label>
+        <name>IsCloseWon__c</name>
+    </fields>
+    <fields>
+        <label>จำนวนเคสที่ไม่เกินกำหนด</label>
+        <name>IsNotOverL1__c</name>
+    </fields>
+    <fields>
+        <label>จำนวนเคสที่เกินกำหนด</label>
+        <name>IsOverL1__c</name>
+    </fields>
+    <fields>
+        <label>จำนวนเคสที่ปฏิเสธ/คืนเรื่อง</label>
+        <name>IsRejected__c</name>
+    </fields>
+    <fields>
+        <label>จำนวนเคสที่อยู่ระหว่างการพิจารณา</label>
+        <name>IsWaiting4Approve__c</name>
+    </fields>
+    <fields>
+        <label>ส่ง App ได้หรือไม่</label>
+        <name>Is_App_In__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- IsPipelineThisMonth --></label>
+        <name>Is_Pipeline_This_Month__c</name>
+    </fields>
+    <fields>
+        <label>จำนวนวัน L1</label>
+        <name>L1day__c</name>
+    </fields>
+    <fields>
+        <label><!-- L1enddate --></label>
+        <name>L1enddate__c</name>
+    </fields>
+    <fields>
+        <label><!-- L1startdate --></label>
+        <name>L1startdate__c</name>
+    </fields>
+    <fields>
+        <label>จำนวนวัน L2</label>
+        <name>L2day__c</name>
+    </fields>
+    <fields>
+        <label><!-- L2endDate --></label>
+        <name>L2endDate__c</name>
+    </fields>
+    <fields>
+        <label>จำนวนวัน L3</label>
+        <name>L3day__c</name>
+    </fields>
+    <fields>
+        <label><!-- L3enddate --></label>
+        <name>L3enddate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Visited Date --></label>
+        <name>Last_Visited_Date__c</name>
+    </fields>
+    <fields>
+        <label>หมายเลข App ครั้งล่าสุด</label>
+        <name>Latest_Application_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Latest Stage Modified Date --></label>
+        <name>Latest_Stage_Modified_Date__c</name>
+    </fields>
+    <fields>
+        <name>LeadSource</name>
+        <picklistValues>
+            <masterLabel>Advertisement</masterLabel>
+            <translation><!-- Advertisement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employee Referral</masterLabel>
+            <translation><!-- Employee Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>External Referral</masterLabel>
+            <translation><!-- External Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner</masterLabel>
+            <translation><!-- Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public Relations</masterLabel>
+            <translation><!-- Public Relations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Seminar - Internal</masterLabel>
+            <translation><!-- Seminar - Internal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Seminar - Partner</masterLabel>
+            <translation><!-- Seminar - Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trade Show</masterLabel>
+            <translation><!-- Trade Show --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web</masterLabel>
+            <translation><!-- Web --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Word of mouth</masterLabel>
+            <translation><!-- Word of mouth --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Loan Setup Date --></label>
+        <name>Loan_Setup_Date__c</name>
+    </fields>
+    <fields>
+        <label>วงเงินที่สูญเสีย</label>
+        <name>Lost_Amount_s__c</name>
+    </fields>
+    <fields>
+        <label>เหตุผลในการไม่ตั้งวงเงิน</label>
+        <name>Lost_reason__c</name>
+        <picklistValues>
+            <masterLabel>Refer ให้ผู้อื่นดำเนินการ (ระบุในหมายเหตุ)</masterLabel>
+            <translation><!-- Refer ให้ผู้อื่นดำเนินการ (ระบุในหมายเหตุ) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>มีเงินคงเหลือในบัญชีสูงหรือวงเงินเป็นตัวดำ</masterLabel>
+            <translation><!-- มีเงินคงเหลือในบัญชีสูงหรือวงเงินเป็นตัวดำ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ยอดขายกิจการลดลง</masterLabel>
+            <translation><!-- ยอดขายกิจการลดลง --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ลูกค้าคุณสมบัติไม่ดี / ไม่ผ่านหลักเกณฑ์ธนาคาร (ระบุในหมายเหตุ)</masterLabel>
+            <translation><!-- ลูกค้าคุณสมบัติไม่ดี / ไม่ผ่านหลักเกณฑ์ธนาคาร (ระบุในหมายเหตุ) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>สนใจแต่ติดปัญหาเรื่องหลักประกัน</masterLabel>
+            <translation><!-- สนใจแต่ติดปัญหาเรื่องหลักประกัน --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>สนใจแต่มีประเด็นต่อรองเกี่ยวกับดอกเบี้ย / ค่าธรรมเนียม / ประกันชีวิต</masterLabel>
+            <translation><!-- สนใจแต่มีประเด็นต่อรองเกี่ยวกับดอกเบี้ย / ค่าธรรมเนียม / ประกันชีวิต --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>สนใจแต่วงเงินที่ลูกค้าต้องการไม่สอดคล้องกับ Source &amp; Use</masterLabel>
+            <translation><!-- สนใจแต่วงเงินที่ลูกค้าต้องการไม่สอดคล้องกับ Source &amp; Use --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>สนใจแต่วงเงินที่เสนอไม่เพียงพอ</masterLabel>
+            <translation><!-- สนใจแต่วงเงินที่เสนอไม่เพียงพอ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>สนใจแต่ไม่ใช่ในช่วงเดือนนี้</masterLabel>
+            <translation><!-- สนใจแต่ไม่ใช่ในช่วงเดือนนี้ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>อื่นๆ (ระบุในหมายเหตุ)</masterLabel>
+            <translation><!-- อื่นๆ (ระบุในหมายเหตุ) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>เป็นเคสที่เริ่มทำก่อนมีระบบ Sales Smart</masterLabel>
+            <translation><!-- เป็นเคสที่เริ่มทำก่อนมีระบบ Sales Smart --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>เพิ่งขอสินเชื่อไม่ถึง 3 เดือน</masterLabel>
+            <translation><!-- เพิ่งขอสินเชื่อไม่ถึง 3 เดือน --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>เสียชีวิต / เลิกกิจการ</masterLabel>
+            <translation><!-- เสียชีวิต / เลิกกิจการ --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- ManualSP --></label>
+        <name>ManualSP__c</name>
+    </fields>
+    <fields>
+        <label><!-- NH --></label>
+        <name>NH__c</name>
+    </fields>
+    <fields>
+        <help><!-- Network Manager --></help>
+        <label><!-- NM by SP --></label>
+        <name>NM_by_SP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of App In --></label>
+        <name>Number_of_App_In__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of App Out --></label>
+        <name>Number_of_App_Out__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Approved --></label>
+        <name>Number_of_Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Cancel Opp Product --></label>
+        <name>Number_of_Cancel_Opp_Product__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Day Created --></label>
+        <name>Number_of_Day_Created__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Lead --></label>
+        <name>Number_of_Lead__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Opp --></label>
+        <name>Number_of_Opp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Resubmit --></label>
+        <name>Number_of_Resubmit__c</name>
+    </fields>
+    <fields>
+        <label>จำนวนครั้งที่ Resubmit</label>
+        <name>Number_of_Resubmit_by_SP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Setup Opp Product --></label>
+        <name>Number_of_Setup_Opp_Product__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Setup --></label>
+        <name>Number_of_Setup__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Waiting Setup Opp Product --></label>
+        <name>Number_of_Waiting_Setup_Opp_Product__c</name>
+    </fields>
+    <fields>
+        <label><!-- OppClosedDate --></label>
+        <name>OppClosedDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- OppID --></label>
+        <name>OppID__c</name>
+    </fields>
+    <fields>
+        <label>วงเงินที่สนใจ</label>
+        <name>Opportunity_Amount_s__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Owner --></label>
+        <name>Opportunity_Owner_Report__c</name>
+    </fields>
+    <fields>
+        <label>จำนวนวัน SLA Leg1</label>
+        <name>Over_SLA_L1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Override Setup --></label>
+        <name>Override_Setup__c</name>
+    </fields>
+    <fields>
+        <label>เขต</label>
+        <name>Owner_AH__c</name>
+    </fields>
+    <fields>
+        <label>เขต</label>
+        <name>Owner_AreaName__c</name>
+    </fields>
+    <fields>
+        <label>เจ้าของโอกาส</label>
+        <name>Owner_FullName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Owner Info --></label>
+        <name>Owner_Info__c</name>
+    </fields>
+    <fields>
+        <label>ภาค</label>
+        <name>Owner_NH__c</name>
+    </fields>
+    <fields>
+        <label>ภาค</label>
+        <name>Owner_NetworkName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Owner Segment --></label>
+        <name>Owner_Segment__c</name>
+    </fields>
+    <fields>
+        <label>ทีม</label>
+        <name>Owner_TeamName__c</name>
+    </fields>
+    <fields>
+        <label>ทีม</label>
+        <name>Owner_Team__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ownership --></label>
+        <name>Ownership__c</name>
+    </fields>
+    <fields>
+        <label><!-- Port / Pool --></label>
+        <name>Port_Pool__c</name>
+    </fields>
+    <fields>
+        <label><!-- Previous Record Type --></label>
+        <name>Previous_Record_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Previous Stage --></label>
+        <name>Previous_Stage__c</name>
+    </fields>
+    <fields>
+        <label><!-- RCCode --></label>
+        <name>RCCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Release Flag --></label>
+        <name>Release_Flag__c</name>
+    </fields>
+    <fields>
+        <label>หมายเหตุ</label>
+        <name>Remark__c</name>
+    </fields>
+    <fields>
+        <label><!-- Report AHName --></label>
+        <name>Report_AHName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Report AH --></label>
+        <name>Report_AH__c</name>
+    </fields>
+    <fields>
+        <label><!-- Report NHName --></label>
+        <name>Report_NHName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Report NH --></label>
+        <name>Report_NH__c</name>
+    </fields>
+    <fields>
+        <label><!-- Report RMName --></label>
+        <name>Report_RMName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Report Segment --></label>
+        <name>Report_Segment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Report TM Name --></label>
+        <name>Report_TM_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Report Team --></label>
+        <name>Report_Team__c</name>
+    </fields>
+    <fields>
+        <help><!-- วงเงินที่ทำการขอในตอนแรก --></help>
+        <label>วงเงินที่ขอครั้งแรก (SP)</label>
+        <name>Request_First_Amount_By_SP__c</name>
+    </fields>
+    <fields>
+        <help><!-- วงเงินที่ทำการขอล่าสุด (เช่น Resubmit แล้ววงเงินไม่ได้ตามที่ขอไปครั้งแรก) --></help>
+        <label>วงเงินที่ขอครั้งล่าสุด (SP)</label>
+        <name>Request_Lastest_Amount_By_SP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requested Amount --></label>
+        <name>Requested_Amount__c</name>
+    </fields>
+    <fields>
+        <label>วงเงินที่ขอ</label>
+        <name>Requested_Amount_s__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requested Amount_Setup --></label>
+        <name>Requested_Amount_setup__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resubmit Approval --></label>
+        <name>Resubmit_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Senior UW Name --></label>
+        <name>Senior_UW_Name__c</name>
+        <relationshipLabel><!-- Opportunities (Senior UW Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>วงเงินที่ตั้ง (Opportunity Products)</label>
+        <name>Setup_Amount__c</name>
+    </fields>
+    <fields>
+        <label>วงเงินที่ตั้ง</label>
+        <name>Setup_Amount_s__c</name>
+    </fields>
+    <fields>
+        <name>StageName</name>
+        <picklistValues>
+            <masterLabel>All Loan Setup</masterLabel>
+            <translation>RM ดำเนินการตั้งวงเงินได้ทั้งหมด</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Auto Closed</masterLabel>
+            <translation><!-- Auto Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Case is Rejected</masterLabel>
+            <translation>UW ปฏิเสธ/คืนเรื่อง</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed Lost</masterLabel>
+            <translation>RM ยอมแพ้</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Create Write Up</masterLabel>
+            <translation>RM จัดทำใบเสนอเรื่อง</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deleted Opportunity</masterLabel>
+            <translation><!-- Deleted Opportunity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partial Loan Setup</masterLabel>
+            <translation>RM ดำเนินการตั้งวงเงินได้บางส่วน</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stock Negotiation</masterLabel>
+            <translation>RM เจรจากับลูกค้า</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting for Credit Approval</masterLabel>
+            <translation>UW พิจารณาความเสี่ยง</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting for Credit Setup</masterLabel>
+            <translation>UW อนุมัติแล้วรอ RM ดำเนินการเพื่อตั้งวงเงิน</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Stage for L2 --></label>
+        <name>Stage_for_L2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Submission Channel --></label>
+        <name>Submission_Channel__c</name>
+        <picklistValues>
+            <masterLabel>CMAS</masterLabel>
+            <translation><!-- CMAS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non CMAS</masterLabel>
+            <translation><!-- Non CMAS --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Submit Issue --></label>
+        <name>Submit_Issue__c</name>
+        <picklistValues>
+            <masterLabel>New Credit</masterLabel>
+            <translation><!-- New Credit --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Submit Issue by SP --></label>
+        <name>Submit_Issue_by_SP__c</name>
+        <picklistValues>
+            <masterLabel>New Credit</masterLabel>
+            <translation><!-- New Credit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not New Credit</masterLabel>
+            <translation><!-- Not New Credit --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- TM by SP --></label>
+        <name>TM_by_SP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Team Name --></label>
+        <name>Team_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Team Name_DEL --></label>
+        <name>Team_Name_del__c</name>
+    </fields>
+    <fields>
+        <label>วันที่คาดว่าจะส่ง App</label>
+        <name>Tentative_Application_Submit_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Amount --></label>
+        <name>Total_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total BA Prosaving --></label>
+        <name>Total_BA_Prosaving__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total BA Protection --></label>
+        <name>Total_BA_Protection__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Front End Fee --></label>
+        <name>Total_Front_End_Fee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Number of Opp Product --></label>
+        <name>Total_Number_of_Opp_Product__c</name>
+    </fields>
+    <fields>
+        <name>Type</name>
+        <picklistValues>
+            <masterLabel>Credit</masterLabel>
+            <translation><!-- Credit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-Credit</masterLabel>
+            <translation><!-- Non-Credit --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- UW Color --></label>
+        <name>UW_Color__c</name>
+    </fields>
+    <fields>
+        <label><!-- UW Comment Opp --></label>
+        <name>UW_Comment_Opp__c</name>
+    </fields>
+    <fields>
+        <label><!-- UW Decision Opp --></label>
+        <name>UW_Decision_Opp__c</name>
+        <picklistValues>
+            <masterLabel>Go</masterLabel>
+            <translation><!-- Go --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Go</masterLabel>
+            <translation><!-- No Go --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>อยู่ระหว่างตัดสินใจ</masterLabel>
+            <translation><!-- อยู่ระหว่างตัดสินใจ --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- คำปรึกษาจาก UW --></help>
+        <label><!-- UW Final Comment --></label>
+        <name>UW_Final_Comment__c</name>
+    </fields>
+    <fields>
+        <label><!-- UW Lane --></label>
+        <name>UW_Lane__c</name>
+    </fields>
+    <fields>
+        <label><!-- UW My Stock --></label>
+        <name>UW_My_Stock__c</name>
+    </fields>
+    <fields>
+        <label><!-- Update Stage by Close Won --></label>
+        <name>Update_Stage_by_Close_Won__c</name>
+    </fields>
+    <fields>
+        <label><!-- Want to close as Lost? --></label>
+        <name>Want_to_close_as_Lost__c</name>
+    </fields>
+    <fields>
+        <help><!-- Zone Manager --></help>
+        <label><!-- ZM by SP --></label>
+        <name>ZM_by_SP__c</name>
+    </fields>
+    <fields>
+        <label><!-- diff Requested Amount --></label>
+        <name>diff_Requested_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- opp closed date --></label>
+        <name>opp_closed_date__c</name>
+    </fields>
+    <layouts>
+        <layout>Closed - Credit Opportunity Layout</layout>
+        <sections>
+            <label><!-- App Information --></label>
+            <section>App Information</section>
+        </sections>
+        <sections>
+            <label><!-- Booking Structure --></label>
+            <section>Booking Structure</section>
+        </sections>
+        <sections>
+            <label><!-- Inflow Structure --></label>
+            <section>Inflow Structure</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+        <sections>
+            <label><!-- Owner Structure --></label>
+            <section>Owner Structure</section>
+        </sections>
+        <sections>
+            <label><!-- SLA --></label>
+            <section>SLA</section>
+        </sections>
+        <sections>
+            <label><!-- Stamp Date --></label>
+            <section>Stamp Date</section>
+        </sections>
+        <sections>
+            <label><!-- UW Information --></label>
+            <section>UW Information</section>
+        </sections>
+        <sections>
+            <label><!-- กรอกเพื่อสร้าง App --></label>
+            <section>กรอกเพื่อสร้าง App</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Closed - Credit Opportunity Layout (Original)</layout>
+        <sections>
+            <label><!-- Approval Information - Provided by SP team --></label>
+            <section>Approval Information - Provided by SP team</section>
+        </sections>
+        <sections>
+            <label><!-- Date Information --></label>
+            <section>Date Information</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Credit Opportunity (Non-Sales) Layout</layout>
+        <sections>
+            <label><!-- App Information --></label>
+            <section>App Information</section>
+        </sections>
+        <sections>
+            <label><!-- Approval Information - Provided by SP team --></label>
+            <section>Approval Information - Provided by SP team</section>
+        </sections>
+        <sections>
+            <label><!-- UW Information --></label>
+            <section>UW Information</section>
+        </sections>
+        <sections>
+            <label><!-- กรอกเพื่อสร้างเลข App --></label>
+            <section>กรอกเพื่อสร้างเลข App</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Credit Opportunity Layout</layout>
+        <sections>
+            <label><!-- App Information --></label>
+            <section>App Information</section>
+        </sections>
+        <sections>
+            <label><!-- SLA --></label>
+            <section>SLA</section>
+        </sections>
+        <sections>
+            <label><!-- Stamp Date --></label>
+            <section>Stamp Date</section>
+        </sections>
+        <sections>
+            <label><!-- Test Section --></label>
+            <section>Test Section</section>
+        </sections>
+        <sections>
+            <label><!-- UW Information --></label>
+            <section>UW Information</section>
+        </sections>
+        <sections>
+            <label><!-- กรอกเพื่อสร้างเลข App --></label>
+            <section>กรอกเพื่อสร้างเลข App</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Credit Opportunity Layout-DLA</layout>
+        <sections>
+            <label><!-- App Information --></label>
+            <section>App Information</section>
+        </sections>
+        <sections>
+            <label><!-- Approval Information - Provided by SP team --></label>
+            <section>Approval Information - Provided by SP team</section>
+        </sections>
+        <sections>
+            <label><!-- กรอกเพื่อสร้างเลข App --></label>
+            <section>กรอกเพื่อสร้างเลข App</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Opportunity Layout</layout>
+        <sections>
+            <label><!-- Stamp Date Value --></label>
+            <section>Stamp Date Value</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>SP Closed2 - Credit Opportunity Layout</layout>
+        <sections>
+            <label><!-- App Information --></label>
+            <section>App Information</section>
+        </sections>
+        <sections>
+            <label><!-- Approval Information - Provided by SP team --></label>
+            <section>Approval Information - Provided by SP team</section>
+        </sections>
+        <sections>
+            <label><!-- Booking --></label>
+            <section>Booking</section>
+        </sections>
+        <sections>
+            <label><!-- Creator --></label>
+            <section>Creator</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+        <sections>
+            <label><!-- Owner --></label>
+            <section>Owner</section>
+        </sections>
+        <sections>
+            <label><!-- กรอกเพื่อสร้าง App --></label>
+            <section>กรอกเพื่อสร้าง App</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label>ผลิตภัณฑ์เพิ่มเติมที่ลูกค้าสนใจ</label>
+        <name>Add_Product</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Close Won --></label>
+        <name>Close_Won</name>
+    </quickActions>
+    <quickActions>
+        <label>Resubmit</label>
+        <name>Resubmit</name>
+    </quickActions>
+    <quickActions>
+        <label>ยอมแพ้</label>
+        <name>Update_as_Lost</name>
+    </quickActions>
+    <recordTypes>
+        <label>ปิด-Credit Opp.</label>
+        <name>Closed_Credit_Opportunity</name>
+    </recordTypes>
+    <recordTypes>
+        <label>ปิด-Non-Credit Opp.</label>
+        <name>Closed_Non_Credit_Opportunity</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Credit Opp.</label>
+        <name>Credit_Opportunity</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Credit Opportunity-DLA --></label>
+        <name>Credit_Opportunity_DLA</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Non-Credit Opp.</label>
+        <name>Non_Credit_Opportunity</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- วันส่งเคสจริงจะต้องไม่ใช่วันในอนาคต --></errorMessage>
+        <name>Actual_RM_Submit_must_not_be_Future</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- วันอนุมัติจะต้องไม่ใช่วันในอนาคต --></errorMessage>
+        <name>ApproveDate_must_not_be_Future</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- เลข App CMAS Format ผิด กรุณาตรวจสอบความถูกต้อง --></errorMessage>
+        <name>CMAS_App_Format_check</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>ไม่สามารถเปลี่ยนแปลงเลข App กรณีทำเครดิตผ่านระบบ CMAS</errorMessage>
+        <name>Cannot_Change_App_Number_after_SOreceive</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- ไม่สามารถแก้ไขข้อมูลของชื่อ Stock สถานะ หรือ วันที่คาดว่าจะตั้งวงเงิน ได้ --></errorMessage>
+        <name>Cannot_Edit_Infor_Name_Status_CloseDate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- กรอก Application Number ไม่ถูก Format เช่น
+ลืมใส่ / 
+เผลอใส่เป็น Special Format เช่น มีวงเล็บ, R1, SR, CG, ... --></errorMessage>
+        <name>Check_App_Format_General</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- กรุณาใส่คำว่า OFS_ หน้า Application Number แล้วกรอกเลข app ที่นำเสนอเครดิต แบบมี / แต่ไม่ต้องมีพวก R1 S1 CG --></errorMessage>
+        <name>Check_App_Format_OFS</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- ไม่สามารถกด Close Won ได้... ต้องอยู่ในสถานะรอตั้งวงเงิน แล้วค่อยไปแก้ไข Opportunity Product (ด้านล่างของโอกาส) ให้เป็น Setup ทั้งหมดแล้วกรอกรายละเอียดการตั้งวงเงินก่อน --></errorMessage>
+        <name>Check_Update_Stage_by_Close_Won</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>ไม่สามารถเปลี่ยนแปลงเลข App กรณีทำเครดิตผ่านระบบ CMAS</errorMessage>
+        <name>NonCMAS_Cannot_Change_App_Number</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>ท่านไม่มีสิทธิ์ในการดำเนินการ</errorMessage>
+        <name>Not_allow_RM_to_manually_change_Stage</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>โปรดระบุหมายเลขบัตรประชาชน หรือ เลขจดทะเบียน</errorMessage>
+        <name>Prospect_need_to_be_input_ID_Number</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- กรุณาระบุเหตุผล --></errorMessage>
+        <name>RequireLostDetailWhenNoLostReason</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- กรุณาระบุเหตุผล --></errorMessage>
+        <name>RequireLostReason</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- กรุณากรอก วันที่คาดว่าจะส่ง App --></errorMessage>
+        <name>RequireTentativeSubmissionDate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>โปรดระบุค่า: Credit Model</errorMessage>
+        <name>RequiredCreditModelBeforeChangeStage</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>โปรดระบุค่า: จำนวนวงเงินที่เป็นไปได้</errorMessage>
+        <name>RequiredOpportunityAmntBeforeChangeStage</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>โปรดระบุค่า: Submission Channel</errorMessage>
+        <name>RequiredSubmissionChannBeforeChangeStage</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>โปรดระบุค่า: Submission Issue</errorMessage>
+        <name>RequiredSubmitIssueBeforeChangeStage</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot close won Opportunity. Please update A/O value from other system before closed won this Opportunity. --></errorMessage>
+        <name>Validate_Cust_segment_before_CloseWon</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Not allow to change Credit Model, Submission Channel, and Submit Issue at this Stage --></errorMessage>
+        <name>cannot_change_credit_model</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>ไม่อนุญาตให้เปลี่ยนแปลง Credit Model, Submission Channel และ Submit Issue</errorMessage>
+        <name>cannot_change_credit_model_submission</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Close_Won --></label>
+        <name>Close_Won</name>
+    </webLinks>
+    <webLinks>
+        <label>ยอมแพ้</label>
+        <name>Closed_Lost</name>
+    </webLinks>
+    <webLinks>
+        <label>ปฏิเสธ</label>
+        <name>Inject</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Opportunity --></label>
+        <name>New_Opportunity</name>
+    </webLinks>
+    <webLinks>
+        <label>Resubmit</label>
+        <name>Resubmit</name>
+    </webLinks>
+</CustomObjectTranslation>

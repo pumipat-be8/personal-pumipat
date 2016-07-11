@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>CallPlanCallReportField</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>CallPlanCallReportField</value>
+    </caseValues>
+    <fields>
+        <label><!-- AccountIdFieldId --></label>
+        <name>AccountIdFieldId__c</name>
+    </fields>
+    <fields>
+        <label><!-- AccountLeadForSalesFieldId --></label>
+        <name>AccountLeadForSalesFieldId__c</name>
+    </fields>
+    <fields>
+        <label><!-- ActualVisitDateFieldId --></label>
+        <name>ActualVisitDateFieldId__c</name>
+    </fields>
+    <fields>
+        <label><!-- BusinessCodeId --></label>
+        <name>BusinessCodeId__c</name>
+    </fields>
+    <fields>
+        <label><!-- CISFieldId --></label>
+        <name>CISFieldId__c</name>
+    </fields>
+    <fields>
+        <label><!-- CallPlanRecordTypeId --></label>
+        <name>CallPlanRecordTypeId__c</name>
+    </fields>
+    <fields>
+        <label><!-- CallReportObjectId --></label>
+        <name>CallReportObjectId__c</name>
+    </fields>
+    <fields>
+        <label><!-- CallReportRecordTypeId --></label>
+        <name>CallReportRecordTypeId__c</name>
+    </fields>
+    <fields>
+        <label><!-- ContactChannelFieldId --></label>
+        <name>ContactChannelFieldId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Person Id --></label>
+        <name>Contact_Person_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Entity Id --></label>
+        <name>Entity_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- NewCallPlanRecordTypeId --></label>
+        <name>NewCallPlanRecordTypeId__c</name>
+    </fields>
+    <fields>
+        <label><!-- OfferCreditProductFieldId --></label>
+        <name>OfferCreditProductFieldId__c</name>
+    </fields>
+    <fields>
+        <label><!-- OfferInterestFieldId --></label>
+        <name>OfferInterestFieldId__c</name>
+    </fields>
+    <fields>
+        <label><!-- SecondaryCallReportRecordTypeId --></label>
+        <name>SecondaryCallReportRecordTypeId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status Field Id --></label>
+        <name>Status_Field_Id__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

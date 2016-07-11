@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>งบกำไรขาดทุน</value>
+    </caseValues>
+    <fields>
+        <label><!-- CIS ID --></label>
+        <name>CIS_ID__c</name>
+        <relationshipLabel><!-- Profit and Loss --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>ค่าใช้จ่ายในการดำเนินการ</label>
+        <name>CostOfOperation__c</name>
+    </fields>
+    <fields>
+        <label>ต้นทุนขาย และ/หรือ บริการ</label>
+        <name>CostOfSalesAndOrServices__c</name>
+    </fields>
+    <fields>
+        <label>หักค่าเสื่อม</label>
+        <name>Depreciate__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label>กำไร (ขาดทุน) ขั้นต้น</label>
+        <name>InitialProfitLoss__c</name>
+    </fields>
+    <fields>
+        <label>กำไร (ขาดทุน) สุทธิ</label>
+        <name>NetProfitLoss__c</name>
+    </fields>
+    <fields>
+        <label>รายได้จากการดำเนินงาน</label>
+        <name>OperationIncome__c</name>
+    </fields>
+    <fields>
+        <label>รายได้อื่นๆ</label>
+        <name>OtherIncome__c</name>
+    </fields>
+    <fields>
+        <label>ภาษี และ อื่นๆ (รายการ adjust ปรับปรุง)</label>
+        <name>TaxAndEtcAdjustItem__c</name>
+    </fields>
+    <fields>
+        <label>รวมรายได้</label>
+        <name>TotalIncome__c</name>
+    </fields>
+    <layouts>
+        <layout>Profit and Loss Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel>รอบปีบัญชี</nameFieldLabel>
+</CustomObjectTranslation>

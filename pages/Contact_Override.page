@@ -1,0 +1,7 @@
+<apex:page standardController="Call_Report__c" extensions="Contact_Override_Controller">
+	<script type='text/javascript'>
+	    (function(){
+			sforce.one.navigateToURL('/003/e?accid={!cisId}&retURL=%2F{!callReportId}&saveURL=%2F{!callReportId}&cancelURL=%2F{!callReportId}');
+	    })();
+	</script>
+</apex:page>

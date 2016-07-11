@@ -1,0 +1,87 @@
+<apex:page showHeader="true" sidebar="true" standardController="Account" extensions="Account_BusinessCodeInformation_CTRL" action="{!init}">
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <apex:includeScript value="{!URLFOR($Resource.jquery, '')}"/>
+    <apex:includeScript value="{!URLFOR($Resource.sfdc_bs3, 'dist/js/bootstrap.js')}"/>
+    <apex:stylesheet value="{!URLFOR($Resource.sfdc_bs3, 'dist/css/bootstrap-bs3.css')}"/>
+    <apex:stylesheet value="{!URLFOR($Resource.bootstrap_icon, '')}"/>
+
+<script>
+$(function() {
+    if( (typeof sforce != 'undefined') && (sforce != null) ) {
+       $(".sf1Version").show();
+       $(".desktopVersion").hide();
+       // console.log("set height");
+       // window.parent.document.getElementById('vfFrameId').width = '500px';
+        // window.parent.document.getElementById('vfFrameId').height = '70px';
+    }
+    else {
+       $(".sf1Version").hide();
+       $(".desktopVersion").show();
+    }
+});
+
+</script>
+<style>
+    .desktopVersion {
+        display: none;
+    }
+
+    .sf1Version {
+        margin-top: -12px;
+        display: none;
+    }
+
+    .sf1Version .row {
+        margin-bottom: 5px;
+    }
+
+    .boldText {
+        font-weight: bold;
+    }
+</style>
+</head>
+<body>
+<div class="bPageBlock bDetailBlock desktopVersion">
+    <table class="detailList" border="0" cellpadding="0" cellspacing="0">
+            <tbody> 
+                <tr>
+                    <td class="labelCol">{!$ObjectType.Account.fields.Customer_s_Business_Code__c.Label}</td>
+                    <td class="dataCol" id="bal1">{!customerBusinessCode}&nbsp;</td>
+                    <td class="labelCol">{!$ObjectType.Account.fields.Industry_Classification_Code__c.Label}</td>
+                    <td class="dataCol">{!industryClassificationCode}&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="labelCol">{!$ObjectType.Account.fields.Business_Code_Name_EN__c.Label}</td>
+                    <td class="dataCol" id="bal2">{!businessCodeNameEN}&nbsp;</td>
+                    <td class="labelCol">{!$ObjectType.Account.fields.Business_Code_Name_TH__c.Label}</td>
+                    <td class="dataCol" id="bal2">{!businessCodeNameTH}&nbsp;</td>
+                </tr>
+            </tbody>
+        </table>
+</div>
+<div class="sf1Version bs3">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-4 col-md-4 boldText">{!$ObjectType.Account.fields.Customer_s_Business_Code__c.Label}</div>
+            <div class="col-xs-8 col-md-8">{!customerBusinessCode}</div>
+        </div>
+        <div class="row">
+            <div class="col-xs-4 col-md-4 boldText">{!$ObjectType.Account.fields.Industry_Classification_Code__c.Label}</div>
+            <div class="col-xs-8 col-md-8">{!industryClassificationCode}</div>
+        </div>
+        <div class="row">
+            <div class="col-xs-4 col-md-4 boldText">{!$ObjectType.Account.fields.Business_Code_Name_EN__c.Label}</div>
+            <div class="col-xs-8 col-md-8">{!businessCodeNameEN}</div>
+        </div>
+        <div class="row">
+            <div class="col-xs-4 col-md-4 boldText">{!$ObjectType.Account.fields.Business_Code_Name_TH__c.Label}</div>
+            <div class="col-xs-8 col-md-8">{!businessCodeNameTH}</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+</apex:page>

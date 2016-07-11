@@ -1,0 +1,12 @@
+Dear Manager, 
+
+The following Opportunity has been rejected to override setup: 
+
+Opportunity Name : {!Opportunity.Name}
+CIS ID / Prospect Name : {!Opportunity.Account}
+Stage : {!Opportunity.StageName}
+Approval Status : {!Opportunity.Approval_Status__c}
+
+Click the link for detail: 
+
+{!Opportunity.Link}

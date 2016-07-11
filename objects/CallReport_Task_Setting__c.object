@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <customSettingsVisibility>Public</customSettingsVisibility>
+    <description>Reminder Task setting for Call report , field Offer Interest equal Interest with condition.</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>ReminderTask_NumOfDays__c</fullName>
+        <description>for set duedate of reminder task from create call report plus this value</description>
+        <externalId>false</externalId>
+        <label>ReminderTask_NumOfDays</label>
+        <precision>2</precision>
+        <required>true</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ReminderTask_Subject__c</fullName>
+        <externalId>false</externalId>
+        <label>ReminderTask_Subject</label>
+        <length>200</length>
+        <required>true</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ReminderTask_TimeReminder__c</fullName>
+        <description>Time to Reminder Task when create Call Report</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Please use format HH:MM Ex. 08:00</inlineHelpText>
+        <label>ReminderTask_TimeReminder</label>
+        <length>5</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>CallReport_Task_Setting</label>
+</CustomObject>

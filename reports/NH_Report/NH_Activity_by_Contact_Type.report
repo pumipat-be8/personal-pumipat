@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>IF ( Team_Structure__c.Total_Face_to_Face_Call__c:SUM &gt; 0, Team_Structure__c.Face_to_Face__c:SUM/Team_Structure__c.Total_Face_to_Face_Call__c:SUM, 0)</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>% Face to Face</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>IF ( Team_Structure__c.Total_Face_to_Face_Call__c:SUM &gt; 0, Team_Structure__c.Phone_Call__c:SUM/Team_Structure__c.Total_Face_to_Face_Call__c:SUM, 0)</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA2</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>% Phone Call</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>IF ( Team_Structure__c.Total_Face_to_Face_Call__c:SUM &gt; 0, (Team_Structure__c.Phone_Call__c:SUM+Team_Structure__c.Face_to_Face__c:SUM)/Team_Structure__c.Total_Face_to_Face_Call__c:SUM, 0)</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA3</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>% Total</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>(Team_Structure__c.Total_Call_Report__c:SUM /  Team_Structure__c.Number_of_RM_under_Team__c:SUM)/ Team_Structure__c.Months__c:AVG</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA4</developerName>
+        <isActive>false</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>AVG Call Report / RM /Month</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Team_Structure__c.Number_of_RM_under_Team__c</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Team_Structure__c.Face_to_Face__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Team_Structure__c.Phone_Call__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Team_Structure__c.Total_Face_to_Face_Call__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Team_Structure__c.Type__c</column>
+            <operator>equals</operator>
+            <value>Team</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Team_Structure__c.NH_Name_Report__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Team_Structure__c.AH_Name_Report__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Team_Structure__c.RC_Name_TH__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>NH : Activity by Contact Type</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Team_Structure__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

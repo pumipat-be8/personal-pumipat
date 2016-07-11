@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>หลักประกัน</value>
+    </caseValues>
+    <fields>
+        <help><!-- จำนองค้ำฯผู้กู้ --></help>
+        <label>จำนองค้ำฯ ผู้กู้</label>
+        <name>Amount_Guarantee__c</name>
+    </fields>
+    <fields>
+        <help><!-- จำนองค้ำฯผู้อื่น --></help>
+        <label>จำนองค้ำฯ ผู้อื่น</label>
+        <name>Amount_Guarantor__c</name>
+    </fields>
+    <fields>
+        <label><!-- CIS ID --></label>
+        <name>CIS_ID__c</name>
+        <relationshipLabel><!-- Collaterals --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label>มูลค่าหลังทอน</label>
+        <name>Remaining_Balance__c</name>
+    </fields>
+    <fields>
+        <label>หลักประกันคงเหลือ</label>
+        <name>Remaining_Collateral_Balance__c</name>
+    </fields>
+    <fields>
+        <label>ประเภทหลักประกัน</label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>ที่ดิน+สปส</masterLabel>
+            <translation><!-- ที่ดิน+สปส --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ที่ดินเปล่า</masterLabel>
+            <translation><!-- ที่ดินเปล่า --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>รวม</masterLabel>
+            <translation><!-- รวม --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>เงินฝาก</masterLabel>
+            <translation><!-- เงินฝาก --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>มูลค่า</label>
+        <name>Value__c</name>
+    </fields>
+    <layouts>
+        <layout>Collateral Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel><!-- Ref # --></nameFieldLabel>
+</CustomObjectTranslation>

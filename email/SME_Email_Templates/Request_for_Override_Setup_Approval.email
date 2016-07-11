@@ -1,0 +1,12 @@
+Dear Manager, 
+
+{!Opportunity.OwnerFullName} would like to request for the override setup of the following customer: 
+
+CIS ID / Prospect Name : {!Opportunity.Account}
+Opportunity Name : {!Opportunity.Name}
+Stage : {!Opportunity.StageName}
+Approval Status : {!Opportunity.Approval_Status__c}
+
+Click the link for detail: 
+
+{!Opportunity.Link}

@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>This object tracks the Opportunity Product under Opportunity</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Application_Number__c</fullName>
+        <externalId>true</externalId>
+        <label>Application Number</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Approved_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Approved Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BA_Prosaving__c</fullName>
+        <externalId>false</externalId>
+        <label>BA Prosaving</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BA_Protection__c</fullName>
+        <externalId>false</externalId>
+        <label>BA Protection</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Front_End_Fee__c</fullName>
+        <externalId>false</externalId>
+        <label>Front End Fee</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Opportunity__c</fullName>
+        <externalId>false</externalId>
+        <label>Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Opportunity Products</relationshipLabel>
+        <relationshipName>Opportunity_Products</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Product__c</fullName>
+        <externalId>false</externalId>
+        <label>Product</label>
+        <picklist>
+            <picklistValues>
+                <fullName>ตั้งวงเงินทั้งหมดในครั้งแรก</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>แยกตั้งครั้งที่ 1</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>แยกตั้งครั้งที่ 2</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>แยกตั้งครั้งที่ 3</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>แยกตั้งครั้งที่ 4</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>แยกตั้งครั้งที่ 5</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Requested_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Requested Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Setup_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Setup Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Setup_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Setup Date</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Setup</fullName>
+                <default>true</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <label>Opportunity Product</label>
+    <nameField>
+        <displayFormat>{000000000}</displayFormat>
+        <label>REF#</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Opportunity Products</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Closed_Opp_Product</fullName>
+        <active>true</active>
+        <description>User not allow to edit any information in opp product</description>
+        <label>Closed Opp Product</label>
+        <picklistValues>
+            <picklist>Product__c</picklist>
+            <values>
+                <fullName>ต%E0%B8%B1%E0%B9%89งวงเง%E0%B8%B4นท%E0%B8%B1%E0%B9%89งหมดในคร%E0%B8%B1%E0%B9%89งแรก</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>แยกต%E0%B8%B1%E0%B9%89งคร%E0%B8%B1%E0%B9%89งท%E0%B8%B5%E0%B9%88 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>แยกต%E0%B8%B1%E0%B9%89งคร%E0%B8%B1%E0%B9%89งท%E0%B8%B5%E0%B9%88 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>แยกต%E0%B8%B1%E0%B9%89งคร%E0%B8%B1%E0%B9%89งท%E0%B8%B5%E0%B9%88 3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>แยกต%E0%B8%B1%E0%B9%89งคร%E0%B8%B1%E0%B9%89งท%E0%B8%B5%E0%B9%88 4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>แยกต%E0%B8%B1%E0%B9%89งคร%E0%B8%B1%E0%B9%89งท%E0%B8%B5%E0%B9%88 5</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Setup</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Open_Opp_Product</fullName>
+        <active>true</active>
+        <description>User will be able to edit opp product information</description>
+        <label>Open Opp Product</label>
+        <picklistValues>
+            <picklist>Product__c</picklist>
+            <values>
+                <fullName>ต%E0%B8%B1%E0%B9%89งวงเง%E0%B8%B4นท%E0%B8%B1%E0%B9%89งหมดในคร%E0%B8%B1%E0%B9%89งแรก</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>แยกต%E0%B8%B1%E0%B9%89งคร%E0%B8%B1%E0%B9%89งท%E0%B8%B5%E0%B9%88 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>แยกต%E0%B8%B1%E0%B9%89งคร%E0%B8%B1%E0%B9%89งท%E0%B8%B5%E0%B9%88 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>แยกต%E0%B8%B1%E0%B9%89งคร%E0%B8%B1%E0%B9%89งท%E0%B8%B5%E0%B9%88 3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>แยกต%E0%B8%B1%E0%B9%89งคร%E0%B8%B1%E0%B9%89งท%E0%B8%B5%E0%B9%88 4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>แยกต%E0%B8%B1%E0%B9%89งคร%E0%B8%B1%E0%B9%89งท%E0%B8%B5%E0%B9%88 5</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Setup</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <excludedStandardButtons>New</excludedStandardButtons>
+        <excludedStandardButtons>Accept</excludedStandardButtons>
+        <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>Can_Input_BA_at_First_Setup_Only</fullName>
+        <active>true</active>
+        <description>กรอก BA ได้เฉพาะตอนตั้งวงเงินครั้งแรกเท่านั้น</description>
+        <errorConditionFormula>AND(NOT(ISPICKVAL(Product__c,&apos;ตั้งวงเงินทั้งหมดในครั้งแรก&apos;)),NOT(ISPICKVAL(Product__c,&apos;แยกตั้งครั้งที่ 1&apos;)),OR(BA_Prosaving__c &lt;&gt; 0,BA_Protection__c &lt;&gt; 0))</errorConditionFormula>
+        <errorMessage>กรอก BA ได้เฉพาะตอนตั้งวงเงินครั้งแรกเท่านั้น</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Cannot_Create_Opportunity_Product</fullName>
+        <active>true</active>
+        <description>Cannot Create Product. Stage need to be in: &apos;Waiting for Credit Setup&apos;</description>
+        <errorConditionFormula>AND(NOT( TEXT(Opportunity__r.StageName) = &quot;Waiting for Credit Setup&quot;),NOT( TEXT(Opportunity__r.StageName) = &quot;Partial Loan Setup&quot;))</errorConditionFormula>
+        <errorMessage>Cannot Create Product. Stage need to be in: &apos;Waiting for Credit Setup&apos; or &apos;Partial Loan Setup&apos;</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Cannot_change_status_to_Setup</fullName>
+        <active>true</active>
+        <description>Not allow to change status to Setup if Setup Amount is equal to null or zero</description>
+        <errorConditionFormula>TEXT(Status__c) = &quot;Setup&quot; &amp;&amp; 
+(ISNULL(Setup_Amount__c) ||
+ISNULL(Setup_Date__c))</errorConditionFormula>
+        <errorMessage>Please input Setup Amount and Setup Date</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Cannot_setup_future_date</fullName>
+        <active>true</active>
+        <errorConditionFormula>Setup_Date__c &gt; TODAY()</errorConditionFormula>
+        <errorDisplayField>Setup_Date__c</errorDisplayField>
+        <errorMessage>ไม่สามารถตั้งวงเงินล่วงหน้าได้</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Not_Allow_Edit_Product_of_Closed_Opp</fullName>
+        <active>true</active>
+        <errorConditionFormula>(ISPICKVAL(Opportunity__r.StageName,&apos;All Loan Setup&apos;) || ISPICKVAL(Opportunity__r.StageName,&apos;Auto Closed&apos;) || ISPICKVAL(Opportunity__r.StageName,&apos;Closed Lost&apos;)) &amp;&amp; (ISCHANGED(Product__c) || ISCHANGED(Status__c) || ISCHANGED(Requested_Amount__c) || ISCHANGED(Approved_Amount__c) || ISCHANGED(Setup_Amount__c) || ISCHANGED(Setup_Date__c) || ISCHANGED(Front_End_Fee__c))</errorConditionFormula>
+        <errorMessage>Unable to edit Opportunity Product if the related Opportunity was closed</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Setup_Amount_more_than_Approved_Amount</fullName>
+        <active>false</active>
+        <errorConditionFormula>Setup_Amount__c &gt; Approved_Amount__c</errorConditionFormula>
+        <errorDisplayField>Setup_Amount__c</errorDisplayField>
+        <errorMessage>Setup Amount cannot be more than Approved Amount</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Setup_Amount_must_be_not_zero</fullName>
+        <active>true</active>
+        <description>วงเงินที่ตั้งห้ามเป็น 0</description>
+        <errorConditionFormula>Setup_Amount__c =0</errorConditionFormula>
+        <errorDisplayField>Setup_Amount__c</errorDisplayField>
+        <errorMessage>วงเงินที่ตั้งห้ามเป็น 0</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Status_Setup_FrontEndFee_BA_NotNull</fullName>
+        <active>true</active>
+        <description>When status = Setup if Front End Fee, BA Prosaving, BA Protection is null</description>
+        <errorConditionFormula>TEXT(Status__c) = &quot;Setup&quot; &amp;&amp; 
+(ISNULL( Front_End_Fee__c ) ||
+ISNULL( BA_Prosaving__c ) ||
+ISNULL(  BA_Protection__c  ))</errorConditionFormula>
+        <errorDisplayField>Front_End_Fee__c</errorDisplayField>
+        <errorMessage>กรุณากรอก  Front End Fee และ เบี้ย BA Prosaving / BA Protection หากไม่มีการเก็บให้ใส่ 0
+*** เบี้ย BA Prosaving and BA Protection ให้กรอกเฉพาะตอนตั้งวงเงินครั้งแรกเท่านั้น</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>New</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>New</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>if(&quot;{!Opportunity.StageName}&quot;==&quot;{!$Label.Waiting_for_Credit_Setup}&quot; || &quot;{!Opportunity.StageName}&quot;==&quot;{!$Label.Partial_Loan_Setup}&quot; || &quot;{!Opportunity.StageName}&quot;==&quot;{!$Label.All_Loan_Setup}&quot;)
+window.location = &quot;{!$Setup.OpportunityProductField__c.OppProductObjectId__c}/e?{!$Setup.OpportunityProductField__c.OpportunityIdFieldId__c}={!Opportunity.Name}&amp;{!$Setup.OpportunityProductField__c.OpportunityIdFieldId__c}_lkid={!Opportunity.Id}&amp;retURL=%2F{!Opportunity.Id}&quot;;
+else alert(&quot;Cannot Create Product. Stage need to be in: &apos;Waiting for Credit Setup&apos;&quot;);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Setup_All</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Setup All</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/32.0/connection.js&quot;)} 
+
+var element = document.getElementById(&apos;setupall_id&apos;); 
+if (typeof(element) === &quot;undefined&quot; || element == null){ 
+document.body.innerHTML += &apos;&lt;div id=&quot;setupall_id&quot; style=&quot; background: #fff none repeat scroll 0 0;border-radius: 5px;box-shadow: 0 0 4px rgba(0, 0, 0, 0.7);display: none;padding: 30px;&quot;&gt;&lt;iframe id=&quot;setupall_frame&quot; src=&quot;&quot; width=&quot;500&quot; height=&quot;200&quot; scrolling=&quot;yes&quot; style=&quot;border:0;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;div id=&quot;lean_overlay&quot; style=&quot;position: fixed;z-index:100;top: 0px;left: 0px;height:100%;width:100%;background: #000;display: none;&quot;&gt;&lt;/div&gt;&apos;; 
+
+window.addEventListener(&quot;message&quot;, function(ev){ 
+try { 
+var objectJson = JSON.parse(ev.data); 
+if (objectJson &amp;&amp; typeof objectJson === &quot;object&quot; &amp;&amp; objectJson !== null) { 
+if(objectJson.success){ 
+var event; 
+if (document.createEvent) { 
+event = document.createEvent(&quot;HTMLEvents&quot;); 
+event.initEvent(&quot;click&quot;, true, true); 
+} else { 
+event = document.createEventObject(); 
+event.eventType = &quot;click&quot;; 
+} 
+event.eventName = &quot;click&quot;; 
+
+if (document.createEvent) { 
+
+document.getElementById(&apos;lean_overlay&apos;).dispatchEvent(event); 
+} else { 
+document.getElementById(&apos;lean_overlay&apos;).fireEvent(&quot;on&quot; + event.eventType, event); 
+}
+location.reload(); 
+} 
+} 
+}catch (e) { console.log(e); } 
+}, false); 
+
+document.getElementById(&apos;lean_overlay&apos;).addEventListener(&quot;click&quot;, function(e) { 
+document.getElementById(&apos;lean_overlay&apos;).style.display = &quot;none&quot;; 
+document.getElementById(&apos;setupall_id&apos;).style.display = &quot;none&quot;; 
+
+}); 
+var profileName = &apos;{!$Profile.Name}&apos;;
+if(profileName!=&apos;SME-RM&apos;){
+  var button = document.querySelectorAll(&apos;.btn&apos;);
+  for(var i = 0; i&lt; button.length;i++){
+    if(button[i].name == &apos;setup_all&apos;) button[i].style.display = &apos;none&apos;;
+  }
+}
+}else{
+
+document.getElementById(&apos;setupall_frame&apos;).src = &apos;/apex/SetupAll?opid={!Opportunity.Id}&apos;; 
+var confirmation = window.confirm(&quot;Do you want to Setup All?&quot;); 
+
+if (confirmation == true){ 
+
+var modal_id = &apos;setupall_id&apos;; 
+
+var modal_width = 560; 
+document.getElementById(&apos;lean_overlay&apos;).style.display = &apos;block&apos;; 
+document.getElementById(&apos;lean_overlay&apos;).style.opacity = &apos;0.5&apos;; 
+
+document.getElementById(&apos;setupall_id&apos;).style.display = &apos;block&apos;; 
+document.getElementById(&apos;setupall_id&apos;).style.position = &apos;fixed&apos;; 
+document.getElementById(&apos;setupall_id&apos;).style.opacity = &apos;1&apos;; 
+document.getElementById(&apos;setupall_id&apos;).style.zIndex = &apos;11000&apos;; 
+document.getElementById(&apos;setupall_id&apos;).style.left = &apos;50%&apos;; 
+document.getElementById(&apos;setupall_id&apos;).style.marginLeft = &apos;-&apos;+(modal_width/2)+&quot;px&quot;; 
+document.getElementById(&apos;setupall_id&apos;).style.top = &apos;100px&apos;; 
+}
+}</url>
+    </webLinks>
+</CustomObject>

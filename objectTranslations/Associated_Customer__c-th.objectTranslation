@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Associated Customer --></value>
+    </caseValues>
+    <fields>
+        <label><!-- Associated Customer Type --></label>
+        <name>Associated_Customer_Type__c</name>
+        <picklistValues>
+            <masterLabel>Interested</masterLabel>
+            <translation><!-- Interested --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Interested</masterLabel>
+            <translation><!-- Not Interested --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Borrower Type --></label>
+        <name>Borrower_Type__c</name>
+        <picklistValues>
+            <masterLabel>Co Borrower</masterLabel>
+            <translation><!-- Co Borrower --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Main Borrower</masterLabel>
+            <translation><!-- Main Borrower --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Call Plan / Call Report --></label>
+        <name>Call_Plan_Call_Report__c</name>
+        <relationshipLabel><!-- Associated Customers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>ชื่อผู้ติดต่อ</label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- Associated Customers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>ชื่อลูกค้า/บริษัท</label>
+        <name>Customer_Name__c</name>
+    </fields>
+    <fields>
+        <label>ลูกค้า/บริษัท</label>
+        <name>Customer__c</name>
+        <relationshipLabel><!-- Associated Customers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Secondary Call Plan / Call Report --></label>
+        <name>Secondary_Call_Plan_Call_Report__c</name>
+        <relationshipLabel><!-- Associated Customers (Secondary Call Plan / Call Report) --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Associated Contact Person</layout>
+        <sections>
+            <label><!-- Associated Contact Person --></label>
+            <section>Associated Contact Person</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Associated Contact Person Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Associated Customer</layout>
+        <sections>
+            <label><!-- Associated Customer --></label>
+            <section>Associated Customer</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Associated Customer Interested Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Associated Customer Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Associated Customer Not Interested Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel><!-- REF# --></nameFieldLabel>
+    <recordTypes>
+        <label>Contact บุคคลผู้เกี่ยวข้อง</label>
+        <name>Associated_Contact_Persons</name>
+    </recordTypes>
+    <recordTypes>
+        <label>Contact ลูกค้าที่เกี่ยวข้อง</label>
+        <name>Associated_Customer</name>
+    </recordTypes>
+    <recordTypes>
+        <label>ลูกค้าสนใจ</label>
+        <name>Interested</name>
+    </recordTypes>
+    <recordTypes>
+        <label>ลูกค้าไม่สนใจ</label>
+        <name>Not_Interested</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Please select borrower type --></errorMessage>
+        <name>Borrow_should_be_selected_when_interest</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>ไม่สามารถเลือกลูกค้าคนเดียวกันกับ Call Plan/Call Report ได้</errorMessage>
+        <name>Not_allow_to_select_same_customer</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Save_Associated --></label>
+        <name>Save_Associated</name>
+    </webLinks>
+</CustomObjectTranslation>

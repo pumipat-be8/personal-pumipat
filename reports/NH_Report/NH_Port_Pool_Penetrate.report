@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>IF( Team_Structure__c.Customer_Port__c:SUM &gt; 0, Team_Structure__c.Contacted_Customer_Port__c:SUM/Team_Structure__c.Customer_Port__c:SUM,0)</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>% Contacted Customer Port</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>IF( Team_Structure__c.Customer_Pool__c:SUM &gt; 0, Team_Structure__c.Contacted_Customer_Pool__c:SUM/Team_Structure__c.Customer_Pool__c:SUM,0)</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA2</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>% Contacted Customer Pool</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>IF( Team_Structure__c.Customer_Other__c:SUM &gt; 0, Team_Structure__c.Contacted_Customer_Other__c:SUM/Team_Structure__c.Customer_Other__c:SUM,0)</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA3</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>% Contacted Customer Other</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>IF(Team_Structure__c.Total_Customer__c:SUM &gt; 0, (Team_Structure__c.Contacted_Customer_Port__c:SUM+Team_Structure__c.Contacted_Customer_Pool__c:SUM+Team_Structure__c.Contacted_Customer_Other__c:SUM)/Team_Structure__c.Total_Customer__c:SUM,0)</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA4</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>% Total Contacted Customer</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Team_Structure__c.Customer_Port__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Team_Structure__c.Customer_Pool__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Team_Structure__c.Customer_Other__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Team_Structure__c.Total_Customer__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Team_Structure__c.Contacted_Customer_Port__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Team_Structure__c.Contacted_Customer_Pool__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Team_Structure__c.Contacted_Customer_Other__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Team_Structure__c.Total_Contacted_Customer_Port_Pool_Other__c</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Team_Structure__c.Type__c</column>
+            <operator>equals</operator>
+            <value>Team</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Team_Structure__c.NH_Name_Report__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Team_Structure__c.AH_Name_Report__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Team_Structure__c.RC_Name_TH__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>NH : Port/Pool Penetrate</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Team_Structure__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

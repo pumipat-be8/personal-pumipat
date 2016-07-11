@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- Pain and Need --></value>
+    </caseValues>
+    <fields>
+        <label><!-- Call Plan / Call Report --></label>
+        <name>Call_Plan_Call_Report__c</name>
+        <relationshipLabel><!-- Pains and Needs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Comment --></label>
+        <name>Comment__c</name>
+    </fields>
+    <fields>
+        <label>ชื่อลูกค้า</label>
+        <name>Customer__c</name>
+        <relationshipLabel><!-- Pains and Needs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Have Pain/Needs? --></label>
+        <name>Have_Pain_Needs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pain List --></label>
+        <name>Pain_List__c</name>
+        <picklistValues>
+            <masterLabel>Credit (ขอเพิ่ม, เปลี่ยนแปลงเงื่อนไขวงเงิน)</masterLabel>
+            <translation><!-- Credit (ขอเพิ่ม, เปลี่ยนแปลงเงื่อนไขวงเงิน) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pricing (ต่อรองค่าดอกเบี้ย, ค่าธรรมเนียม)</masterLabel>
+            <translation><!-- Pricing (ต่อรองค่าดอกเบี้ย, ค่าธรรมเนียม) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pricing (ต่อรองค่าธรรมเนียม, วิธีคิดค่าธรรมเนียม)</masterLabel>
+            <translation><!-- Pricing (ต่อรองค่าธรรมเนียม, วิธีคิดค่าธรรมเนียม) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service (ไม่พอใจบริการของ Spoke)</masterLabel>
+            <translation><!-- Service (ไม่พอใจบริการของ Spoke) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service (ไม่พอใจบริการของสาขา, ความถูกต้องและรวดเร็วในการออกเอกสาร / Spoke)</masterLabel>
+            <translation><!-- Service (ไม่พอใจบริการของสาขา, ความถูกต้องและรวดเร็วในการออกเอกสาร / Spoke) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>มี LI ไฟฟ้าอย่างเดียว</masterLabel>
+            <translation><!-- มี LI ไฟฟ้าอย่างเดียว --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ลูกค้าต่อรอง Rate</masterLabel>
+            <translation><!-- ลูกค้าต่อรอง Rate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ลูกค้ารู้สึกว่าไม่ได้รับประโยชน์จากการทำ Fwd/Option</masterLabel>
+            <translation><!-- ลูกค้ารู้สึกว่าไม่ได้รับประโยชน์จากการทำ Fwd/Option --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>อื่นๆ โปรดระบุ</masterLabel>
+            <translation><!-- อื่นๆ โปรดระบุ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>อื่นๆ โปรดระบุ (Relationship, ปรับโครงสร้างหนี้, Refinance ไปธนาคารอื่น, ลูกค้าปิดกิจการ)</masterLabel>
+            <translation><!-- อื่นๆ โปรดระบุ (Relationship, ปรับโครงสร้างหนี้, Refinance ไปธนาคารอื่น, ลูกค้าปิดกิจการ) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>เศรษฐกิจ (ซื้อ-ขาย ในประเทศมากขึ้น, บริษัทมีสภาพคล่องเพียงพอ, คู่ค้าชะลอคำสั่งซื้อ)</masterLabel>
+            <translation><!-- เศรษฐกิจ (ซื้อ-ขาย ในประเทศมากขึ้น, บริษัทมีสภาพคล่องเพียงพอ, คู่ค้าชะลอคำสั่งซื้อ) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>เศรษฐกิจ (เศรษฐกิจชะลอตัว, งบประมาณของรัฐลดลง)</masterLabel>
+            <translation><!-- เศรษฐกิจ (เศรษฐกิจชะลอตัว, งบประมาณของรัฐลดลง) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ไม่มี Pain</masterLabel>
+            <translation><!-- ไม่มี Pain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ไม่มีธุรกรรมต่างประเทศอีกต่อไป</masterLabel>
+            <translation><!-- ไม่มีธุรกรรมต่างประเทศอีกต่อไป --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>หมายเหตุ Pain</label>
+        <name>Pain_Resolution_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pain Status --></label>
+        <name>Pain_Status__c</name>
+        <picklistValues>
+            <masterLabel>No Status</masterLabel>
+            <translation><!-- No Status --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>จบ (แก้ได้)</masterLabel>
+            <translation><!-- จบ (แก้ได้) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>จบ(แก้ไม่ได้)</masterLabel>
+            <translation><!-- จบ(แก้ไม่ได้) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ยังไม่จบ(ต้องตามต่อ)</masterLabel>
+            <translation><!-- ยังไม่จบ(ต้องตามต่อ) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>โอนให้คนอื่นดำเนินการต่อ</masterLabel>
+            <translation><!-- โอนให้คนอื่นดำเนินการต่อ --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>Product__c</name>
+        <picklistValues>
+            <masterLabel>Pain FX</masterLabel>
+            <translation><!-- Pain FX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pain LI</masterLabel>
+            <translation><!-- Pain LI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pain TF</masterLabel>
+            <translation><!-- Pain TF --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Profile --></label>
+        <name>Profile__c</name>
+    </fields>
+    <layouts>
+        <layout>Pain Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel><!-- Need/Pain No. --></nameFieldLabel>
+    <webLinks>
+        <label>Pain และ Need</label>
+        <name>New_Pain_and_Need</name>
+    </webLinks>
+</CustomObjectTranslation>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Customer Relationship</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Customer Relationship</value>
+    </caseValues>
+    <fields>
+        <label><!-- Contact Person Name --></label>
+        <name>Contact_Person_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Person --></label>
+        <name>Contact_Person__c</name>
+        <relationshipLabel><!-- Customer Relationship --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Customer --></label>
+        <name>Customer_1Mashup__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer --></label>
+        <name>Customer_1__c</name>
+        <relationshipLabel><!-- Customer Relationship --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Customer --></label>
+        <name>Customer_2Mashup__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer --></label>
+        <name>Customer_2__c</name>
+        <relationshipLabel><!-- Customer Relationship (Customer) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Relationship Type --></label>
+        <name>Relationship_Type__c</name>
+        <picklistValues>
+            <masterLabel>Is Owner Of</masterLabel>
+            <translation><!-- Is Owner Of --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Is Parent Account Of</masterLabel>
+            <translation><!-- Is Parent Account Of --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Customer with Contact Person</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Customer with Customer</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Customer with Contact Person --></label>
+        <name>Customer_with_Contact_Person</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Customer with Customer --></label>
+        <name>Customer_with_Customer</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

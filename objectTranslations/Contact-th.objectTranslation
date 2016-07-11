@@ -1,0 +1,943 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>บุคคลผู้ติดต่อ</value>
+    </caseValues>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>เข้าถึงบุคคลผู้ติดต่อ</value>
+        </caseValues>
+        <name>contact_access</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>ระดับการเข้าถึงบุคคลผู้ติดต่อ</value>
+        </caseValues>
+        <name>contact_access_level</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>บัญชีบุคคลผู้ติดต่อ</value>
+        </caseValues>
+        <name>contact_account</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>สกุลเงินของบุคคลผู้ติดต่อ</value>
+        </caseValues>
+        <name>contact_currency</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>คำอธิบายสำหรับบุคคลผู้ติดต่อ</value>
+        </caseValues>
+        <name>contact_description</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>ฝ่ายของบุคคลผู้ติดต่อ</value>
+        </caseValues>
+        <name>contact_division</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>แก้ไขบุคคลผู้ติดต่อ</value>
+        </caseValues>
+        <name>contact_edit</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>อีเมลของบุคคลผู้ติดต่อ</value>
+        </caseValues>
+        <name>contact_email</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>โทรสารของบุคคลผู้ติดต่อ</value>
+        </caseValues>
+        <name>contact_fax</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>ฟิลด์บุคคลผู้ติดต่อ</value>
+        </caseValues>
+        <name>contact_field</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>รหัสประจำบุคคลผู้ติดต่อ</value>
+        </caseValues>
+        <name>contact_id</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>ข้อมูลบุคคลผู้ติดต่อ</value>
+        </caseValues>
+        <name>contact_information</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>โทรศัพท์เคลื่อนที่ของบุคคลผู้ติดต่อ</value>
+        </caseValues>
+        <name>contact_mobile</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>ชื่อบุคคลผู้ติดต่อ</value>
+        </caseValues>
+        <name>contact_name</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>บันทึกบุคคลผู้ติดต่อ</value>
+        </caseValues>
+        <name>contact_note</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>หมายเลขบุคคลผู้ติดต่อ</value>
+        </caseValues>
+        <name>contact_number</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>เจ้าของบุคคลผู้ติดต่อ</value>
+        </caseValues>
+        <name>contact_owner</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>ชื่อย่อของเจ้าของบุคคลผู้ติดต่อ</value>
+        </caseValues>
+        <name>contact_owner_alias</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>โทรศัพท์ของบุคคลผู้ติดต่อ</value>
+        </caseValues>
+        <name>contact_phone</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>เร็กคอร์ดบุคคลผู้ติดต่อ</value>
+        </caseValues>
+        <name>contact_record</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>ประเภทเร็กคอร์ดสำหรับบุคคลผู้ติดต่อ</value>
+        </caseValues>
+        <name>contact_record_type</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>รายงานไปยังบุคคลผู้ติดต่อ</value>
+        </caseValues>
+        <name>contact_reports_to</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>บทบาทบุคคลผู้ติดต่อ</value>
+        </caseValues>
+        <name>contact_role</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>รหัสประจำระยะบุคคลผู้ติดต่อ</value>
+        </caseValues>
+        <name>contact_stage_id</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>สถานะของบุคคลผู้ติดต่อ</value>
+        </caseValues>
+        <name>contact_status</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>ประเภทของบุคคลผู้ติดต่อ</value>
+        </caseValues>
+        <name>contact_type</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>มุมมองบุคคลผู้ติดต่อ</value>
+        </caseValues>
+        <name>contact_view</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>ชื่อบุคคลผู้ติดต่อ</value>
+        </caseValues>
+        <name>first_name_contact</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>นามสกุลบุคคลผู้ติดต่อ</value>
+        </caseValues>
+        <name>last_name_contact</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>ชื่อบุคคลผู้ติดต่อ</value>
+        </caseValues>
+        <name>name_contact</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>ชื่อบุคคลผู้ติดต่อ</value>
+        </caseValues>
+        <name>salutation_contact</name>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>ตำแหน่งของบุคคลผู้ติดต่อ (อื่นๆ)</value>
+        </caseValues>
+        <name>title_contact</name>
+    </fields>
+    <fields>
+        <label>ผู้ติดต่อยังสามารถติดต่อได้</label>
+        <name>Active_Contact__c</name>
+    </fields>
+    <fields>
+        <label>อาหารที่แพ้</label>
+        <name>Allergy_to_Food__c</name>
+    </fields>
+    <fields>
+        <help>กรุณากรอกเป็น วว/ดด/ปปปป เท่านั้น เช่น 31/12/2530</help>
+        <label>วันเกิดผู้ติดต่อ</label>
+        <name>Birthdate__c</name>
+    </fields>
+    <fields>
+        <label>อีเมล์บริษัท</label>
+        <name>Business_Email__c</name>
+    </fields>
+    <fields>
+        <label>เลขที่ CIS ID</label>
+        <name>CIS_ID__c</name>
+    </fields>
+    <fields>
+        <label>ช่องทางในการส่งข่าวสาร</label>
+        <name>Channel_to_Deliver__c</name>
+        <picklistValues>
+            <masterLabel>Article</masterLabel>
+            <translation><!-- Article --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event Speaker</masterLabel>
+            <translation><!-- Event Speaker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VTR</masterLabel>
+            <translation><!-- VTR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>short scoop</masterLabel>
+            <translation><!-- short scoop --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>ชอบเข้าสังคม</label>
+        <name>Character__c</name>
+    </fields>
+    <fields>
+        <label>ของสะสม</label>
+        <name>Collection__c</name>
+    </fields>
+    <fields>
+        <label>ชื่อบุคคลผู้ติดต่อ</label>
+        <name>Contact_Firstname__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Owner --></label>
+        <name>Contact_Owner__c</name>
+    </fields>
+    <fields>
+        <label>ตำแหน่งของผู้ติดต่อ</label>
+        <name>Contact_Position__c</name>
+        <picklistValues>
+            <masterLabel>กรรมการ</masterLabel>
+            <translation><!-- กรรมการ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>กรรมการบริหาร</masterLabel>
+            <translation><!-- กรรมการบริหาร --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ประธานกรรมการ</masterLabel>
+            <translation><!-- ประธานกรรมการ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ผุ้จ้ดการฝ่ายอำนวยการ</masterLabel>
+            <translation><!-- ผุ้จ้ดการฝ่ายอำนวยการ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ผู้จัดการร้าน</masterLabel>
+            <translation><!-- ผู้จัดการร้าน --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ผู้จัดการสาขา</masterLabel>
+            <translation><!-- ผู้จัดการสาขา --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ผู้จัดการโรงงาน</masterLabel>
+            <translation><!-- ผู้จัดการโรงงาน --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ผู้จ้ดการฝ่ายการตลาด</masterLabel>
+            <translation><!-- ผู้จ้ดการฝ่ายการตลาด --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ผู้จ้ดการฝ่ายการเงิน</masterLabel>
+            <translation><!-- ผู้จ้ดการฝ่ายการเงิน --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ผู้จ้ดการฝ่ายจัดซื้อ</masterLabel>
+            <translation><!-- ผู้จ้ดการฝ่ายจัดซื้อ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ผู้จ้ดการฝ่ายนำเข้าและส่งออก</masterLabel>
+            <translation><!-- ผู้จ้ดการฝ่ายนำเข้าและส่งออก --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ผู้จ้ดการฝ่ายบัญชี</masterLabel>
+            <translation><!-- ผู้จ้ดการฝ่ายบัญชี --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ผู้จ้ดการฝ่ายบัญชีและการเงิน</masterLabel>
+            <translation><!-- ผู้จ้ดการฝ่ายบัญชีและการเงิน --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ผู้จ้ดการฝ่ายผลิต</masterLabel>
+            <translation><!-- ผู้จ้ดการฝ่ายผลิต --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ผู้จ้ดการฝ่ายเอกสาร</masterLabel>
+            <translation><!-- ผู้จ้ดการฝ่ายเอกสาร --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ผู้จ้ดการภาคพื้นแปซิฟิก</masterLabel>
+            <translation><!-- ผู้จ้ดการภาคพื้นแปซิฟิก --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ผู้อำนวยการ</masterLabel>
+            <translation><!-- ผู้อำนวยการ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>รองกรรมการผู้จัดการ</masterLabel>
+            <translation><!-- รองกรรมการผู้จัดการ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>อื่นๆ โปรดระบุ</masterLabel>
+            <translation><!-- อื่นๆ โปรดระบุ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>เจ้าของกิจการ</masterLabel>
+            <translation><!-- เจ้าของกิจการ --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>ช่องทางที่สะดวกให้ติดต่อ</label>
+        <name>Contact_Preference_Communication__c</name>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Face to face</masterLabel>
+            <translation><!-- Face to face --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Line</masterLabel>
+            <translation><!-- Line --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Telephone</masterLabel>
+            <translation><!-- Telephone --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>ผู้ที่แก้ไข</label>
+        <name>Contact_Preference_Last_Modified_By__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Preference Last Modified Date --></label>
+        <name>Contact_Preference_Last_Modified_Date__c</name>
+    </fields>
+    <fields>
+        <label>ประเภทบุคคลผู้ติดต่อ</label>
+        <name>Contact_Representative_Type__c</name>
+        <picklistValues>
+            <masterLabel>Gate keeper</masterLabel>
+            <translation><!-- Gate keeper --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Influencer</masterLabel>
+            <translation><!-- Influencer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Innovator</masterLabel>
+            <translation><!-- Innovator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Key decision maker</masterLabel>
+            <translation><!-- Key decision maker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Purchaser</masterLabel>
+            <translation><!-- Purchaser --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User</masterLabel>
+            <translation><!-- User --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>ชื่อลูกค้า</label>
+        <name>Customer_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Id --></label>
+        <name>External_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Facebook ID --></label>
+        <name>Facebook_ID__c</name>
+    </fields>
+    <fields>
+        <label>อาหารที่ชอบ</label>
+        <name>Favorite_Food__c</name>
+        <picklistValues>
+            <masterLabel>Asian Food</masterLabel>
+            <translation><!-- Asian Food --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chinese food</masterLabel>
+            <translation><!-- Chinese food --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>European Food</masterLabel>
+            <translation><!-- European Food --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Indian</masterLabel>
+            <translation><!-- Indian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Italian</masterLabel>
+            <translation><!-- Italian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Japanese food</masterLabel>
+            <translation><!-- Japanese food --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Korean Food</masterLabel>
+            <translation><!-- Korean Food --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maxican Food</masterLabel>
+            <translation><!-- Maxican Food --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Thai food</masterLabel>
+            <translation><!-- Thai food --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>แบรนด์สินค้าที่ชอบ</label>
+        <name>Favourite_Brand__c</name>
+    </fields>
+    <fields>
+        <label>นิตยสารที่ชอบ</label>
+        <name>Favourite_Magazine__c</name>
+    </fields>
+    <fields>
+        <label>ร้านอาหารที่ชอบ</label>
+        <name>Favourite_Restaurant__c</name>
+    </fields>
+    <fields>
+        <label>กีฬาที่ชอบ</label>
+        <name>Favourite_Sport__c</name>
+        <picklistValues>
+            <masterLabel>Basketball</masterLabel>
+            <translation><!-- Basketball --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Football</masterLabel>
+            <translation><!-- Football --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Golf</masterLabel>
+            <translation><!-- Golf --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>รุ่น</label>
+        <name>Generation__c</name>
+        <picklistValues>
+            <masterLabel>Founder</masterLabel>
+            <translation><!-- Founder --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Heir</masterLabel>
+            <translation><!-- Heir --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Health-body Life Style --></label>
+        <name>Health_body_Life_Style__c</name>
+        <picklistValues>
+            <masterLabel>กอล์ฟ</masterLabel>
+            <translation><!-- กอล์ฟ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ฟุตบอล</masterLabel>
+            <translation><!-- ฟุตบอล --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>สปา/โยคะ</masterLabel>
+            <translation><!-- สปา/โยคะ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>อื่นๆ ระบุ</masterLabel>
+            <translation><!-- อื่นๆ ระบุ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>แบตมินตัน</masterLabel>
+            <translation><!-- แบตมินตัน --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Health-mind Life Style --></label>
+        <name>Health_mind_Life_Style__c</name>
+        <picklistValues>
+            <masterLabel>กิจกรรมช่วยเหลือสังคม</masterLabel>
+            <translation><!-- กิจกรรมช่วยเหลือสังคม --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ทำบุญไหว้พระ</masterLabel>
+            <translation><!-- ทำบุญไหว้พระ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>นั่งสมาธิ</masterLabel>
+            <translation><!-- นั่งสมาธิ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>อื่นๆ ระบุ</masterLabel>
+            <translation><!-- อื่นๆ ระบุ --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Instagram ID --></label>
+        <name>Instagram_ID__c</name>
+    </fields>
+    <fields>
+        <label>กิจกรรมที่สนใจ(ทั่วไป)</label>
+        <name>Interested_Event_General__c</name>
+    </fields>
+    <fields>
+        <label>กิจกรรมที่สนใจ(การลงทุน)</label>
+        <name>Interested_Event_Investment__c</name>
+    </fields>
+    <fields>
+        <label>สิ่งที่สนใจ</label>
+        <name>Interested__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>หัวข้อที่สนใจ</label>
+        <name>Interesting_Story_Topic__c</name>
+    </fields>
+    <fields>
+        <label>ภาษาที่พูด</label>
+        <name>Langauge_Spoken__c</name>
+        <picklistValues>
+            <masterLabel>Chinese</masterLabel>
+            <translation><!-- Chinese --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>English</masterLabel>
+            <translation><!-- English --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Japanese</masterLabel>
+            <translation><!-- Japanese --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Thai</masterLabel>
+            <translation><!-- Thai --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <name>LeadSource</name>
+        <picklistValues>
+            <masterLabel>Advertisement</masterLabel>
+            <translation><!-- Advertisement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employee Referral</masterLabel>
+            <translation><!-- Employee Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>External Referral</masterLabel>
+            <translation><!-- External Referral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner</masterLabel>
+            <translation><!-- Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Public Relations</masterLabel>
+            <translation><!-- Public Relations --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Seminar - Internal</masterLabel>
+            <translation><!-- Seminar - Internal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Seminar - Partner</masterLabel>
+            <translation><!-- Seminar - Partner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trade Show</masterLabel>
+            <translation><!-- Trade Show --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web</masterLabel>
+            <translation><!-- Web --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Word of mouth</masterLabel>
+            <translation><!-- Word of mouth --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>รายละเอียดงานอดิเรกหรือความสนใจ</label>
+        <name>Life_Style_Details__c</name>
+        <picklistValues>
+            <masterLabel>กอล์ฟ</masterLabel>
+            <translation><!-- กอล์ฟ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>กิจกรรมช่วยเหลือสังคม</masterLabel>
+            <translation><!-- กิจกรรมช่วยเหลือสังคม --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>คาราโอเกะ</masterLabel>
+            <translation><!-- คาราโอเกะ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ชมคอนเสิร์ต</masterLabel>
+            <translation><!-- ชมคอนเสิร์ต --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ชมภาพยนตร์</masterLabel>
+            <translation><!-- ชมภาพยนตร์ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ช้อปปิ้ง</masterLabel>
+            <translation><!-- ช้อปปิ้ง --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ทะเล</masterLabel>
+            <translation><!-- ทะเล --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ทำบุญไหว้พระ</masterLabel>
+            <translation><!-- ทำบุญไหว้พระ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>นั่งสมาธิ</masterLabel>
+            <translation><!-- นั่งสมาธิ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>น้ำตก/แม่น้ำ</masterLabel>
+            <translation><!-- น้ำตก/แม่น้ำ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ปาร์ตี้สังสรรค์</masterLabel>
+            <translation><!-- ปาร์ตี้สังสรรค์ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ฟุตบอล</masterLabel>
+            <translation><!-- ฟุตบอล --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ภูเขา</masterLabel>
+            <translation><!-- ภูเขา --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>รับประทานอาหาร</masterLabel>
+            <translation><!-- รับประทานอาหาร --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>สปา/โยคะ</masterLabel>
+            <translation><!-- สปา/โยคะ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>อื่นๆ ระบุ</masterLabel>
+            <translation><!-- อื่นๆ ระบุ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>แบตมินตัน</masterLabel>
+            <translation><!-- แบตมินตัน --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>งานอดิเรกหรือความสนใจ</label>
+        <name>Life_Style__c</name>
+        <picklistValues>
+            <masterLabel>Health-body</masterLabel>
+            <translation>กิจกรรมเชิงสุขภาพกาย</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Health-mind</masterLabel>
+            <translation>กิจกรรมเชิงสุขภาพใจ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>อื่นๆ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recreation</masterLabel>
+            <translation>กิจกรรมเชิงสันทนาการ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Travel</masterLabel>
+            <translation>กิจกรรมเชิงท่องเที่ยว</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Line ID --></label>
+        <name>Line_ID__c</name>
+    </fields>
+    <fields>
+        <label>หัวข้อที่สนใจที่สุด</label>
+        <name>Most_Interested_Topic__c</name>
+        <picklistValues>
+            <masterLabel>Business Only</masterLabel>
+            <translation><!-- Business Only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Investment</masterLabel>
+            <translation><!-- Investment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Travel</masterLabel>
+            <translation><!-- Travel --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>ชื่อเล่น</label>
+        <name>Nickname__c</name>
+    </fields>
+    <fields>
+        <label>ข้อมูลอื่นๆเกี่ยวกับลักษณะส่วนบุคคล</label>
+        <name>Other_Info_about_Character__c</name>
+    </fields>
+    <fields>
+        <label>รายละเอียดงานอดิเรกหรือความสนใจอื่นๆ</label>
+        <name>Other_Life_Style_Detail__c</name>
+    </fields>
+    <fields>
+        <label>อีเมล์ส่วนตัว</label>
+        <name>Personal_Email__c</name>
+    </fields>
+    <fields>
+        <help>กรุณากรอกเป็นตัวเลข 9 - 10 หลักเท่านั้น</help>
+        <label>โทรศัพท์มือถือ</label>
+        <name>Phone_Number__c</name>
+    </fields>
+    <fields>
+        <label>รูปถ่ายกิจการ</label>
+        <name>Picture__c</name>
+    </fields>
+    <fields>
+        <label>ทักษะในการนำเสนอ</label>
+        <name>Presentation_Skill__c</name>
+        <picklistValues>
+            <masterLabel>Fair</masterLabel>
+            <translation><!-- Fair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Good</masterLabel>
+            <translation><!-- Good --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Good</masterLabel>
+            <translation><!-- Not Good --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>เป็นผู้ติดต่อหลัก</label>
+        <name>Primary_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recreation Life Style --></label>
+        <name>Recreation_Life_Style__c</name>
+        <picklistValues>
+            <masterLabel>คาราโอเกะ</masterLabel>
+            <translation><!-- คาราโอเกะ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ชมคอนเสิร์ต</masterLabel>
+            <translation><!-- ชมคอนเสิร์ต --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ชมภาพยนตร์</masterLabel>
+            <translation><!-- ชมภาพยนตร์ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ช้อปปิ้ง</masterLabel>
+            <translation><!-- ช้อปปิ้ง --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ปาร์ตี้สังสรรค์</masterLabel>
+            <translation><!-- ปาร์ตี้สังสรรค์ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>รับประทานอาหาร</masterLabel>
+            <translation><!-- รับประทานอาหาร --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>อื่นๆ ระบุ</masterLabel>
+            <translation><!-- อื่นๆ ระบุ --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>ประเภทเครือข่ายสังคม</label>
+        <name>Social_Network_Type__c</name>
+        <picklistValues>
+            <masterLabel>Facebook</masterLabel>
+            <translation><!-- Facebook --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Instagram</masterLabel>
+            <translation><!-- Instagram --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Line</masterLabel>
+            <translation><!-- Line --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Travel Life Style --></label>
+        <name>Travel_Life_Style__c</name>
+        <picklistValues>
+            <masterLabel>ทะเล</masterLabel>
+            <translation><!-- ทะเล --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>น้ำตก/แม่น้ำ</masterLabel>
+            <translation><!-- น้ำตก/แม่น้ำ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ภูเขา</masterLabel>
+            <translation><!-- ภูเขา --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>อื่นๆ ระบุ</masterLabel>
+            <translation><!-- อื่นๆ ระบุ --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>SME-Contact Layout</layout>
+        <sections>
+            <label><!-- Preference --></label>
+            <section>Preference</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- SME-Contact --></label>
+        <name>SME_Contact</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage>กรุณากรอกเป็น วว/ดด/ปปปป เท่านั้น เช่น 31/12/2530 และวันที่จะต้องไม่เกินกว่าวันปัจจุบัน</errorMessage>
+        <name>Invalid_Contact_Birthdate</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- กรุณากรอกชื่อตำแหน่งบุคคลผู้ติดต่อ --></errorMessage>
+        <name>Other_Contact_Position_Cannot_Blank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>กรุณากรอกชื่อบุคคลผู้ติดต่อที่ฟิลด์ Contact Firstname เท่านั้น</errorMessage>
+        <name>Standard_Firstname_Must_be_Blank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>กรุณากรอกเป็น วว/ดด/ปปปป เท่านั้น เช่น 31/12/2530</errorMessage>
+        <name>Validate_Contact_Birthdate_Format</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>กรุณากรอกเบอร์โทรศัพท์เป็นตัวเลข 9 - 10 หลักเท่านั้น</errorMessage>
+        <name>Validate_Contact_Person_Phone_Format</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SendGmail --></label>
+        <name>SendGmail</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooMaps --></label>
+        <name>YahooMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- YahooWeather --></label>
+        <name>YahooWeather</name>
+    </webLinks>
+</CustomObjectTranslation>

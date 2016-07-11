@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>ที่อยู่ลูกค้า</value>
+    </caseValues>
+    <fields>
+        <label>ประเภทที่อยู่</label>
+        <name>Address_Type__c</name>
+        <picklistValues>
+            <masterLabel>02</masterLabel>
+            <translation><!-- 02 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>ซอย</label>
+        <name>Alley__c</name>
+    </fields>
+    <fields>
+        <label>ตู้ ปณ.</label>
+        <name>Box_Number__c</name>
+    </fields>
+    <fields>
+        <label>อาคาร</label>
+        <name>Building__c</name>
+    </fields>
+    <fields>
+        <label><!-- CIS ID --></label>
+        <name>CIS_ID__c</name>
+        <relationshipLabel>ที่อยู่</relationshipLabel>
+    </fields>
+    <fields>
+        <label>รหัสประเทศ</label>
+        <name>Country_code__c</name>
+    </fields>
+    <fields>
+        <label>เขต/อำเภอ</label>
+        <name>District__c</name>
+    </fields>
+    <fields>
+        <label><!-- External_ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label>ชั้น</label>
+        <name>Floor__c</name>
+    </fields>
+    <fields>
+        <label>บ้านเลขที่</label>
+        <name>House_Number_Encrypt__c</name>
+    </fields>
+    <fields>
+        <label>รหัสที่อยู่จากระบบเดิม</label>
+        <name>Original_Code_from_CIS__c</name>
+    </fields>
+    <fields>
+        <label>ชื่อสถานที่</label>
+        <name>Place_Name__c</name>
+    </fields>
+    <fields>
+        <label>ชื่อสถานที่</label>
+        <name>Place__c</name>
+    </fields>
+    <fields>
+        <label>รหัสไปรษณีย์</label>
+        <name>Postcode__c</name>
+    </fields>
+    <fields>
+        <label>จังหวัด</label>
+        <name>Province__c</name>
+    </fields>
+    <fields>
+        <label>ห้อง</label>
+        <name>Room__c</name>
+    </fields>
+    <fields>
+        <label>ถนน</label>
+        <name>Street__c</name>
+    </fields>
+    <fields>
+        <label>แขวง/ตำบล</label>
+        <name>Sub_District__c</name>
+    </fields>
+    <fields>
+        <label>หมู่ที่</label>
+        <name>Village_Number__c</name>
+    </fields>
+    <fields>
+        <label>หมู่บ้าน</label>
+        <name>Village__c</name>
+    </fields>
+    <layouts>
+        <layout>Address Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel><!-- Address REF# --></nameFieldLabel>
+</CustomObjectTranslation>

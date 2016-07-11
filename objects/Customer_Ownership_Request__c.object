@@ -1,0 +1,2086 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <content>CustomerOwnerReq_OverrideListView</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>This object tracks the on-going request for customer assignment via salesforce approval process</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>AH_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Year_End_Assignment__r.AH_Name__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>AH Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Approval_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Approval Status</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Open</fullName>
+                <default>true</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Approval In Progress</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cancel</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Approved_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Approved Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Assigned_Port_Pool__c</fullName>
+        <externalId>false</externalId>
+        <label>Assigned Port / Pool</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Port</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pool</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>CIS_ID_Text__c</fullName>
+        <externalId>false</externalId>
+        <formula>CIS_ID__r.CIS__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>CIS ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CIS_ID__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>CIS ID</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Customer Ownership Requests</relationshipLabel>
+        <relationshipName>Customer_Ownership_Requests</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Credit_Status__c</fullName>
+        <externalId>false</externalId>
+        <formula>Year_End_Assignment__r.Credit_Status__c</formula>
+        <label>Credit Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Current_Owner_AH__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Current Owner AH</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Customer_Ownership_Requests3</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Current_Owner_Email_Other_Team__c</fullName>
+        <externalId>false</externalId>
+        <label>Current Owner Email (Other Team)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Current_Owner_Email_Same_Team__c</fullName>
+        <externalId>false</externalId>
+        <label>Current Owner Email (Same Team)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Current_Owner_NH__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Current Owner NH</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Customer_Ownership_Requests4</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Current_Owner_TM__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Current Owner TM</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Customer_Ownership_Requests2</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Current_Owner_Team_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Current_Owner__r.Team_Name__c</formula>
+        <label>Current Owner Team Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Current_Owner__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Current Owner</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Customer_Ownership_Requests1</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Current_Owner_is_RM__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF (Current_Owner__r.Profile.Name = &quot;SME-RM&quot;, True, False)</formula>
+        <label>Current Owner is RM?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Current_Owner_is_me__c</fullName>
+        <externalId>false</externalId>
+        <formula>If ( Current_Owner__r.Employee_ID__c =  Owner:User.Employee_ID__c , True, False)</formula>
+        <label>Current Owner is me?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Customer_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>CIS_ID__r.Name_Surname_TH__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Customer Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Different_AH__c</fullName>
+        <externalId>false</externalId>
+        <formula>Current_Owner_AH__r.RC_Code__c &lt;&gt; Owner:User.AH_RC_Code__c</formula>
+        <label>Different AH?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Different_NH__c</fullName>
+        <externalId>false</externalId>
+        <formula>Current_Owner_NH__r.RC_Code__c &lt;&gt; Owner:User.NH_RC_Code__c</formula>
+        <label>Different NH?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>High_Value_Flag__c</fullName>
+        <externalId>false</externalId>
+        <formula>Year_End_Assignment__r.High_Value_Flag__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>High Value Flag</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NH_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Year_End_Assignment__r.NH_Name__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>NH Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Not_SME_Remark__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE( TEXT(Refer_Out_Segment__c), 
+&quot;CB&quot;, &quot;ขอให้ดำเนินการผ่านระบบ Change AO ตามกระบวนการปกติครับ&quot;, 
+&quot;MB&quot;, &quot;ขอให้ดำเนินการผ่านระบบ Change AO ตามกระบวนการปกติครับ&quot;,
+&quot;XS&quot;, &quot;ขอให้ดำเนินการผ่านระบบ CS SME ตามกระบวนการปกติครับ&quot;,
+&quot;MI&quot;, &quot;ขอให้ดำเนินการผ่านระบบ CS SME ตามกระบวนการปกติครับ&quot;,
+&quot;PC&quot;, &quot;ขอให้ดำเนินการผ่านระบบ CS SME ตามกระบวนการปกติครับ&quot;,
+&quot;TC&quot;, &quot;ขอให้ดำเนินการผ่านระบบ CS SME ตามกระบวนการปกติครับ&quot;,
+NULL
+)</formula>
+        <label>Remark for not SME segment :</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Not_SME_Segment_Flag__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Not SME Segment Flag</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Original_Segment__c</fullName>
+        <externalId>false</externalId>
+        <label>Original Segment</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Other_Team_AH_Email__c</fullName>
+        <externalId>false</externalId>
+        <label>Other Team AH Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Other_Team_NH_Email__c</fullName>
+        <externalId>false</externalId>
+        <label>Other Team NH Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Owned_by_AH__c</fullName>
+        <externalId>false</externalId>
+        <formula>Current_Owner__c = Current_Owner_AH__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Owned by AH</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Owned_by_NH__c</fullName>
+        <externalId>false</externalId>
+        <formula>Current_Owner__c = Current_Owner_NH__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Owned by NH</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Owner_Profile__c</fullName>
+        <externalId>false</externalId>
+        <formula>Owner:User.Profile.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Owner Profile</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Owner_is_My_AH__c</fullName>
+        <externalId>false</externalId>
+        <formula>Requestor_AH__c = Current_Owner__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Owner is My AH</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Owner_is_My_NH__c</fullName>
+        <externalId>false</externalId>
+        <formula>Requestor_NH__c = Current_Owner__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Owner is My NH</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Owner_is_My_TM__c</fullName>
+        <externalId>false</externalId>
+        <formula>Requestor_TM__c = Current_Owner__c || Owner:User.RC_Code__c = CIS_ID__r.Permanent_Team_Name__r.RC_Code__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Owner is My TM</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Owner_is_SME_Admin__c</fullName>
+        <externalId>false</externalId>
+        <formula>CIS_ID__r.Owner_is_SME_Admin__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Owner is SME-Admin</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Port_Pool_YearEnd__c</fullName>
+        <externalId>false</externalId>
+        <formula>Year_End_Assignment__r.Port_Pool__c</formula>
+        <label>Year End Port / Pool</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Port_Pool__c</fullName>
+        <externalId>false</externalId>
+        <formula>CIS_ID__r.Port_Pool__c</formula>
+        <label>CIS Port / Pool</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Previous_Owner_Email__c</fullName>
+        <externalId>false</externalId>
+        <label>Previous Owner Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RM_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Year_End_Assignment__r.RM_Name__c</formula>
+        <label>RM Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>Reason</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Refer_Out_Amphur__c</fullName>
+        <externalId>false</externalId>
+        <formula>Refer_Out_Area__r.District__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Refer Out: Amphur</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Refer_Out_Area__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Refer Out: Area</label>
+        <lookupFilter>
+            <active>false</active>
+            <filterItems>
+                <field>Master_Map__c.Type__c</field>
+                <operation>equals</operation>
+                <value>Sub District</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Master_Map__c</referenceTo>
+        <relationshipLabel>Customer Ownership Requests</relationshipLabel>
+        <relationshipName>Customer_Ownership_Requests_del</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Refer_Out_Details__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE( TEXT( Refer_Out_Reason__c ) , 
+&quot;Other Team&quot;,   Refer_Out_Team__c   , 
+&quot;Wrong Area&quot;, Refer_Out_Tumbon__c + &quot; / &quot; +  Refer_Out_Amphur__c  + &quot; / &quot; + Refer_Out_Area__r.Name , 
+&quot;Other Segment&quot;, TEXT(Refer_Out_Segment__c) , 
+null)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Refer Out Details</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Refer_Out_Province__c</fullName>
+        <externalId>false</externalId>
+        <label>Refer Out Province</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Refer_Out_Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>Refer Out Reason</label>
+        <picklist>
+            <controllingField>Request_Type__c</controllingField>
+            <picklistValues>
+                <fullName>TM Pool</fullName>
+                <default>false</default>
+                <controllingFieldValues>Release Ownership</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Bad</fullName>
+                <default>false</default>
+                <controllingFieldValues>Release Ownership</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dead</fullName>
+                <default>false</default>
+                <controllingFieldValues>Release Ownership</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Closed Business</fullName>
+                <default>false</default>
+                <controllingFieldValues>Release Ownership</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Wrong Area</fullName>
+                <default>false</default>
+                <controllingFieldValues>Release Ownership</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>AMLO List</fullName>
+                <default>false</default>
+                <controllingFieldValues>Release Ownership</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Exit Plan</fullName>
+                <default>false</default>
+                <controllingFieldValues>Release Ownership</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Criminal Offense</fullName>
+                <default>false</default>
+                <controllingFieldValues>Release Ownership</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other Team</fullName>
+                <default>false</default>
+                <controllingFieldValues>Release Ownership</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Not SME Segment</fullName>
+                <default>false</default>
+                <controllingFieldValues>Release Ownership</controllingFieldValues>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Refer_Out_Segment__c</fullName>
+        <externalId>false</externalId>
+        <label>Refer Out Segment</label>
+        <picklist>
+            <controllingField>Refer_Out_Reason__c</controllingField>
+            <picklistValues>
+                <fullName>CB</fullName>
+                <default>false</default>
+                <controllingFieldValues>Not SME Segment</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MB</fullName>
+                <default>false</default>
+                <controllingFieldValues>Not SME Segment</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ME</fullName>
+                <default>false</default>
+                <controllingFieldValues>Other Team</controllingFieldValues>
+                <controllingFieldValues>Wrong Area</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>MI</fullName>
+                <default>false</default>
+                <controllingFieldValues>Not SME Segment</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>PC</fullName>
+                <default>false</default>
+                <controllingFieldValues>Not SME Segment</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>SE</fullName>
+                <default>false</default>
+                <controllingFieldValues>Other Team</controllingFieldValues>
+                <controllingFieldValues>Wrong Area</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>TC</fullName>
+                <default>false</default>
+                <controllingFieldValues>Not SME Segment</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>XS</fullName>
+                <default>false</default>
+                <controllingFieldValues>Not SME Segment</controllingFieldValues>
+            </picklistValues>
+            <sorted>true</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Refer_Out_Team__c</fullName>
+        <externalId>false</externalId>
+        <label>Refer Out Team</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Refer_Out_Tumbon__c</fullName>
+        <externalId>false</externalId>
+        <formula>Refer_Out_Area__r.Sub_District__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Refer Out: Tumbon</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Request_Ownership_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Request Ownership Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Port</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pool (Temporary)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Request_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Request Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Request Ownership</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Release Ownership</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Requested_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Requested Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Requester_is_TM__c</fullName>
+        <externalId>false</externalId>
+        <formula>Owner:User.Id = Requestor_TM__c</formula>
+        <label>Requester is TM?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Requestor_AH_Emp_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Requestor AH Emp ID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Requestor_AH__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Requestor AH</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Customer_Ownership_Requests6</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Requestor_Emp_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>Owner:User.Employee_ID__c</formula>
+        <label>Requestor Emp ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Requestor_NH_Emp_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Requestor NH Emp ID</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Requestor_NH__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Requestor NH</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Customer_Ownership_Requests7</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Requestor_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Owner:User.FirstName &amp; &quot; &quot; &amp;  Owner:User.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Requestor Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Requestor_RC_Code__c</fullName>
+        <externalId>false</externalId>
+        <label>Requestor RC Code</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Requestor_TM_Emp_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Requestor TM Emp ID</label>
+        <length>100</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Requestor_TM__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Requestor TM</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Customer_Ownership_Requests</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Requestor_Team_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Requestor_TM__r.Team_Name__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Requestor Team Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Required_Owner_Approved__c</fullName>
+        <externalId>false</externalId>
+        <formula>if(CIS_ID__r.Ownership_Text__c = &quot;Temporary&quot; &amp;&amp; (CIS_ID__r.Permanent_Team_Name__c !=  CIS_ID__r.Current_Team_Name__c ),true,false)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Required Owner Approved</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Required_TM_Requester_Approved__c</fullName>
+        <externalId>false</externalId>
+        <formula>Owner_Profile__c =&quot;SME-RM&quot;</formula>
+        <label>Required TM Requester Approved</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Same_Team__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(Owner:User.RC_Code__c = CIS_ID__r.RC_Code__c ||  CIS_ID__r.Owner_is_SME_Admin__c , True, False)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Same Team?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Segment_Original__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Year_End_Assignment__r.Segment_Original__c)</formula>
+        <label>Segment (Original)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Service_RM_Emp_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Service RM Emp ID</label>
+        <length>20</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Service_RM_User__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Service RM</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Customer_Ownership_Requests5</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Service_RM__c</fullName>
+        <externalId>false</externalId>
+        <label>Service RM</label>
+        <picklist>
+            <controllingField>Refer_Out_Reason__c</controllingField>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+                <controllingFieldValues>TM Pool</controllingFieldValues>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+                <controllingFieldValues>TM Pool</controllingFieldValues>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Source_is_On_Going__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( ISBLANK(Year_End_Assignment__c ), True, False)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Source is On-Going</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>TM_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Year_End_Assignment__r.TM_Name__c</formula>
+        <label>TM Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Team__c</fullName>
+        <externalId>false</externalId>
+        <formula>Year_End_Assignment__r.Team__c</formula>
+        <label>Team</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>User_Admin__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>User Admin</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Customer_Ownership_Requests8</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Want_to_request_for_ownership__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Want to request for ownership ?</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Year_End_Assignment__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Year-End Assignment</label>
+        <referenceTo>Year_End_Assignment__c</referenceTo>
+        <relationshipLabel>Customer Ownership Requests</relationshipLabel>
+        <relationshipName>Customer_Ownership_Requests</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>Customer Ownership Request</label>
+    <listViews>
+        <fullName>All_Request</fullName>
+        <columns>NAME</columns>
+        <columns>CIS_ID__c</columns>
+        <columns>Customer_Name__c</columns>
+        <columns>Request_Type__c</columns>
+        <columns>Reason__c</columns>
+        <columns>Requestor_TM__c</columns>
+        <columns>Refer_Out_Reason__c</columns>
+        <columns>Approval_Status__c</columns>
+        <columns>Current_Owner__c</columns>
+        <columns>Current_Owner_TM__c</columns>
+        <columns>Requestor_Name__c</columns>
+        <columns>Port_Pool__c</columns>
+        <columns>Year_End_Assignment__c</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <label>2. All Request</label>
+        <language>en_US</language>
+        <sharedTo>
+            <group>SME_AH</group>
+            <group>SME_NH</group>
+            <group>SME_RM</group>
+            <group>SME_TM</group>
+            <role>SME_Admin</role>
+            <role>SME_Support</role>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>My_Request</fullName>
+        <columns>NAME</columns>
+        <columns>CIS_ID__c</columns>
+        <columns>Customer_Name__c</columns>
+        <columns>Port_Pool__c</columns>
+        <columns>Request_Type__c</columns>
+        <columns>Reason__c</columns>
+        <columns>Refer_Out_Reason__c</columns>
+        <columns>Approval_Status__c</columns>
+        <columns>Current_Owner__c</columns>
+        <columns>Current_Owner_TM__c</columns>
+        <columns>Requestor_TM__c</columns>
+        <columns>Requestor_Name__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Mine</filterScope>
+        <label>1. My Request</label>
+        <language>en_US</language>
+    </listViews>
+    <nameField>
+        <displayFormat>R-{000000}</displayFormat>
+        <label>REF#</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Customer Ownership Requests</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Customer_Ownership_Request_Cancel</fullName>
+        <active>true</active>
+        <description>Customer Ownership Request - Cancelled</description>
+        <label>Customer Ownership Request (Cancel)</label>
+        <picklistValues>
+            <picklist>Approval_Status__c</picklist>
+            <values>
+                <fullName>Approval In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Open</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Assigned_Port_Pool__c</picklist>
+            <values>
+                <fullName>Pool</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Port</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Refer_Out_Reason__c</picklist>
+            <values>
+                <fullName>AMLO List</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bad</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed Business</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Criminal Offense</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dead</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Exit Plan</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Team</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TM Pool</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wrong Area</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Refer_Out_Segment__c</picklist>
+            <values>
+                <fullName>CB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>XS</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Request_Type__c</picklist>
+            <values>
+                <fullName>Release Ownership</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Request Ownership</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Service_RM__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Customer_Ownership_Request_For_approval</fullName>
+        <active>true</active>
+        <description>Customer Ownership Request - Ready for Submission</description>
+        <label>Customer Ownership Request (For approval)</label>
+        <picklistValues>
+            <picklist>Approval_Status__c</picklist>
+            <values>
+                <fullName>Approval In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Open</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Assigned_Port_Pool__c</picklist>
+            <values>
+                <fullName>Pool</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Port</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Refer_Out_Reason__c</picklist>
+            <values>
+                <fullName>AMLO List</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bad</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed Business</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Criminal Offense</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dead</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Exit Plan</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not SME Segment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Team</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TM Pool</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wrong Area</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Refer_Out_Segment__c</picklist>
+            <values>
+                <fullName>CB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>XS</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Request_Ownership_Type__c</picklist>
+            <values>
+                <fullName>Pool %28Temporary%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Port</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Request_Type__c</picklist>
+            <values>
+                <fullName>Release Ownership</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Request Ownership</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Service_RM__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Customer_Ownership_Request_Info_Req</fullName>
+        <active>true</active>
+        <description>Customer Ownership Request - Missing Required Info</description>
+        <label>Customer Ownership Request (Info Req)</label>
+        <picklistValues>
+            <picklist>Approval_Status__c</picklist>
+            <values>
+                <fullName>Approval In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Open</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Assigned_Port_Pool__c</picklist>
+            <values>
+                <fullName>Pool</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Port</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Refer_Out_Reason__c</picklist>
+            <values>
+                <fullName>AMLO List</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bad</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed Business</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Criminal Offense</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dead</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Exit Plan</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Team</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TM Pool</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wrong Area</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Refer_Out_Segment__c</picklist>
+            <values>
+                <fullName>CB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>XS</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Request_Type__c</picklist>
+            <values>
+                <fullName>Release Ownership</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Request Ownership</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Service_RM__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Release_Ownership</fullName>
+        <active>true</active>
+        <description>Release Ownership - Before request for approval</description>
+        <label>Release Ownership</label>
+        <picklistValues>
+            <picklist>Approval_Status__c</picklist>
+            <values>
+                <fullName>Approval In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Open</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Assigned_Port_Pool__c</picklist>
+            <values>
+                <fullName>Pool</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Port</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Refer_Out_Reason__c</picklist>
+            <values>
+                <fullName>AMLO List</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bad</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed Business</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Criminal Offense</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dead</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Exit Plan</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not SME Segment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Team</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TM Pool</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wrong Area</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Refer_Out_Segment__c</picklist>
+            <values>
+                <fullName>CB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ME</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>XS</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Request_Ownership_Type__c</picklist>
+            <values>
+                <fullName>Pool %28Temporary%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Port</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Request_Type__c</picklist>
+            <values>
+                <fullName>Release Ownership</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Request Ownership</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Service_RM__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Release_Ownership_Read_Only</fullName>
+        <active>true</active>
+        <description>Release Ownership - After request for approval</description>
+        <label>Release Ownership (Read-Only)</label>
+        <picklistValues>
+            <picklist>Approval_Status__c</picklist>
+            <values>
+                <fullName>Approval In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Open</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Assigned_Port_Pool__c</picklist>
+            <values>
+                <fullName>Pool</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Port</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Refer_Out_Reason__c</picklist>
+            <values>
+                <fullName>AMLO List</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bad</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed Business</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Criminal Offense</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dead</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Exit Plan</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not SME Segment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Team</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TM Pool</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wrong Area</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Refer_Out_Segment__c</picklist>
+            <values>
+                <fullName>CB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ME</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>XS</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Request_Ownership_Type__c</picklist>
+            <values>
+                <fullName>Pool %28Temporary%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Port</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Request_Type__c</picklist>
+            <values>
+                <fullName>Release Ownership</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Request Ownership</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Service_RM__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Request_Ownership_Pool_Temporary</fullName>
+        <active>true</active>
+        <label>Request Ownership (Pool:Temporary)</label>
+        <picklistValues>
+            <picklist>Approval_Status__c</picklist>
+            <values>
+                <fullName>Approval In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Open</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Assigned_Port_Pool__c</picklist>
+            <values>
+                <fullName>Pool</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Port</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Refer_Out_Reason__c</picklist>
+            <values>
+                <fullName>AMLO List</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bad</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed Business</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Criminal Offense</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dead</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Exit Plan</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not SME Segment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Team</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TM Pool</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wrong Area</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Refer_Out_Segment__c</picklist>
+            <values>
+                <fullName>CB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>XS</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Request_Ownership_Type__c</picklist>
+            <values>
+                <fullName>Pool %28Temporary%29</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Request_Type__c</picklist>
+            <values>
+                <fullName>Release Ownership</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Request Ownership</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Service_RM__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Request_Ownership_Port</fullName>
+        <active>true</active>
+        <label>Request Ownership (Port)</label>
+        <picklistValues>
+            <picklist>Approval_Status__c</picklist>
+            <values>
+                <fullName>Open</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Assigned_Port_Pool__c</picklist>
+            <values>
+                <fullName>Pool</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Port</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Refer_Out_Reason__c</picklist>
+            <values>
+                <fullName>AMLO List</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bad</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed Business</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Criminal Offense</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dead</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Exit Plan</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not SME Segment</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Team</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TM Pool</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wrong Area</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Refer_Out_Segment__c</picklist>
+            <values>
+                <fullName>CB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>MB</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>XS</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Request_Ownership_Type__c</picklist>
+            <values>
+                <fullName>Pool %28Temporary%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Port</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Request_Type__c</picklist>
+            <values>
+                <fullName>Release Ownership</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Request Ownership</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Service_RM__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>CIS_ID__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Customer_Name__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Port_Pool__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Approval_Status__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Reason__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Current_Owner__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Current_Owner_TM__c</customTabListAdditionalFields>
+        <excludedStandardButtons>New</excludedStandardButtons>
+        <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
+        <excludedStandardButtons>Accept</excludedStandardButtons>
+        <lookupDialogsAdditionalFields>CIS_ID__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Customer_Name__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Port_Pool__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Approval_Status__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Current_Owner__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Current_Owner_TM__c</lookupDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>CIS_ID__c</searchFilterFields>
+        <searchFilterFields>Customer_Name__c</searchFilterFields>
+        <searchFilterFields>Port_Pool__c</searchFilterFields>
+        <searchFilterFields>Approval_Status__c</searchFilterFields>
+        <searchFilterFields>Current_Owner__c</searchFilterFields>
+        <searchFilterFields>Current_Owner_TM__c</searchFilterFields>
+        <searchResultsAdditionalFields>CIS_ID__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Customer_Name__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Port_Pool__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Approval_Status__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Current_Owner__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Current_Owner_TM__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
+    <validationRules>
+        <fullName>CannotRequestPoolWhenCustSMEAndSMEAdmin</fullName>
+        <active>true</active>
+        <description>Cannot request customer type pool when customer segment is in SME segment and owner is SME-Admin</description>
+        <errorConditionFormula>CIS_ID__r.Owner_is_SME_Admin__c &amp;&amp; 
+ispickval(Request_Ownership_Type__c, &quot;Pool (Temporary)&quot;) &amp;&amp; 
+(CIS_ID__r.Primary_Segment_Code__c = &quot;SM&quot; || 
+CIS_ID__r.Primary_Segment_Code__c = &quot;LM&quot; || 
+CIS_ID__r.Primary_Segment_Code__c = &quot;UM&quot; || 
+CIS_ID__r.Primary_Segment_Code__c = &quot;SR&quot; || 
+CIS_ID__r.Primary_Segment_Code__c = &quot;LR&quot; || 
+CIS_ID__r.Primary_Segment_Code__c = &quot;UR&quot;) &amp;&amp; 
+RecordType.DeveloperName = &quot;Request_Ownership_Port&quot; &amp;&amp; 
+ISPICKVAL(Approval_Status__c, &quot;Open&quot;)</errorConditionFormula>
+        <errorDisplayField>Request_Ownership_Type__c</errorDisplayField>
+        <errorMessage>Cannot request customer type pool when customer segment is in SME segment and owner is SME-Admin</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Check_required_fields</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( NOT(ISNEW()) , ISPICKVAL( Approval_Status__c, &quot;Open&quot;) , OR(ISBLANK( Reason__c ) , ISPICKVAL(Request_Ownership_Type__c, &quot;&quot;)) ,  OR( RecordType.DeveloperName = &quot;Request_Ownership_Pool_Temporary&quot; , RecordType.DeveloperName = &quot;Request_Ownership_Port&quot; , RecordType.DeveloperName = &quot;Customer_Ownership_Request_For_approval&quot;))</errorConditionFormula>
+        <errorMessage>Please input Reason and select Request Ownership Type</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Not_allow_to_change_ownership</fullName>
+        <active>true</active>
+        <description>User cannot change owner of Customer Ownership Request record</description>
+        <errorConditionFormula>ISCHANGED(OwnerId )</errorConditionFormula>
+        <errorMessage>ไม่อนุญาตให้ทำการแก้ไข Owner</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Refer_Out_Area_is_required</fullName>
+        <active>false</active>
+        <errorConditionFormula>TEXT( Refer_Out_Reason__c ) = &quot;Wrong Area&quot; &amp;&amp;
+ISBLANK( Refer_Out_Area__c )</errorConditionFormula>
+        <errorDisplayField>Refer_Out_Area__c</errorDisplayField>
+        <errorMessage>Refer Out Area is required</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Refer_Out_Segment_is_required</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(OR(
+ISPICKVAL(Refer_Out_Reason__c, &quot;Other Segment&quot;),
+ISPICKVAL(Refer_Out_Reason__c, &quot;Wrong Area&quot;)),
+ISBLANK(TEXT(Refer_Out_Segment__c)))</errorConditionFormula>
+        <errorDisplayField>Refer_Out_Segment__c</errorDisplayField>
+        <errorMessage>Refer Out Segment is required</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Refer_Out_Team_is_required</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+OR(
+ISPICKVAL(Refer_Out_Reason__c , &quot;Other Team&quot;),
+ISPICKVAL(Refer_Out_Reason__c , &quot;Wrong Area&quot;)),
+ISBLANK( Refer_Out_Team__c))</errorConditionFormula>
+        <errorDisplayField>Refer_Out_Team__c</errorDisplayField>
+        <errorMessage>Refer Out Team is required</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Refer_Out_to_TM_Pool_selected_by_RM</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(TEXT( Refer_Out_Reason__c ) = &quot;TM Pool&quot;, AND($Profile.Name &lt;&gt; &quot;SME-RM&quot;, $Profile.Name &lt;&gt; &quot;SME-TM&quot;))</errorConditionFormula>
+        <errorDisplayField>Refer_Out_Reason__c</errorDisplayField>
+        <errorMessage>Refer Out to TM Pool can only be selected by RM</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>Edit</fullName>
+        <availability>online</availability>
+        <description>This button will open Refer Out edit page</description>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Edit</masterLabel>
+        <openType>sidebar</openType>
+        <page>Account_ReferOutInformation_Page</page>
+        <protected>false</protected>
+    </webLinks>
+</CustomObject>

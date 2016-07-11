@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>รายชื่อกลุ่มเป้าหมาย</value>
+    </caseValues>
+    <fields>
+        <label><!-- Approved Amount --></label>
+        <name>Approved_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Borrower CIS ID --></label>
+        <name>Borrower_CIS_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Borrower Name --></label>
+        <name>Borrower_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- CASA --></label>
+        <name>CASA__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- CIS ID / Prospect Name --></label>
+        <name>CIS_ID_Prospect_Name__c</name>
+        <relationshipLabel><!-- Target Lists --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- CIS ID --></label>
+        <name>CIS_ID_Search__c</name>
+    </fields>
+    <fields>
+        <label>ผลการติดต่อ</label>
+        <name>Call_Result__c</name>
+        <picklistValues>
+            <masterLabel>1. ลูกค้าสนใจและขอสินเชื่อในครั้งนี้</masterLabel>
+            <translation><!-- 1. ลูกค้าสนใจและขอสินเชื่อในครั้งนี้ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2. ลูกค้าสนใจแต่ติดเงื่อนไข</masterLabel>
+            <translation><!-- 2. ลูกค้าสนใจแต่ติดเงื่อนไข --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3. ลูกค้าไม่สนใจ</masterLabel>
+            <translation><!-- 3. ลูกค้าไม่สนใจ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4. ติดปัญหาเรื่องการดำเนินการ</masterLabel>
+            <translation><!-- 4. ติดปัญหาเรื่องการดำเนินการ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5. เก็บไว้เป็น Lead ในครั้งหน้า</masterLabel>
+            <translation><!-- 5. เก็บไว้เป็น Lead ในครั้งหน้า --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6. ตัดออกจากรายชื่อ Lead (ระยะเวลา 6 เดือน)</masterLabel>
+            <translation><!-- 6. ตัดออกจากรายชื่อ Lead (ระยะเวลา 6 เดือน) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Campaign Lead Status --></label>
+        <name>Campaign_Lead_Status__c</name>
+        <picklistValues>
+            <masterLabel>Not Interested This Time</masterLabel>
+            <translation><!-- Not Interested This Time --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Register</masterLabel>
+            <translation><!-- Not Register --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Register</masterLabel>
+            <translation><!-- Register --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Campaign Reward Calc --></label>
+        <name>Campaign_Reward_Calc__c</name>
+    </fields>
+    <fields>
+        <label><!-- Campaign Reward --></label>
+        <name>Campaign_Reward__c</name>
+    </fields>
+    <fields>
+        <label><!-- Chain Name --></label>
+        <name>Chain_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Chain Sponsor --></label>
+        <name>Chain_Sponsor__c</name>
+    </fields>
+    <fields>
+        <label>ช่องทางการติดต่อ</label>
+        <name>Contact_Channel__c</name>
+        <picklistValues>
+            <masterLabel>Face to Face</masterLabel>
+            <translation><!-- Face to Face --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone Call</masterLabel>
+            <translation><!-- Phone Call --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Customer Contact Number --></label>
+        <name>Customer_Contact_Number__c</name>
+    </fields>
+    <fields>
+        <label>ชื่อเจ้าของลูกค้า</label>
+        <name>Customer_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- External_ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- In Call Plan --></label>
+        <name>In_Call_Plan__c</name>
+    </fields>
+    <fields>
+        <label><!-- IsInterested --></label>
+        <name>IsInterested__c</name>
+    </fields>
+    <fields>
+        <label><!-- IsMyTargetList --></label>
+        <name>IsMyTargetList__c</name>
+    </fields>
+    <fields>
+        <label><!-- IsNoTouch --></label>
+        <name>IsNoTouch__c</name>
+    </fields>
+    <fields>
+        <label><!-- IsNotInterested --></label>
+        <name>IsNotInterested__c</name>
+    </fields>
+    <fields>
+        <label><!-- IsTouch --></label>
+        <name>IsTouch__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead/Campaign --></label>
+        <name>Lead_Campaign__c</name>
+        <relationshipLabel><!-- Target Lists --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>การดำเนินการ Lead</label>
+        <name>Lead_Response__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Subtype --></label>
+        <name>Lead_Subtype__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead To Inform --></label>
+        <name>Lead_To_Inform__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Type --></label>
+        <name>Lead_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Main Customer --></label>
+        <name>Main_Customer__c</name>
+        <relationshipLabel><!-- Associate Customer --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Mobile No. --></label>
+        <name>Mobile_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Lead --></label>
+        <name>Number_of_Lead__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Target Lists --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Reward New Booking Option --></label>
+        <name>Option__c</name>
+        <picklistValues>
+            <masterLabel>A</masterLabel>
+            <translation><!-- A --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>เขต</label>
+        <name>Owner_AH__c</name>
+    </fields>
+    <fields>
+        <label>ภาค</label>
+        <name>Owner_NH__c</name>
+    </fields>
+    <fields>
+        <label>ทีม</label>
+        <name>Owner_Team__c</name>
+    </fields>
+    <fields>
+        <label><!-- Personalised Message --></label>
+        <name>Personalised_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Re-assign To --></label>
+        <name>Re_assign_To__c</name>
+        <relationshipLabel><!-- Target Lists --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Reason --></label>
+        <name>Reason__c</name>
+        <picklistValues>
+            <masterLabel>1.1 อยู่ระหว่างจัดเตรียมเอกสาร / รอเอกสารเพิ่มเติม</masterLabel>
+            <translation><!-- 1.1 อยู่ระหว่างจัดเตรียมเอกสาร / รอเอกสารเพิ่มเติม --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1.2 ส่ง Opp แล้วรอการอนุมัติ</masterLabel>
+            <translation><!-- 1.2 ส่ง Opp แล้วรอการอนุมัติ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1.3 ได้ผลการอนุมัติแล้ว</masterLabel>
+            <translation><!-- 1.3 ได้ผลการอนุมัติแล้ว --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2.1 รอตัดสินใจ/รอปรึกษาครอบครัว</masterLabel>
+            <translation><!-- 2.1 รอตัดสินใจ/รอปรึกษาครอบครัว --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2.2 ลูกค้าคุณสมบัติไม่ดี / ไม่ผ่านหลักเกณฑ์ธนาคาร</masterLabel>
+            <translation><!-- 2.2 ลูกค้าคุณสมบัติไม่ดี / ไม่ผ่านหลักเกณฑ์ธนาคาร --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2.3 สนใจแต่ติดปัญหาเรื่องหลักประกัน</masterLabel>
+            <translation><!-- 2.3 สนใจแต่ติดปัญหาเรื่องหลักประกัน --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2.4 สนใจแต่มีประเด็นต่อรองเกี่ยวกับดอกเบี้ย / ค่าธรรมเนียม / ประกันชีวิต</masterLabel>
+            <translation><!-- 2.4 สนใจแต่มีประเด็นต่อรองเกี่ยวกับดอกเบี้ย / ค่าธรรมเนียม / ประกันชีวิต --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2.5 สนใจแต่ไม่ใช่ในช่วงเดือนนี้</masterLabel>
+            <translation><!-- 2.5 สนใจแต่ไม่ใช่ในช่วงเดือนนี้ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2.6 สนใจแต่วงเงินที่ลูกค้าต้องการไม่สอดคล้องกับ Source &amp; Use</masterLabel>
+            <translation><!-- 2.6 สนใจแต่วงเงินที่ลูกค้าต้องการไม่สอดคล้องกับ Source &amp; Use --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2.7 สนใจแต่วงเงินที่เสนอไม่เพียงพอ</masterLabel>
+            <translation><!-- 2.7 สนใจแต่วงเงินที่เสนอไม่เพียงพอ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2.8 อื่น ๆ (ระบุในหมายเหตุ)</masterLabel>
+            <translation><!-- 2.8 อื่น ๆ (ระบุในหมายเหตุ) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3.1 มีเงินคงเหลือในบัญชีสูงหรือวงเงินเป็นตัวดำ</masterLabel>
+            <translation><!-- 3.1 มีเงินคงเหลือในบัญชีสูงหรือวงเงินเป็นตัวดำ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3.2 ไม่สนใจติดเรื่องหลักประกัน หรือค่าใช้จ่าย</masterLabel>
+            <translation><!-- 3.2 ไม่สนใจติดเรื่องหลักประกัน หรือค่าใช้จ่าย --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3.3 ยอดขายกิจการลดลง</masterLabel>
+            <translation><!-- 3.3 ยอดขายกิจการลดลง --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3.4 ยังไม่มีแผนขยายธุรกิจ / วงเงินเดิมเพียงพอแล้ว</masterLabel>
+            <translation><!-- 3.4 ยังไม่มีแผนขยายธุรกิจ / วงเงินเดิมเพียงพอแล้ว --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3.5 ลูกค้าคุณสมบัติไม่ดี / ไม่ผ่านหลักเกณฑ์ธนาคาร (ระบุในหมายเหตุ)</masterLabel>
+            <translation><!-- 3.5 ลูกค้าคุณสมบัติไม่ดี / ไม่ผ่านหลักเกณฑ์ธนาคาร (ระบุในหมายเหตุ) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3.6 หลักประกันมีมูลค่าคงเหลือไม่เพียงพอ / ไม่ผ่านเกณฑ์</masterLabel>
+            <translation><!-- 3.6 หลักประกันมีมูลค่าคงเหลือไม่เพียงพอ / ไม่ผ่านเกณฑ์ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3.7 อื่น ๆ (ระบุในหมายเหตุ)</masterLabel>
+            <translation><!-- 3.7 อื่น ๆ (ระบุในหมายเหตุ) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4.1 Refer ให้ผู้อื่นดำเนินการ (ระบุในหมายเหตุ)</masterLabel>
+            <translation><!-- 4.1 Refer ให้ผู้อื่นดำเนินการ (ระบุในหมายเหตุ) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4.2 ที่อยู่ และเบอร์โทรศัพท์ไม่ถูกต้อง / ไม่มีข้อมูล</masterLabel>
+            <translation><!-- 4.2 ที่อยู่ และเบอร์โทรศัพท์ไม่ถูกต้อง / ไม่มีข้อมูล --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4.3 เพิ่งขอสินเชื่อไม่ถึง 3 เดือน</masterLabel>
+            <translation><!-- 4.3 เพิ่งขอสินเชื่อไม่ถึง 3 เดือน --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4.4 ลูกค้าคุณสมบัติไม่ดี / ไม่ผ่านหลักเกณฑ์ธนาคาร (ระบุในหมายเหตุ)</masterLabel>
+            <translation><!-- 4.4 ลูกค้าคุณสมบัติไม่ดี / ไม่ผ่านหลักเกณฑ์ธนาคาร (ระบุในหมายเหตุ) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4.5 ไม่สามารถติดต่อลูกค้าได้</masterLabel>
+            <translation><!-- 4.5 ไม่สามารถติดต่อลูกค้าได้ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4.6 เสียชีวิต / เลิกกิจการ</masterLabel>
+            <translation><!-- 4.6 เสียชีวิต / เลิกกิจการ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4.7 หลักประกันมีมูลค่าคงเหลือไม่เพียงพอ / ไม่ผ่านเกณฑ์</masterLabel>
+            <translation><!-- 4.7 หลักประกันมีมูลค่าคงเหลือไม่เพียงพอ / ไม่ผ่านเกณฑ์ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4.8 อื่น ๆ (ระบุในหมายเหตุ)</masterLabel>
+            <translation><!-- 4.8 อื่น ๆ (ระบุในหมายเหตุ) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Refer or Not ? --></label>
+        <name>Refer_or_Not__c</name>
+        <picklistValues>
+            <masterLabel>Refer-คุยกันเองแล้ว</masterLabel>
+            <translation><!-- Refer-คุยกันเองแล้ว --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refer-ยังไม่ได้คุยกัน</masterLabel>
+            <translation><!-- Refer-ยังไม่ได้คุยกัน --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ดูแลเอง</masterLabel>
+            <translation><!-- ดูแลเอง --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Referred Segment --></label>
+        <name>Referred_Segment__c</name>
+        <picklistValues>
+            <masterLabel>CB</masterLabel>
+            <translation><!-- CB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MB</masterLabel>
+            <translation><!-- MB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation><!-- Medium --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Micro</masterLabel>
+            <translation><!-- Micro --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Small</masterLabel>
+            <translation><!-- Small --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Register --></label>
+        <name>Register__c</name>
+    </fields>
+    <fields>
+        <label><!-- Registered DateTime --></label>
+        <name>Registered_DateTime__c</name>
+    </fields>
+    <fields>
+        <label>หมายเหตุ</label>
+        <name>Remark__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reward --></label>
+        <name>Reward__c</name>
+        <picklistValues>
+            <masterLabel>Cashback</masterLabel>
+            <translation><!-- Cashback --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Voucher ห้างทอง Aurora</masterLabel>
+            <translation><!-- Voucher ห้างทอง Aurora --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>บัตรเงินสด Central</masterLabel>
+            <translation><!-- บัตรเงินสด Central --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>บัตรเติมน้ำมัน ปตท</masterLabel>
+            <translation><!-- บัตรเติมน้ำมัน ปตท --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Setup Amount --></label>
+        <name>Setup_Amount_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Setup Amount --></label>
+        <name>Setup_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status Order Flag --></label>
+        <name>Status_Order_Flag__c</name>
+    </fields>
+    <fields>
+        <label>สถานะ</label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>All Loan Setup</masterLabel>
+            <translation><!-- All Loan Setup --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>App In</masterLabel>
+            <translation><!-- App In --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Auto Closed</masterLabel>
+            <translation><!-- Auto Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancel Lead</masterLabel>
+            <translation><!-- Cancel Lead --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Case is Rejected</masterLabel>
+            <translation><!-- Case is Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed Lost</masterLabel>
+            <translation><!-- Closed Lost --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Create Write Up</masterLabel>
+            <translation><!-- Create Write Up --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Interested</masterLabel>
+            <translation><!-- Customer Interested --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Done</masterLabel>
+            <translation><!-- Done --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Interested</masterLabel>
+            <translation><!-- Interested --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Interested but not register</masterLabel>
+            <translation><!-- Interested but not register --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lead Expired</masterLabel>
+            <translation><!-- Lead Expired --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Loan Setup</masterLabel>
+            <translation><!-- Loan Setup --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Interested This Time</masterLabel>
+            <translation><!-- Not Interested This Time --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not interested</masterLabel>
+            <translation><!-- Not interested --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partial Loan Setup</masterLabel>
+            <translation><!-- Partial Loan Setup --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Registered</masterLabel>
+            <translation><!-- Registered --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stock Negotiation</masterLabel>
+            <translation><!-- Stock Negotiation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting for Credit Approval</masterLabel>
+            <translation><!-- Waiting for Credit Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting for Credit Setup</masterLabel>
+            <translation><!-- Waiting for Credit Setup --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Team Name --></label>
+        <name>Team_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Visit Date --></label>
+        <name>Visit_Date__c</name>
+    </fields>
+    <layouts>
+        <layout>Campaign Member / Lead Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Copy of Campaign Member / Lead Layout (non-sales)</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Value Chain Lead</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Value Chain Info --></label>
+            <section>Value Chain Info</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Value Chain Lead for BIU</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Value Chain Info --></label>
+            <section>Value Chain Info</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel><!-- REF# --></nameFieldLabel>
+    <quickActions>
+        <label>อัพเดท Lead แคมเปญ</label>
+        <name>Update_Campaign_Lead</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Update Target List --></label>
+        <name>Update_Value_Chain</name>
+    </quickActions>
+    <quickActions>
+        <label>อัพเดท Lead Value Chain</label>
+        <name>Value_Chain_Lead</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Standard --></label>
+        <name>Standard</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Value Chain --></label>
+        <name>value_chain</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- ไม่อนุญาตให้เปลี่ยนสถานะย้อนกลับได้ --></errorMessage>
+        <name>Validate_Status_backward</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- ไม่สามารถเปลี่ยนสถานะได้หลังจากช่วงเวลาที่กำหนด --></errorMessage>
+        <name>Validate_change_status_period</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Interest_with_Mobile_No --></label>
+        <name>Interest_with_Mobile_No</name>
+    </webLinks>
+    <webLinks>
+        <label>Lead Value Chain</label>
+        <name>Lead_Value_Chain</name>
+    </webLinks>
+    <webLinks>
+        <label>ยังไม่สนใจในครั้งนี้</label>
+        <name>Not_Interested_This_Time</name>
+    </webLinks>
+    <webLinks>
+        <label>ไม่ลงทะเบียน</label>
+        <name>Not_Register</name>
+    </webLinks>
+    <webLinks>
+        <label>ลงทะเบียน</label>
+        <name>Register</name>
+    </webLinks>
+</CustomObjectTranslation>

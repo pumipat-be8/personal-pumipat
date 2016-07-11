@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>This object tracks the additional Customer and Contact for one call plan/call report</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>Associated_Customer_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Associated Customer Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Interested</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Not Interested</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Borrower_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Borrower Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Main Borrower</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Co Borrower</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Call_Plan_Call_Report__c</fullName>
+        <externalId>false</externalId>
+        <label>Call Plan / Call Report</label>
+        <referenceTo>Call_Report__c</referenceTo>
+        <relationshipLabel>Associated Customers</relationshipLabel>
+        <relationshipName>Relationships</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipName>Customer_Contacts</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Customer_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF ( Customer__r.RecordType.DeveloperName = &quot;Prospect_SME&quot;,  Customer__r.Name,  Customer__r.Name_Surname_TH__c)</formula>
+        <label>Customer Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Customer__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>CIS</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Associated Customers</relationshipLabel>
+        <relationshipName>Customer_Contacts</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Secondary_Call_Plan_Call_Report__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Secondary Call Plan / Call Report</label>
+        <referenceTo>Call_Report__c</referenceTo>
+        <relationshipLabel>Associated Customers (Secondary Call Plan / Call Report)</relationshipLabel>
+        <relationshipName>Associated_Customers</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>Associated Customer</label>
+    <nameField>
+        <displayFormat>R-{000000}</displayFormat>
+        <label>REF#</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Associated Customers</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Associated_Contact_Persons</fullName>
+        <active>false</active>
+        <description>Relationship between Contact Person and Call Report</description>
+        <label>Associated Contact Persons</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Associated_Customer</fullName>
+        <active>false</active>
+        <description>Relationship between Customer and Call Report</description>
+        <label>Associated Customers</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Interested</fullName>
+        <active>true</active>
+        <description>Associate Customer is interested.</description>
+        <label>Interested</label>
+        <picklistValues>
+            <picklist>Associated_Customer_Type__c</picklist>
+            <values>
+                <fullName>Interested</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Interested</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Borrower_Type__c</picklist>
+            <values>
+                <fullName>Co Borrower</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Main Borrower</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Not_Interested</fullName>
+        <active>true</active>
+        <description>Associate Customer is not interested.</description>
+        <label>Not Interested</label>
+        <picklistValues>
+            <picklist>Associated_Customer_Type__c</picklist>
+            <values>
+                <fullName>Interested</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not Interested</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Borrower_Type__c</picklist>
+            <values>
+                <fullName>Co Borrower</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Main Borrower</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <excludedStandardButtons>New</excludedStandardButtons>
+        <excludedStandardButtons>ChangeOwner</excludedStandardButtons>
+        <excludedStandardButtons>Accept</excludedStandardButtons>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>Borrow_should_be_selected_when_interest</fullName>
+        <active>true</active>
+        <errorConditionFormula>RecordType.DeveloperName = &quot;Associated_Customer_for_Mobile&quot; &amp;&amp; ispickval(Associated_Customer_Type__c, &quot;Interested&quot;)</errorConditionFormula>
+        <errorDisplayField>Borrower_Type__c</errorDisplayField>
+        <errorMessage>Please select borrower type</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Not_allow_to_select_same_customer</fullName>
+        <active>true</active>
+        <errorConditionFormula>Call_Plan_Call_Report__r.CIS_ID__r.Id =  Customer__r.Id</errorConditionFormula>
+        <errorDisplayField>Customer__c</errorDisplayField>
+        <errorMessage>cannot select the same customer with Call Plan / Call Report</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>Save_Associated</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>New Associated Customer</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <requireRowSelection>false</requireRowSelection>
+        <url>/setup/ui/recordtypeselect.jsp?
+save_new_url=/{!$Setup.AssociatedField__c.AssociatedObjectId__c}/e?
+{!$Setup.AssociatedField__c.CallReportIdFieldId__c}={!Call_Report__c.Name}
+&amp;{!$Setup.AssociatedField__c.CallReportIdFieldId__c}_lkid={!Call_Report__c.Id}&amp;retURL={!Call_Report__c.Id}
+&amp;saveURL=%2Fapex%2FOverride_NewAssociated_Page%3FcallReportId%3D{!Call_Report__c.Id}%26CISID%3D{!Call_Report__c.CIS_ID__c}%26callReportActualVisitDate%3D{!Call_Report__c.Actual_Visit_Date__c}
+&amp;ent={!$Setup.AssociatedField__c.Entity_Id__c}
+&amp;nooverride=1</url>
+    </webLinks>
+</CustomObject>

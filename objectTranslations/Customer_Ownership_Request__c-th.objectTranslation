@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>การขอเป็นผู้ดูแล</value>
+    </caseValues>
+    <fields>
+        <label><!-- AH Name --></label>
+        <name>AH_Name__c</name>
+    </fields>
+    <fields>
+        <label>สถานะการอนุมัติ</label>
+        <name>Approval_Status__c</name>
+        <picklistValues>
+            <masterLabel>Approval In Progress</masterLabel>
+            <translation><!-- Approval In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancel</masterLabel>
+            <translation><!-- Cancel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open</masterLabel>
+            <translation><!-- Open --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Approved Date --></label>
+        <name>Approved_Date__c</name>
+    </fields>
+    <fields>
+        <label>Port/Pool ที่ได้รับมอบหมาย</label>
+        <name>Assigned_Port_Pool__c</name>
+        <picklistValues>
+            <masterLabel>Pool</masterLabel>
+            <translation><!-- Pool --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Port</masterLabel>
+            <translation><!-- Port --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- CIS ID --></label>
+        <name>CIS_ID_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- CIS ID --></label>
+        <name>CIS_ID__c</name>
+        <relationshipLabel><!-- Customer Ownership Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Credit Status --></label>
+        <name>Credit_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Owner AH --></label>
+        <name>Current_Owner_AH__c</name>
+        <relationshipLabel><!-- Customer Ownership Requests (Current Owner AH) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Current Owner Email (Other Team) --></label>
+        <name>Current_Owner_Email_Other_Team__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Owner Email (Same Team) --></label>
+        <name>Current_Owner_Email_Same_Team__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Owner NH --></label>
+        <name>Current_Owner_NH__c</name>
+        <relationshipLabel><!-- Customer Ownership Requests (Current Owner NH) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Current Owner TM --></label>
+        <name>Current_Owner_TM__c</name>
+        <relationshipLabel><!-- Customer Ownership Requests (Current Owner TM) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Current Owner Team Name --></label>
+        <name>Current_Owner_Team_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Owner --></label>
+        <name>Current_Owner__c</name>
+        <relationshipLabel><!-- Customer Ownership Requests (Current Owner) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Current Owner is RM? --></label>
+        <name>Current_Owner_is_RM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Owner is me? --></label>
+        <name>Current_Owner_is_me__c</name>
+    </fields>
+    <fields>
+        <label>ชื่อลูกค้า</label>
+        <name>Customer_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Different AH? --></label>
+        <name>Different_AH__c</name>
+    </fields>
+    <fields>
+        <label><!-- Different NH? --></label>
+        <name>Different_NH__c</name>
+    </fields>
+    <fields>
+        <label><!-- High Value Flag --></label>
+        <name>High_Value_Flag__c</name>
+    </fields>
+    <fields>
+        <label><!-- NH Name --></label>
+        <name>NH_Name__c</name>
+    </fields>
+    <fields>
+        <label>หมายเหตุสำหรับลูกค้าเป็น Segment อื่น</label>
+        <name>Not_SME_Remark__c</name>
+    </fields>
+    <fields>
+        <label><!-- Not SME Segment Flag --></label>
+        <name>Not_SME_Segment_Flag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Original Segment --></label>
+        <name>Original_Segment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Team AH Email --></label>
+        <name>Other_Team_AH_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Team NH Email --></label>
+        <name>Other_Team_NH_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Owned by AH --></label>
+        <name>Owned_by_AH__c</name>
+    </fields>
+    <fields>
+        <label><!-- Owned by NH --></label>
+        <name>Owned_by_NH__c</name>
+    </fields>
+    <fields>
+        <label><!-- Owner Profile --></label>
+        <name>Owner_Profile__c</name>
+    </fields>
+    <fields>
+        <label><!-- Owner is My AH --></label>
+        <name>Owner_is_My_AH__c</name>
+    </fields>
+    <fields>
+        <label><!-- Owner is My NH --></label>
+        <name>Owner_is_My_NH__c</name>
+    </fields>
+    <fields>
+        <label><!-- Owner is My TM --></label>
+        <name>Owner_is_My_TM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Owner is SME-Admin --></label>
+        <name>Owner_is_SME_Admin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Year End Port / Pool --></label>
+        <name>Port_Pool_YearEnd__c</name>
+    </fields>
+    <fields>
+        <label><!-- CIS Port / Pool --></label>
+        <name>Port_Pool__c</name>
+    </fields>
+    <fields>
+        <label><!-- Previous Owner Email --></label>
+        <name>Previous_Owner_Email__c</name>
+    </fields>
+    <fields>
+        <label>ชื่อผู้ดูแลเดิม</label>
+        <name>RM_Name__c</name>
+    </fields>
+    <fields>
+        <label>เหตุผล</label>
+        <name>Reason__c</name>
+    </fields>
+    <fields>
+        <label>อำเภอที่ Refer ไป</label>
+        <name>Refer_Out_Amphur__c</name>
+    </fields>
+    <fields>
+        <label>เขต ที่ Refer ไป</label>
+        <name>Refer_Out_Area__c</name>
+        <relationshipLabel><!-- Customer Ownership Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>รายละเอียดการเลือกออก</label>
+        <name>Refer_Out_Details__c</name>
+    </fields>
+    <fields>
+        <label>จังหวัด ที่ Refer ไป</label>
+        <name>Refer_Out_Province__c</name>
+    </fields>
+    <fields>
+        <label>เหตุผลการเลือกออก</label>
+        <name>Refer_Out_Reason__c</name>
+        <picklistValues>
+            <masterLabel>AMLO List</masterLabel>
+            <translation>ติดอุตเสื่ยง/อุตเฉพาะ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bad</masterLabel>
+            <translation><!-- Bad --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed Business</masterLabel>
+            <translation>เลิกกิจการ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Criminal Offense</masterLabel>
+            <translation>ฟ้องร้องคดี</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dead</masterLabel>
+            <translation>เสียชีวิต</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exit Plan</masterLabel>
+            <translation>ลูกค้าในแผน Exit</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not SME Segment</masterLabel>
+            <translation>ลูกค้าเป็น Segment อื่น</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Team</masterLabel>
+            <translation>ลูกค้ามีความสัมพันธ์</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TM Pool</masterLabel>
+            <translation><!-- TM Pool --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wrong Area</masterLabel>
+            <translation>ผิดพื้นที่</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Segment ที่ Refer ไป</label>
+        <name>Refer_Out_Segment__c</name>
+        <picklistValues>
+            <masterLabel>CB</masterLabel>
+            <translation><!-- CB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MB</masterLabel>
+            <translation><!-- MB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ME</masterLabel>
+            <translation><!-- ME --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MI</masterLabel>
+            <translation><!-- MI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PC</masterLabel>
+            <translation><!-- PC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SE</masterLabel>
+            <translation><!-- SE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TC</masterLabel>
+            <translation><!-- TC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>XS</masterLabel>
+            <translation><!-- XS --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Team ที่ Refer ไป</label>
+        <name>Refer_Out_Team__c</name>
+    </fields>
+    <fields>
+        <label>ตำบล</label>
+        <name>Refer_Out_Tumbon__c</name>
+    </fields>
+    <fields>
+        <label>ประเภทคำขอเปลี่ยนชื่อผู้ดูแล</label>
+        <name>Request_Ownership_Type__c</name>
+        <picklistValues>
+            <masterLabel>Pool (Temporary)</masterLabel>
+            <translation><!-- Pool (Temporary) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Port</masterLabel>
+            <translation><!-- Port --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>ประเภทการขอ</label>
+        <name>Request_Type__c</name>
+        <picklistValues>
+            <masterLabel>Release Ownership</masterLabel>
+            <translation><!-- Release Ownership --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Request Ownership</masterLabel>
+            <translation><!-- Request Ownership --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Requested Date --></label>
+        <name>Requested_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requester is TM? --></label>
+        <name>Requester_is_TM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requestor AH Emp ID --></label>
+        <name>Requestor_AH_Emp_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requestor AH --></label>
+        <name>Requestor_AH__c</name>
+        <relationshipLabel><!-- Customer Ownership Requests (Requestor AH) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Requestor Emp ID --></label>
+        <name>Requestor_Emp_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requestor NH Emp ID --></label>
+        <name>Requestor_NH_Emp_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requestor NH --></label>
+        <name>Requestor_NH__c</name>
+        <relationshipLabel><!-- Customer Ownership Requests (Requestor NH) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Requestor Name --></label>
+        <name>Requestor_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requestor RC Code --></label>
+        <name>Requestor_RC_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requestor TM Emp ID --></label>
+        <name>Requestor_TM_Emp_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requestor TM --></label>
+        <name>Requestor_TM__c</name>
+        <relationshipLabel><!-- Customer Ownership Requests (Requestor TM) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Requestor Team Name --></label>
+        <name>Requestor_Team_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Required Owner Approved --></label>
+        <name>Required_Owner_Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Required TM Requester Approved --></label>
+        <name>Required_TM_Requester_Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Same Team? --></label>
+        <name>Same_Team__c</name>
+    </fields>
+    <fields>
+        <label>Segment เดิม</label>
+        <name>Segment_Original__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service RM Emp ID --></label>
+        <name>Service_RM_Emp_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service RM --></label>
+        <name>Service_RM_User__c</name>
+        <relationshipLabel><!-- Customer Ownership Requests (Service RM) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Service RM --></label>
+        <name>Service_RM__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Source is On-Going --></label>
+        <name>Source_is_On_Going__c</name>
+    </fields>
+    <fields>
+        <label><!-- TM Name --></label>
+        <name>TM_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Team --></label>
+        <name>Team__c</name>
+    </fields>
+    <fields>
+        <label><!-- User Admin --></label>
+        <name>User_Admin__c</name>
+        <relationshipLabel><!-- Customer Ownership Requests (User Admin) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Want to request for ownership ? --></label>
+        <name>Want_to_request_for_ownership__c</name>
+    </fields>
+    <fields>
+        <label><!-- Year-End Assignment --></label>
+        <name>Year_End_Assignment__c</name>
+        <relationshipLabel><!-- Customer Ownership Requests --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Customer Ownership Request Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Customer Ownership Request Layout (Cancel)</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>เหตุผลการ Refer out</label>
+            <section>Refer Out Reason</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Customer Ownership Request Layout (No Submit for Approval)</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>เหตุผลการ Refer out</label>
+            <section>Refer Out Reason</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Customer Request Ownership (Need Reason)</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Release Ownership Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>เหตุผลการ Refer out</label>
+            <section>Refer Out Reason</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Release Ownership Layout (Read-Only)</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label>เหตุผลการ Refer out</label>
+            <section>Refer Out Reason</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel><!-- REF# --></nameFieldLabel>
+    <quickActions>
+        <label><!-- Edit --></label>
+        <name>Edit_VF</name>
+    </quickActions>
+    <recordTypes>
+        <label>คำขอเปลี่ยนผู้ดูแล (ยกเลิก)</label>
+        <name>Customer_Ownership_Request_Cancel</name>
+    </recordTypes>
+    <recordTypes>
+        <label>คำขอเปลี่ยนผู้ดูแล (เพื่อการอนุมัติ)</label>
+        <name>Customer_Ownership_Request_For_approval</name>
+    </recordTypes>
+    <recordTypes>
+        <label>คำขอเปลี่ยนผู้ดูแล (ข้อมูลคำขอ)</label>
+        <name>Customer_Ownership_Request_Info_Req</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Release Ownership --></label>
+        <name>Release_Ownership</name>
+    </recordTypes>
+    <recordTypes>
+        <label>คำขอเปลี่ยนผู้ดูแล (ข้อมูลคำขอ)</label>
+        <name>Release_Ownership_Read_Only</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Request Ownership (Pool:Temporary) --></label>
+        <name>Request_Ownership_Pool_Temporary</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Request Ownership (Port) --></label>
+        <name>Request_Ownership_Port</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Cannot request customer type pool when customer segment is in SME segment and owner is SME-Admin --></errorMessage>
+        <name>CannotRequestPoolWhenCustSMEAndSMEAdmin</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>กรุณาระบุเหตุผล และ ประเภทคำขอเปลี่ยนชื่อผู้ดูแล</errorMessage>
+        <name>Check_required_fields</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- ไม่อนุญาตให้ทำการแก้ไข Owner --></errorMessage>
+        <name>Not_allow_to_change_ownership</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>ต้องระบุพื้นที่ที่ refer ลูกค้าไป</errorMessage>
+        <name>Refer_Out_Area_is_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>ต้องระบุ Segment ที่ refer ไป</errorMessage>
+        <name>Refer_Out_Segment_is_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>ต้องระบุทีมที่ refer ลูกค้าไปให้</errorMessage>
+        <name>Refer_Out_Team_is_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>RM เท่านั้นที่สามารถเลือกลูกค้าไปไว้ TM Pool</errorMessage>
+        <name>Refer_Out_to_TM_Pool_selected_by_RM</name>
+    </validationRules>
+    <webLinks>
+        <label>แก้ไข</label>
+        <name>Edit</name>
+    </webLinks>
+</CustomObjectTranslation>

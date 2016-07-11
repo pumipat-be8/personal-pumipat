@@ -1,0 +1,1509 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Call Plan / Call Report</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Call Plans / Call Reports</value>
+    </caseValues>
+    <fields>
+        <label><!-- Accompanied By Names --></label>
+        <name>Accompanied_By_Names__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accompanied By --></label>
+        <name>Accompanied_By__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accompanied Executive Name --></label>
+        <name>Accompanied_Executive_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accompanied by CEM/MS --></label>
+        <name>Accompanied_by_CEM_MS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accompanied by Executive --></label>
+        <name>Accompanied_by_Executive__c</name>
+        <relationshipLabel><!-- Call Plans / Call Reports (Accompanied by Executive) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Acquantainceship --></label>
+        <name>Acquantainceship_CEM__c</name>
+        <picklistValues>
+            <masterLabel>0</masterLabel>
+            <translation><!-- 0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Acquaintanceship Score --></label>
+        <name>Acquantainceship_Score__c</name>
+    </fields>
+    <fields>
+        <help><!-- ห้ามเกินกว่าวันปัจจุบัน --></help>
+        <label><!-- Actual Visit Date --></label>
+        <name>Actual_Visit_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Visit --></label>
+        <name>Actual_Visit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Code Description --></label>
+        <name>Business_Code_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Code --></label>
+        <name>Business_Code_Formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Code --></label>
+        <name>Business_Code__c</name>
+        <relationshipLabel><!-- Call Plans / Call Reports --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Business Knowledge --></label>
+        <name>Business_Knowledge_CEM__c</name>
+        <picklistValues>
+            <masterLabel>0</masterLabel>
+            <translation><!-- 0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Business Knowledge Score --></label>
+        <name>Business_Knowledge_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- CEM/MS Contact Information --></label>
+        <name>CEM_MS_Contact_Information__c</name>
+    </fields>
+    <fields>
+        <label><!-- CIS ID --></label>
+        <name>CIS_ID__c</name>
+        <relationshipLabel><!-- Call Plans / Call Reports --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Call_Plan_Port --></label>
+        <name>Call_Plan_Port__c</name>
+    </fields>
+    <fields>
+        <label><!-- Call Report No Plan --></label>
+        <name>Call_Report_No_Plan__c</name>
+    </fields>
+    <fields>
+        <label><!-- Call Report with Plan --></label>
+        <name>Call_Report_with_Plan__c</name>
+    </fields>
+    <fields>
+        <label><!-- Call Result Activity --></label>
+        <name>Call_Result_Activity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Do you want to cancel Call Plan ? --></label>
+        <name>Cancel_Call_Plan__c</name>
+    </fields>
+    <fields>
+        <label><!-- Co Borrower --></label>
+        <name>Co_Borrower__c</name>
+    </fields>
+    <fields>
+        <label><!-- Collect Documents --></label>
+        <name>Collect_Documents__c</name>
+    </fields>
+    <fields>
+        <label><!-- Complete Monthly --></label>
+        <name>Complete_Monthly__c</name>
+    </fields>
+    <fields>
+        <label><!-- Completed --></label>
+        <name>Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact_Call --></label>
+        <name>Contact_Call__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Channel --></label>
+        <name>Contact_Channel__c</name>
+        <picklistValues>
+            <masterLabel>Face to Face</masterLabel>
+            <translation><!-- Face to Face --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone Call</masterLabel>
+            <translation><!-- Phone Call --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Contact_F2F --></label>
+        <name>Contact_F2F__c</name>
+    </fields>
+    <fields>
+        <help><!-- สำหรับสร้างบุคคลผู้ติดต่อใหม่ --></help>
+        <label><!-- Contact Firstname --></label>
+        <name>Contact_Firstname__c</name>
+    </fields>
+    <fields>
+        <help><!-- สำหรับสร้างบุคคลผู้ติดต่อใหม่ --></help>
+        <label><!-- Contact Lastname --></label>
+        <name>Contact_Lastname__c</name>
+    </fields>
+    <fields>
+        <help><!-- สำหรับสร้างบุคคลผู้ติดต่อใหม่ --></help>
+        <label><!-- Contact Phone --></label>
+        <name>Contact_Phone__c</name>
+    </fields>
+    <fields>
+        <help><!-- เลือกบุคคลผู้ติดต่อที่มีอยู่แล้ว --></help>
+        <label><!-- Existing Contact Person --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- Call Plans / Call Reports --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contacted by Current Owner --></label>
+        <name>Contacted_by_Current_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Count Plan Last Week --></label>
+        <name>Count_Plan_Last_Week__c</name>
+    </fields>
+    <fields>
+        <label><!-- CreateByMe --></label>
+        <name>CreateByMe__c</name>
+    </fields>
+    <fields>
+        <label><!-- CreatedByMyArea --></label>
+        <name>CreatedByMyArea__c</name>
+    </fields>
+    <fields>
+        <label><!-- CreatedByMyNetwork --></label>
+        <name>CreatedByMyNetwork__c</name>
+    </fields>
+    <fields>
+        <label><!-- CreatedByMyTeam --></label>
+        <name>CreatedByMyTeam__c</name>
+    </fields>
+    <fields>
+        <label><!-- CreatedTeam --></label>
+        <name>CreatedTeam__c</name>
+    </fields>
+    <fields>
+        <label><!-- Creator AH --></label>
+        <name>Creator_AH__c</name>
+    </fields>
+    <fields>
+        <label><!-- Creator Area Name --></label>
+        <name>Creator_Area_Name__c</name>
+        <relationshipLabel><!-- Call Plans / Call Reports (Creator Area Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Creator FullName --></label>
+        <name>Creator_FullName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Creator NH --></label>
+        <name>Creator_NH__c</name>
+    </fields>
+    <fields>
+        <label><!-- Creator NetworkName --></label>
+        <name>Creator_NetworkName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Creator Profile --></label>
+        <name>Creator_Profile__c</name>
+    </fields>
+    <fields>
+        <label><!-- Creator Team --></label>
+        <name>Creator_Team_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit / Non-Credit --></label>
+        <name>Credit_Non_Credit__c</name>
+    </fields>
+    <fields>
+        <label><!-- CurrentOwnerIsMe --></label>
+        <name>CurrentOwnerIsMe__c</name>
+    </fields>
+    <fields>
+        <label><!-- AH Name --></label>
+        <name>Current_AH_Name__c</name>
+        <relationshipLabel><!-- Call Plans / Call Reports (Current AH Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- NH Name --></label>
+        <name>Current_NH_Name__c</name>
+        <relationshipLabel><!-- Call Plans / Call Reports (Current NH Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Owner Extension --></label>
+        <name>Current_Owner_Extension__c</name>
+        <relationshipLabel><!-- Call Plans / Call Reports --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Team Name --></label>
+        <name>Current_Team_Name__c</name>
+        <relationshipLabel><!-- Call Plans / Call Reports (Current Team Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Important Note of this Visit --></label>
+        <name>Customer_Important_Note__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Insight --></label>
+        <name>Customer_Insight__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Name --></label>
+        <name>Customer_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Owner --></label>
+        <name>Customer_Owner_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Owner Release Flag --></label>
+        <name>Customer_Owner_Release_Flag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Owner --></label>
+        <name>Customer_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date --></label>
+        <name>Date_Report__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expected Credit Amount (Baht) --></label>
+        <name>Expected_Credit_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Final Score --></label>
+        <name>Final_Score_CEM__c</name>
+        <picklistValues>
+            <masterLabel>0</masterLabel>
+            <translation><!-- 0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Final Score --></label>
+        <name>Final_Score_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Has Opp or not --></label>
+        <name>Has_Opp_or_not__c</name>
+    </fields>
+    <fields>
+        <label><!-- Head of UW Name --></label>
+        <name>Head_of_UW_Name__c</name>
+        <relationshipLabel><!-- Call Plans / Call Reports (Head of UW Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- IsSLACount --></label>
+        <name>IsSLACount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Call Report This Year --></label>
+        <name>Is_Call_Report_This_Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is me (CEM/MS) --></label>
+        <name>Is_me_CEM_MS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Visited Date --></label>
+        <name>Last_Visited_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Main Borrower --></label>
+        <name>Main_Borrower__c</name>
+    </fields>
+    <fields>
+        <label><!-- Memo --></label>
+        <name>Memo__c</name>
+    </fields>
+    <fields>
+        <label><!-- My Area --></label>
+        <name>My_Area__c</name>
+    </fields>
+    <fields>
+        <label><!-- My Network --></label>
+        <name>My_Network__c</name>
+    </fields>
+    <fields>
+        <label><!-- My Team --></label>
+        <name>My_Team__c</name>
+    </fields>
+    <fields>
+        <label><!-- Negotiation --></label>
+        <name>Negotiation__c</name>
+    </fields>
+    <fields>
+        <label><!-- No Change --></label>
+        <name>No_Change__c</name>
+    </fields>
+    <fields>
+        <label><!-- Non - Credit --></label>
+        <name>Non_Credit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Non - Financial Provides --></label>
+        <name>Non_Financial_Provides_CEM__c</name>
+        <picklistValues>
+            <masterLabel>0</masterLabel>
+            <translation><!-- 0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Non - Financial Provides Score --></label>
+        <name>Non_Financial_Provides_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Note --></label>
+        <name>Note__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Opp --></label>
+        <name>Number_of_Opp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Reschedule --></label>
+        <name>Number_of_Reschedule__c</name>
+    </fields>
+    <fields>
+        <label><!-- Offer Credit Product --></label>
+        <name>Offer_Credit_Product__c</name>
+    </fields>
+    <fields>
+        <label><!-- Offer Interest --></label>
+        <name>Offer_Interest__c</name>
+        <picklistValues>
+            <masterLabel>Cannot apply</masterLabel>
+            <translation><!-- Cannot apply --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer interested</masterLabel>
+            <translation><!-- Customer interested --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer not interested</masterLabel>
+            <translation><!-- Customer not interested --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Interest and can apply</masterLabel>
+            <translation><!-- Interest and can apply --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Interest with condition</masterLabel>
+            <translation><!-- Interest with condition --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Interested with condition</masterLabel>
+            <translation><!-- Interested with condition --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not interest</masterLabel>
+            <translation><!-- Not interest --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Other Comments --></label>
+        <name>Other_Comments_CEM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Details --></label>
+        <name>Other_Details_CEM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ownership --></label>
+        <name>Ownership__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pain (TF/LI/FX) --></label>
+        <name>Pain__c</name>
+    </fields>
+    <fields>
+        <label><!-- Existing Phone Number --></label>
+        <name>Phone_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Plan Amount --></label>
+        <name>Plan_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Plan Date --></label>
+        <name>Plan_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Plan Last Week --></label>
+        <name>Plan_Last_Week__c</name>
+    </fields>
+    <fields>
+        <label><!-- Plan --></label>
+        <name>Plan__c</name>
+    </fields>
+    <fields>
+        <label><!-- Port / Pool --></label>
+        <name>Port_Pool_Formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Port / Pool --></label>
+        <name>Port_Pool__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Call Plan / Call Report --></label>
+        <name>Primary_Call_Plan_Call_Report__c</name>
+        <relationshipLabel><!-- Call Plans / Call Reports --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Primary Call Report --></label>
+        <name>Primary_Call_Report__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Explanation --></label>
+        <name>Product_Explanation_CEM__c</name>
+        <picklistValues>
+            <masterLabel>0</masterLabel>
+            <translation><!-- 0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Product Explanation Score --></label>
+        <name>Product_Explanation_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reason --></label>
+        <name>Reason__c</name>
+        <picklistValues>
+            <masterLabel>2.1 รอตัดสินใจ/รอปรึกษาครอบครัว</masterLabel>
+            <translation><!-- 2.1 รอตัดสินใจ/รอปรึกษาครอบครัว --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2.2 สนใจแต่รอแก้ปัญหาเรื่องหลักประกัน</masterLabel>
+            <translation><!-- 2.2 สนใจแต่รอแก้ปัญหาเรื่องหลักประกัน --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2.3 สนใจแต่มีประเด็นต่อรองเกี่ยวกับดอกเบี้ย / ค่าธรรมเนียม</masterLabel>
+            <translation><!-- 2.3 สนใจแต่มีประเด็นต่อรองเกี่ยวกับดอกเบี้ย / ค่าธรรมเนียม --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2.4 สนใจแต่ไม่ใช่ในช่วงเดือนนี้</masterLabel>
+            <translation><!-- 2.4 สนใจแต่ไม่ใช่ในช่วงเดือนนี้ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2.5 สนใจแต่มีประเด็นต่อรองเกี่ยวกับประกันชีวิต</masterLabel>
+            <translation><!-- 2.5 สนใจแต่มีประเด็นต่อรองเกี่ยวกับประกันชีวิต --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2.6 สนใจแต่วงเงินที่เสนอไม่เพียงพอ</masterLabel>
+            <translation><!-- 2.6 สนใจแต่วงเงินที่เสนอไม่เพียงพอ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2.7 อื่น ๆ (โปรดระบุ)</masterLabel>
+            <translation><!-- 2.7 อื่น ๆ (โปรดระบุ) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3.1 Refer ให้ผู้อื่นดำเนินการ (ระบุในหมายเหตุ)</masterLabel>
+            <translation><!-- 3.1 Refer ให้ผู้อื่นดำเนินการ (ระบุในหมายเหตุ) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3.2 ที่อยู่ และเบอร์โทรศัพท์ไม่ถูกต้อง / ไม่มีข้อมูล/ ติดต่อไม่ได้</masterLabel>
+            <translation><!-- 3.2 ที่อยู่ และเบอร์โทรศัพท์ไม่ถูกต้อง / ไม่มีข้อมูล/ ติดต่อไม่ได้ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3.3 เพิ่งขอสินเชื่อไม่ถึง 3 เดือน</masterLabel>
+            <translation><!-- 3.3 เพิ่งขอสินเชื่อไม่ถึง 3 เดือน --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3.4 ลูกค้าคุณสมบัติไม่ดี / ไม่ผ่านหลักเกณฑ์ธนาคาร (ระบุในหมายเหตุ)</masterLabel>
+            <translation><!-- 3.4 ลูกค้าคุณสมบัติไม่ดี / ไม่ผ่านหลักเกณฑ์ธนาคาร (ระบุในหมายเหตุ) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3.5 ลูกค้าไม่ให้เข้าพบ</masterLabel>
+            <translation><!-- 3.5 ลูกค้าไม่ให้เข้าพบ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3.6 เสียชีวิต / เลิกกิจการ</masterLabel>
+            <translation><!-- 3.6 เสียชีวิต / เลิกกิจการ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3.7 หลักประกันไม่ผ่านเกณฑ์</masterLabel>
+            <translation><!-- 3.7 หลักประกันไม่ผ่านเกณฑ์ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3.8 อื่น ๆ (โปรดระบุ)</masterLabel>
+            <translation><!-- 3.8 อื่น ๆ (โปรดระบุ) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4.1 มีเงินคงเหลือในบัญชีสูงหรือวงเงินเป็นตัวดำ</masterLabel>
+            <translation><!-- 4.1 มีเงินคงเหลือในบัญชีสูงหรือวงเงินเป็นตัวดำ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4.2 ติดเรื่องค่าใช้จ่ายในการดำเนินการ</masterLabel>
+            <translation><!-- 4.2 ติดเรื่องค่าใช้จ่ายในการดำเนินการ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4.3 ยอดขายกิจการลดลง</masterLabel>
+            <translation><!-- 4.3 ยอดขายกิจการลดลง --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4.4 ตัดออกจากรายชื่อ Lead (ระยะเวลา 6 เดือน)</masterLabel>
+            <translation><!-- 4.4 ตัดออกจากรายชื่อ Lead (ระยะเวลา 6 เดือน) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4.5 ขอในนามบุคคล/บริษัทอื่น (โปรดระบุ CIS/เลขบัตรประชาชนหรือเลขทะเบียนการค้า)</masterLabel>
+            <translation><!-- 4.5 ขอในนามบุคคล/บริษัทอื่น (โปรดระบุ CIS/เลขบัตรประชาชนหรือเลขทะเบียนการค้า) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4.6 อื่น ๆ (โปรดระบุ)</masterLabel>
+            <translation><!-- 4.6 อื่น ๆ (โปรดระบุ) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Reason for Cancellation --></label>
+        <name>Reason_for_Cancellation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reasons of Visit --></label>
+        <name>Reasons_of_Visit_CEM__c</name>
+        <picklistValues>
+            <masterLabel>(just) On Schedule</masterLabel>
+            <translation><!-- (just) On Schedule --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opportunity</masterLabel>
+            <translation><!-- Opportunity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Others</masterLabel>
+            <translation><!-- Others --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pain</masterLabel>
+            <translation><!-- Pain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Servicing</masterLabel>
+            <translation><!-- Servicing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Special Assignment</masterLabel>
+            <translation><!-- Special Assignment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Special Occasion</masterLabel>
+            <translation><!-- Special Occasion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Top 200</masterLabel>
+            <translation><!-- Top 200 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Voice from Sales Team</masterLabel>
+            <translation><!-- Voice from Sales Team --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Related Date --></label>
+        <name>Related_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Secondary Call Report --></label>
+        <name>Secondary_Call_Report__c</name>
+    </fields>
+    <fields>
+        <label><!-- Senior UW Name --></label>
+        <name>Senior_UW_Name__c</name>
+        <relationshipLabel><!-- Call Plans / Call Reports (Senior UW Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Servicing,DPD(แก้ไขหนี้),มอบของขวัญ,ฯลฯ --></label>
+        <name>Servicing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status_Display__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Cancel</masterLabel>
+            <translation><!-- Cancel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contacted</masterLabel>
+            <translation><!-- Contacted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plan</masterLabel>
+            <translation><!-- Plan --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sub Industry Group Description --></label>
+        <name>Sub_Industry_Group_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sub Industry Group --></label>
+        <name>Sub_Industry_Group__c</name>
+    </fields>
+    <fields>
+        <label><!-- TM Email Address --></label>
+        <name>TM_Email_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Team Name --></label>
+        <name>Team_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Score --></label>
+        <name>Total_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- UW Decision --></label>
+        <name>UW_Decision__c</name>
+        <picklistValues>
+            <masterLabel>Go</masterLabel>
+            <translation><!-- Go --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Go</masterLabel>
+            <translation><!-- No Go --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>อยู่ระหว่างตัดสินใจ</masterLabel>
+            <translation><!-- อยู่ระหว่างตัดสินใจ --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- UW Comment --></label>
+        <name>UW_Final_Decision__c</name>
+    </fields>
+    <fields>
+        <label><!-- UW: My Call Plan --></label>
+        <name>UW_My_Call_Plan__c</name>
+    </fields>
+    <fields>
+        <label><!-- Updated Date/Time by CEM/MS --></label>
+        <name>Updated_Date_Time_by_CEM_MS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Updated by CEM/MS ID --></label>
+        <name>Updated_by_CEM_MS_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Updated by CEM/MS --></label>
+        <name>Updated_by_CEM_MS__c</name>
+    </fields>
+    <fields>
+        <label><!-- VObj_Relation --></label>
+        <name>VObj_Relation__c</name>
+    </fields>
+    <fields>
+        <label><!-- VObj_Sell --></label>
+        <name>VObj_Sell__c</name>
+    </fields>
+    <fields>
+        <label><!-- Visit Objective --></label>
+        <name>Visit_Objective__c</name>
+        <picklistValues>
+            <masterLabel>Relationship</masterLabel>
+            <translation><!-- Relationship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sell</masterLabel>
+            <translation><!-- Sell --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Visit Stage --></label>
+        <name>Visit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Who --></label>
+        <name>Who__c</name>
+        <relationshipLabel><!-- Call Plans / Call Reports (Who) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- 26 Industries Group --></label>
+        <name>X26_Industries_Group__c</name>
+    </fields>
+    <fields>
+        <label><!-- call plan call report ID --></label>
+        <name>call_plan_call_report_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- last mo dateTime --></label>
+        <name>last_mo_dateTime_jazzy__c</name>
+    </fields>
+    <layouts>
+        <layout>Call Plan (Non-Sales) Layout</layout>
+        <sections>
+            <label><!-- CEM Accompanied --></label>
+            <section>CEM Accompanied</section>
+        </sections>
+        <sections>
+            <label><!-- Call Plan Details --></label>
+            <section>Call Plan Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Note Section --></label>
+            <section>Note Section</section>
+        </sections>
+        <sections>
+            <label><!-- UW Information --></label>
+            <section>UW Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Call Plan Layout</layout>
+        <sections>
+            <label><!-- CEM Accompanied --></label>
+            <section>CEM Accompanied</section>
+        </sections>
+        <sections>
+            <label><!-- Call Plan Details --></label>
+            <section>Call Plan Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Note Section --></label>
+            <section>Note Section</section>
+        </sections>
+        <sections>
+            <label><!-- UW Information --></label>
+            <section>UW Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Call Report (No Plan) Layout</layout>
+        <sections>
+            <label><!-- Call Report Details --></label>
+            <section>Call Report Details</section>
+        </sections>
+        <sections>
+            <label><!-- Call Result --></label>
+            <section>Call Result</section>
+        </sections>
+        <sections>
+            <label><!-- Contact --></label>
+            <section>Contact</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- UW Information --></label>
+            <section>UW Information</section>
+        </sections>
+        <sections>
+            <label><!-- Visit Activity --></label>
+            <section>Visit Activity</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Call Report Layout</layout>
+        <sections>
+            <label><!-- CEM / MS --></label>
+            <section>CEM / MS</section>
+        </sections>
+        <sections>
+            <label><!-- Call Plan Details --></label>
+            <section>Call Plan Details</section>
+        </sections>
+        <sections>
+            <label><!-- Call Report Details --></label>
+            <section>Call Report Details</section>
+        </sections>
+        <sections>
+            <label><!-- Call Result --></label>
+            <section>Call Result</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+        <sections>
+            <label><!-- Note Section --></label>
+            <section>Note Section</section>
+        </sections>
+        <sections>
+            <label><!-- Visit Activity --></label>
+            <section>Visit Activity</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Closed / Cancelled Call Plan Layout</layout>
+        <sections>
+            <label><!-- CEM/MS --></label>
+            <section>CEM/MS</section>
+        </sections>
+        <sections>
+            <label><!-- Call Plan Details --></label>
+            <section>Call Plan Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Note Section --></label>
+            <section>Note Section</section>
+        </sections>
+        <sections>
+            <label><!-- UW Information --></label>
+            <section>UW Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Closed / Cancelled Call Report (No Plan) Layout</layout>
+        <sections>
+            <label><!-- Call Report Details --></label>
+            <section>Call Report Details</section>
+        </sections>
+        <sections>
+            <label><!-- Call Result --></label>
+            <section>Call Result</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- UW Information --></label>
+            <section>UW Information</section>
+        </sections>
+        <sections>
+            <label><!-- Visit Activity --></label>
+            <section>Visit Activity</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Closed / Cancelled Call Report Layout</layout>
+        <sections>
+            <label><!-- CEM / MS --></label>
+            <section>CEM / MS</section>
+        </sections>
+        <sections>
+            <label><!-- Call Plan Details --></label>
+            <section>Call Plan Details</section>
+        </sections>
+        <sections>
+            <label><!-- Call Report Details --></label>
+            <section>Call Report Details</section>
+        </sections>
+        <sections>
+            <label><!-- Call Result --></label>
+            <section>Call Result</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Lead Info --></label>
+            <section>Lead Info</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+        <sections>
+            <label><!-- Note Section --></label>
+            <section>Note Section</section>
+        </sections>
+        <sections>
+            <label><!-- UW Information --></label>
+            <section>UW Information</section>
+        </sections>
+        <sections>
+            <label><!-- Visit Activity --></label>
+            <section>Visit Activity</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Closed / Contacted Call Report (No Plan) Editable Layout</layout>
+        <sections>
+            <label><!-- Accompanied by CEM --></label>
+            <section>Accompanied by CEM</section>
+        </sections>
+        <sections>
+            <label><!-- Call Report Details --></label>
+            <section>Call Report Details</section>
+        </sections>
+        <sections>
+            <label><!-- Call Result --></label>
+            <section>Call Result</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- UW Information --></label>
+            <section>UW Information</section>
+        </sections>
+        <sections>
+            <label><!-- Visit Activity --></label>
+            <section>Visit Activity</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Closed / Contacted Call Report (No Plan) Editable for Non-Sales Layout</layout>
+        <sections>
+            <label><!-- Accompanied by CEM --></label>
+            <section>Accompanied by CEM</section>
+        </sections>
+        <sections>
+            <label><!-- Call Report Details --></label>
+            <section>Call Report Details</section>
+        </sections>
+        <sections>
+            <label><!-- Call Result --></label>
+            <section>Call Result</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- UW Information --></label>
+            <section>UW Information</section>
+        </sections>
+        <sections>
+            <label><!-- Visit Activity --></label>
+            <section>Visit Activity</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Closed / Contacted Call Report Editable Layout</layout>
+        <sections>
+            <label><!-- CEM Evaluation --></label>
+            <section>CEM Evaluation</section>
+        </sections>
+        <sections>
+            <label><!-- Call Plan Details --></label>
+            <section>Call Plan Details</section>
+        </sections>
+        <sections>
+            <label><!-- Call Report Details --></label>
+            <section>Call Report Details</section>
+        </sections>
+        <sections>
+            <label><!-- Call Result --></label>
+            <section>Call Result</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+        <sections>
+            <label><!-- Note Section --></label>
+            <section>Note Section</section>
+        </sections>
+        <sections>
+            <label><!-- UW Information --></label>
+            <section>UW Information</section>
+        </sections>
+        <sections>
+            <label><!-- Visit Activity --></label>
+            <section>Visit Activity</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Closed / Contacted Call Report Editable Layout (Lead)</layout>
+        <sections>
+            <label><!-- CEM Evaluation --></label>
+            <section>CEM Evaluation</section>
+        </sections>
+        <sections>
+            <label><!-- Call Plan Details --></label>
+            <section>Call Plan Details</section>
+        </sections>
+        <sections>
+            <label><!-- Call Report Details --></label>
+            <section>Call Report Details</section>
+        </sections>
+        <sections>
+            <label><!-- Call Result --></label>
+            <section>Call Result</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+        <sections>
+            <label><!-- Note Section --></label>
+            <section>Note Section</section>
+        </sections>
+        <sections>
+            <label><!-- UW Information --></label>
+            <section>UW Information</section>
+        </sections>
+        <sections>
+            <label><!-- Visit Activity --></label>
+            <section>Visit Activity</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Closed / Contacted Call Report Editable for Non-Sales Layout</layout>
+        <sections>
+            <label><!-- CEM Evaluation --></label>
+            <section>CEM Evaluation</section>
+        </sections>
+        <sections>
+            <label><!-- Call Plan Details --></label>
+            <section>Call Plan Details</section>
+        </sections>
+        <sections>
+            <label><!-- Call Report Details --></label>
+            <section>Call Report Details</section>
+        </sections>
+        <sections>
+            <label><!-- Call Result --></label>
+            <section>Call Result</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- New Section --></label>
+            <section>New Section</section>
+        </sections>
+        <sections>
+            <label><!-- Note Section --></label>
+            <section>Note Section</section>
+        </sections>
+        <sections>
+            <label><!-- UW Information --></label>
+            <section>UW Information</section>
+        </sections>
+        <sections>
+            <label><!-- Visit Activity --></label>
+            <section>Visit Activity</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Closed / Contacted Secondary Call Report (No Plan) Layout</layout>
+        <sections>
+            <label><!-- Call Report Details --></label>
+            <section>Call Report Details</section>
+        </sections>
+        <sections>
+            <label><!-- Call Result --></label>
+            <section>Call Result</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- UW Information --></label>
+            <section>UW Information</section>
+        </sections>
+        <sections>
+            <label><!-- Visit Activity --></label>
+            <section>Visit Activity</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Closed / Contacted Secondary Call Report Main Borrower (No Plan) Layout</layout>
+        <sections>
+            <label><!-- Accompanied by CEM --></label>
+            <section>Accompanied by CEM</section>
+        </sections>
+        <sections>
+            <label><!-- Call Report Details --></label>
+            <section>Call Report Details</section>
+        </sections>
+        <sections>
+            <label><!-- Call Result --></label>
+            <section>Call Result</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- UW Information --></label>
+            <section>UW Information</section>
+        </sections>
+        <sections>
+            <label><!-- Visit Activity --></label>
+            <section>Visit Activity</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>New Call Plan Layout</layout>
+        <sections>
+            <label><!-- Call Plan Details --></label>
+            <section>Call Plan Details</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Note Section --></label>
+            <section>Note Section</section>
+        </sections>
+        <sections>
+            <label><!-- UW Information --></label>
+            <section>UW Information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Secondary Call Report (No Plan) Layout</layout>
+        <sections>
+            <label><!-- Call Report Details --></label>
+            <section>Call Report Details</section>
+        </sections>
+        <sections>
+            <label><!-- Call Result --></label>
+            <section>Call Result</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- UW Information --></label>
+            <section>UW Information</section>
+        </sections>
+        <sections>
+            <label><!-- Visit Activity --></label>
+            <section>Visit Activity</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Secondary Call Report Main Borrower (No Plan) Layout</layout>
+        <sections>
+            <label><!-- Call Report Details --></label>
+            <section>Call Report Details</section>
+        </sections>
+        <sections>
+            <label><!-- Call Result --></label>
+            <section>Call Result</section>
+        </sections>
+        <sections>
+            <label><!-- Contact --></label>
+            <section>Contact</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- UW Information --></label>
+            <section>UW Information</section>
+        </sections>
+        <sections>
+            <label><!-- Visit Activity --></label>
+            <section>Visit Activity</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label><!-- Asso Interested --></label>
+        <name>Associated_Customer_Interested</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Asso Not interest --></label>
+        <name>Associated_Customer_Not_Interested</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Cancel Call Plan --></label>
+        <name>Cancel_Call_Plan</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Convert to Call Report --></label>
+        <name>Convert_To_Call_Report</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- Create New Contact --></label>
+        <name>Create_New_Contact</name>
+    </quickActions>
+    <quickActions>
+        <label><!-- New Pain and Need --></label>
+        <name>New_Pain_and_Need</name>
+    </quickActions>
+    <recordTypes>
+        <label><!-- Call Plan --></label>
+        <name>CallPlan</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Call Report --></label>
+        <name>CallReport</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Call Report (No Plan) --></label>
+        <name>CallReportNoPlan</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Closed / Cancelled Call Plan --></label>
+        <name>ClosedCancelledCallPlan</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Closed / Cancelled Call Report --></label>
+        <name>ClosedCancelledCallReport</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Closed / Cancelled Call Report (No Plan) --></label>
+        <name>ClosedCancelledCallReportNoPlan</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Closed / Contacted Call Report Editable (Lead) --></label>
+        <name>Closed_Contacted_Call_Report_Editable_Lead</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Closed / Contacted Call Report (No Plan) Editable --></label>
+        <name>Closed_Contacted_Call_Report_No_Plan_Editable</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Closed / Contacted Secondary Call Report Main Borrower (No plan) --></label>
+        <name>Closed_Contacted_Secondary_Call_Report_Main_Borrower_No_plan</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Closed / Contacted Secondary Call Report (No Plan) --></label>
+        <name>Closed_Contacted_Secondary_Call_Report_No_Plan_Layout</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- New Call Plan --></label>
+        <name>New_Call_Plan</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Secondary Call Report Main Borrower (No plan) --></label>
+        <name>Secondary_Call_Report_Main_Borrower_No_plan</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Secondary Call Report (No plan) --></label>
+        <name>Secondary_Call_Report_No_plan</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Cannot evaluate RM. This Call Plan was NOT accompanied by CEM/MS. --></errorMessage>
+        <name>Accompanied_by_CEM_required_for_RM_Eval</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>ไม่สามารถเปลี่ยนแปลงวันเยี่ยมจริงได้</errorMessage>
+        <name>Actual_Visit_Date_cannot_be_changed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>ไม่สามารถระบุวันเยี่ยมจริงล่วงหน้าได้</errorMessage>
+        <name>Cannot_Select_ActualDate_More_Than_Today</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please input only one contact --></errorMessage>
+        <name>Cannot_input_more_than_one_contact</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>ไม่สามารถระบุวันที่คาดว่าจะเข้าพบลูกค้าย้อนหลังได้</errorMessage>
+        <name>Cannot_select_date_backward</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>วงเงินต้องไม่ต่ำกว่า 5,000 บาท</errorMessage>
+        <name>Expected_Credit_Amount_Minimum</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Offer Interest Should be Null --></errorMessage>
+        <name>Not_Require_Offer_Interest</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>โปรดระบุเหตุผล</errorMessage>
+        <name>Other_Reason_Required_Remark</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- กรุณากรอกเป็น พ.ศ. --></errorMessage>
+        <name>Plan_Date_Cannot_Use_In_AD</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- กรุณากรอกวงเงินเป็นหน่วยบาท และ จำนวนเงินต้องมากกว่า 5000 บาท --></errorMessage>
+        <name>Plan_amount_need_to_be_more_than_5000</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>ต้องระบุ วดป เกิด และเลขที่บัตรก่อนสร้างโอกาส</errorMessage>
+        <name>Prospect_need_to_be_input_ID_Number</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- All 5 Evaluation must be entered --></errorMessage>
+        <name>RM_Evaluation_Fields_must_be_entered</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>โปรดระบุวงเงินที่จะไปเสนอลูกค้า</errorMessage>
+        <name>RequirePlanAmountWhenVisitObjectiveSell</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>โปรดระบุวงเงินที่ลูกค้าต้องการ</errorMessage>
+        <name>RequireToInputExpectedCreditAmount</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>โปรดระบุเหตุผลการยกเลิกแผน</errorMessage>
+        <name>Require_Call_Plan_Reason_for_Cancel</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>โปรดระบุเหตุผล</errorMessage>
+        <name>Require_Offer_Interest_and_Reason</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage>โปรดระบุบุคคลผู้ติดต่อ</errorMessage>
+        <name>To_validation_null_contact</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- At least 1 Visit Activity field must be entered --></errorMessage>
+        <name>Visit_Activity_Fields_must_be_entered</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- CallReportContactLink --></label>
+        <name>CallReportContactLink</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Cancel_Call_Plan --></label>
+        <name>Cancel_Call_Plan</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Convert_to_Call_Report --></label>
+        <name>Convert_to_Call_Report</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Call_Plan --></label>
+        <name>New_Call_Plan</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Call_Plan_No_Acc --></label>
+        <name>New_Call_Plan_No_Acc</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Call_Report --></label>
+        <name>New_Call_Report</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- New_Call_Report_No_Acc --></label>
+        <name>New_Call_Report_No_Acc</name>
+    </webLinks>
+</CustomObjectTranslation>

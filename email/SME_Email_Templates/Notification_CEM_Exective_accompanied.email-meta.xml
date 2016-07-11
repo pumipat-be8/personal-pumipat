@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Notification CEM/Exective accompanied</name>
+    <style>none</style>
+    <subject>แจ้งการขอเข้าเยี่ยมลูกค้าราย CIS: {!Call_Report__c.CIS_ID__c}</subject>
+    <type>text</type>
+</EmailTemplate>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- AH Employee ID --></label>
+        <name>AH_Employee_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- AH Name --></label>
+        <name>AH_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- AH RC Code --></label>
+        <name>AH_RC_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Acting Flag --></label>
+        <name>Acting_Flag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Area Name --></label>
+        <name>Area_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- DB Region --></label>
+        <name>DB_Region__c</name>
+        <picklistValues>
+            <masterLabel>APAC</masterLabel>
+            <translation><!-- APAC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMEA</masterLabel>
+            <translation><!-- EMEA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LA</masterLabel>
+            <translation><!-- LA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NA</masterLabel>
+            <translation><!-- NA --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Effective Date --></label>
+        <name>Effective_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employee ID --></label>
+        <name>Employee_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Executive --></label>
+        <name>Executive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Code --></label>
+        <name>Job_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- NH Employee ID --></label>
+        <name>NH_Employee_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- NH Name --></label>
+        <name>NH_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- NH RC Code --></label>
+        <name>NH_RC_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Network Name --></label>
+        <name>Network_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- RC Code --></label>
+        <name>RC_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Segment --></label>
+        <name>Segment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status Code --></label>
+        <name>Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- TM Employee ID --></label>
+        <name>TM_Employee_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- TM Name --></label>
+        <name>TM_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Team Name --></label>
+        <name>Team_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current AH --></label>
+        <name>current_ah__c</name>
+        <relationshipLabel><!-- Users --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>User Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <validationRules>
+        <errorMessage>ท่านไม่มีสิทธิ์ในการดำเนินการ</errorMessage>
+        <name>Can_Edit_User_Record</name>
+    </validationRules>
+</CustomObjectTranslation>

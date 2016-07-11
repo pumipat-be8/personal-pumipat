@@ -1,0 +1,1123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>ADDRESS_INFORMATION_IS_NULL</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ADDRESS_INFORMATION_IS_NULL</shortDescription>
+        <value>Please provide address information</value>
+    </labels>
+    <labels>
+        <fullName>All_Loan_Setup</fullName>
+        <categories>Opportunity Stage</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>All Loan Setup</shortDescription>
+        <value>All Loan Setup</value>
+    </labels>
+    <labels>
+        <fullName>Apply_All_Area</fullName>
+        <categories>Business Code: Apply All Area</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Apply All Area</shortDescription>
+        <value>All</value>
+    </labels>
+    <labels>
+        <fullName>BACKEND_ERROR</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>BACKEND_ERROR</shortDescription>
+        <value>Found Error from the backend</value>
+    </labels>
+    <labels>
+        <fullName>BulkAssign_AHLevelName</fullName>
+        <categories>Bulk Assignment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>BulkAssign AHLevelName</shortDescription>
+        <value>AH Level Name</value>
+    </labels>
+    <labels>
+        <fullName>BulkAssign_CustomerList</fullName>
+        <categories>Bulk Assignment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Permanent</shortDescription>
+        <value>Permanent Ownership</value>
+    </labels>
+    <labels>
+        <fullName>BulkAssign_Invalid_Fields</fullName>
+        <categories>Bulk Assignment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>BulkAssign Invalid Fields</shortDescription>
+        <value>Invalid Selection</value>
+    </labels>
+    <labels>
+        <fullName>BulkAssign_MirrorUser</fullName>
+        <categories>Bulk Assignment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Bulk Mirror User</shortDescription>
+        <value>00528000000a5Lp</value>
+    </labels>
+    <labels>
+        <fullName>BulkAssign_NHLevelName</fullName>
+        <categories>Bulk Assignment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>BulkAssign NHLevelName</shortDescription>
+        <value>NH Level Name</value>
+    </labels>
+    <labels>
+        <fullName>BulkAssign_NoAssignmentSelected</fullName>
+        <categories>Bulk Assignment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>No Assignment Selected</shortDescription>
+        <value>No Assignment have been selected</value>
+    </labels>
+    <labels>
+        <fullName>BulkAssign_NoRM_TM_UserAssignment</fullName>
+        <categories>Bulk Assignment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>No RM/TM User Assignment</shortDescription>
+        <value>No TM/RM User Assignment have been selected</value>
+    </labels>
+    <labels>
+        <fullName>BulkAssign_OwnerByOtherList</fullName>
+        <categories>Bulk Assignment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OwnedByOtherList</shortDescription>
+        <value>Owned By Other</value>
+    </labels>
+    <labels>
+        <fullName>BulkAssign_RMLevelName</fullName>
+        <categories>Bulk Assignment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>BulkAssign RMLevelName</shortDescription>
+        <value>RM Level Name</value>
+    </labels>
+    <labels>
+        <fullName>BulkAssign_SelectRM_TM</fullName>
+        <categories>Bulk Assignment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Select RM/TM</shortDescription>
+        <value>Select RM/TM</value>
+    </labels>
+    <labels>
+        <fullName>BulkAssign_Servererror</fullName>
+        <categories>Bulk Assignment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>BulkAssign Servererror</shortDescription>
+        <value>Server error</value>
+    </labels>
+    <labels>
+        <fullName>BulkAssign_Submit</fullName>
+        <categories>Bulk Assignment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Submit Customer</shortDescription>
+        <value>Submit</value>
+    </labels>
+    <labels>
+        <fullName>BulkAssign_TMLevelName</fullName>
+        <categories>Bulk Assignment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>BulkAssign TMLevelName</shortDescription>
+        <value>Team Level Name</value>
+    </labels>
+    <labels>
+        <fullName>BulkAssign_TempOwnerList</fullName>
+        <categories>Bulk Assignment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Temporary</shortDescription>
+        <value>Temporary Ownership</value>
+    </labels>
+    <labels>
+        <fullName>BulkAssign_Thefollowingfieldsareinvalid</fullName>
+        <categories>Bulk Assignment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>BulkAssign Thefollowingfieldsareinvalid</shortDescription>
+        <value>The following fields are invalid</value>
+    </labels>
+    <labels>
+        <fullName>CANNOT_CLOSE_WON_OPP</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CANNOT CLOSE WON OPP</shortDescription>
+        <value>ไม่สามารถกด Close Won ได้... ต้องอยู่ในสถานะรอตั้งวงเงิน แล้วค่อยไปแก้ไข Opportunity Product (ด้านล่างของโอกาส) ให้เป็น Setup ทั้งหมดแล้วกรอกรายละเอียดการตั้งวงเงินก่อน</value>
+    </labels>
+    <labels>
+        <fullName>CANNOT_DELETE_TRANSACTION</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CANNOT_DELETE_TRANSACTION</shortDescription>
+        <value>Can&apos;t delete data on system.</value>
+    </labels>
+    <labels>
+        <fullName>CANNOT_INSERT_TRANSACTION</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CANNOT_INSERT_TRANSACTION</shortDescription>
+        <value>Can&apos;t insert data on system.</value>
+    </labels>
+    <labels>
+        <fullName>CANNOT_REQUEST_OWNERSHIP</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CANNOT REQUEST OWNERSHIP</shortDescription>
+        <value>You have already requested ownership for this customer.</value>
+    </labels>
+    <labels>
+        <fullName>CANNOT_ROLLBACK_TRANSACTION</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CANNOT_ROLLBACK_TRANSACTION</shortDescription>
+        <value>Can&apos;t rollback data on system</value>
+    </labels>
+    <labels>
+        <fullName>CANNOT_UPDATE_TRANSACTION</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CANNOT_UPDATE_TRANSACTION</shortDescription>
+        <value>Can&apos;t update data on system.</value>
+    </labels>
+    <labels>
+        <fullName>CANNOT_UPSERT_TRANSACTION</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CANNOT_UPSERT_TRANSACTION</shortDescription>
+        <value>Can&apos;t upsert data on system.</value>
+    </labels>
+    <labels>
+        <fullName>CI_RESPONSE_ERROR</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CI_RESPONSE_ERROR</shortDescription>
+        <value>Found error message from CI Webservice:</value>
+    </labels>
+    <labels>
+        <fullName>COMPANY_CODE_IS_NULL</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>COMPANY_CODE_IS_NULL</shortDescription>
+        <value>Please provide Company Code</value>
+    </labels>
+    <labels>
+        <fullName>Campaign_Lead_Batch_Size</fullName>
+        <categories>Campaign/Lead</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CAMPAIGN_LEAD_BATCH_SIZE</shortDescription>
+        <value>5000</value>
+    </labels>
+    <labels>
+        <fullName>Cannot_Refer_Out_to_this_Province</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Cannot Refer Out to this Province</shortDescription>
+        <value>เป็นพื้นที่ฝากสาขา ไม่มีนโยบายฝากเพิ่มเติม กรุณาดูแลต่อ</value>
+    </labels>
+    <labels>
+        <fullName>Cannotprocessyourrequest</fullName>
+        <categories>Year End</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Cannotprocessyourrequest</shortDescription>
+        <value>Can not process your request. Some records has been already updated by another user. Please refresh the list.</value>
+    </labels>
+    <labels>
+        <fullName>Chatter_Group_Owner</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Chatter Group Owner</shortDescription>
+        <value>Bandit Sontirat</value>
+    </labels>
+    <labels>
+        <fullName>Default_Opportunity_Close_Date</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Default Opportunity Close Date</shortDescription>
+        <value>45</value>
+    </labels>
+    <labels>
+        <fullName>Filter_ME_Team</fullName>
+        <categories>Refer Out</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Filter ME Team</shortDescription>
+        <value>ทีมลูกค้าผู้ประกอบการ 1</value>
+    </labels>
+    <labels>
+        <fullName>Filter_SE_Team</fullName>
+        <categories>Refer Out</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Filter SE Team</shortDescription>
+        <value>ทีมลูกค้าผู้ประกอบการ 2</value>
+    </labels>
+    <labels>
+        <fullName>HTTP_CONNECTION_FAILED</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>HTTP_CONNECTION_FAILED</shortDescription>
+        <value>Connection problem occurred:</value>
+    </labels>
+    <labels>
+        <fullName>INVALID_RESPONSE</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>INVALID_RESPONSE</shortDescription>
+        <value>Got Invalid format response from the backend:</value>
+    </labels>
+    <labels>
+        <fullName>Information_Section</fullName>
+        <categories>Refer Out</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Information Section</shortDescription>
+        <value>Information</value>
+    </labels>
+    <labels>
+        <fullName>LICENSE_EXCEED</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LICENSE_EXCEED</shortDescription>
+        <value>License already exceed : Cannot Activate</value>
+    </labels>
+    <labels>
+        <fullName>MANUAL_BATCH_SIZE</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Manual Batch Size</shortDescription>
+        <value>200</value>
+    </labels>
+    <labels>
+        <fullName>ME_Lead_URL</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ME Lead URL</shortDescription>
+        <value>http://test.salesforce.com</value>
+    </labels>
+    <labels>
+        <fullName>MashupUrl</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MashupUrl</shortDescription>
+        <value>http://172.30.132.137/encrypt/</value>
+    </labels>
+    <labels>
+        <fullName>NO_AUTHORIZATION_USER</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NO_AUTHORIZATION_USER</shortDescription>
+        <value>No authorization to change user information</value>
+    </labels>
+    <labels>
+        <fullName>NO_CONTACT_WITH_THIS_PHONE</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NO_CONTACT_WITH_THIS_PHONE</shortDescription>
+        <value>This error began when didn&apos;t found Contact according phone number :</value>
+    </labels>
+    <labels>
+        <fullName>NO_SGID_ACCOUNT</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NO_SGID_ACCOUNT</shortDescription>
+        <value>This error began when didn&apos;t found SFIG account.</value>
+    </labels>
+    <labels>
+        <fullName>PARSE_FAILED</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PARSE_FAILED</shortDescription>
+        <value>Failed to parse the invalid format response:</value>
+    </labels>
+    <labels>
+        <fullName>Page_Size</fullName>
+        <categories>Bulk Assignment</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Page Size</shortDescription>
+        <value>200</value>
+    </labels>
+    <labels>
+        <fullName>Partial_Loan_Setup</fullName>
+        <categories>Opportunity Stage</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Partial Loan Setup</shortDescription>
+        <value>Partial Loan Setup</value>
+    </labels>
+    <labels>
+        <fullName>PrimaryContactErrorMessage</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PrimaryContactErrorMessage</shortDescription>
+        <value>This Customer already has primary contact.</value>
+    </labels>
+    <labels>
+        <fullName>Refer_Out_Cancel_Button</fullName>
+        <categories>Refer Out</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Refer Out Cancel Button</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>Refer_Out_Reason_Section</fullName>
+        <categories>Refer Out</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Refer Out Reason Section</shortDescription>
+        <value>Refer Out Reason</value>
+    </labels>
+    <labels>
+        <fullName>Refer_Out_Save_Button</fullName>
+        <categories>Refer Out</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Refer Out Save Button</shortDescription>
+        <value>Save</value>
+    </labels>
+    <labels>
+        <fullName>Release_Customer_Ownership_for_Call_Plan_Call_Report_ME</fullName>
+        <categories>Customers</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Release Customer Ownership for Call Plan / Call Report (ME)</shortDescription>
+        <value>90</value>
+    </labels>
+    <labels>
+        <fullName>Release_Customer_Ownership_for_Call_Plan_Call_Report_SE</fullName>
+        <categories>Customers</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Release Customer Ownership for Call Plan / Call Report (SE)</shortDescription>
+        <value>90</value>
+    </labels>
+    <labels>
+        <fullName>Release_Prospect_Ownership_ME</fullName>
+        <categories>Customers</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Release Prospect Ownership (ME)</shortDescription>
+        <value>90</value>
+    </labels>
+    <labels>
+        <fullName>Release_Prospect_Ownership_SE</fullName>
+        <categories>Customers</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Release Prospect Ownership (SE)</shortDescription>
+        <value>90</value>
+    </labels>
+    <labels>
+        <fullName>Release_Prospect_Ownership_for_Call_Plan_Call_Report_ME</fullName>
+        <categories>Customers</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Release Prospect Ownership for Call Plan / Call Report (ME)</shortDescription>
+        <value>90</value>
+    </labels>
+    <labels>
+        <fullName>Release_Prospect_Ownership_for_Call_Plan_Call_Report_SE</fullName>
+        <categories>Customers</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Release Prospect Ownership for Call Plan / Call Report (SE)</shortDescription>
+        <value>90</value>
+    </labels>
+    <labels>
+        <fullName>Release_Tempolary_Ownership</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error Message When Failed to Release Temporary Ownership</shortDescription>
+        <value>No authorizaton to release owner as you are not the owner of this record</value>
+    </labels>
+    <labels>
+        <fullName>SE_Lead_URL</fullName>
+        <categories>Lead URL</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SE Lead URL</shortDescription>
+        <value>http://login.salesforce.com</value>
+    </labels>
+    <labels>
+        <fullName>SME_ME_Release_Date</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SME ME Release Date</shortDescription>
+        <value>45</value>
+    </labels>
+    <labels>
+        <fullName>SME_MaxRecordReturn</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SME Max Record Return</shortDescription>
+        <value>100</value>
+    </labels>
+    <labels>
+        <fullName>SME_SE_Release_Date</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SME SE Release Date</shortDescription>
+        <value>0</value>
+    </labels>
+    <labels>
+        <fullName>Search_MinChar</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Search_MinChar</shortDescription>
+        <value>Search term must be longer than one character</value>
+    </labels>
+    <labels>
+        <fullName>Search_MinField</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Search_MinField</shortDescription>
+        <value>One search field must be entered</value>
+    </labels>
+    <labels>
+        <fullName>Search_More100Records</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Search_More100Records</shortDescription>
+        <value>Return results are more than 100 records. Please add more search criteria</value>
+    </labels>
+    <labels>
+        <fullName>Search_NoMatch</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Search_NoMatch</shortDescription>
+        <value>No matching record found</value>
+    </labels>
+    <labels>
+        <fullName>Search_Not_SME_RM</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Search_Not_SME_RM</shortDescription>
+        <value>Only RM can request for official ownership</value>
+    </labels>
+    <labels>
+        <fullName>Search_Numeric</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Search_Numeric</shortDescription>
+        <value>Search ID must be numberic.</value>
+    </labels>
+    <labels>
+        <fullName>Search_TimeOut</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Search_TimeOut</shortDescription>
+        <value>Time out, please try again.</value>
+    </labels>
+    <labels>
+        <fullName>SubmittedAlert</fullName>
+        <categories>Year End</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SubmittedAlert</shortDescription>
+        <value>This button will change status of YearEnd records to Submitted , RM/TM will lose ability to select or refer out for those Submitted records.</value>
+    </labels>
+    <labels>
+        <fullName>System_Section</fullName>
+        <categories>Refer Out</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>System Section</shortDescription>
+        <value>System Information</value>
+    </labels>
+    <labels>
+        <fullName>USERROLE_BLANK</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>USERROLE_BLANK</shortDescription>
+        <value>UserRole is blank : Cannot Activate</value>
+    </labels>
+    <labels>
+        <fullName>Waiting_for_Credit_Setup</fullName>
+        <categories>Opportunity Stage</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Waiting for Credit Setup</shortDescription>
+        <value>Waiting for Credit Setup</value>
+    </labels>
+    <labels>
+        <fullName>YearEnd_AreYouConfirmtoConfirmation</fullName>
+        <categories>Year End</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Are You Confirm to Confirmation ?</shortDescription>
+        <value>Are You Confirm to Confirmation ?</value>
+    </labels>
+    <labels>
+        <fullName>YearEnd_AreYouConfirmtoRemove</fullName>
+        <categories>Year End</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Are You Confirm to Remove ?</shortDescription>
+        <value>Are You Confirm to Remove ?</value>
+    </labels>
+    <labels>
+        <fullName>YearEnd_AreYouConfirmtoRemoveConfirmation</fullName>
+        <categories>Year End</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Are You Confirm to Remove Confirmation ?</shortDescription>
+        <value>Are You Confirm to Remove Confirmation ?</value>
+    </labels>
+    <labels>
+        <fullName>YearEnd_AreYouConfirmtoRemoveselected</fullName>
+        <categories>Year End</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Are You Confirm to Remove selected ?</shortDescription>
+        <value>Are You Confirm to Remove selected ?</value>
+    </labels>
+    <labels>
+        <fullName>YearEnd_AreYouConfirmtoSelect</fullName>
+        <categories>Year End</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Are You Confirm to Select ?</shortDescription>
+        <value>Are You Confirm to Select ?</value>
+    </labels>
+    <labels>
+        <fullName>YearEnd_Areyousuretoconfirm</fullName>
+        <categories>Year End</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Are you sure to confirm?</shortDescription>
+        <value>Are you sure to confirm?</value>
+    </labels>
+    <labels>
+        <fullName>YearEnd_ConfirmFinalRM_TM_ReferOut</fullName>
+        <categories>Year End</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Confirm Final RM/TM &amp; Refer Out</shortDescription>
+        <value>Confirm Final RM/TM &amp; Refer Out</value>
+    </labels>
+    <labels>
+        <fullName>YearEnd_ConfirmList</fullName>
+        <categories>Year End</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Final List</shortDescription>
+        <value>Final List</value>
+    </labels>
+    <labels>
+        <fullName>YearEnd_CustomerSelectedbyName</fullName>
+        <categories>Year End</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Customer Selected by Name (RM/TM)</shortDescription>
+        <value>Customer Selected by Name (RM/TM)</value>
+    </labels>
+    <labels>
+        <fullName>YearEnd_CustomerSelectedbyTeam</fullName>
+        <categories>Year End</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Customer Selected by Team</shortDescription>
+        <value>Customer Selected by Team</value>
+    </labels>
+    <labels>
+        <fullName>YearEnd_CustomersList</fullName>
+        <categories>Year End</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Customer List</shortDescription>
+        <value>All Customer List</value>
+    </labels>
+    <labels>
+        <fullName>YearEnd_InvalidSelection</fullName>
+        <categories>Year End</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Invalid Selection</shortDescription>
+        <value>Invalid Selection</value>
+    </labels>
+    <labels>
+        <fullName>YearEnd_Invalid_Fields</fullName>
+        <categories>Year End</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Invalid Fields</shortDescription>
+        <value>Invalid Fields</value>
+    </labels>
+    <labels>
+        <fullName>YearEnd_ListofRequest</fullName>
+        <categories>Year End</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>List of Request</shortDescription>
+        <value>List of Request</value>
+    </labels>
+    <labels>
+        <fullName>YearEnd_MyTeam</fullName>
+        <categories>Year End</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>My Team</shortDescription>
+        <value>My Team</value>
+    </labels>
+    <labels>
+        <fullName>YearEnd_NextPage</fullName>
+        <categories>Year End</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>YearEnd_NextPage</shortDescription>
+        <value>Next</value>
+    </labels>
+    <labels>
+        <fullName>YearEnd_NoYearendhavebeenselected</fullName>
+        <categories>Year End</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>No Yearend have been selected</shortDescription>
+        <value>No Yearend have been selected</value>
+    </labels>
+    <labels>
+        <fullName>YearEnd_OwnershipRequest</fullName>
+        <categories>Year End</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Ownership Request</shortDescription>
+        <value>Ownership Request</value>
+    </labels>
+    <labels>
+        <fullName>YearEnd_PleaseConfirm</fullName>
+        <categories>Year End</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Please Confirm</shortDescription>
+        <value>Please Confirm</value>
+    </labels>
+    <labels>
+        <fullName>YearEnd_PleaseConfirmtoRefreshList</fullName>
+        <categories>Year End</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Please Confirm to Refresh List</shortDescription>
+        <value>Please Confirm to Refresh List</value>
+    </labels>
+    <labels>
+        <fullName>YearEnd_Pool</fullName>
+        <categories>Year End</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Pool</shortDescription>
+        <value>Pool</value>
+    </labels>
+    <labels>
+        <fullName>YearEnd_Port</fullName>
+        <categories>Year End</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Port</shortDescription>
+        <value>Port</value>
+    </labels>
+    <labels>
+        <fullName>YearEnd_Previouslyownedbyme</fullName>
+        <categories>Year End</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Previously owned by me</shortDescription>
+        <value>Previously owned by me</value>
+    </labels>
+    <labels>
+        <fullName>YearEnd_RecordPerPage</fullName>
+        <categories>Year End</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>YearEnd_RecordsPerPage</shortDescription>
+        <value>10</value>
+    </labels>
+    <labels>
+        <fullName>YearEnd_ReferOutCheckedCustomer</fullName>
+        <categories>Year End</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Refer Out Checked Customer</shortDescription>
+        <value>Refer Out Checked Customer</value>
+    </labels>
+    <labels>
+        <fullName>YearEnd_ReferOutList</fullName>
+        <categories>Year End</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Refer Out</shortDescription>
+        <value>Refer Out</value>
+    </labels>
+    <labels>
+        <fullName>YearEnd_ReferOutSegment</fullName>
+        <categories>Year End</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Refer Out Segment</shortDescription>
+        <value>Refer Out Segment</value>
+    </labels>
+    <labels>
+        <fullName>YearEnd_ReferOutTeam</fullName>
+        <categories>Year End</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Refer Out Team</shortDescription>
+        <value>Refer Out Team</value>
+    </labels>
+    <labels>
+        <fullName>YearEnd_ReferOut_Confirm</fullName>
+        <categories>Year End</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Refer Out &amp; Confirm</shortDescription>
+        <value>Refer Out &amp; Confirm</value>
+    </labels>
+    <labels>
+        <fullName>YearEnd_Refer_Out</fullName>
+        <categories>Year End</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Refer Out</shortDescription>
+        <value>Refer Out</value>
+    </labels>
+    <labels>
+        <fullName>YearEnd_Refer_Out_Aumpur</fullName>
+        <categories>Year End</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Refer Out Aumpur</shortDescription>
+        <value>Refer Out Aumpur</value>
+    </labels>
+    <labels>
+        <fullName>YearEnd_Refer_Out_Province</fullName>
+        <categories>Year End</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Refer Out Province</shortDescription>
+        <value>Refer Out Province</value>
+    </labels>
+    <labels>
+        <fullName>YearEnd_Refer_Out_Reason</fullName>
+        <categories>Year End</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Refer Out Reason</shortDescription>
+        <value>Refer Out Reason</value>
+    </labels>
+    <labels>
+        <fullName>YearEnd_Refer_Out_Tumbon</fullName>
+        <categories>Year End</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Refer Out Tumbon</shortDescription>
+        <value>Refer Out Tumbon</value>
+    </labels>
+    <labels>
+        <fullName>YearEnd_RemoveConfirmation</fullName>
+        <categories>Year End</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RemoveConfirmation</shortDescription>
+        <value>Remove Confirmation</value>
+    </labels>
+    <labels>
+        <fullName>YearEnd_RemoveSelection</fullName>
+        <categories>Year End</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Remove Selection</shortDescription>
+        <value>Remove Selection</value>
+    </labels>
+    <labels>
+        <fullName>YearEnd_Remove_RM_Selection</fullName>
+        <categories>Year End</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Remove RM Selection</shortDescription>
+        <value>Remove RM Selection</value>
+    </labels>
+    <labels>
+        <fullName>YearEnd_RequestInformation</fullName>
+        <categories>Year End</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Request Information</shortDescription>
+        <value>Request Information</value>
+    </labels>
+    <labels>
+        <fullName>YearEnd_RequestOwnership</fullName>
+        <categories>Year End</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Request Ownership</shortDescription>
+        <value>Ownership Request</value>
+    </labels>
+    <labels>
+        <fullName>YearEnd_Requested</fullName>
+        <categories>Year End</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Requested_RM_TM</shortDescription>
+        <value>Requested RM/TM</value>
+    </labels>
+    <labels>
+        <fullName>YearEnd_Requested_Servicing_RM</fullName>
+        <categories>Year End</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Requested Servicing RM</shortDescription>
+        <value>Requested Servicing RM</value>
+    </labels>
+    <labels>
+        <fullName>YearEnd_Save</fullName>
+        <categories>Year End</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Save</shortDescription>
+        <value>Save</value>
+    </labels>
+    <labels>
+        <fullName>YearEnd_Search</fullName>
+        <categories>Year End</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Search</shortDescription>
+        <value>Search</value>
+    </labels>
+    <labels>
+        <fullName>YearEnd_SearchResult</fullName>
+        <categories>Year End</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Search Result</shortDescription>
+        <value>Search Result</value>
+    </labels>
+    <labels>
+        <fullName>YearEnd_SelectCheckedCustomer</fullName>
+        <categories>Year End</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Select Checked Customer</shortDescription>
+        <value>Select Checked Customer</value>
+    </labels>
+    <labels>
+        <fullName>YearEnd_SelectPort_Pool</fullName>
+        <categories>Year End</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Select Port/Pool</shortDescription>
+        <value>Select Port/Pool</value>
+    </labels>
+    <labels>
+        <fullName>YearEnd_SelectRM_TM</fullName>
+        <categories>Year End</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Select RM/TM</shortDescription>
+        <value>Select RM/TM</value>
+    </labels>
+    <labels>
+        <fullName>YearEnd_SelectServicingRM</fullName>
+        <categories>Year End</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Select Servicing RM</shortDescription>
+        <value>Select Servicing RM</value>
+    </labels>
+    <labels>
+        <fullName>YearEnd_Select_Confirm</fullName>
+        <categories>Year End</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Select &amp; Confirm</shortDescription>
+        <value>Select &amp; Confirm</value>
+    </labels>
+    <labels>
+        <fullName>YearEnd_Select_a_Reason</fullName>
+        <categories>Year End</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Select a Reason</shortDescription>
+        <value>Select a Reason</value>
+    </labels>
+    <labels>
+        <fullName>YearEnd_Select_a_Segment</fullName>
+        <categories>Year End</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Select a Segment</shortDescription>
+        <value>Select a Segment</value>
+    </labels>
+    <labels>
+        <fullName>YearEnd_SelectaAumpur</fullName>
+        <categories>Year End</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Select a Aumpur</shortDescription>
+        <value>Select a Aumpur</value>
+    </labels>
+    <labels>
+        <fullName>YearEnd_SelectaProvince</fullName>
+        <categories>Year End</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Select a Province</shortDescription>
+        <value>Select a Province</value>
+    </labels>
+    <labels>
+        <fullName>YearEnd_SelectaTumbon</fullName>
+        <categories>Year End</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Select a Tumbon</shortDescription>
+        <value>Select a Tumbon</value>
+    </labels>
+    <labels>
+        <fullName>YearEnd_SelectedByMe</fullName>
+        <categories>Year End</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Selected By Me</shortDescription>
+        <value>Selected By Me</value>
+    </labels>
+    <labels>
+        <fullName>YearEnd_SelectedCountMoreThanOne</fullName>
+        <categories>Year End</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Selected Count &gt; 1</shortDescription>
+        <value>Duplicate Selected Customers</value>
+    </labels>
+    <labels>
+        <fullName>YearEnd_SelectedList</fullName>
+        <categories>Year End</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Selected List</shortDescription>
+        <value>Selected List</value>
+    </labels>
+    <labels>
+        <fullName>YearEnd_SelectedUserinthisRecords</fullName>
+        <categories>Year End</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Selected User in this Records</shortDescription>
+        <value>Selected User in this Records</value>
+    </labels>
+    <labels>
+        <fullName>YearEnd_Selected_ReferOut</fullName>
+        <categories>Year End</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Selected/Refer Out</shortDescription>
+        <value>Selected/Refer Out</value>
+    </labels>
+    <labels>
+        <fullName>YearEnd_Servererror</fullName>
+        <categories>Year End</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Server error</shortDescription>
+        <value>Server error</value>
+    </labels>
+    <labels>
+        <fullName>YearEnd_Servicing_RM</fullName>
+        <categories>Year End</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Servicing RM</shortDescription>
+        <value>Servicing RM</value>
+    </labels>
+    <labels>
+        <fullName>YearEnd_ShowAll</fullName>
+        <categories>Year End</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Show All</shortDescription>
+        <value>Show All</value>
+    </labels>
+    <labels>
+        <fullName>YearEnd_Submit_All_Selection</fullName>
+        <categories>Year End</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Do you want to submit all selection</shortDescription>
+        <value>Do you want to submit all selection ?</value>
+    </labels>
+    <labels>
+        <fullName>YearEnd_Submitted</fullName>
+        <categories>Year End</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Submit All Selection</shortDescription>
+        <value>Submit All Selection</value>
+    </labels>
+    <labels>
+        <fullName>YearEnd_SubmittedAllSelection</fullName>
+        <categories>Year End</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Submitted All Selection</shortDescription>
+        <value>Submitted All Selection</value>
+    </labels>
+    <labels>
+        <fullName>YearEnd_TheListisnotcompleted_cannotsubmit</fullName>
+        <categories>Year End</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>The List is not completed, cannot submit.</shortDescription>
+        <value>The List is not completed, cannot submit.</value>
+    </labels>
+    <labels>
+        <fullName>YearEnd_Thefollowingfieldsareinvalid</fullName>
+        <categories>Year End</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>The following fields are invalid</shortDescription>
+        <value>The following fields are invalid</value>
+    </labels>
+</CustomLabels>

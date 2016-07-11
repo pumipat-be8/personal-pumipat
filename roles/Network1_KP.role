@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Role xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseAccessLevel>None</caseAccessLevel>
+    <contactAccessLevel>Edit</contactAccessLevel>
+    <description>โครงสร้างเครือข่ายลูกค้าผู้ประกอบการ 1 (คป.)</description>
+    <mayForecastManagerShare>false</mayForecastManagerShare>
+    <name>โครงสร้างเครือข่ายลูกค้าผู้ประกอบการ 1</name>
+    <opportunityAccessLevel>None</opportunityAccessLevel>
+    <parentRole>SME_UW</parentRole>
+</Role>

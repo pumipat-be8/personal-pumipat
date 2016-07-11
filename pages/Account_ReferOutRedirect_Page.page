@@ -1,0 +1,15 @@
+<apex:page showHeader="false" sidebar="false" standardController="Account">
+    <script type="text/javascript">
+        (function(){
+            sforce.one.navigateToURL("/apex/Account_ReferOutInformation_Page?cisId={!Account.Id}");
+
+            // if( (typeof sforce != 'undefined') && (sforce != null) ) {
+            //     // do your SF1 mobile button stuff
+            //     sforce.one.navigateToURL("/apex/Account_ReferOutInformation_Page?cisId="+{!Account.Id});
+            // } else {
+            //     // do your desktop stuff
+            //     alert('For salesforce1 only');
+            // }
+        })();
+    </script>
+</apex:page>

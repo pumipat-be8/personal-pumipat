@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>CallReport_Task_Setting</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>CallReport_Task_Setting</value>
+    </caseValues>
+    <fields>
+        <label><!-- ReminderTask_NumOfDays --></label>
+        <name>ReminderTask_NumOfDays__c</name>
+    </fields>
+    <fields>
+        <label><!-- ReminderTask_Subject --></label>
+        <name>ReminderTask_Subject__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please use format HH:MM Ex. 08:00 --></help>
+        <label><!-- ReminderTask_TimeReminder --></label>
+        <name>ReminderTask_TimeReminder__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

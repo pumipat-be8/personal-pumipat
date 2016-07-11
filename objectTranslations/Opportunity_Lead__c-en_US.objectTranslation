@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Opportunity / Lead</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Opportunities / Leads</value>
+    </caseValues>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead/Campaign/Event Name` --></label>
+        <name>Lead_Campaign_Event_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity / Lead Status --></label>
+        <name>Opportunity_Lead_Status__c</name>
+        <picklistValues>
+            <masterLabel>All Loan Setup</masterLabel>
+            <translation><!-- All Loan Setup --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Auto Closed</masterLabel>
+            <translation><!-- Auto Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Case is Rejected</masterLabel>
+            <translation><!-- Case is Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed Lost</masterLabel>
+            <translation><!-- Closed Lost --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Create Write Up</masterLabel>
+            <translation><!-- Create Write Up --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partial Loan Setup</masterLabel>
+            <translation><!-- Partial Loan Setup --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stock Negotiation</masterLabel>
+            <translation><!-- Stock Negotiation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting for Credit Approval</masterLabel>
+            <translation><!-- Waiting for Credit Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting for Credit Setup</masterLabel>
+            <translation><!-- Waiting for Credit Setup --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Opportunities / Leads --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Personalised Message --></label>
+        <name>Personalised_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subtype --></label>
+        <name>Subtype__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target List --></label>
+        <name>Target_List__c</name>
+        <relationshipLabel><!-- Opportunities / Leads --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+    </fields>
+    <layouts>
+        <layout>Opportunity / Lead Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Opportunity Account and Lead need to be the same account --></errorMessage>
+        <name>Customer_need_to_be_the_same_account</name>
+    </validationRules>
+</CustomObjectTranslation>

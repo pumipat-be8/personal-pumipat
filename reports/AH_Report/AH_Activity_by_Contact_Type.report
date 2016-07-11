@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>IF( User_Extension__c.Total_Face_to_Face_Call__c:SUM &gt; 0, User_Extension__c.Face_to_Face__c:SUM/User_Extension__c.Total_Face_to_Face_Call__c:SUM ,0)</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>% Face to Face</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>IF( User_Extension__c.Total_Face_to_Face_Call__c:SUM &gt; 0, User_Extension__c.Phone_Call__c:SUM/User_Extension__c.Total_Face_to_Face_Call__c:SUM ,0)</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA2</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>% Phone Call</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>IF( User_Extension__c.Total_Face_to_Face_Call__c:SUM &gt; 0, (User_Extension__c.Face_to_Face__c:SUM+User_Extension__c.Phone_Call__c:SUM)/User_Extension__c.Total_Face_to_Face_Call__c:SUM ,0)</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA4</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>% Total</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>User_Extension__c.Number_of_RM_under_Team__c:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA5</developerName>
+        <downGroupingContext>User_Extension__c.Area__c</downGroupingContext>
+        <isActive>false</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Number of RM under Team</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <columns>
+        <field>User_Extension__c.Number_of_RM_under_Team__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>User_Extension__c.Number_of_RM__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>User_Extension__c.Face_to_Face__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>User_Extension__c.Phone_Call__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>User_Extension__c.Total_Face_to_Face_Call__c</field>
+    </columns>
+    <columns>
+        <field>User_Extension__c.PFace_to_Face__c</field>
+    </columns>
+    <columns>
+        <field>User_Extension__c.PPhone_Call__c</field>
+    </columns>
+    <columns>
+        <field>User_Extension__c.PTotal_Face_to_Face_Call__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>User_Extension__c.Team_Structure__c</column>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>User_Extension__c.Position__c</column>
+            <operator>equals</operator>
+            <value>RM,Team Manager</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>User_Extension__c.Active__c</column>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>User_Extension__c.Area__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>User_Extension__c.Team_Report__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>User_Extension__c.Name__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>AH : Activity by Contact Type</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$User_Extension__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <sortColumn>User_Extension__c.Phone_Call__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>User_Extension__c.Last_Month_Stamp__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

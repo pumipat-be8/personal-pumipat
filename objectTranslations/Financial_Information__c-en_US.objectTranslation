@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Financial Information</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Financial Information</value>
+    </caseValues>
+    <fields>
+        <label><!-- CC Limit --></label>
+        <name>CC_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- CIS ID --></label>
+        <name>CIS_ID__c</name>
+        <relationshipLabel><!-- Financial Information --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- HL Limit --></label>
+        <name>HL_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- LI Limit --></label>
+        <name>LI_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- LN Limit --></label>
+        <name>LN_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- OD Limit --></label>
+        <name>OD_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- PN Limit --></label>
+        <name>PN_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- POD Limit --></label>
+        <name>POD_Limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- TF Limit --></label>
+        <name>TF_Limit__c</name>
+    </fields>
+    <layouts>
+        <layout>Financial Information Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

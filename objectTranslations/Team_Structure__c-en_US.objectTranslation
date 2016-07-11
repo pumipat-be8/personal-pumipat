@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Team Structure</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Team Structure</value>
+    </caseValues>
+    <fields>
+        <label>AH Name</label>
+        <name>AH_Name_Report__c</name>
+    </fields>
+    <fields>
+        <label><!-- AH Name --></label>
+        <name>AH_Name__c</name>
+        <relationshipLabel><!-- Team Structure --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- AH RC Code --></label>
+        <name>AH_RC_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- AH RC Name EN --></label>
+        <name>AH_RC_Name_EN__c</name>
+    </fields>
+    <fields>
+        <label><!-- AH RC Name TH --></label>
+        <name>AH_RC_Name_TH__c</name>
+    </fields>
+    <fields>
+        <label><!-- AH Short Name --></label>
+        <name>AH_Short_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- AVG Call Report / Customer --></label>
+        <name>AVG_Call_Report_Customer__c</name>
+    </fields>
+    <fields>
+        <label><!-- AVG Call Report / RM / Month --></label>
+        <name>AVG_Call_Report_RM_Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address --></label>
+        <name>Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch Code --></label>
+        <name>Branch_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Branch Name --></label>
+        <name>Branch_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Call Report Customer Others --></label>
+        <name>Call_Report_Customer_Others__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Call Report Customer Pool --></label>
+        <name>Call_Report_Customer_Pool__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Call Report Customer Port --></label>
+        <name>Call_Report_Customer_Port__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Call Report --></label>
+        <name>Call_Report__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Call Report for Relationship --></label>
+        <name>Call_Report_for_Relationship__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Call Report for Sales --></label>
+        <name>Call_Report_for_Sales__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Contacted Customer Other(My Penetrate) --></label>
+        <name>Contacted_Customer_Other_My_Penetrate__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Contacted Customer in Other --></label>
+        <name>Contacted_Customer_Other__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Contacted Customer Pool(My Penetrate) --></label>
+        <name>Contacted_Customer_Pool_My_Penetrate__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Contacted Customer in Pool --></label>
+        <name>Contacted_Customer_Pool__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Contacted Customer Port(My Penetrate) --></label>
+        <name>Contacted_Customer_Port_My_Penetrate__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Contacted Customer in Port --></label>
+        <name>Contacted_Customer_Port__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Customer in Other --></label>
+        <name>Customer_Other__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Customer in Pool --></label>
+        <name>Customer_Pool__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Customer in Port --></label>
+        <name>Customer_Port__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Face to Face --></label>
+        <name>Face_to_Face__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hub Code --></label>
+        <name>Hub_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hub Name --></label>
+        <name>Hub_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- IS AH --></label>
+        <name>IS_AH__c</name>
+    </fields>
+    <fields>
+        <label><!-- IS NH --></label>
+        <name>IS_NH__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Months --></label>
+        <name>Months__c</name>
+    </fields>
+    <fields>
+        <label>NH Name</label>
+        <name>NH_Name_Report__c</name>
+    </fields>
+    <fields>
+        <label><!-- NH Name --></label>
+        <name>NH_Name__c</name>
+        <relationshipLabel><!-- Team Structure (NH Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- NH RC Code --></label>
+        <name>NH_RC_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- NH RC Name EN --></label>
+        <name>NH_RC_Name_EN__c</name>
+    </fields>
+    <fields>
+        <label><!-- NH RC Name TH --></label>
+        <name>NH_RC_Name_TH__c</name>
+    </fields>
+    <fields>
+        <label><!-- NH Short Name --></label>
+        <name>NH_Short_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name EN --></label>
+        <name>Name_EN__c</name>
+    </fields>
+    <fields>
+        <label>Name</label>
+        <name>Name_Report__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name TH --></label>
+        <name>Name_TH__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name --></label>
+        <name>Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of RM under Team --></label>
+        <name>Number_of_RM_under_Team__c</name>
+    </fields>
+    <fields>
+        <label><!-- % Call Report Customer Others --></label>
+        <name>PCall_Report_Customer_Others__c</name>
+    </fields>
+    <fields>
+        <label><!-- % Call Report Customer Pool --></label>
+        <name>PCall_Report_Customer_Pool__c</name>
+    </fields>
+    <fields>
+        <label><!-- % Call Report Customer Port --></label>
+        <name>PCall_Report_Customer_Port__c</name>
+    </fields>
+    <fields>
+        <label><!-- % Call Report for Relationship --></label>
+        <name>PCall_Report_for_Relationship__c</name>
+    </fields>
+    <fields>
+        <label><!-- % Call Report for Sales --></label>
+        <name>PCall_Report_for_Sales__c</name>
+    </fields>
+    <fields>
+        <label><!-- % Contacted Customer Other(My Penetrate) --></label>
+        <name>PContacted_Customer_Other_My_Penetrate__c</name>
+    </fields>
+    <fields>
+        <label><!-- % Contacted Customer Other --></label>
+        <name>PContacted_Customer_Other__c</name>
+    </fields>
+    <fields>
+        <label><!-- % Contacted Customer Pool(My Penetrate) --></label>
+        <name>PContacted_Customer_Pool_My_Penetrate__c</name>
+    </fields>
+    <fields>
+        <label><!-- % Contacted Customer in Pool --></label>
+        <name>PContacted_Customer_Pool__c</name>
+    </fields>
+    <fields>
+        <label><!-- % Contacted Customer Port(My Penetrate) --></label>
+        <name>PContacted_Customer_Port_My_Penetrate__c</name>
+    </fields>
+    <fields>
+        <label><!-- % Contacted Customer in Port --></label>
+        <name>PContacted_Customer_Port__c</name>
+    </fields>
+    <fields>
+        <label><!-- % Face to Face --></label>
+        <name>PFace_to_Face__c</name>
+    </fields>
+    <fields>
+        <label><!-- % Phone Call --></label>
+        <name>PPhone_Call__c</name>
+    </fields>
+    <fields>
+        <label><!-- % Total Call Report --></label>
+        <name>PTotal_Call_Report__c</name>
+    </fields>
+    <fields>
+        <label><!-- % Total Contacted Customer(My Penetrate) --></label>
+        <name>PTotal_Contacted_Customer_My_P__c</name>
+    </fields>
+    <fields>
+        <label><!-- % Total Contacted Customer Port&amp;Pool(MP) --></label>
+        <name>PTotal_Contacted_Customer_Port_Pool_My_P__c</name>
+    </fields>
+    <fields>
+        <label><!-- % Total Contacted Customer Port&amp;Pool --></label>
+        <name>PTotal_Contacted_Customer_Port_Pool__c</name>
+    </fields>
+    <fields>
+        <label><!-- % Total Contacted Customer --></label>
+        <name>PTotal_Contacted_Customer__c</name>
+    </fields>
+    <fields>
+        <label><!-- % Total Face to Face &amp; Call --></label>
+        <name>PTotal_Face_to_Face_Call__c</name>
+    </fields>
+    <fields>
+        <label><!-- % Total Sales &amp; Relationship --></label>
+        <name>PTotal_Sales_Relationship__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Phone Call --></label>
+        <name>Phone_Call__c</name>
+    </fields>
+    <fields>
+        <label><!-- RC Code --></label>
+        <name>RC_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- RC Name EN --></label>
+        <name>RC_Name_EN__c</name>
+    </fields>
+    <fields>
+        <label><!-- RC Name TH --></label>
+        <name>RC_Name_TH__c</name>
+    </fields>
+    <fields>
+        <label><!-- RC Short Name --></label>
+        <name>RC_Short_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Segment --></label>
+        <name>Segment__c</name>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation><!-- Medium --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Small</masterLabel>
+            <translation><!-- Small --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Phone --></label>
+        <name>Tel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Call Report --></label>
+        <name>Total_Call_Report__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Contacted Customer(My Penetrate) --></label>
+        <name>Total_Contacted_Customer_My_Penetrate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Contacted Customer --></label>
+        <name>Total_Contacted_Customer_Port_Pool_Other__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Customer --></label>
+        <name>Total_Customer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Face to Face &amp; Call --></label>
+        <name>Total_Face_to_Face_Call__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Sales &amp; Relationship --></label>
+        <name>Total_Sales_Relationship__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total visited Customer --></label>
+        <name>Total_visited_Customer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Area</masterLabel>
+            <translation><!-- Area --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Network</masterLabel>
+            <translation><!-- Network --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Team</masterLabel>
+            <translation><!-- Team --></translation>
+        </picklistValues>
+    </fields>
+    <layouts>
+        <layout>Area Layout</layout>
+        <sections>
+            <label><!-- Contact Information --></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Performance --></label>
+            <section>Performance</section>
+        </sections>
+        <sections>
+            <label><!-- Performance Information --></label>
+            <section>Performance Information</section>
+        </sections>
+        <sections>
+            <label><!-- Port Penetrate --></label>
+            <section>Port Penetrate</section>
+        </sections>
+        <sections>
+            <label><!-- Team Hierarchy --></label>
+            <section>Team Hierarchy</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Network Layout</layout>
+        <sections>
+            <label><!-- Contact Information --></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Performance --></label>
+            <section>Performance</section>
+        </sections>
+        <sections>
+            <label><!-- Performance Information --></label>
+            <section>Performance Information</section>
+        </sections>
+        <sections>
+            <label><!-- Port Penetrate --></label>
+            <section>Port Penetrate</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Team Structure Layout</layout>
+        <sections>
+            <label><!-- Contact Information --></label>
+            <section>Contact Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Performance --></label>
+            <section>Performance</section>
+        </sections>
+        <sections>
+            <label><!-- Performance Information --></label>
+            <section>Performance Information</section>
+        </sections>
+        <sections>
+            <label><!-- Port Penetrate --></label>
+            <section>Port Penetrate</section>
+        </sections>
+        <sections>
+            <label><!-- Team Hierarchy --></label>
+            <section>Team Hierarchy</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label><!-- Area --></label>
+        <name>Area</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Network --></label>
+        <name>Network</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Team --></label>
+        <name>Team</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>ผู้กู้ร่วม</value>
+    </caseValues>
+    <fields>
+        <label><!-- CIS ID / Prospect Name --></label>
+        <name>CIS_ID_Prospect_Name__c</name>
+        <relationshipLabel><!-- Co-Borrowers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label>ชื่อลูกค้า/บริษัท</label>
+        <name>Customer_Name__c</name>
+    </fields>
+    <fields>
+        <label>โอกาส</label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Co-Borrowers --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Co-Borrower Opportunity Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel><!-- REF# --></nameFieldLabel>
+    <validationRules>
+        <errorMessage>ไม่สามารถเลือกลูกค้าคนเดียวกันกับ Opportunity ได้</errorMessage>
+        <name>Not_allow_to_select_same_customer_Opp</name>
+    </validationRules>
+</CustomObjectTranslation>

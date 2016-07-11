@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Call Report / Opportunity</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Call Reports / Opportunities</value>
+    </caseValues>
+    <fields>
+        <label><!-- AH --></label>
+        <name>AH__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Visit Date --></label>
+        <name>Actual_Visit_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- App No --></label>
+        <name>App_No_F__c</name>
+    </fields>
+    <fields>
+        <label><!-- Call Plan / Call Report --></label>
+        <name>Call_Plan_Call_Report__c</name>
+        <relationshipLabel><!-- Call Reports / Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Call Result Activity --></label>
+        <name>Call_Result_Activity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Close Date --></label>
+        <name>Close_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Person --></label>
+        <name>Contact_Person__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Owner Release Flag --></label>
+        <name>Customer_Owner_Release_Flag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Memo --></label>
+        <name>Memo__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of App In --></label>
+        <name>Number_of_App_In__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Day Created --></label>
+        <name>Number_of_Day_Created__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Setup --></label>
+        <name>Number_of_Setup__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Stock --></label>
+        <name>Number_of_Stock__c</name>
+    </fields>
+    <fields>
+        <label><!-- Offer Interest --></label>
+        <name>Offer_Interest__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Amount --></label>
+        <name>Opportunity_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Name --></label>
+        <name>Opportunity_Name__c</name>
+        <relationshipLabel><!-- Call Reports / Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Plan Date --></label>
+        <name>Plan_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Call Plan / Call Report --></label>
+        <name>Primary_Call_Plan_Call_Report__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage --></label>
+        <name>Stage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tentative App Submit Date --></label>
+        <name>Tentative_App_Submit_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Visit Objective --></label>
+        <name>Visit_Objective__c</name>
+    </fields>
+    <layouts>
+        <layout>Call Report/Opportunity Layout</layout>
+        <sections>
+            <label><!-- Call Plan / Report Information --></label>
+            <section>Call Plan / Report Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

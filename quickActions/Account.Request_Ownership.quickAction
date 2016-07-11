@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldOverrides>
+        <field>CIS_ID__c</field>
+        <formula>Account.Id</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Request_Ownership_Type__c</field>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Request_Type__c</field>
+        <literalValue>Request Ownership</literalValue>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Want_to_request_for_ownership__c</field>
+        <formula>TRUE</formula>
+    </fieldOverrides>
+    <icon>Request</icon>
+    <label>Request Ownership</label>
+    <quickActionLayout>
+        <layoutSectionStyle>TwoColumnsLeftToRight</layoutSectionStyle>
+        <quickActionLayoutColumns>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>CIS_ID__c</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Want_to_request_for_ownership__c</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+        </quickActionLayoutColumns>
+        <quickActionLayoutColumns>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Request_Ownership_Type__c</field>
+                <uiBehavior>Required</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Reason__c</field>
+                <uiBehavior>Required</uiBehavior>
+            </quickActionLayoutItems>
+        </quickActionLayoutColumns>
+    </quickActionLayout>
+    <targetObject>Customer_Ownership_Request__c</targetObject>
+    <targetParentField>CIS_ID__c</targetParentField>
+    <targetRecordType>Customer_Ownership_Request__c.Request_Ownership_Port</targetRecordType>
+    <type>Create</type>
+</QuickAction>

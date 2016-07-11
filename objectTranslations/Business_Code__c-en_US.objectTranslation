@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Business Code</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Business Codes</value>
+    </caseValues>
+    <fields>
+        <label><!-- Business Code Description --></label>
+        <name>Business_Code_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sub Industry Group Description --></label>
+        <name>Sub_Industry_Group_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sub Industry Group --></label>
+        <name>Sub_Industry_Group__c</name>
+    </fields>
+    <fields>
+        <label><!-- 26 Industries Group --></label>
+        <name>X26_Industries_Group__c</name>
+    </fields>
+    <layouts>
+        <layout>Business Code Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

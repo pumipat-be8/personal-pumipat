@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Bulk Assignment Queue</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Bulk Assignments Queue</value>
+    </caseValues>
+    <fields>
+        <label><!-- Finish Time --></label>
+        <name>FinishTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Time --></label>
+        <name>StartTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation><!-- Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Create</masterLabel>
+            <translation><!-- Create --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Execute</masterLabel>
+            <translation><!-- Execute --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

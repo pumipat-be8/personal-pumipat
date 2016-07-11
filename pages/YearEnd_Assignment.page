@@ -1,0 +1,199 @@
+<apex:page controller="YearEndAssignment_ListView_Controller" standardStylesheets="false">
+    <apex:stylesheet value="{!$Resource.ext6}/ext6/build/classic/theme-classic/resources/theme-classic-all.css"/>
+    <script>var __sfdcSessionId = '{!GETSESSIONID()}';</script>
+    <script src="/soap/ajax/34.0/connection.js" type="text/javascript"></script>
+    <script src="/soap/ajax/34.0/apex.js" type="text/javascript"></script>
+    <apex:includeScript value="{!$Resource.underscore}"/>
+    <style type="text/css">
+        .x-grid-td > .x-grid-cell-inner{
+            height:20px !important;
+        }
+        .biggertext{
+            font-size: 35px !important;
+        }
+    </style>
+    <script>
+        YearEndAssignment_ListView_Controller.query.directCfg.method.getArgs = Ext.direct.RemotingMethod.prototype.getArgs;
+        YearEndAssignment_ListView_Controller.describeMapFields.directCfg.method.getArgs = Ext.direct.RemotingMethod.prototype.getArgs;
+        YearEndAssignment_ListView_Controller.querySelectedBy.directCfg.method.getArgs = Ext.direct.RemotingMethod.prototype.getArgs;
+        YearEndAssignment_ListView_Controller.querySelectedByAH.directCfg.method.getArgs = Ext.direct.RemotingMethod.prototype.getArgs;
+        YearEndAssignment_ListView_Controller.querySelectedByTeam.directCfg.method.getArgs = Ext.direct.RemotingMethod.prototype.getArgs;
+        YearEndAssignment_ListView_Controller.querySelectedByOnlyRM.directCfg.method.getArgs = Ext.direct.RemotingMethod.prototype.getArgs;
+        YearEndAssignment_ListView_Controller.deleteYearEndSel.directCfg.method.getArgs = Ext.direct.RemotingMethod.prototype.getArgs;
+        YearEndAssignment_ListView_Controller.queryLocation.directCfg.method.getArgs = Ext.direct.RemotingMethod.prototype.getArgs;
+        YearEndAssignment_ListView_Controller.queryPicklist.directCfg.method.getArgs = Ext.direct.RemotingMethod.prototype.getArgs;
+        YearEndAssignment_ListView_Controller.saveYearEnd.directCfg.method.getArgs = Ext.direct.RemotingMethod.prototype.getArgs;
+
+        Ext.data.proxy.Direct.prototype.createRequestCallback =
+            function(request, operation, callback, scope){
+                var me = this;
+                return function(data, event){
+                    me.processResponse(event.status, operation, request,
+                                       {data: data}, callback, scope);
+                };
+            };
+        Ext.define('Jet.SFDC.writer', {
+            extend: 'Ext.data.writer.Json',
+            alias: 'writer.sfdc',
+            config: {extraParams: undefined},
+            constructor: function(config) {
+                this.callParent([config]);
+            },
+            writeRecords: function(request, data) {
+                this.callParent([request, data]);
+                if ((this.extraParams !== undefined)) {
+                    Ext.apply(request.jsonData, this.extraParams);
+                }
+                return request;
+            }
+        });
+    </script>
+    <apex:includeScript value="{!$Resource.ext6}/ext6/build/ext-all.js"/>
+    <apex:includeScript value="{!$Resource.extjs_util}"/>
+    <apex:includeScript value="{!$Resource[selectedResource]}"/>
+    <apex:form id="yearForm">
+        <apex:pageMessages id="msg" />
+        <apex:outputPanel id="yearPanel" layout="block"/>
+    </apex:form>
+    <script>
+        Visualforce.remoting.timeout = 120000;
+        (function(){
+            var fieldlist = getFieldList('{!YearEndFieldsForDes}');
+            var fieldsellist = getFieldList('{!YearEndSelFieldsForDes}');
+            var customerownerlist = getFieldList('{!CustomerOwnerRequestFieldsForDes}');
+
+            var yearAsync = getFieldMapDescription('Year_End_Assignment__c',fieldlist);
+            var yearSelAsync = getFieldMapDescription('Year_End_Assignment_Selection__c',fieldsellist);
+            var customerOwnerAsync = getFieldMapDescription('Customer_Ownership_Request__c',customerownerlist);
+
+
+            var final_grid = Ext.create('Ext.container.Container', {
+                renderTo: '{!$Component.yearForm.yearPanel}',
+                id: 'year-container'
+            });
+
+            final_grid.setLoading('Processing Element...');
+
+            Ext.Deferred
+            .all([yearAsync,yearSelAsync,customerOwnerAsync])
+            .then(function (results) {
+                var config = {
+                    pagesize : parseInt('{!rows}'),
+                    yearEndForMap : results[0],
+                    yearEndSelForMap : results[1],
+                    customerOwnerForMap : results[2],
+                    fieldlist : getFieldList('{!YearEndFields}'),
+                    fieldsellist : getFieldList('{!YearEndSelFields}'),
+                    fieldrequestlist : getFieldList('{!CustomerOwnerRequestFields}'),
+                    fieldselcountlist : getFieldList('{!SelectedCountFields}'),
+                    panel_items : [],
+                    container_items : [],
+                    user_id : '{!$User.Id}',
+                    user_rc_code : '{!rcCode}',
+                    user_empid : '{!empId}',
+                    lowerLevelSet : {!userLowerSet},
+                    map_label : {
+                        YearEnd_SelectaProvince: '{!$Label.YearEnd_SelectaProvince}',
+                        YearEnd_SelectaAumpur: '{!$Label.YearEnd_SelectaAumpur}',
+                        YearEnd_SelectaTumbon: '{!$Label.YearEnd_SelectaTumbon}',
+                        YearEnd_ReferOutTeam: '{!$Label.YearEnd_ReferOutTeam}',
+                        YearEnd_ReferOutSegment: '{!$Label.YearEnd_ReferOutSegment}',
+                        YearEnd_PleaseConfirmtoRefreshList: '{!$Label.YearEnd_PleaseConfirmtoRefreshList}',
+                        YearEnd_Servererror: '{!$Label.YearEnd_Servererror}',
+                        YearEnd_InvalidSelection: '{!$Label.YearEnd_InvalidSelection}',
+                        YearEnd_NoYearendhavebeenselected: '{!$Label.YearEnd_NoYearendhavebeenselected}',
+                        YearEnd_CustomersList: '{!$Label.YearEnd_CustomersList}',
+                        YearEnd_SelectCheckedCustomer: '{!$Label.YearEnd_SelectCheckedCustomer}',
+                        YearEnd_PleaseConfirm: '{!$Label.YearEnd_PleaseConfirm}',
+                        YearEnd_AreYouConfirmtoSelect: '{!$Label.YearEnd_AreYouConfirmtoSelect}',
+                        YearEnd_AreYouConfirmtoConfirmation: '{!$Label.YearEnd_AreYouConfirmtoConfirmation}',
+                        YearEnd_AreYouConfirmtoRemoveselected: '{!$Label.YearEnd_AreYouConfirmtoRemoveselected}',
+                        YearEnd_AreYouConfirmtoRemoveConfirmation: '{!$Label.YearEnd_AreYouConfirmtoRemoveConfirmation}',
+                        YearEnd_Areyousuretoconfirm: '{!$Label.YearEnd_Areyousuretoconfirm}',
+                        YearEnd_ReferOutCheckedCustomer: '{!$Label.YearEnd_ReferOutCheckedCustomer}',
+                        YearEnd_Previouslyownedbyme: '{!$Label.YearEnd_Previouslyownedbyme}',
+                        YearEnd_SelectedList: '{!$Label.YearEnd_SelectedList}',
+                        YearEnd_RemoveSelection: '{!$Label.YearEnd_RemoveSelection}',
+                        YearEnd_AreYouConfirmtoRemove: '{!$Label.YearEnd_AreYouConfirmtoRemove}',
+                        YearEnd_Selected_ReferOut: '{!$Label.YearEnd_Selected_ReferOut}',
+                        YearEnd_SelectedByMe: '{!$Label.YearEnd_SelectedByMe}',
+                        YearEnd_RequestOwnership: '{!$Label.YearEnd_RequestOwnership}',
+                        YearEnd_CustomerSelectedbyName: '{!$Label.YearEnd_CustomerSelectedbyName}',
+                        YearEnd_SelectRM_TM: '{!$Label.YearEnd_SelectRM_TM}',
+                        YearEnd_SelectPort_Pool: '{!$Label.YearEnd_SelectPort_Pool}',
+                        YearEnd_Port: '{!$Label.YearEnd_Port}',
+                        YearEnd_Pool: '{!$Label.YearEnd_Pool}',
+                        YearEnd_SelectServicingRM: '{!$Label.YearEnd_SelectServicingRM}',
+                        YearEnd_SelectedUserinthisRecords: '{!$Label.YearEnd_SelectedUserinthisRecords}',
+                        YearEnd_Thefollowingfieldsareinvalid: '{!$Label.YearEnd_Thefollowingfieldsareinvalid}',
+                        YearEnd_RequestInformation: '{!$Label.YearEnd_RequestInformation}',
+                        YearEnd_ConfirmFinalRM_TM_ReferOut: '{!$Label.YearEnd_ConfirmFinalRM_TM_ReferOut}',
+                        YearEnd_CustomerSelectedbyTeam: '{!$Label.YearEnd_CustomerSelectedbyTeam}',
+                        YearEnd_ShowAll: '{!$Label.YearEnd_ShowAll}',
+                        YearEnd_MyTeam: '{!$Label.YearEnd_MyTeam}',
+                        YearEnd_SelectedCountMoreThanOne: '{!$Label.YearEnd_SelectedCountMoreThanOne}',
+                        YearEnd_ReferOutList: '{!$Label.YearEnd_ReferOutList}',
+                        YearEnd_ConfirmList: '{!$Label.YearEnd_ConfirmList}',
+                        YearEnd_ReferOut_Confirm: '{!$Label.YearEnd_ReferOut_Confirm}',
+                        YearEnd_OwnershipRequest: '{!$Label.YearEnd_OwnershipRequest}',
+                        YearEnd_SearchResult: '{!$Label.YearEnd_SearchResult}',
+                        YearEnd_Search: '{!$Label.YearEnd_Search}',
+                        YearEnd_ListofRequest: '{!$Label.YearEnd_ListofRequest}',
+                        YearEnd_SubmittedAllSelection: '{!$Label.YearEnd_SubmittedAllSelection}',
+                        YearEnd_Submitted: '{!$Label.YearEnd_Submitted}',
+                        YearEnd_TheListisnotcompleted_cannotsubmit: '{!$Label.YearEnd_TheListisnotcompleted_cannotsubmit}',
+                        YearEnd_RemoveConfirmation: '{!$Label.YearEnd_RemoveConfirmation}',
+                        YearEnd_Remove_RM_Selection: '{!$Label.YearEnd_Remove_RM_Selection}',
+                        YearEnd_Select_a_Segment: '{!$Label.YearEnd_Select_a_Segment}',
+                        YearEnd_Select_a_Reason: '{!$Label.YearEnd_Select_a_Reason}',
+                        YearEnd_Refer_Out_Reason: '{!$Label.YearEnd_Refer_Out_Reason}',
+                        YearEnd_Refer_Out_Province: '{!$Label.YearEnd_Refer_Out_Province}',
+                        YearEnd_Refer_Out_Aumpur: '{!$Label.YearEnd_Refer_Out_Aumpur}',
+                        YearEnd_Refer_Out_Tumbon: '{!$Label.YearEnd_Refer_Out_Tumbon}',
+                        YearEnd_Invalid_Fields: '{!$Label.YearEnd_Invalid_Fields}',
+                        YearEnd_Refer_Out: '{!$Label.YearEnd_Refer_Out}',
+                        YearEnd_Save: '{!$Label.YearEnd_Save}',
+                        YearEnd_Select_Confirm: '{!$Label.YearEnd_Select_Confirm}',
+                        SubmittedAlert: '{!$Label.SubmittedAlert}',
+                        YearEnd_Requested: '{!$Label.YearEnd_Requested}',
+                        YearEnd_Requested_Servicing_RM: '{!$Label.YearEnd_Requested_Servicing_RM}',
+                        YearEnd_Submit_All_Selection: '{!$Label.YearEnd_Submit_All_Selection}',
+                        YearEnd_Servicing_RM: '{!$Label.YearEnd_Servicing_RM}',
+                        YearEnd_NextPage: '{!$Label.YearEnd_NextPage}'
+                    }
+                };
+
+                init(config);
+                //Ext.onReady(function() {
+
+                var w = Ext.getCmp('year-container');
+                w.setLoading(false);
+                var tabpanel = Ext.create('Ext.tab.Panel', {
+                    id: 'main-tab',
+                    plain: true,
+                    items: config.panel_items,
+
+                    defaults: {
+                        listeners: {
+                            beforeclose: function(panel) {
+                                var closeAction = this.ownerCt.closeAction
+                                if (closeAction === 'hide') {
+                                    panel.hide();
+                                    Ext.get(panel.tabEl).setVisible(false);
+                                    return false;
+                                }
+                                return true;
+                            }
+                        }
+                    },
+                });
+
+                final_grid.add([tabpanel].concat(config.container_items));
+                //});
+            },function(errors){
+                Ext.Msg.alert('Server error', errors);
+                return;
+            });
+        })();
+    </script>
+</apex:page>

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Monthly Performance</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Monthly Performance</value>
+    </caseValues>
+    <fields>
+        <label><!-- AVG Call Report / Customer --></label>
+        <name>AVG_Call_Report_Customer__c</name>
+    </fields>
+    <fields>
+        <label><!-- AVG Call Report/RM --></label>
+        <name>AVG_Call_Report_RM__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Call Report Customer Others --></label>
+        <name>Call_Report_Customer_Others__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Call Report Customer Pool --></label>
+        <name>Call_Report_Customer_Pool__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Call Report Customer Port --></label>
+        <name>Call_Report_Customer_Port__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Call Report --></label>
+        <name>Call_Report__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Call Report for Relationship --></label>
+        <name>Call_Report_for_Relationship__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Call Report for Sales --></label>
+        <name>Call_Report_for_Sales__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Contacted Customer Other(My Penetrate) --></label>
+        <name>Contacted_Customer_Other_My_Penetrate__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Contacted Customer in Other --></label>
+        <name>Contacted_Customer_Other__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Contacted Customer Pool(My Penetrate) --></label>
+        <name>Contacted_Customer_Pool_My_Penetrate__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Contacted Customer in Pool --></label>
+        <name>Contacted_Customer_Pool__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Contacted Customer Port(My Penetrate) --></label>
+        <name>Contacted_Customer_Port_My_Penetrate__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Contacted Customer in Port --></label>
+        <name>Contacted_Customer_Port__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Customer in Others --></label>
+        <name>Customer_Other__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Customer in Pool --></label>
+        <name>Customer_Pool__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Customer in Port --></label>
+        <name>Customer_Port__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date --></label>
+        <name>Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Face to Face --></label>
+        <name>Face_to_Face__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month Performance --></label>
+        <name>Month_Performance__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Months --></label>
+        <name>Months__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of RM under Team --></label>
+        <name>Number_of_RM_under_Team__c</name>
+    </fields>
+    <fields>
+        <label><!-- % Call Report Customer Others --></label>
+        <name>PCall_Report_Customer_Others__c</name>
+    </fields>
+    <fields>
+        <label><!-- % Call Report Customer Pool --></label>
+        <name>PCall_Report_Customer_Pool__c</name>
+    </fields>
+    <fields>
+        <label><!-- % Call Report Customer Port --></label>
+        <name>PCall_Report_Customer_Port__c</name>
+    </fields>
+    <fields>
+        <label><!-- % Call Report for Relationship --></label>
+        <name>PCall_Report_for_Relationship__c</name>
+    </fields>
+    <fields>
+        <label><!-- % Call Report for Sales --></label>
+        <name>PCall_Report_for_Sales__c</name>
+    </fields>
+    <fields>
+        <label><!-- % Contacted Customer Other(My Penetrate) --></label>
+        <name>PContacted_Customer_Other_My_Penetrate__c</name>
+    </fields>
+    <fields>
+        <label><!-- % Contacted Customer in Other --></label>
+        <name>PContacted_Customer_Other__c</name>
+    </fields>
+    <fields>
+        <label><!-- % Contacted Customer Pool (My Penetrate) --></label>
+        <name>PContacted_Customer_Pool_My_Penetrate__c</name>
+    </fields>
+    <fields>
+        <label><!-- % Contacted Customer in Pool --></label>
+        <name>PContacted_Customer_Pool__c</name>
+    </fields>
+    <fields>
+        <label><!-- % Contacted Customer Port(My Penetrate) --></label>
+        <name>PContacted_Customer_Port_My_Penetrate__c</name>
+    </fields>
+    <fields>
+        <label><!-- % Contacted Customer in Port --></label>
+        <name>PContacted_Customer_Port__c</name>
+    </fields>
+    <fields>
+        <label><!-- % Face to Face --></label>
+        <name>PFace_to_Face__c</name>
+    </fields>
+    <fields>
+        <label><!-- % Phone Call --></label>
+        <name>PPhone_Call__c</name>
+    </fields>
+    <fields>
+        <label><!-- % Total Call Report --></label>
+        <name>PTotal_Call_Report__c</name>
+    </fields>
+    <fields>
+        <label><!-- % Total Contacted Customer(My Penetrate) --></label>
+        <name>PTotal_Contacted_Customer_My_P__c</name>
+    </fields>
+    <fields>
+        <label><!-- % Total Contacted Customer Port&amp;Pool(MP) --></label>
+        <name>PTotal_Contacted_Customer_Port_Pool_My_P__c</name>
+    </fields>
+    <fields>
+        <label><!-- % Total Contacted Customer Port&amp;Pool --></label>
+        <name>PTotal_Contacted_Customer_Port_Pool__c</name>
+    </fields>
+    <fields>
+        <label><!-- % Total Contacted Customer --></label>
+        <name>PTotal_Contacted_Customer__c</name>
+    </fields>
+    <fields>
+        <label><!-- % Total Face to Face &amp; Call --></label>
+        <name>PTotal_Face_to_Face_Call__c</name>
+    </fields>
+    <fields>
+        <label><!-- % Total Sales &amp; Relationship --></label>
+        <name>PTotal_Sales_Relationship__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Phone Call --></label>
+        <name>Phone_Call__c</name>
+    </fields>
+    <fields>
+        <label><!-- Team --></label>
+        <name>Team__c</name>
+        <relationshipLabel><!-- Monthly Performance --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Total Call Report --></label>
+        <name>Total_Call_Report__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Contacted Customer(My Penetrate) --></label>
+        <name>Total_Contacted_Customer_My_Penetrate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Contacted Customer --></label>
+        <name>Total_Contacted_Customer_Port_Pool_Other__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Customer --></label>
+        <name>Total_Customer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Face to Face &amp; Call --></label>
+        <name>Total_Face_to_Face_Call__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Sales &amp; Relationship --></label>
+        <name>Total_Sales_Relationship__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total visited Customer --></label>
+        <name>Total_visited_Customer__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>User__c</name>
+        <relationshipLabel><!-- Monthly Performance --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Monthly Performance Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Monthly Performance --></label>
+            <section>Monthly Performance</section>
+        </sections>
+        <sections>
+            <label><!-- Port/Pool Penetrate Performance --></label>
+            <section>Port/Pool Penetrate Performance</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

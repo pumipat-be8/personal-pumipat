@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Request for Customer Ownership Approval (Year-End)-Approved</name>
+    <style>none</style>
+    <subject>Request for Customer Ownership (Year-End) has been approved</subject>
+    <textOnly>เรียน ผู้เกี่ยวข้อง
+
+อนุมัตืการเลือก Port ของลูกค้าดังต่อไปนี้:
+
+CIS ID: {!Customer_Ownership_Request__c.CIS_ID__c}
+ชื่อลูกค้า: {!Customer_Ownership_Request__c.Customer_Name__c}
+Port / Pool: {!Customer_Ownership_Request__c.Port_Pool__c}
+
+ผู้ขอ: {!Customer_Ownership_Request__c.Requestor_Name__c}
+ผู้จัดการทีมของผู้ขอr: {!Customer_Ownership_Request__c.Requestor_TM__c}
+ชื่อทีมของผู้ขอ: {!Customer_Ownership_Request__c.Requestor_Team_Name__c}
+
+รายละเอียดเพิ่มเติม
+
+{!Customer_Ownership_Request__c.Link}</textOnly>
+    <type>custom</type>
+</EmailTemplate>

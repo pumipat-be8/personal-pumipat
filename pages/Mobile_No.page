@@ -1,0 +1,104 @@
+<apex:page standardController="Target_List__c" extensions="ValueChain_Controller" showHeader="false" sidebar="false" >
+<apex:includeScript value="{!$Resource.jquery}"/>
+    <apex:outputPanel >
+        <apex:pageMessages id="showmsg"></apex:pageMessages>
+    </apex:outputPanel>
+<apex:form id="formMobile">    
+    <apex:pageblock id="pageblockMobile" mode="maindetail">       
+        <apex:pageBlockSection id="panelTarget" columns="1">            
+            <apex:outputLabel style="text-align:center" value="กรอกข้อมูลเบอร์โทรศัพท์มือถือลูกค้าให้ครบ 10 หลัก"/> 
+        </apex:pageBlockSection>    
+        <apex:pageBlockSection id="panelTarget2" columns="2">
+            <apex:outputLabel value="{!$ObjectType.Target_List__c.fields.Mobile_No__c.label}" for="inputMobileNo" style="font-weight: bold;"/>
+            <apex:inputField id="inputMobileNo" value="{!target.Mobile_No__c}" onkeyup="checkMobile('{!$Component.inputMobileNo}','{!$Component.buttomSubmit.savingButton}');" label="" />  
+        </apex:pageBlockSection>
+        <apex:pageBlockSection id="panelTarget3" columns="2" rendered="{!isNewBooking}">           
+          <apex:outputLabel value="{!$ObjectType.Target_List__c.fields.Option__c.label}" for="inputOption" style="font-weight: bold;"/>
+            <apex:selectRadio id="inputOption" value="{!optionType}" onclick="checkButton()">
+                <apex:selectOptions value="{!optionTypeItems}"/>
+            </apex:selectRadio>
+            <apex:outputLabel value="{!$ObjectType.Target_List__c.fields.Reward__c.label}" for="Reward" style="font-weight: bold;"/>
+             <apex:selectList id="inputReward" value="{!rewardType}" size="1" onchange="checkButton()">
+             <apex:selectOptions value="{!rewardTypeItems}"/>
+            </apex:selectList>
+        </apex:pageBlockSection>
+
+        <apex:pageBlockButtons id="buttomSubmit" location="bottom" >
+            <apex:commandButton id="savingButton" value="Save" action="{!savingtarget}" status="savingStatus" reRender="panelTarget,panelTarget2,panelTarget3,showmsg" oncomplete="completeSave({!shouldReload});" />
+            <apex:actionStatus id="savingStatus" startText="  กำลังบันทึก..." stopText=""></apex:actionStatus>
+        </apex:pageBlockButtons>
+    </apex:pageblock>
+</apex:form>
+<script type="text/javascript">
+    window.onload = function() {        
+       document.getElementById('{!$Component.formMobile.pageblockMobile.buttomSubmit.savingButton}').disabled = true;
+       document.getElementById('{!$Component.formMobile.pageblockMobile.buttomSubmit.savingButton}').className = "btnDisabled";    
+    }
+    
+    function checkMobile(inputMobileNoId,saveButton){
+        var mobileNoText = document.getElementById(inputMobileNoId).value;
+        var regex = new RegExp('^[0-9]+$');  
+        if (!regex.test(mobileNoText)) {
+            disableButton();
+            alert ("ต้องเป็นตัวเลขเท่านั้น");
+            return false;
+        }
+        checkButton();
+    };
+
+    function checkButton(){
+        console.log($('input[id$=inputMobileNo]').val());
+        console.log($('input[name$=inputOption]:checked').val());
+        console.log($('select[id$=inputReward]').val());
+        var isNewBooking = {!isNewBooking};
+        if( document.getElementById('{!$Component.formMobile.pageblockMobile.panelTarget2.inputMobileNo}').value.length == 10 )
+        {
+            if(isNewBooking){
+                var radioValue = findSelection();
+                var comboValue = comboSelectValue();
+                console.log(radioValue);
+                console.log(comboValue);
+                if( radioValue !=null && comboValue != '') {
+                    enableButton();    
+                } else {
+                    disableButton();
+                }
+            } else {
+                enableButton();
+            }
+        } else {
+            disableButton();                 
+        }
+    };
+
+    function disableButton(){
+        document.getElementById('{!$Component.formMobile.pageblockMobile.buttomSubmit.savingButton}').disabled = true;
+        document.getElementById('{!$Component.formMobile.pageblockMobile.buttomSubmit.savingButton}').className = "btnDisabled"; 
+    }
+
+    function enableButton(){
+        document.getElementById('{!$Component.formMobile.pageblockMobile.buttomSubmit.savingButton}').disabled = false;
+        document.getElementById('{!$Component.formMobile.pageblockMobile.buttomSubmit.savingButton}').classList.remove("btnDisabled"); 
+    }
+
+    function findSelection() {
+        var test = document.getElementsByName('{!$Component.formMobile.pageblockMobile.panelTarget3.inputOption}');        
+        for (i=0; i < test.length; i++) {
+                if (test[i].checked==true) {  
+                return test[i].value;
+            }
+        }
+        return null;
+    }
+
+    function comboSelectValue(){
+        var e = document.getElementById('{!$Component.formMobile.pageblockMobile.panelTarget3.inputReward}');
+        return e.options[e.selectedIndex].value;
+    }
+
+    function completeSave(shouldReload){
+        if(shouldReload) window.parent.postMessage(JSON.stringify({success:true}), '*');
+    };
+
+   </script>
+</apex:page>

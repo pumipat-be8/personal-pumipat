@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>IF( User_Extension__c.Total_Sales_Relationship__c:SUM &gt; 0, User_Extension__c.Call_Report_for_Sales__c:SUM/User_Extension__c.Total_Sales_Relationship__c:SUM,0)</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>% Call Report for Sales</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>IF( User_Extension__c.Total_Sales_Relationship__c:SUM &gt; 0, User_Extension__c.Call_Report_for_Relationship__c:SUM/User_Extension__c.Total_Sales_Relationship__c:SUM,0)</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA2</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>% Call Report for Relationship</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>IF( User_Extension__c.Total_Sales_Relationship__c:SUM &gt; 0, (User_Extension__c.Call_Report_for_Sales__c:SUM+User_Extension__c.Call_Report_for_Relationship__c:SUM)/User_Extension__c.Total_Sales_Relationship__c:SUM,0)</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA7</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>% Total</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>User_Extension__c.Number_of_RM__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>User_Extension__c.AVG_Call_Report_Month__c</field>
+    </columns>
+    <columns>
+        <field>User_Extension__c.Number_of_RM_under_Team__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>User_Extension__c.Call_Report_for_Sales__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>User_Extension__c.Call_Report_for_Relationship__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>User_Extension__c.Total_Sales_Relationship__c</field>
+    </columns>
+    <columns>
+        <field>User_Extension__c.PFace_to_Face__c</field>
+    </columns>
+    <columns>
+        <field>User_Extension__c.PPhone_Call__c</field>
+    </columns>
+    <columns>
+        <field>User_Extension__c.PTotal_Face_to_Face_Call__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>User_Extension__c.Team_Structure__c</column>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>User_Extension__c.Position__c</column>
+            <operator>equals</operator>
+            <value>RM,Team Manager</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>User_Extension__c.Active__c</column>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>User_Extension__c.Name__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>RM : Activity by Objective</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$User_Extension__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>User_Extension__c.Last_Month_Stamp__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

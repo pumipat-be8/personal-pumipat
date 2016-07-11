@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value><!-- KBank Statement --></value>
+    </caseValues>
+    <fields>
+        <label><!-- Amount Inflow --></label>
+        <name>Amount_Inflow__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount Outflow --></label>
+        <name>Amount_Outflow__c</name>
+    </fields>
+    <fields>
+        <label><!-- As of Date --></label>
+        <name>As_of_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- CASA Average Balance --></label>
+        <name>CASA_Average_Balance__c</name>
+    </fields>
+    <fields>
+        <label><!-- CIS ID --></label>
+        <name>CIS_ID__c</name>
+        <relationshipLabel><!-- KBank Statements --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Cheque Paid Amount --></label>
+        <name>Cheque_Paid_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cheque Paid (Items) --></label>
+        <name>Cheque_Paid_Items__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cheque Return Amount --></label>
+        <name>Cheque_Return_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cheque Return (Items) --></label>
+        <name>Cheque_Return_Items__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- TXN Inflow --></label>
+        <name>TXN_Inflow__c</name>
+    </fields>
+    <fields>
+        <label><!-- TXN Outflow --></label>
+        <name>TXN_Outflow__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trade Turn Export --></label>
+        <name>Trade_Turn_Export__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trade Turn Import --></label>
+        <name>Trade_Turn_Import__c</name>
+    </fields>
+    <layouts>
+        <layout>KBANK STM Layout</layout>
+        <sections>
+            <label>ข้อมูลเช็ค</label>
+            <section>Cheque Info</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- TXN Info --></label>
+            <section>TXN Info</section>
+        </sections>
+    </layouts>
+    <nameFieldLabel><!-- Month --></nameFieldLabel>
+</CustomObjectTranslation>

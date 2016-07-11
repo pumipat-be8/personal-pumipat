@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>RowCount</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>จำนวนเคส (เคส)</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>Opportunity.Setup_Amount_s__c:SUM/1000000</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA2</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>วงเงินรวม (ลบ.)</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>Opportunity.Setup_Amount_s__c:SUM/RowCount/1000000</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA3</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>วงเงินเฉลี่ย (ลบ.)</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_36062766</developerName>
+        <masterLabel>Leg</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Opportunity$StageName</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Stock Negotiation</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Create Write Up</sourceValue>
+            </sourceValues>
+            <value>L1</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Waiting for Credit Approval</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Case is Rejected</sourceValue>
+            </sourceValues>
+            <value>L2</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Waiting for Credit Setup</sourceValue>
+            </sourceValues>
+            <value>L3</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Partial Loan Setup</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>All Loan Setup</sourceValue>
+            </sourceValues>
+            <value>Closed Won</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Auto Closed</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Closed Lost</sourceValue>
+            </sourceValues>
+            <value>Closed Lost</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_21166256</developerName>
+        <masterLabel>สถานะ</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Opportunity$StageName</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Stock Negotiation</sourceValue>
+            </sourceValues>
+            <value>RM เจรจากับลูกค้า</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Create Write Up</sourceValue>
+            </sourceValues>
+            <value>RM จัดทำใบเสนอเรื่อง</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Waiting for Credit Approval</sourceValue>
+            </sourceValues>
+            <value>UW พิจารณาความเสี่ยง</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Case is Rejected</sourceValue>
+            </sourceValues>
+            <value>UW ปฏิเสธ/คืนเรื่อง</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Waiting for Credit Setup</sourceValue>
+            </sourceValues>
+            <value>UW อนุมัติแล้วรอ RM ดำเนินการเพื่อตั้งวงเงิน</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>All Loan Setup</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Partial Loan Setup</sourceValue>
+            </sourceValues>
+            <value>RM ดำเนินการตั้งวงเงินได้</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Auto Closed</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Closed Lost</sourceValue>
+            </sourceValues>
+            <value>RM ยอมแพ้</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>FORMULA1</column>
+        </chartSummaries>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>FORMULA2</column>
+        </chartSummaries>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>FORMULA3</column>
+        </chartSummaries>
+        <chartType>VerticalColumn</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>Opportunity$Owner_FullName__c</groupingColumn>
+        <legendPosition>Bottom</legendPosition>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Tiny</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>Opportunity$Name</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Account</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Account.Name_Report__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$L1day__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Actual_Visit_Date__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$L2day__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Actual_RM_Submit_Date__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$First_Application_SO_Receive_Date__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Opportunity$Requested_Amount_setup__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$L3day__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Approval_Workout_Date__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Opportunity$Approve_Latest_Amount_By_SP__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$E2Eday__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Credit_Setup_Date__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Opportunity$Setup_Amount_s__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Opportunity$Owner_NH__c</column>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$StageName</column>
+            <operator>equals</operator>
+            <value>Partial Loan Setup,All Loan Setup</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Opportunity$Owner_FullName__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>08. New Booking เดือนนี้</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>OppwithOpportunity_Product_Custom__c</reportType>
+    <roleHierarchyFilter>SME_Support</roleHierarchyFilter>
+    <scope>user</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Opportunity$Credit_Setup_Date__c</dateColumn>
+        <interval>INTERVAL_THISMONTH</interval>
+    </timeFrameFilter>
+</Report>

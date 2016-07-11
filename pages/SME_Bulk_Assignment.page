@@ -1,0 +1,110 @@
+<apex:page controller="SME_BulkAssignment_ListView_Controller" extensions="RemoterExtensions" standardStylesheets="false">
+    <c:ExtRemoteDependency />
+    <script>
+        Visualforce.remoting.timeout = 120000;
+        var controllers = [SME_BulkAssignment_ListView_Controller];
+        for(var i=0;i<controllers.length;i++){
+            for(var method in controllers[i]){
+                if(controllers[i].hasOwnProperty(method)){
+                    controllers[i][method].directCfg.method.getArgs = Ext.direct.RemotingMethod.prototype.getArgs;
+                }
+            }
+        }
+    </script>
+    <apex:includeScript value="{!$Resource.reassign_util}"/>
+    <apex:includeScript value="{!$Resource[selectedResource]}"/>
+    <apex:form id="bulkForm">
+        <apex:pageMessages id="msg" />
+        <apex:outputPanel id="assignPanel" layout="block"/>
+    </apex:form>
+    <script>
+        Ext.onReady(function(){
+        Visualforce.remoting.timeout = 120000;
+        (function(){
+            var reAssignPermanencefieldlist = getFieldList('{!ReAssignPermanenceFieldsForDes}');
+            var reAssignTemporaryfieldlist = getFieldList('{!ReAssignTemporaryFieldsForDes}');
+            var reAssignOwnedByOtherfieldlist = getFieldList('{!ReAssignOwnedByOtherFieldsForDes}');
+
+            var reAssignPermanenceAsync = getFieldMapPicklistDescription('Account',reAssignPermanencefieldlist);
+            var reAssignTemporaryAsync = getFieldMapPicklistDescription('Account',reAssignTemporaryfieldlist);
+            var reAssignOwnedByOtherAsync = getFieldMapPicklistDescription('Account',reAssignOwnedByOtherfieldlist);
+
+            var final_grid = Ext.create('Ext.container.Container', {
+                renderTo: '{!$Component.bulkForm.assignPanel}',
+                id: 'bulk-container'
+            });
+
+            final_grid.setLoading('Processing Element...');
+
+            Ext.Deferred
+            .all([reAssignPermanenceAsync,reAssignTemporaryAsync,reAssignOwnedByOtherAsync])
+            .then(function (results) {
+                var config = {
+                    pagesize : parseInt('{!rows}'),
+                    reAssignPermanenceForMap : results[0],
+                    reAssignTemporaryForMap : results[1],
+                    reAssignOwnedByOtherForMap : results[2],
+                    reAssignPermanencefieldlist : getFieldList('{!ReAssignPermanenceFields}'),
+                    reAssignTemporaryfieldlist : getFieldList('{!ReAssignTemporaryFields}'),
+                    reAssignOwnedByOtherfieldlist : getFieldList('{!ReAssignOwnedByOtherFields}'),
+
+                    panel_items : [],
+                    container_items : [],
+                    user_id : '{!$User.Id}',
+                    user_rc_code : '{!rcCode}',
+                    user_empid : '{!empId}',
+                    lowerLevelSet : {!userLowerSet},
+                    
+                    map_label : {
+                        BulkAssign_ShowAll: '{!$Label.YearEnd_ShowAll}',
+                        BulkAssign_Invalid_Fields: '{!$Label.BulkAssign_Invalid_Fields}',
+                        BulkAssign_CustomerList: '{!$Label.BulkAssign_CustomerList}',
+                        BulkAssign_TempOwnerList: '{!$Label.BulkAssign_TempOwnerList}',
+                        BulkAssign_OwnerByOtherList: '{!$Label.BulkAssign_OwnerByOtherList}',
+                        BulkAssign_Submitted: '{!$Label.BulkAssign_Submit}',
+                        BulkAssign_Thefollowingfieldsareinvalid: '{!$Label.BulkAssign_Thefollowingfieldsareinvalid}',
+                        BulkAssign_NHLevelName: '{!$Label.BulkAssign_NHLevelName}',
+                        BulkAssign_AHLevelName: '{!$Label.BulkAssign_AHLevelName}',
+                        BulkAssign_TMLevelName: '{!$Label.BulkAssign_TMLevelName}',
+                        BulkAssign_RMLevelName: '{!$Label.BulkAssign_RMLevelName}',
+                        BulkAssign_Servererror: '{!$Label.BulkAssign_Servererror}',
+                        BulkAssign_SelectRM_TM: '{!$Label.BulkAssign_SelectRM_TM}',
+                        BulkAssign_NoAssignmentSelected: '{!$Label.BulkAssign_NoAssignmentSelected}',
+                        BulkAssign_NoRM_TM_UserAssignment: '{!$Label.BulkAssign_NoRM_TM_UserAssignment}',
+                        BulkAssign_PleaseConfirmtoRefreshList: '{!$Label.YearEnd_PleaseConfirmtoRefreshList}',
+                        BulkAssign_Port: '{!$Label.YearEnd_Port}',
+                        BulkAssign_Pool: '{!$Label.YearEnd_Pool}'
+                    }
+                };
+
+                init(config);
+
+                var w = Ext.getCmp('bulk-container');
+                w.setLoading(false);
+                var tabpanel = Ext.create('Ext.tab.Panel', {
+                    id: 'main-tab',
+                    plain: true,
+                    items: config.panel_items,
+
+                    defaults: {
+                        listeners: {
+                            beforeclose: function(panel) {
+                                var closeAction = this.ownerCt.closeAction
+                                if (closeAction === 'hide') {
+                                    panel.hide();
+                                    Ext.get(panel.tabEl).setVisible(false);
+                                    return false;
+                                }
+                                return true;
+                            }
+                        }
+                    },
+                });
+                final_grid.add([tabpanel].concat(config.container_items));               
+            },function(errors){
+                return;
+            });
+        })();
+    });
+    </script>
+</apex:page>

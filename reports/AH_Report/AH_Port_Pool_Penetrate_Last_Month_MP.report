@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>IF( Monthly_Performance__c.Customer_Port__c:SUM &gt; 0, Monthly_Performance__c.Contacted_Customer_Port_My_Penetrate__c:SUM/Monthly_Performance__c.Customer_Port__c:SUM,0)</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>% Contacted Customer Port My Penetrate</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>IF( Monthly_Performance__c.Customer_Pool__c:SUM &gt; 0, Monthly_Performance__c.Contacted_Customer_Pool_My_Penetrate__c:SUM/Monthly_Performance__c.Customer_Pool__c:SUM,0)</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA2</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>% Contacted Customer Pool My Penetrate</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>IF( Monthly_Performance__c.Customer_Other__c:SUM &gt; 0, Monthly_Performance__c.Contacted_Customer_Other_My_Penetrate__c:SUM/Monthly_Performance__c.Customer_Other__c:SUM,0)</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA4</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>% Contacted Customer Other My Penetrate</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>IF( OR(Monthly_Performance__c.Customer_Port__c:SUM &gt; 0,Monthly_Performance__c.Customer_Pool__c:SUM &gt; 0,Monthly_Performance__c.Customer_Other__c:SUM &gt;0), (Monthly_Performance__c.Contacted_Customer_Port_My_Penetrate__c:SUM+Monthly_Performance__c.Contacted_Customer_Pool_My_Penetrate__c:SUM+Monthly_Performance__c.Contacted_Customer_Other_My_Penetrate__c:SUM)/(Monthly_Performance__c.Customer_Port__c:SUM+Monthly_Performance__c.Customer_Pool__c:SUM+Monthly_Performance__c.Customer_Other__c:SUM),0)</calculatedFormula>
+        <datatype>percent</datatype>
+        <developerName>FORMULA5</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>% Total Contacted Customer My Penetrate</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>User_Extension__c.Monthly_Performance__r$Customer_Port__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>User_Extension__c.Monthly_Performance__r$Customer_Pool__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>User_Extension__c.Monthly_Performance__r$Customer_Other__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>User_Extension__c.Monthly_Performance__r$Total_Customer__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>User_Extension__c$Contacted_Customer_Port_My_Penetrate__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>User_Extension__c$Contacted_Customer_Pool_My_Penetrate__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>User_Extension__c$Contacted_Customer_Other_My_Penetrate__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>User_Extension__c$Total_Contacted_Customer_My_Penetrate__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>User_Extension__c.Monthly_Performance__r$Date__c</column>
+            <operator>equals</operator>
+            <value>LAST_MONTH</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>User_Extension__c$Team_Structure__c</column>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>User_Extension__c$Position__c</column>
+            <operator>equals</operator>
+            <value>RM,Team Manager</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>User_Extension__c$Active__c</column>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <language>en_US</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>User_Extension__c$Area__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>User_Extension__c$Team_Report__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>User_Extension__c$Name__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>AH : My Port/Pool Penetrate Last Month</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>User_Extension_with_Monthly_Performance__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>User_Extension__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>
