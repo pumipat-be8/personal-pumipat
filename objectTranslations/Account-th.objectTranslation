@@ -3816,6 +3816,10 @@
             <label>ข้อมูล Prospect</label>
             <section>Prospect Information</section>
         </sections>
+        <sections>
+            <label><!-- Test Section --></label>
+            <section>Test Section</section>
+        </sections>
     </layouts>
     <quickActions>
         <label>สร้างแผนการเยี่ยม</label>

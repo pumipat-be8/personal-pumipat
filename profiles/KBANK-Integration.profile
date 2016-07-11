@@ -151,10 +151,6 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>BatchInitialGroupChatter_Test</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
         <apexClass>BatchJob</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -492,6 +488,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>SME_Associated_OverrideEdit_Controller</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>SME_BatchInitialGroupChatter_Test</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>

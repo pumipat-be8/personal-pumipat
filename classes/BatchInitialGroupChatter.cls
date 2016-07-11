@@ -39,8 +39,6 @@ global class BatchInitialGroupChatter implements Database.Batchable<sObject>, Da
 	}
 
    	global void execute(Database.BatchableContext BC, List<Team_Structure__c> listNhTeamStructure) {
-		//List<CollaborationGroup> listDeleteCollaborationGroup = deleteNhGroupAndAllNhGroup();
-		//delete listDeleteCollaborationGroup;
 		List<CollaborationGroup> listCreateCollaborationGroup = createNhGroupAndAllNhGroup(listNhTeamStructure);
 		insert listCreateCollaborationGroup;
 		List<CollaborationGroupMember> listCreateCollaborationGroupMember = createGroupMemberAndAdmin(listNhTeamStructure);
@@ -56,9 +54,6 @@ global class BatchInitialGroupChatter implements Database.Batchable<sObject>, Da
 		Map<String, CollaborationGroup> mapAllGroupMapByName = GroupChatterService.getAllCollaborationGroupMapByName();
 
 		for(Team_Structure__c eachTeam : listNhTeamStructure){
-			//System.debug('eachTeam.Rc_Code__c = '+eachTeam.Rc_Code__c);
-			//Team_Structure__c nhTeam = mapTeamStructureMapByNhRcCode.get(eachTeam.Rc_Code__c);
-			//System.debug('nhTeam = '+nhTeam);
 			String groupName = GroupChatterService.createGroupNameFromTeamNameAndSegment(eachTeam.Name, eachTeam.Segment__c);
 			CollaborationGroup eachGroupNh = mapAllGroupMapByName.get(groupName);
 			listNewCollaborationGroupMember.addAll(GroupChatterService.getListManager(eachGroupNh));
@@ -98,27 +93,12 @@ global class BatchInitialGroupChatter implements Database.Batchable<sObject>, Da
 			if(!GroupChatterService.mapCollaborationGroupMapByName.containsKey(groupName)){
 				CollaborationGroup newGroup = GroupChatterService.createGroupChatter(groupName);
 				listCreateCollaborationGroup.add(newGroup);
-				//mapTeamStructureMapByNhRcCode.put(eachTeam.RC_Code__c, eachTeam);
-				//collaborationGroupMapByRcCode.put(eachTeam.RC_Code__c, newGroup);
 			}
 		}
 		CollaborationGroup newMeGroup = GroupChatterService.createGroupChatter(GlobalConstants.SEGMENT_ME);
 		CollaborationGroup newSeGroup = GroupChatterService.createGroupChatter(GlobalConstants.SEGMENT_SE);
 		listCreateCollaborationGroup.add(newMeGroup);
 		listCreateCollaborationGroup.add(newSeGroup);
-		//collaborationGroupMapByRcCode.put(GlobalConstants.SEGMENT_ME, newMeGroup);
-		//collaborationGroupMapByRcCode.put(GlobalConstants.SEGMENT_SE, newSeGroup);
 		return listCreateCollaborationGroup;
 	}
-
-	//private List<CollaborationGroup> deleteNhGroupAndAllNhGroup(){
-	//	List<CollaborationGroup> listDeleteCollaborationGroup = new List<CollaborationGroup>();
-	//	for(String teamName : GroupChatterService.mapCollaborationGroupMapByName.keySet()){
-	//		CollaborationGroup deleteGroup = GroupChatterService.deleteGroupChatter(teamName);
-	//		if(deleteGroup != null){
-	//			listDeleteCollaborationGroup.add(deleteGroup);
-	//		}
-	//	}
-	//	return listDeleteCollaborationGroup;
-	//}
 }

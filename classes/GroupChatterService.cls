@@ -78,11 +78,14 @@ public without sharing class GroupChatterService {
 
 	public static String createGroupNameFromTeamNameAndSegment(String teamName,String segment){
 		String groupName;
-		if(segment == GlobalConstants.SEGMENT_SE || segment == 'Small'){
-            groupName = teamName.replace('เครือข่ายลูกค้าผู้ประกอบการ 2','SE');
-        }else if(segment == GlobalConstants.SEGMENT_ME || segment == 'Medium'){
-            groupName = teamName.replace('เครือข่ายลูกค้าผู้ประกอบการ 1','ME');
-        }
+		for(Chatter_Group_Name__c replaceGroupName : Chatter_Group_Name__c.getall().values()){
+			groupName = teamName.replace(replaceGroupName.replace_from__c ,replaceGroupName.Name);
+		}
+		//if(segment == GlobalConstants.SEGMENT_SE || segment == 'Small'){
+  //          groupName = teamName.replace('เครือข่ายลูกค้าผู้ประกอบการ 2','SE');
+  //      }else if(segment == GlobalConstants.SEGMENT_ME || segment == 'Medium'){
+  //          groupName = teamName.replace('เครือข่ายลูกค้าผู้ประกอบการ 1','ME');
+  //      }
         groupName = groupName.replace('(','');
         groupName = groupName.replace(')','');
 		return groupName;
@@ -179,12 +182,10 @@ public without sharing class GroupChatterService {
 			}
 			listUserManager = [SELECT Id,Name, Profile.Name FROM User WHERE Name in :listManagerName AND IsActive = true AND Name != :System.Label.Chatter_Group_Owner];
 		}
-		System.debug('listUserManager = '+listUserManager);
 		for(User eachUser : listUserManager){
 			CollaborationGroupMember cbgMember = createAdminGroup(eachUser,collaborationGroup);
 			returnList.add(cbgMember);
 		}
-		System.debug('getListManager = '+returnList);
 		return returnList;
 	}
 
@@ -210,8 +211,8 @@ public without sharing class GroupChatterService {
 	public static CollaborationGroup getUpdatedGroupName(Team_Structure__c newTeam,Team_Structure__c oldTeam){
 		String oldName = createGroupNameFromTeamNameAndSegment(oldTeam.Name,oldTeam.Segment__c);
 		String newName = createGroupNameFromTeamNameAndSegment(newTeam.Name,newTeam.Segment__c);
-		CollaborationGroup cbg = mapCollaborationGroupMapByName.get(oldName);
-		cbg.Name = newName;
-		return cbg;
+		CollaborationGroup collaborationGroup = mapCollaborationGroupMapByName.get(oldName);
+		collaborationGroup.Name = newName;
+		return collaborationGroup;
 	}
 }

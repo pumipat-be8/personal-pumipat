@@ -3998,6 +3998,10 @@
             <label><!-- Prospect Information --></label>
             <section>Prospect Information</section>
         </sections>
+        <sections>
+            <label><!-- Test Section --></label>
+            <section>Test Section</section>
+        </sections>
     </layouts>
     <quickActions>
         <label><!-- New Call Plan --></label>
