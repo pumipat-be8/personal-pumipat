@@ -1,6 +1,6 @@
+rem add all to stage
 git add *
-
-git commit -m "Automated Sync - $timeStamp"
-
+rem commit to stage
+git commit -m "Automated Sync"
 rem Push them up to the repo
 git push -u origin master
