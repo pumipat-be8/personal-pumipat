@@ -1,3 +1,4 @@
+@echo off
 for /f "tokens=2-4 delims=/ " %%a in ('date /t') do (set mydate=%%c-%%a-%%b)
 rem add all to stage
 git add *
