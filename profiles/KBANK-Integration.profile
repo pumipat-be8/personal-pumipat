@@ -147,10 +147,6 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>BatchInitialGroupChatter</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
         <apexClass>BatchJob</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -403,10 +399,6 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
-        <apexClass>GroupChatterService</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
-    <classAccesses>
         <apexClass>InteractionHistory_Model</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -488,6 +480,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>SME_Associated_OverrideEdit_Controller</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>SME_BatchInitialGroupChatter</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
@@ -592,6 +588,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>SME_FixedResultResponse</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>SME_GroupChatterService</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
