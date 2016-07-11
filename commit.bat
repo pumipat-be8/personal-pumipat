@@ -7,3 +7,5 @@ rem commit to stage
 git commit -m "Automated Sync %mydate%_%mytime%"
 rem Push them up to the repo
 git push -u origin master
+
+pause
