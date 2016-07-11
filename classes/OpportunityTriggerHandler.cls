@@ -27,7 +27,7 @@ public class OpportunityTriggerHandler extends TriggerHandler{
         String currentYear = (System.now().yearGmt() > 2555)?String.valueOf(System.now().yearGmt()):String.valueOf(System.now().yearGmt()+543);
         String runningNumberString;
 
-        userMapRMTM = new Map<Id,User>([SELECT Id,ManagerId,Manager.ManagerId,Manager.Manager.ManagerId, Profile.Name FROM User WHERE Profile.Name IN (:GlobalConstants.SME_TM,:GlobalConstants.SME_RM)]);
+        userMapRMTM = new Map<Id,User>([SELECT Id,ManagerId,Manager.ManagerId,Manager.Manager.ManagerId, Profile.Name FROM User WHERE Profile.Name !=: GlobalConstants.SME_ADMIN]);
         
         currentUser = [SELECT Id, IsActive,RC_Code__c, AH_RC_Code__c, NH_RC_Code__c, Employee_Id__c, AH_Employee_ID__c, NH_Employee_ID__c FROM User WHERE Id = :UserInfo.getUserId()];
         currentUserAH = [SELECT Id, IsActive FROM User WHERE Employee_ID__c =: currentUser.AH_Employee_ID__c LIMIT 1];
@@ -140,6 +140,15 @@ public class OpportunityTriggerHandler extends TriggerHandler{
                     eachOpportunity.Current_AH__c = userRelatedToOpportunity.ManagerId;
                     eachOpportunity.Current_NH__c = userRelatedToOpportunity.Manager.ManagerId;
                 }
+                if(userRelatedToOpportunity.Profile.Name == GlobalConstants.SME_AH){
+                    eachOpportunity.Current_AH__c = null;
+                    eachOpportunity.Current_NH__c = userRelatedToOpportunity.ManagerId;
+                }
+                if(userRelatedToOpportunity.Profile.Name == GlobalConstants.SME_NH){
+                    eachOpportunity.Current_AH__c = null;
+                    eachOpportunity.Current_NH__c = null;
+                }
+
                 
                 if(accountRecord.Port_Pool__c!=GlobalConstants.PORT && accountRecord.OwnerId != eachOpportunity.OwnerId){
                     //accountRecord.Port_Pool__c = GlobalConstants.POOL;
@@ -245,6 +254,14 @@ public class OpportunityTriggerHandler extends TriggerHandler{
                 if(userRelatedToOpportunity.Profile.Name == GlobalConstants.SME_TM){
                     eachOpportunity.Current_AH__c = userRelatedToOpportunity.ManagerId;
                     eachOpportunity.Current_NH__c = userRelatedToOpportunity.Manager.ManagerId;
+                }
+                if(userRelatedToOpportunity.Profile.Name == GlobalConstants.SME_AH){
+                    eachOpportunity.Current_AH__c = null;
+                    eachOpportunity.Current_NH__c = userRelatedToOpportunity.ManagerId;
+                }
+                if(userRelatedToOpportunity.Profile.Name == GlobalConstants.SME_NH){
+                    eachOpportunity.Current_AH__c = null;
+                    eachOpportunity.Current_NH__c = null;
                 }
             }
             if(eachOpportunity.StageName != oldRecord.StageName){
