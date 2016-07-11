@@ -3979,6 +3979,10 @@
             <label><!-- System Information --></label>
             <section>System Information</section>
         </sections>
+        <sections>
+            <label><!-- Test Section --></label>
+            <section>Test Section</section>
+        </sections>
     </layouts>
     <layouts>
         <layout>SME-Prospect Layout</layout>
