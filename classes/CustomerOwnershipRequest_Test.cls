@@ -273,7 +273,7 @@ private class CustomerOwnershipRequest_Test {
 				AH_Name__c = null,
 				RC_Code__c = Mockup_Test.NH_RC_CODE,
 				External_ID__c = userRcCode2,
-				Name = 'Nh Team 1',
+				Name = 'เครือข่ายลูกค้าผู้ประกอบการ 2 Team 1',
                 Segment__c = GlobalConstants.SEGMENT_SE,
                 Type__c = 'Network'
 			);

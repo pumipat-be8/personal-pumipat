@@ -6,7 +6,7 @@
     <description>aa</description>
     <join>
         <outerJoin>false</outerJoin>
-        <relationship>Associated_Leads__r</relationship>
+        <relationship>Call_Reports_Leads__r</relationship>
     </join>
     <label>aa</label>
     <sections>
@@ -1111,677 +1111,677 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Id</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Campaign_Name__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>CreatedBy</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>CreatedDate</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Creator_AH__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Creator_NH__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Creator_Team__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>End_Date__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>LastActivityDate</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>LastModifiedBy</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>LastModifiedDate</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>true</checkedByDefault>
             <field>Name</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Start_Date__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Status__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Type__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.X26_Industries_Group__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Accompanied_By__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Accompanied_by_CEM_MS__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Accompanied_by_Executive__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Accompanied_By_Names__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Accompanied_Executive_Name__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Acquantainceship_Score__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Acquantainceship_CEM__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Actual_Visit__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Actual_Visit_Date__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Business_Code__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Business_Code_Formula__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Business_Code_Description__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Business_Knowledge_CEM__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Business_Knowledge_Score__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Call_Plan_Port__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Name</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Id</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.call_plan_call_report_ID__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Call_Report_No_Plan__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Call_Report_with_Plan__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Call_Result_Activity__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.CEM_MS_Contact_Information__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.CIS_ID__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Collect_Documents__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Completed__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Contact_Call__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Contact_F2F__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Contact_Channel__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Contact_Firstname__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Contact_Lastname__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Contact_Phone__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.CreateByMe__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.CreatedBy</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.CreatedByMyArea__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.CreatedByMyNetwork__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.CreatedByMyTeam__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.CreatedDate</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.CreatedTeam__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Creator_AH__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Creator_Area_Name__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Creator_FullName__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Creator_NetworkName__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Creator_NH__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Creator_Profile__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Creator_Team_Name__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Credit_Non_Credit__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.CurrentOwnerIsMe__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Customer_Insight__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Customer_Name__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Customer_Owner_2__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Customer_Owner__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Customer_Owner_Release_Flag__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Date_Report__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Cancel_Call_Plan__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Contact__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Phone_Number__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Expected_Credit_Amount__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Final_Score_CEM__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Final_Score_Score__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Has_Opp_or_not__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Head_of_UW_Name__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Customer_Important_Note__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Is_Call_Report_This_Year__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Is_me_CEM_MS__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.IsSLACount__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.LastActivityDate</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.LastModifiedBy</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.LastModifiedDate</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Last_Visited_Date__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Memo__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.My_Area__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.My_Network__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.My_Team__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Negotiation__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.No_Change__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Non_Credit__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Non_Financial_Provides_CEM__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Non_Financial_Provides_Score__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Note__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Number_of_Opp__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Number_of_Reschedule__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Offer_Credit_Product__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Offer_Interest__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Other_Comments_CEM__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Other_Details_CEM__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Pain__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Count_Plan_Last_Week__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Plan__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Plan_Amount__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Plan_Date__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Plan_Last_Week__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Port_Pool_Formula__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Product_Explanation_CEM__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Product_Explanation_Score__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Reason__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Reason_for_Cancellation__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Reasons_of_Visit_CEM__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.RecordType</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Related_Date__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Senior_UW_Name__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Servicing__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Status_Display__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Status__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Sub_Industry_Group__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Sub_Industry_Group_Description__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Team_Name__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.TM_Email_Address__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Total_Score__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Updated_by_CEM_MS__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Updated_by_CEM_MS_ID__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Updated_Date_Time_by_CEM_MS__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.UW_My_Call_Plan__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.UW_Decision__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.UW_Final_Decision__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Visit_Objective__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.VObj_Relation__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.VObj_Sell__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Call_Plan_Call_Report__c.Who__c</field>
-            <table>Target_List__c.Associated_Leads__r</table>
+            <table>Target_List__c.Call_Reports_Leads__r</table>
         </columns>
         <masterLabel>Call Reports / Leads</masterLabel>
     </sections>

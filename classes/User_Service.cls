@@ -17,11 +17,11 @@ public class User_Service {
 
     public static Map<String, Team_Structure__c> getAllTeamStructureMapByRC() {
         List<Team_Structure__c> teamStructureList = new List<Team_Structure__c>();
-        teamStructureList = [SELECT Id, External_ID__c, OwnerId, Segment__c, Name, Type__c,NH_RC_Code__c FROM Team_Structure__c];
+        teamStructureList = [SELECT Id, External_ID__c,RC_Code__C, OwnerId, Segment__c, Name, Type__c,NH_RC_Code__c FROM Team_Structure__c];
         Map<String, Team_Structure__c> allTeamMapByRc = new Map<String, Team_Structure__c>();
 
         for(Team_Structure__c eachTeam : teamStructureList) {
-            allTeamMapByRc.put(eachTeam.External_ID__c, eachTeam);
+            allTeamMapByRc.put(eachTeam.RC_Code__C, eachTeam);
         }
         return allTeamMapByRc;
     }

@@ -248,7 +248,7 @@ public class Account_OwnerChange_Service {
         List<User_Extension__c> userExtList = new List<User_Extension__c>();
         userExtList = [SELECT Id, User__c, External_ID__c, Team_Structure__c, Team_Structure__r.RC_Code__c, Team_Structure__r.AH_RC_CODE__c, Team_Structure__r.NH_RC_CODE__c FROM User_Extension__c WHERE User__c IN :accountOwnerSet];
         List<Team_Structure__c> teamStructureList = new List<Team_Structure__c>();
-        teamStructureList = [SELECT Id, External_ID__c FROM Team_Structure__c];
+        teamStructureList = [SELECT Id, External_ID__c, RC_Code__c FROM Team_Structure__c];
 
         Map<String, User_Extension__c> userExtMapByUserId = new Map<String, User_Extension__c>();
         for(User_Extension__c eachUserExt : userExtList) { 
@@ -258,7 +258,8 @@ public class Account_OwnerChange_Service {
 
         Map<String, Id> teamMapByRc = new Map<String, Id>();
         for(Team_Structure__c eachTeam : teamStructureList) { 
-            teamMapByRc.put(eachTeam.External_ID__c, eachTeam.Id);
+            if(eachTeam.RC_Code__c != null)
+                teamMapByRc.put(eachTeam.RC_Code__c, eachTeam.Id);
         }
 
         if(propectRecord == null)
@@ -551,6 +552,7 @@ public class Account_OwnerChange_Service {
                                 }
                             }else if(!eachOpportunity.IsClosed && (eachOpportunity.StageName != GlobalConstants.PARTIAL_LOAN_SETUP && eachOpportunity.StageName!=GlobalConstants.ALL_LOAN_SETUP && eachOpportunity.StageName != GlobalConstants.AUTO_CLOSED && eachOpportunity.StageName != GlobalConstants.CLOSE_LOST)){
                                 // Add Change Owner
+                                System.debug('accounttrigger4');
                                 eachOpportunity.OwnerId = eachMask.ownerUser.Id;
                                 eachOpportunity.Current_Team_Name__c = eachMask.accObj.Current_Team_Name__c;
                                 eachOpportunity.Current_AH_Name__c = eachMask.accObj.Current_AH_Name__c;
@@ -558,6 +560,7 @@ public class Account_OwnerChange_Service {
                                 eachOpportunity.Current_Owner_Extension__c = eachMask.accObj.Current_Owner_Extension__c;
                                 eachOpportunity.Ownership__c = eachMask.accObj.Ownership_Text__c;
                                 eachOpportunity.Port_Pool__c = eachMask.accObj.Port_Pool__c;
+                                System.debug('In account owner change service1');
                             }
                         }
                         break;
@@ -591,6 +594,7 @@ public class Account_OwnerChange_Service {
                                     eachOpportunity.Current_Owner_Extension__c = eachMask.accObj.Current_Owner_Extension__c;
                                     eachOpportunity.Ownership__c = eachMask.accObj.Ownership_Text__c;
                                     eachOpportunity.Port_Pool__c = eachMask.accObj.Port_Pool__c;
+                                    System.debug('In account owner change service2');
                                     toUpdate = true;
                                 }
 

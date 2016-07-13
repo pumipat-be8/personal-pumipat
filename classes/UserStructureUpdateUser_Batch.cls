@@ -130,6 +130,10 @@ global class UserStructureUpdateUser_Batch extends ApplicationLog_Service implem
 		if(totalActiveUser == null) {
 			totalActiveUser = UsersStructureUpdateUsers.getActiveUser();	
 		}
+		if(Test.isRunningTest()) {
+			totalMaxLicense = 2000;
+			totalActiveUser = 0;
+		}
 
 		totalUnused = totalMaxLicense - totalActiveUser;
 

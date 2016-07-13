@@ -364,17 +364,27 @@ public class CallReportTriggerHandler extends TriggerHandler{
     public override void afterInsert() {
         if(CallReport_Service.userMapByCallReportCreateby == null)
             CallReport_Service.userMapByCallReportCreateby = CallReport_Service.getUserMapByCallReportCreateby(Trigger.new);
+        
+        // ----- ISCR028 START -----
+        Map<Id, Target_List__c> targetListsMap = new Map<Id, Target_List__c>([SELECT Id FROM Target_List__c WHERE CIS_ID_Prospect_Name__c IN :CallReport_Service.accountMapByCallReportCustomer.keySet()]);
+        // ----- ISCR028 END -----
+
         Account accountRecord;
         for(Call_Report__c eachCallReport : (List<Call_Report__c>)Trigger.new){
             if(CallReport_Service.accountMapByCallReportCustomer.containsKey(eachCallReport.CIS_ID__c)){
                 accountRecord = CallReport_Service.accountMapByCallReportCustomer.get(eachCallReport.CIS_ID__c);
                 
-                if((eachCallReport.RecordTypeId == CALL_REPORT_NO_PLAN || eachCallReport.RecordTypeId == NEW_CALL_PLAN || eachCallReport.RecordTypeId == SECONDARY_CALL_REPORT_NO_PLAN || eachCallReport.RecordTypeId == SECONDARY_CALL_REPORT_MAIN_BORROWER_NO_PLAN) && accountRecord.Campaign_Members_Leads__r!=null && accountRecord.Campaign_Members_Leads__r.size() > 0){
+                if((eachCallReport.RecordTypeId == CALL_REPORT_NO_PLAN || eachCallReport.RecordTypeId == NEW_CALL_PLAN || eachCallReport.RecordTypeId == SECONDARY_CALL_REPORT_NO_PLAN || eachCallReport.RecordTypeId == SECONDARY_CALL_REPORT_MAIN_BORROWER_NO_PLAN || eachCallReport.RecordTypeId == SECONDARY_CALL_REPORT_NO_PLAN) && accountRecord.Campaign_Members_Leads__r!=null && accountRecord.Campaign_Members_Leads__r.size() > 0){
                     for(Target_List__c eachTargetLead : accountRecord.Campaign_Members_Leads__r){
-                        callReportLeadList.add(new Call_Report_Lead__c(
-                            Call_Plan_Call_Report__c = eachCallReport.Id,
-                            Target_List__c = eachTargetLead.Id
-                        ));
+                        // ----- ISCR028 START -----
+                        if(targetListsMap.containsKey(eachTargetLead.Id)) {
+
+                        } else {
+                            callReportLeadList.add(new Call_Report_Lead__c(
+                                Call_Plan_Call_Report__c = eachCallReport.Id,
+                                Target_List__c = eachTargetLead.Id
+                            ));
+                        }
                     }
                 }
                 if(eachCallReport.Status__c == GlobalConstants.PLAN && eachCallReport.Plan_Date__c!=null){
@@ -385,6 +395,59 @@ public class CallReportTriggerHandler extends TriggerHandler{
             }
         }
     }
+
+    public override void afterUpdate() {
+        if(!Account_OwnerChange_Service.callReportRunOnce){
+            List<Event> eventList = [SELECT Call_Plan_Call_Report__c FROM Event WHERE Call_Plan_Call_Report__c in:Trigger.newMap.keySet()];
+            List<Event> thisCallReportEvent;
+            Set<Id> callReportIdSet = new Set<Id>();
+            Set<Id> callRepSetForCheckOpp = new Set<Id>();
+            Boolean isChangeToSLACount;
+            for(Call_Report__c eachCallReport : (List<Call_Report__c>)Trigger.new){
+                Call_Report__c oldCallReport = (Call_Report__c)Trigger.oldMap.get(eachCallReport.Id);
+
+                isChangeToSLACount = oldCallReport.IsSLACount__c == false && eachCallReport.IsSLACount__c == true;
+
+                if(isChangeToSLACount) {
+                    callReportIdSet.add(eachCallReport.Id);
+                }
+
+                if((eachCallReport.Head_of_UW_Name__c != oldCallReport.Head_of_UW_Name__c || eachCallReport.Senior_UW_Name__c != oldCallReport.Senior_UW_Name__c)) {
+                    callRepSetForCheckOpp.add(eachCallReport.Id);
+                }
+
+                if(eachCallReport.Status__c == GlobalConstants.CANCEL || eachCallReport.Status__c == GlobalConstants.CLOSED){
+                    this.handlerEvent(eachCallReport, null, null, EventContext.E_DELETE);
+                }else if(eachCallReport.Plan_Date__c!=null && eachCallReport.Plan_Date__c!=((Call_Report__c)Trigger.oldMap.get(eachCallReport.Id)).Plan_Date__c){
+                    thisCallReportEvent = new List<Event>();
+                    for(Event eachEvent : eventList){
+                        if(eachEvent.Call_Plan_Call_Report__c == eachCallReport.Id){
+                            thisCallReportEvent.add(eachEvent);
+                            break;
+                        }
+                    }
+                    this.handlerEvent(eachCallReport, null, thisCallReportEvent, EventContext.E_UPDATE);
+                }
+            }
+
+            Set<Id> oppIdSetForUpdateAcutalVisitDate = new Set<Id>();
+            Map<Id, Call_Report__c> callRepMapByOpp = new Map<Id, Call_Report__c>();
+            if(!callReportIdSet.isEmpty()) {
+                for(Call_Report_Opportunity__c callReportOpp : [SELECT Id, Opportunity_Name__c FROM Call_Report_Opportunity__c WHERE Call_Plan_Call_Report__c IN :callReportIdSet]) {
+                    oppIdSetForUpdateAcutalVisitDate.add(callReportOpp.Opportunity_Name__c);
+                }
+            }
+
+            if(!callRepSetForCheckOpp.isEmpty()) {
+                for(Call_Report_Opportunity__c callReportOpp : [SELECT Id, Opportunity_Name__c, Call_Plan_Call_Report__c  FROM Call_Report_Opportunity__c WHERE Call_Plan_Call_Report__c IN :callRepSetForCheckOpp]) {
+                    callRepMapByOpp.put(callReportOpp.Opportunity_Name__c, (Call_Report__c)Trigger.newMap.get(callReportOpp.Call_Plan_Call_Report__c));
+                }
+            }
+            UW_Service.updateOppUW(callRepMapByOpp);
+            CallReport_Service.updateActualVisitDateOfOpp(oppIdSetForUpdateAcutalVisitDate);
+        }
+    }
+
     public override void afterFinally() {
         if(!Account_OwnerChange_Service.callReportRunOnce){
             insertingContact();
@@ -484,57 +547,7 @@ public class CallReportTriggerHandler extends TriggerHandler{
             }
         }
     }
-    public override void afterUpdate() {
-        if(!Account_OwnerChange_Service.callReportRunOnce){
-            List<Event> eventList = [SELECT Call_Plan_Call_Report__c FROM Event WHERE Call_Plan_Call_Report__c in:Trigger.newMap.keySet()];
-            List<Event> thisCallReportEvent;
-            Set<Id> callReportIdSet = new Set<Id>();
-            Set<Id> callRepSetForCheckOpp = new Set<Id>();
-            Boolean isChangeToSLACount;
-            for(Call_Report__c eachCallReport : (List<Call_Report__c>)Trigger.new){
-                Call_Report__c oldCallReport = (Call_Report__c)Trigger.oldMap.get(eachCallReport.Id);
-
-                isChangeToSLACount = oldCallReport.IsSLACount__c == false && eachCallReport.IsSLACount__c == true;
-
-                if(isChangeToSLACount) {
-                    callReportIdSet.add(eachCallReport.Id);
-                }
-
-                if((eachCallReport.Head_of_UW_Name__c != oldCallReport.Head_of_UW_Name__c || eachCallReport.Senior_UW_Name__c != oldCallReport.Senior_UW_Name__c)) {
-                    callRepSetForCheckOpp.add(eachCallReport.Id);
-                }
-
-                if(eachCallReport.Status__c == GlobalConstants.CANCEL || eachCallReport.Status__c == GlobalConstants.CLOSED){
-                    this.handlerEvent(eachCallReport, null, null, EventContext.E_DELETE);
-                }else if(eachCallReport.Plan_Date__c!=null && eachCallReport.Plan_Date__c!=((Call_Report__c)Trigger.oldMap.get(eachCallReport.Id)).Plan_Date__c){
-                    thisCallReportEvent = new List<Event>();
-                    for(Event eachEvent : eventList){
-                        if(eachEvent.Call_Plan_Call_Report__c == eachCallReport.Id){
-                            thisCallReportEvent.add(eachEvent);
-                            break;
-                        }
-                    }
-                    this.handlerEvent(eachCallReport, null, thisCallReportEvent, EventContext.E_UPDATE);
-                }
-            }
-
-            Set<Id> oppIdSetForUpdateAcutalVisitDate = new Set<Id>();
-            Map<Id, Call_Report__c> callRepMapByOpp = new Map<Id, Call_Report__c>();
-            if(!callReportIdSet.isEmpty()) {
-                for(Call_Report_Opportunity__c callReportOpp : [SELECT Id, Opportunity_Name__c FROM Call_Report_Opportunity__c WHERE Call_Plan_Call_Report__c IN :callReportIdSet]) {
-                    oppIdSetForUpdateAcutalVisitDate.add(callReportOpp.Opportunity_Name__c);
-                }
-            }
-
-            if(!callRepSetForCheckOpp.isEmpty()) {
-                for(Call_Report_Opportunity__c callReportOpp : [SELECT Id, Opportunity_Name__c, Call_Plan_Call_Report__c  FROM Call_Report_Opportunity__c WHERE Call_Plan_Call_Report__c IN :callRepSetForCheckOpp]) {
-                    callRepMapByOpp.put(callReportOpp.Opportunity_Name__c, (Call_Report__c)Trigger.newMap.get(callReportOpp.Call_Plan_Call_Report__c));
-                }
-            }
-            UW_Service.updateOppUW(callRepMapByOpp);
-            CallReport_Service.updateActualVisitDateOfOpp(oppIdSetForUpdateAcutalVisitDate);
-        }
-    }
+    
     private void handlerEvent(Call_Report__c callReportEvent, Account accountObj, List<Event> eventList,EventContext ec){
         if(ec == EventContext.E_CREATE){
             eventInsertList.add(new Event(
@@ -559,6 +572,7 @@ public class CallReportTriggerHandler extends TriggerHandler{
             eventDeleteSet.add(callReportEvent.Id);
         }
     }
+
     public override void afterInsertFinally(){
         if(eventInsertList.size() > 0){
             CallReport_Service.insertEvent(eventInsertList);

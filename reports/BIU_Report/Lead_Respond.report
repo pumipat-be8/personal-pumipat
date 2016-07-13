@@ -69,13 +69,13 @@
         <field>BucketField_64393457</field>
     </columns>
     <columns>
-        <field>Target_List__c.Associated_Leads__r$Call_Plan_Call_Report__c.Actual_Visit_Date__c</field>
+        <field>Target_List__c.Call_Reports_Leads__r$Call_Plan_Call_Report__c.Actual_Visit_Date__c</field>
     </columns>
     <columns>
-        <field>Target_List__c.Associated_Leads__r$Call_Plan_Call_Report__c.Status__c</field>
+        <field>Target_List__c.Call_Reports_Leads__r$Call_Plan_Call_Report__c.Status__c</field>
     </columns>
     <columns>
-        <field>Target_List__c.Associated_Leads__r$CreatedBy</field>
+        <field>Target_List__c.Call_Reports_Leads__r$CreatedBy</field>
     </columns>
     <columns>
         <field>Target_List__c$Register__c</field>

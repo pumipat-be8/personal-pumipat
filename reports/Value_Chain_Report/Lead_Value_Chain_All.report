@@ -37,7 +37,7 @@
         <field>Target_List__c$Personalised_Message__c</field>
     </columns>
     <columns>
-        <field>Target_List__c.Associated_Leads__r$Status__c</field>
+        <field>Target_List__c.Call_Reports_Leads__r$Status__c</field>
     </columns>
     <filter>
         <criteriaItems>

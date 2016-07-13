@@ -4113,6 +4113,27 @@ IF ( AND ( Plan__c = 0 , Actual_Visit__c = 1 ) , &quot;2&quot; , &quot;99&quot;)
             <group>SME_UW</group>
         </sharedTo>
     </listViews>
+    <listViews>
+        <fullName>all</fullName>
+        <columns>NAME</columns>
+        <columns>Business_Code__c</columns>
+        <columns>CIS_ID__c</columns>
+        <columns>Completed__c</columns>
+        <columns>Reason__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>Total_Score__c</columns>
+        <columns>Team_Name__c</columns>
+        <columns>Status__c</columns>
+        <columns>Status_Display__c</columns>
+        <columns>Customer_Owner__c</columns>
+        <columns>Number_of_Opp__c</columns>
+        <columns>Plan_Amount__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>all</label>
+        <language>en_US</language>
+    </listViews>
     <nameField>
         <displayFormat>{0000000000}</displayFormat>
         <label>Call Plan / Call Report</label>

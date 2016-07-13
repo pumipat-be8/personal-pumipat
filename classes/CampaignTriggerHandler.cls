@@ -169,7 +169,7 @@ public class CampaignTriggerHandler extends TriggerHandler {
                 List<Target_List__c> targetList = new List<Target_List__c>();
                 targetList = [SELECT Id, CIS_ID_Prospect_Name__c FROM Target_List__c WHERE Lead_Campaign__c IN :activeLeadIds];
                 if(!targetList.isEmpty())
-                    CampaignTriggerHandlerService.updateTargetlistStatusFromLatestOpp(targetList);
+                    CampaignLead_Service.updateTargetlistStatusFromLatestOpp(targetList);
             }
         }
     }

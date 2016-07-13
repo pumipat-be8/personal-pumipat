@@ -79,7 +79,8 @@ global class SME_FixAccountPermanentOwner_Batch extends ApplicationLog_Service i
                         eachAccount = setPermanentOwner(ownerUser, eachAccount);
                         if(eachAccount == null) continue;
                     }
-                } else if(eachAccount.Port_Pool__c == null && eachAccount.Ownership_Text__c == GlobalConstants.OWNERSHIP_TEMPORARY) { // Converted Customer
+                } else if(eachAccount.Port_Pool__c == null && (eachAccount.Ownership_Text__c == null || eachAccount.Ownership_Text__c == GlobalConstants.OWNERSHIP_TEMPORARY)) { // Converted Customer
+                    eachAccount.Ownership_Text__c = GlobalConstants.OWNERSHIP_TEMPORARY;
                     eachAccount.Permanent_Owner_Extension__c = null;
                     eachAccount.Permanent_Team_Name__c = null;
                     eachAccount.Permanent_AH_Name__c = null; 

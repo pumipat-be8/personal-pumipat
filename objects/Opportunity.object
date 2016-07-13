@@ -209,6 +209,17 @@ $User.RC_Code__c &amp;
         <type>Date</type>
     </fields>
     <fields>
+        <fullName>Allow_Backward_Stage__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Checked Check box if want Backward Stage</description>
+        <externalId>false</externalId>
+        <label>Allow Backward Stage</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>Amount</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>true</trackHistory>
@@ -1945,6 +1956,15 @@ IF ( OR ( Amount_Report__c &lt;&gt; 0 , TEXT( Actual_Visit_Date__c ) &lt;&gt; &q
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Opp_Owner__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( Account.OwnerId = OwnerId ,True,False)</formula>
+        <label>Opp Owner</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>Opportunity_Amount_s__c</fullName>
         <externalId>false</externalId>
         <formula>IF(TEXT(StageName)=&quot;Create Write Up&quot;,  Amount  ,0)</formula>
@@ -2317,6 +2337,35 @@ IF( AND(Creator_Segment__c =&quot;SE&quot;, L1day__c &gt; 10), &quot;เกิ�
         <type>Currency</type>
     </fields>
     <fields>
+        <fullName>Request_Process_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Request Process Name</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Override Setup</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Closed Lost</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Deleted Opportunity</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Backward Stage</fullName>
+                <default>false</default>
+            </picklistValues>
+            <restrictedPicklist>true</restrictedPicklist>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
         <fullName>Requested_Amount__c</fullName>
         <description>ไม่ใช้แล้ว เปลี่ยนไปใช้ของ SP แทน</description>
         <externalId>false</externalId>
@@ -2463,10 +2512,10 @@ IF(OR(TEXT(StageName)=&quot;Waiting for Credit Approval&quot;,TEXT(StageName)=&q
             <picklistValues>
                 <fullName>Partial Loan Setup</fullName>
                 <default>false</default>
-                <closed>true</closed>
-                <forecastCategory>Closed</forecastCategory>
+                <closed>false</closed>
+                <forecastCategory>Pipeline</forecastCategory>
                 <probability>90</probability>
-                <won>true</won>
+                <won>false</won>
             </picklistValues>
             <picklistValues>
                 <fullName>All Loan Setup</fullName>
@@ -2498,6 +2547,15 @@ IF(OR(TEXT(StageName)=&quot;Waiting for Credit Approval&quot;,TEXT(StageName)=&q
                 <closed>true</closed>
                 <forecastCategory>Omitted</forecastCategory>
                 <probability>0</probability>
+                <won>false</won>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Backward Stage</fullName>
+                <default>false</default>
+                <description>RM require to backward previous stage</description>
+                <closed>false</closed>
+                <forecastCategory>Pipeline</forecastCategory>
+                <probability>50</probability>
                 <won>false</won>
             </picklistValues>
             <sorted>false</sorted>
@@ -3754,6 +3812,25 @@ IF(OR(TEXT(StageName)=&quot;	Auto Closed&quot;, TEXT(StageName)=&quot;Case is Re
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Request_Process_Name__c</picklist>
+            <values>
+                <fullName>Backward Stage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed Lost</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deleted Opportunity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Override Setup</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Submission_Channel__c</picklist>
             <values>
                 <fullName>CMAS</fullName>
@@ -3994,6 +4071,25 @@ IF(OR(TEXT(StageName)=&quot;	Auto Closed&quot;, TEXT(StageName)=&quot;Case is Re
             </values>
             <values>
                 <fullName>เส%E0%B8%B5ยช%E0%B8%B5ว%E0%B8%B4ต %2F เล%E0%B8%B4กก%E0%B8%B4จการ</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Request_Process_Name__c</picklist>
+            <values>
+                <fullName>Backward Stage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed Lost</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deleted Opportunity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Override Setup</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -4250,6 +4346,25 @@ IF(OR(TEXT(StageName)=&quot;	Auto Closed&quot;, TEXT(StageName)=&quot;Case is Re
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Request_Process_Name__c</picklist>
+            <values>
+                <fullName>Backward Stage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed Lost</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deleted Opportunity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Override Setup</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Submission_Channel__c</picklist>
             <values>
                 <fullName>CMAS</fullName>
@@ -4502,6 +4617,25 @@ IF(OR(TEXT(StageName)=&quot;	Auto Closed&quot;, TEXT(StageName)=&quot;Case is Re
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Request_Process_Name__c</picklist>
+            <values>
+                <fullName>Backward Stage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed Lost</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deleted Opportunity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Override Setup</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Submission_Channel__c</picklist>
             <values>
                 <fullName>CMAS</fullName>
@@ -4749,6 +4883,25 @@ IF(OR(TEXT(StageName)=&quot;	Auto Closed&quot;, TEXT(StageName)=&quot;Case is Re
             </values>
             <values>
                 <fullName>เส%E0%B8%B5ยช%E0%B8%B5ว%E0%B8%B4ต %2F เล%E0%B8%B4กก%E0%B8%B4จการ</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Request_Process_Name__c</picklist>
+            <values>
+                <fullName>Backward Stage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed Lost</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Deleted Opportunity</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Override Setup</fullName>
                 <default>false</default>
             </values>
         </picklistValues>

@@ -117,31 +117,31 @@
         <field>Target_List__c$Customer_Owner__c</field>
     </columns>
     <columns>
-        <field>Target_List__c.Associated_Leads__r$Call_Plan_Call_Report__c</field>
+        <field>Target_List__c.Call_Reports_Leads__r$Call_Plan_Call_Report__c</field>
     </columns>
     <columns>
-        <field>Target_List__c.Associated_Leads__r$Call_Plan_Call_Report__c.Creator_FullName__c</field>
+        <field>Target_List__c.Call_Reports_Leads__r$Call_Plan_Call_Report__c.Creator_FullName__c</field>
     </columns>
     <columns>
-        <field>Target_List__c.Associated_Leads__r$Call_Plan_Call_Report__c.Status_Display__c</field>
+        <field>Target_List__c.Call_Reports_Leads__r$Call_Plan_Call_Report__c.Status_Display__c</field>
     </columns>
     <columns>
-        <field>Target_List__c.Associated_Leads__r$Call_Plan_Call_Report__c.Contact_Channel__c</field>
+        <field>Target_List__c.Call_Reports_Leads__r$Call_Plan_Call_Report__c.Contact_Channel__c</field>
     </columns>
     <columns>
-        <field>Target_List__c.Associated_Leads__r$Call_Plan_Call_Report__c.Actual_Visit_Date__c</field>
+        <field>Target_List__c.Call_Reports_Leads__r$Call_Plan_Call_Report__c.Actual_Visit_Date__c</field>
     </columns>
     <columns>
-        <field>Target_List__c.Associated_Leads__r$Call_Plan_Call_Report__c.Visit_Objective__c</field>
+        <field>Target_List__c.Call_Reports_Leads__r$Call_Plan_Call_Report__c.Visit_Objective__c</field>
     </columns>
     <columns>
-        <field>Target_List__c.Associated_Leads__r$Call_Plan_Call_Report__c.Offer_Interest__c</field>
+        <field>Target_List__c.Call_Reports_Leads__r$Call_Plan_Call_Report__c.Offer_Interest__c</field>
     </columns>
     <columns>
-        <field>Target_List__c.Associated_Leads__r$Call_Plan_Call_Report__c.Reason__c</field>
+        <field>Target_List__c.Call_Reports_Leads__r$Call_Plan_Call_Report__c.Reason__c</field>
     </columns>
     <columns>
-        <field>Target_List__c.Associated_Leads__r$Call_Plan_Call_Report__c.Memo__c</field>
+        <field>Target_List__c.Call_Reports_Leads__r$Call_Plan_Call_Report__c.Memo__c</field>
     </columns>
     <filter>
         <criteriaItems>

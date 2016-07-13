@@ -347,7 +347,8 @@ private class SME_PrepareOwnershipAssignment_Test {
 
             Team_Structure__c tsNh = new Team_Structure__c(
                 RC_Code__c = newNHRCCode,
-                External_ID__c = newNHRCCode
+                External_ID__c = newNHRCCode,
+                Name = 'เครือข่ายลูกค้าผู้ประกอบการ 2 tsNh'
             );
             insert tsNh;
 

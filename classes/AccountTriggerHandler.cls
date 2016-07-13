@@ -53,7 +53,9 @@ public class AccountTriggerHandler extends TriggerHandler{
     }
     public override void beforeUpdate() {
         Account oldRecord;
+        System.debug(LoggingLevel.INFO,'In account0');
         if(sa!=null){
+            System.debug('In account1');
             Set<Id> accSegmentUpdatedSet = new Set<Id>();
             for(Account eachAccount : (List<Account>)Trigger.new){
                 if(eachAccount.Customer_Owner_Release_Flag__c){
@@ -63,7 +65,9 @@ public class AccountTriggerHandler extends TriggerHandler{
 
                     if(eachAccount.RecordTypeId == GlobalUtility.getRecordTypeAccountIdByName(GlobalConstants.SME_PROSPECT)) {
                         eachAccount.OwnerId = sa.User_Record_ID__c;
+                        System.debug('In account2');
                     } else {
+
                         Ownership_Service.releaseOwnership(eachAccount);
                     }
                 }
@@ -99,11 +103,14 @@ public class AccountTriggerHandler extends TriggerHandler{
         maskAccountListForPortPool = new List<Account_MaskModel>();
         for(Account eachAccount : (List<Account>)Trigger.new){
             oldRecord = (Account)Trigger.oldMap.get(eachAccount.Id);
-
+            System.debug(LoggingLevel.INFO,'accounttrigger1');
+            System.debug(LoggingLevel.INFO,''+eachAccount.Delete_Flag__c);
+            System.debug(LoggingLevel.INFO,''+eachAccount.OwnerId);
+            System.debug(LoggingLevel.INFO,''+oldRecord.OwnerId);
             if(eachAccount.Delete_Flag__c == false && eachAccount.OwnerId != null && oldRecord.OwnerId != eachAccount.OwnerId ) {
                 eachAccount.Temporary_Ownership_Flag__c = Account_OwnerChange_Service.temporaryOwnershipFlag;
                 eachAccount.Customer_Owner_Changed_Date__c = System.Today();
-
+                System.debug('accounttrigger2');
                 Account_MaskModel accountMaskModel = new Account_MaskModel(eachAccount);
                 accountMaskModel.temporaryNewOwnerUserId = eachAccount.OwnerId;
                 accountMaskModel.temporaryPreviousOwnerUserId = oldRecord.OwnerId;
@@ -112,7 +119,7 @@ public class AccountTriggerHandler extends TriggerHandler{
                     eachAccount.Previous_Owner_Emp_ID__c = oldRecord.Owner_Emp_ID__c;
                     eachAccount.Previous_Owner_Segment_Code__c = oldRecord.Primary_Segment_Code__c;
                     eachAccount.Port_Pool_Flag_Previous_Owner__c = oldRecord.Port_Pool__c;
-
+                    System.debug('accounttrigger3');
                     // Previous Extension Set
                     eachAccount.Previous_Owner_Extension__c = oldRecord.Current_Owner_Extension__c;
                     eachAccount.Previous_AH_Name__c = oldRecord.Current_AH_Name__c;
@@ -164,6 +171,7 @@ public class AccountTriggerHandler extends TriggerHandler{
         }
     }
     public override void afterUpdateFinally() {
+        TriggerHandler.bypass('AccountTriggerHandler');
         Account_OwnerChange_Service.accountTriggerMap = (Map<Id,Account>)Trigger.newMap;
         if(deletedAccountSet.size() > 0){
             delete [SELECT Id FROM Account WHERE Id in:deletedAccountSet];
@@ -189,5 +197,7 @@ public class AccountTriggerHandler extends TriggerHandler{
         }
         if(customerRequestList != null && customerRequestList.size() > 0)
             update customerRequestList;
+
+        TriggerHandler.clearBypass('AccountTriggerHandler');
     }
 }

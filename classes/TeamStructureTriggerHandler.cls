@@ -1,24 +1,29 @@
 public class TeamStructureTriggerHandler extends TriggerHandler{
 
+	private static Map<String, CollaborationGroup>  mapCollaborationGroupMapByName;
 	public override void allAfter() {
         //for test class
         if(TestUtils.isRunningTest()){
             User_Service.allUserMap = null;
-            GroupChatterService.mapCollaborationGroupMapByName = null;
+            SME_GroupChatterService.mapCollaborationGroupMapByName = null;
         }
 
         if(User_Service.allUserMap == null){
             User_Service.allUserMap = new Map<Id, User>([SELECT Id, Name, Status__c, FirstName, LastName, Profile.Name, Employee_ID__c, RC_Code__c, IsActive, ManagerId, Manager.ManagerId, Manager.Manager.ManagerId,Manager.RC_Code__c, Manager.Manager.RC_Code__c, Manager.Manager.Manager.RC_Code__c, Manager.IsActive, Manager.Manager.IsActive, Manager.Manager.Manager.IsActive,Segment__c FROM User]);
         }
 
-        if(GroupChatterService.mapCollaborationGroupMapByName == null){
-            GroupChatterService.mapCollaborationGroupMapByName = GroupChatterService.getAllCollaborationGroupMapByName();
+        if(SME_GroupChatterService.mapCollaborationGroupMapByName == null){
+            SME_GroupChatterService.mapCollaborationGroupMapByName = SME_GroupChatterService.getAllCollaborationGroupMapByName();
         }
 
-        if(GroupChatterService.mapAllGroupMembersByGroupIdAndMemberId == null){
-            GroupChatterService.mapAllGroupMembersByGroupIdAndMemberId = GroupChatterService.getAllGroupMembersByGroupIdAndMemberId();
+        if(SME_GroupChatterService.mapAllGroupMembersByGroupIdAndMemberId == null){
+            SME_GroupChatterService.mapAllGroupMembersByGroupIdAndMemberId = SME_GroupChatterService.getAllGroupMembersByGroupIdAndMemberId();
         }
     }
+
+    public override void allBefore() {
+		checkNhGroupNameCondition();
+	}
 
 	public override void afterUpdate() {
 		updateGroupChatter();
@@ -26,6 +31,25 @@ public class TeamStructureTriggerHandler extends TriggerHandler{
 
 	public override void afterInsert() {
 		createGroupChatter();
+	}
+
+	public override void afterDelete() {
+		deleteGroupChatter();
+	}
+
+	private void deleteGroupChatter(){
+		List<CollaborationGroup> listDeleteCollaborationGroup = new List<CollaborationGroup>();
+		for(Team_Structure__c eachTeam : (List<Team_Structure__c>)Trigger.old){
+			String groupName = SME_GroupChatterService.createGroupNameFromTeamNameAndSegment(eachTeam.Name,eachTeam.Segment__c);
+			CollaborationGroup deleteCollaborationGroup = SME_GroupChatterService.deleteGroupChatter(groupName);
+			if(deleteCollaborationGroup != null){
+				listDeleteCollaborationGroup.add(deleteCollaborationGroup);
+			}
+		}
+
+		if(!listDeleteCollaborationGroup.isEmpty()){
+			delete listDeleteCollaborationGroup;
+		}
 	}
 
 	private Boolean isNetworkChangeTeamName(Team_Structure__c newTeam , Team_Structure__c oldTeam){
@@ -42,6 +66,66 @@ public class TeamStructureTriggerHandler extends TriggerHandler{
 		return false;
 	}
 
+	private void checkNhGroupNameCondition(){
+		Map<String, String> mapReplaceTeamNameMapBySegment = new Map<String, String>();
+		for(Chatter_Group_Name__c replaceGroupName : Chatter_Group_Name__c.getall().values()){
+			mapReplaceTeamNameMapBySegment.put(replaceGroupName.Name, replaceGroupName.replace_from__c);
+		}
+		if(mapCollaborationGroupMapByName == null){
+			mapCollaborationGroupMapByName = SME_GroupChatterService.getAllCollaborationGroupMapByName();
+		}
+		for(Team_Structure__c eachTeam : (List<Team_Structure__c>)Trigger.new){
+			if(eachTeam.Type__c == 'Network'){
+				String groupName = SME_GroupChatterService.createGroupNameFromTeamNameAndSegment(eachTeam.Name,eachTeam.Segment__c);
+				
+				if(Trigger.isInsert || Trigger.isUpdate){
+					if(isGroupNameLengthMoreThan40(groupName) || eachTeam.Segment__c == null){
+						eachTeam.addError(System.Label.TeamStructure_Name_Error);
+					}
+				}
+				//else if(isTeamStructureNameAndSegmentDoesNotMatch(groupName,eachTeam.Segment__c)){
+				//	eachTeam.addError(System.Label.TeamStructure_Segment_Error);
+				//}
+
+				if(Trigger.isInsert){
+					if(mapCollaborationGroupMapByName.containsKey(groupName)){
+						eachTeam.addError(System.Label.TeamStructure_Dup_Name_Error);
+					}
+				}
+			}
+		}
+	}
+
+	private Boolean isGroupNameLengthMoreThan40(String groupName){
+		Boolean result = false;
+		if(groupName.length() > 40){
+			return true;
+		}
+		return false;
+	}
+
+	//private Boolean isTeamStructureNameAndSegmentDoesNotMatch(String groupName,String teamSegment){
+	//	String convertedTeamSegment = getConvertTeamSegment(teamSegment);
+	//	if(!groupName.contains(convertedTeamSegment)){
+	//		return true;
+	//	}
+	//	return false;
+	//}
+
+	//private String getConvertTeamSegment(String teamSegment){
+	//	String convertedTeamSegment;
+	//	if(teamSegment == 'Small'){
+	//		convertedTeamSegment = 'SE';
+	//	}else if(teamSegment == 'Medium'){
+	//		convertedTeamSegment = 'ME';
+	//	}else if(teamSegment == null){
+	//		convertedTeamSegment = '';
+	//	}else{
+	//		convertedTeamSegment = teamSegment;
+	//	}
+	//	return convertedTeamSegment;
+	//}
+
 	private void updateGroupChatter(){
 		String groupName;
 		CollaborationGroup collaborationGroup;
@@ -53,13 +137,13 @@ public class TeamStructureTriggerHandler extends TriggerHandler{
 			Team_Structure__c oldTeam = (Team_Structure__c) Trigger.oldMap.get(eachTeam.Id);
 
 			if(isNetworkChangeTeamName(eachTeam,oldTeam)){
-				collaborationGroup = GroupChatterService.getUpdatedGroupName(eachTeam,oldTeam);
+				collaborationGroup = SME_GroupChatterService.getUpdatedGroupName(eachTeam,oldTeam);
 				if(collaborationGroup != null){
 					listUpdateCollaborationGroup.add(collaborationGroup);
 				}
 			}else if(isChangeTypeToNetwork(eachTeam,oldTeam)){
-				groupName = GroupChatterService.createGroupNameFromTeamNameAndSegment(eachTeam.Name,eachTeam.Segment__c);
-				collaborationGroup = GroupChatterService.createGroupChatter(groupName);
+				groupName = SME_GroupChatterService.createGroupNameFromTeamNameAndSegment(eachTeam.Name,eachTeam.Segment__c);
+				collaborationGroup = SME_GroupChatterService.createGroupChatter(groupName);
 				if(collaborationGroup != null){
 					listInsertCollaborationGroup.add(collaborationGroup);
 				}
@@ -72,7 +156,7 @@ public class TeamStructureTriggerHandler extends TriggerHandler{
 		if(!listInsertCollaborationGroup.isEmpty()){
 			insert listInsertCollaborationGroup;
 			for(CollaborationGroup eachGroup : listInsertCollaborationGroup){
-				listInsertCollaborationGroupManager.addAll(GroupChatterService.getListManager(eachGroup));
+				listInsertCollaborationGroupManager.addAll(SME_GroupChatterService.getListManager(eachGroup));
 			}
 		}
 
@@ -88,8 +172,8 @@ public class TeamStructureTriggerHandler extends TriggerHandler{
 		List<CollaborationGroup> listCollaborationGroup = new List<CollaborationGroup>();
 		for(Team_Structure__c eachTeam : (List<Team_Structure__c>)Trigger.new){
 			if(eachTeam.Type__c == 'Network'){
-				groupName = GroupChatterService.createGroupNameFromTeamNameAndSegment(eachTeam.Name,eachTeam.Segment__c);
-				collaborationGroup = GroupChatterService.createGroupChatter(groupName);
+				groupName = SME_GroupChatterService.createGroupNameFromTeamNameAndSegment(eachTeam.Name,eachTeam.Segment__c);
+				collaborationGroup = SME_GroupChatterService.createGroupChatter(groupName);
 				listCollaborationGroup.add(collaborationGroup);
 			}
 		}
@@ -98,7 +182,7 @@ public class TeamStructureTriggerHandler extends TriggerHandler{
 			insert listCollaborationGroup;
 		}
 		for(CollaborationGroup eachGroup : listCollaborationGroup){
-			listInsertCollaborationGroupManager.addAll(GroupChatterService.getListManager(eachGroup));
+			listInsertCollaborationGroupManager.addAll(SME_GroupChatterService.getListManager(eachGroup));
 		}
 		if(!listInsertCollaborationGroupManager.isEmpty()){
 			insert listInsertCollaborationGroupManager;

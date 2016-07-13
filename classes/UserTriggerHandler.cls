@@ -70,14 +70,14 @@ public class UserTriggerHandler extends TriggerHandler{
         }
 
         if(TestUtils.isRunningTest()){
-            GroupChatterService.mapCollaborationGroupMapByName = null;
+            SME_GroupChatterService.mapCollaborationGroupMapByName = null;
         }
-        if(GroupChatterService.mapCollaborationGroupMapByName == null){
-            GroupChatterService.mapCollaborationGroupMapByName = GroupChatterService.getAllCollaborationGroupMapByName();
+        if(SME_GroupChatterService.mapCollaborationGroupMapByName == null){
+            SME_GroupChatterService.mapCollaborationGroupMapByName = SME_GroupChatterService.getAllCollaborationGroupMapByName();
         }
 
-        if(GroupChatterService.mapAllGroupMembersByGroupIdAndMemberId == null){
-            GroupChatterService.mapAllGroupMembersByGroupIdAndMemberId = GroupChatterService.getAllGroupMembersByGroupIdAndMemberId();
+        if(SME_GroupChatterService.mapAllGroupMembersByGroupIdAndMemberId == null){
+            SME_GroupChatterService.mapAllGroupMembersByGroupIdAndMemberId = SME_GroupChatterService.getAllGroupMembersByGroupIdAndMemberId();
         }
     }
 
@@ -150,10 +150,10 @@ public class UserTriggerHandler extends TriggerHandler{
             }
 
             if(!eachUser.IsActive){
-                GroupChatterService.addDeleteUserToList(eachUser, listDeleteMemberFromGroup);
-            }else if(GroupChatterService.isUserChangeRcCode(eachUser,oldUser)){
-                GroupChatterService.addDeleteUserToList(oldUser, listDeleteMemberFromGroup);
-                GroupChatterService.addUserToList(eachUser, listInsertMemberToGroup);
+                SME_GroupChatterService.addDeleteUserToList(eachUser, listDeleteMemberFromGroup);
+            }else if(SME_GroupChatterService.isUserChangeNhRcCode(User_Service.allUserMap.get(eachUser.Id),User_Service.allOldUserMap.get(oldUser.Id))){
+                SME_GroupChatterService.addDeleteUserToList(oldUser, listDeleteMemberFromGroup);
+                SME_GroupChatterService.addUserToList(eachUser, listInsertMemberToGroup);
             }
 
         }
@@ -199,7 +199,7 @@ public class UserTriggerHandler extends TriggerHandler{
                         eachTeam.OwnerId = eachUser.Id;
                         updateTeamList.add(eachTeam);
                     }
-                    GroupChatterService.addUserToList(eachUser, listInsertMemberToGroup);
+                    SME_GroupChatterService.addUserToList(eachUser, listInsertMemberToGroup);
                 } else {
                     userExt.OwnerId = smeAdmin.User_Record_ID__c;
                 }

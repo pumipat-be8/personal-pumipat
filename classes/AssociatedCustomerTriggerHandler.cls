@@ -6,7 +6,11 @@ public without sharing class AssociatedCustomerTriggerHandler extends TriggerHan
 	public override void afterInsert() {
         List<Associated_Customer__c> associatedCustomerList = Trigger.new;
 
+
         if(associatedCustomerList.size() == 1){
+            Account accountToUpdateTrashPool = [SELECT Id, CIS__c, Trash_Pool_Flag__c FROM Account WHERE Id =: associatedCustomerList.get(0).Customer__c];
+            accountToUpdateTrashPool.Trash_Pool_Flag__c = false;
+            update accountToUpdateTrashPool;
             // Get data from call report
             Call_Report__c newCallReport;
             Call_Report__c getCallReportDetails = [SELECT Actual_Visit_Date__c,Id FROM Call_Report__c where Id =:associatedCustomerList.get(0).Call_Plan_Call_Report__c];

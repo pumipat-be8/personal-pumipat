@@ -9,7 +9,7 @@
 public class OpportunityTriggerHandler extends TriggerHandler{
     private List<Account> accountUpdateList;
     private Map<Id,Account> accountMap;
-    private Map<Id,User> userMapRMTM;
+    private Map<Id,User> userMap;
 
     private User currentUser;
     private User currentUserAH;
@@ -27,11 +27,11 @@ public class OpportunityTriggerHandler extends TriggerHandler{
         String currentYear = (System.now().yearGmt() > 2555)?String.valueOf(System.now().yearGmt()):String.valueOf(System.now().yearGmt()+543);
         String runningNumberString;
 
-        userMapRMTM = new Map<Id,User>([SELECT Id,ManagerId,Manager.ManagerId,Manager.Manager.ManagerId, Profile.Name FROM User WHERE Profile.Name !=: GlobalConstants.SME_ADMIN]);
+        userMap = new Map<Id,User>([SELECT Id,ManagerId,Manager.ManagerId,Manager.Manager.ManagerId, Profile.Name FROM User WHERE Profile.Name !=: GlobalConstants.SME_ADMIN]);
         
         currentUser = [SELECT Id, IsActive,RC_Code__c, AH_RC_Code__c, NH_RC_Code__c, Employee_Id__c, AH_Employee_ID__c, NH_Employee_ID__c FROM User WHERE Id = :UserInfo.getUserId()];
-        currentUserAH = [SELECT Id, IsActive FROM User WHERE Employee_ID__c =: currentUser.AH_Employee_ID__c LIMIT 1];
-        currentUserNH = [SELECT Id, IsActive FROM User WHERE Employee_ID__c =: currentUser.NH_Employee_ID__c LIMIT 1];
+        //currentUserAH = [SELECT Id, IsActive FROM User WHERE Employee_ID__c =: currentUser.AH_Employee_ID__c LIMIT 1];
+        //currentUserNH = [SELECT Id, IsActive FROM User WHERE Employee_ID__c =: currentUser.NH_Employee_ID__c LIMIT 1];
         // Init Team and User Extension
         
         Set<Id> accountOwnerSet = new Set<Id>();
@@ -131,7 +131,7 @@ public class OpportunityTriggerHandler extends TriggerHandler{
                 isChangeOwner = false;
                 
                 Id userIdRelatedToOpportunity = eachOpportunity.OwnerId;
-                User userRelatedToOpportunity = userMapRMTM.get(userIdRelatedToOpportunity);
+                User userRelatedToOpportunity = userMap.get(userIdRelatedToOpportunity);
                 if(userRelatedToOpportunity.Profile.Name == GlobalConstants.SME_RM){
                     eachOpportunity.Current_AH__c = userRelatedToOpportunity.Manager.ManagerId;
                     eachOpportunity.Current_NH__c = userRelatedToOpportunity.Manager.Manager.ManagerId;
@@ -245,17 +245,21 @@ public class OpportunityTriggerHandler extends TriggerHandler{
             Opportunity oldRecord = (Opportunity)Trigger.oldMap.get(eachOpportunity.Id);
             Account accountRecord = Opportunity_Service.accountMap.get(eachOpportunity.AccountId);
             Id userIdRelatedToOpportunity = eachOpportunity.OwnerId;
-            User userRelatedToOpportunity = userMapRMTM.get(userIdRelatedToOpportunity);
-            if(eachOpportunity.OwnerId != oldRecord.OwnerId){
+            User userRelatedToOpportunity = userMap.get(userIdRelatedToOpportunity);
+
+            if(eachOpportunity.OwnerId != oldRecord.OwnerId || eachOpportunity.Current_Team_Name__c != oldRecord.Current_Team_Name__c){
+                System.debug('Opptest change owner');
                 if(userRelatedToOpportunity.Profile.Name == GlobalConstants.SME_RM){
                     eachOpportunity.Current_AH__c = userRelatedToOpportunity.Manager.ManagerId;
                     eachOpportunity.Current_NH__c = userRelatedToOpportunity.Manager.Manager.ManagerId;
                 }
                 if(userRelatedToOpportunity.Profile.Name == GlobalConstants.SME_TM){
+                    System.debug('In TM');
                     eachOpportunity.Current_AH__c = userRelatedToOpportunity.ManagerId;
                     eachOpportunity.Current_NH__c = userRelatedToOpportunity.Manager.ManagerId;
                 }
                 if(userRelatedToOpportunity.Profile.Name == GlobalConstants.SME_AH){
+                    System.debug('In AH');
                     eachOpportunity.Current_AH__c = null;
                     eachOpportunity.Current_NH__c = userRelatedToOpportunity.ManagerId;
                 }

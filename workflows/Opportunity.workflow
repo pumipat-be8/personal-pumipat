@@ -1,6 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
     <alerts>
+        <fullName>Send_Email_Request_for_Backward_Stage_Opportunity_Approval_Approved_AH</fullName>
+        <description>Send Email - Request for Backward Stage Opportunity Approval - Approved AH</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>SME_Email_Templates/Request_for_Backward_Stage_Opportunity_Approval_Approved_AH</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_Email_Request_for_Backward_Stage_Opportunity_Approval_Approved_NH</fullName>
+        <description>Send Email - Request for Backward Stage Opportunity Approval - Approved NH</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>SME_Email_Templates/Request_for_Backward_Stage_Opportunity_Approval_Approved_NH</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_Email_Request_for_Backward_Stage_Opportunity_Approval_Rejected_AH</fullName>
+        <description>Send Email - Request for Backward Stage Opportunity Approval - Rejected AH</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>SME_Email_Templates/Request_for_Backward_Stage_Opportunity_Approval_Rejected_AH</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_Email_Request_for_Backward_Stage_Opportunity_Approval_Rejected_NH</fullName>
+        <description>Send Email - Request for Backward Stage Opportunity Approval - Rejected NH</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>SME_Email_Templates/Request_for_Backward_Stage_Opportunity_Approval_Rejected_NH</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_Email_Request_for_Closed_Lost_Opportunity_Approval_Approved_AH</fullName>
+        <description>Send Email - Request for Closed Lost Opportunity Approval - Approved AH</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>SME_Email_Templates/Request_for_Closed_Lost_Opportunity_Approval_Approved_AH</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_Email_Request_for_Closed_Lost_Opportunity_Approval_Approved_NH</fullName>
+        <description>Send Email - Request for Closed Lost Opportunity Approval - Approved NH</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>SME_Email_Templates/Request_for_Closed_Lost_Opportunity_Approval_Approved_NH</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_Email_Request_for_Closed_Lost_Opportunity_Approval_Rejected_AH</fullName>
+        <description>Send Email - Request for Closed Lost Opportunity Approval - Rejected AH</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>SME_Email_Templates/Request_for_Closed_Lost_Opportunity_Approval_Rejected_AH</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_Email_Request_for_Closed_Lost_Opportunity_Approval_Rejected_NH</fullName>
+        <description>Send Email - Request for Closed Lost Opportunity Approval - Rejected NH</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>SME_Email_Templates/Request_for_Closed_Lost_Opportunity_Approval_Rejected_NH</template>
+    </alerts>
+    <alerts>
         <fullName>Send_Email_Request_for_Delete_Opportunity_Approval_Approved</fullName>
         <description>Send Email - Request for Delete Opportunity Approval - Approved AH</description>
         <protected>false</protected>
@@ -21,6 +101,16 @@
         <template>SME_Email_Templates/Request_for_Delete_Opportunity_Approval_Approved_NH</template>
     </alerts>
     <alerts>
+        <fullName>Send_Email_Request_for_Delete_Opportunity_Approval_Approved_NH2</fullName>
+        <description>Send Email - Request for Delete Opportunity Approval - Approved NH</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>SME_Email_Templates/Request_for_Delete_Opportunity_Approval_NH</template>
+    </alerts>
+    <alerts>
         <fullName>Send_Email_Request_for_Delete_Opportunity_Approval_Rejected_AH</fullName>
         <description>Send Email - Request for Delete Opportunity Approval - Rejected AH</description>
         <protected>false</protected>
@@ -32,6 +122,16 @@
     </alerts>
     <alerts>
         <fullName>Send_Email_Request_for_Delete_Opportunity_Approval_Rejected_NH</fullName>
+        <description>Send Email - Request for Delete Opportunity Approval - Rejected NH</description>
+        <protected>false</protected>
+        <recipients>
+            <type>creator</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>SME_Email_Templates/Request_for_Delete_Opportunity_Approval_Rejected_NH</template>
+    </alerts>
+    <alerts>
+        <fullName>Send_Email_Request_for_Delete_Opportunity_Approval_Rejected_NH2</fullName>
         <description>Send Email - Request for Delete Opportunity Approval - Rejected NH</description>
         <protected>false</protected>
         <recipients>
@@ -70,6 +170,50 @@
         <senderType>CurrentUser</senderType>
         <template>SME_Email_Templates/Request_for_Override_Setup_Approval_Rejected</template>
     </alerts>
+    <fieldUpdates>
+        <fullName>Approve_to_Backward_Stage_Opportunity</fullName>
+        <field>StageName</field>
+        <literalValue>Backward Stage</literalValue>
+        <name>Approve to Backward Stage Opportunity</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approve_to_Backward_Stage_Opportunity2</fullName>
+        <field>Previous_Record_Type__c</field>
+        <name>Approve to Backward Stage Opportunity</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approve_to_Backward_Stage_Opportunity3</fullName>
+        <field>Previous_Stage__c</field>
+        <name>Approve to Backward Stage Opportunity</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approve_to_Closed_Lost_Opportunity</fullName>
+        <field>StageName</field>
+        <literalValue>Closed Lost</literalValue>
+        <name>Approve to Closed Lost Opportunity</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Approve_to_Delete_Opportunity</fullName>
+        <description>After NH or AH approve to delete opportunity the status will be change to approve to delete</description>
+        <field>StageName</field>
+        <literalValue>Deleted Opportunity</literalValue>
+        <name>Approve to Delete Opportunity</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
     <fieldUpdates>
         <fullName>Check_Has_been_Approved</fullName>
         <field>Has_been_approved__c</field>
@@ -475,6 +619,30 @@
         <protected>false</protected>
     </fieldUpdates>
     <fieldUpdates>
+        <fullName>Update_Previous_Record_t_Backward_Stage</fullName>
+        <field>Previous_Record_Type__c</field>
+        <name>Update Previous Record to Backward Stage</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Previous_Record_to_Backward_Stage</fullName>
+        <field>Previous_Record_Type__c</field>
+        <name>Update Previous Record to Backward Stage</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Previous_Stage_t_Backward_Stage</fullName>
+        <field>Previous_Stage__c</field>
+        <name>Update Previous Stage to Backward Stage</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Update_Record_Type_to_Close_Opportunity</fullName>
         <field>RecordTypeId</field>
         <lookupValue>Closed_Credit_Opportunity</lookupValue>
@@ -524,6 +692,32 @@
         <protected>false</protected>
     </fieldUpdates>
     <fieldUpdates>
+        <fullName>Update_Stage_to_Backward_Stage</fullName>
+        <field>StageName</field>
+        <literalValue>Backward Stage</literalValue>
+        <name>Update Stage to Backward Stage Opp</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Stage_to_Backward_Stage_Opp</fullName>
+        <field>StageName</field>
+        <literalValue>Backward Stage</literalValue>
+        <name>Update Stage to Backward Stage Opp</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Stage_to_Backward_Stage_Opp2</fullName>
+        <field>Previous_Stage__c</field>
+        <name>Update Previous Stage to Backward Stage</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Null</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Update_Stage_to_Close_Lost</fullName>
         <field>StageName</field>
         <literalValue>Closed Lost</literalValue>
@@ -533,7 +727,36 @@
         <protected>false</protected>
     </fieldUpdates>
     <fieldUpdates>
+        <fullName>Update_Stage_to_Closed_Lost_Opp</fullName>
+        <description>Update Stage to be Closed Lost Opportunity</description>
+        <field>StageName</field>
+        <literalValue>Closed Lost</literalValue>
+        <name>Update Stage to Closed Lost Opp</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Stage_to_Closed_Lost_Opp2</fullName>
+        <field>StageName</field>
+        <literalValue>Closed Lost</literalValue>
+        <name>Update Stage to Closed Lost Opp</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
         <fullName>Update_Stage_to_Delete_Opp</fullName>
+        <description>Update Stage to be Deleted Opportunity</description>
+        <field>StageName</field>
+        <literalValue>Deleted Opportunity</literalValue>
+        <name>Update Stage to Delete Opp</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Stage_to_Delete_Opp2</fullName>
         <description>Update Stage to be Deleted Opportunity</description>
         <field>StageName</field>
         <literalValue>Deleted Opportunity</literalValue>

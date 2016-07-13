@@ -10,9 +10,9 @@ global class SME_BatchInitialGroupChatter implements Database.Batchable<sObject>
 	}
 	
 	global Database.QueryLocator start(Database.BatchableContext BC) {
-		if(GroupChatterService.mapCollaborationGroupMapByName == null){
-			GroupChatterService.mapCollaborationGroupMapByName = GroupChatterService.getAllCollaborationGroupMapByName();
-		}
+		//if(SME_GroupChatterService.mapCollaborationGroupMapByName == null){
+		//	SME_GroupChatterService.mapCollaborationGroupMapByName = SME_GroupChatterService.getAllCollaborationGroupMapByName();
+		//}
 		List<String> listProfileNameForGroup = new List<String>{GlobalConstants.SME_NH,GlobalConstants.SME_AH,GlobalConstants.SME_TM,GlobalConstants.SME_RM};
 		List<String> listAdmin = new List<String>{System.Label.Chatter_Group_Owner};
 		for(Chatter_Group_Manager__c groupManager : Chatter_Group_Manager__c.getall().values()){
@@ -51,16 +51,16 @@ global class SME_BatchInitialGroupChatter implements Database.Batchable<sObject>
 	
 	private List<CollaborationGroupMember> createGroupMemberAndAdmin(List<Team_Structure__c> listNhTeamStructure){
 		List<CollaborationGroupMember> listNewCollaborationGroupMember = new List<CollaborationGroupMember>();
-		Map<String, CollaborationGroup> mapAllGroupMapByName = GroupChatterService.getAllCollaborationGroupMapByName();
+		Map<String, CollaborationGroup> mapAllGroupMapByName = SME_GroupChatterService.getAllCollaborationGroupMapByName();
 
 		for(Team_Structure__c eachTeam : listNhTeamStructure){
-			String groupName = GroupChatterService.createGroupNameFromTeamNameAndSegment(eachTeam.Name, eachTeam.Segment__c);
+			String groupName = SME_GroupChatterService.createGroupNameFromTeamNameAndSegment(eachTeam.Name, eachTeam.Segment__c);
 			CollaborationGroup eachGroupNh = mapAllGroupMapByName.get(groupName);
-			listNewCollaborationGroupMember.addAll(GroupChatterService.getListManager(eachGroupNh));
+			listNewCollaborationGroupMember.addAll(SME_GroupChatterService.getListManager(eachGroupNh));
 
 			List<User> listUserGroupMapNhRcCode = mapListUserMapByNhRcCode.get(eachTeam.Rc_Code__c);
 			for(User eachUser : listUserGroupMapNhRcCode){
-				CollaborationGroupMember newMember = GroupChatterService.createMemberGroup(eachUser, eachGroupNh);
+				CollaborationGroupMember newMember = SME_GroupChatterService.createMemberGroup(eachUser, eachGroupNh);
 				listNewCollaborationGroupMember.add(newMember);
 				if(eachUser.Profile.Name == GlobalConstants.SME_NH){
 					CollaborationGroupMember newNhMember = createNhMemberToAllNhGroupBySegment(eachUser,mapAllGroupMapByName);
@@ -70,17 +70,17 @@ global class SME_BatchInitialGroupChatter implements Database.Batchable<sObject>
 		}
 		CollaborationGroup allNhSeGroup = mapAllGroupMapByName.get(GlobalConstants.SEGMENT_SE);
 		CollaborationGroup allNhMeGroup = mapAllGroupMapByName.get(GlobalConstants.SEGMENT_ME);
-		listNewCollaborationGroupMember.addAll(GroupChatterService.getListManager(allNhSeGroup));
-		listNewCollaborationGroupMember.addAll(GroupChatterService.getListManager(allNhMeGroup));
+		listNewCollaborationGroupMember.addAll(SME_GroupChatterService.getListManager(allNhSeGroup));
+		listNewCollaborationGroupMember.addAll(SME_GroupChatterService.getListManager(allNhMeGroup));
 		return listNewCollaborationGroupMember;
 	}
 
 	private CollaborationGroupMember createNhMemberToAllNhGroupBySegment(User nhUser,Map<String, CollaborationGroup> mapAllGroupMapByName){
 		CollaborationGroupMember newNhMember;
 		if(nhUser.Segment__c == GlobalConstants.SEGMENT_ME){
-			newNhMember = GroupChatterService.createMemberGroup(nhUser, mapAllGroupMapByName.get(GlobalConstants.SEGMENT_ME));
+			newNhMember = SME_GroupChatterService.createMemberGroup(nhUser, mapAllGroupMapByName.get(GlobalConstants.SEGMENT_ME));
 		}else if(nhUser.Segment__c == GlobalConstants.SEGMENT_SE){
-			newNhMember = GroupChatterService.createMemberGroup(nhUser, mapAllGroupMapByName.get(GlobalConstants.SEGMENT_SE));
+			newNhMember = SME_GroupChatterService.createMemberGroup(nhUser, mapAllGroupMapByName.get(GlobalConstants.SEGMENT_SE));
 		}
 		return newNhMember;
 	}
@@ -88,15 +88,19 @@ global class SME_BatchInitialGroupChatter implements Database.Batchable<sObject>
 	private List<CollaborationGroup> createNhGroupAndAllNhGroup(List<Team_Structure__c> listNhTeamStructure){
 		List<CollaborationGroup> listCreateCollaborationGroup = new List<CollaborationGroup>();
 		List<CollaborationGroupMember> listCreateCollaborationGroupMember = new List<CollaborationGroupMember>();
+		Map<String, CollaborationGroup> allCollaborationGroupMapByName = SME_GroupChatterService.getAllCollaborationGroupMapByName();
+
 		for(Team_Structure__c eachTeam : listNhTeamStructure){
-			String groupName = GroupChatterService.createGroupNameFromTeamNameAndSegment(eachTeam.Name, eachTeam.Segment__c);
-			if(!GroupChatterService.mapCollaborationGroupMapByName.containsKey(groupName)){
-				CollaborationGroup newGroup = GroupChatterService.createGroupChatter(groupName);
-				listCreateCollaborationGroup.add(newGroup);
+			String groupName = SME_GroupChatterService.createGroupNameFromTeamNameAndSegment(eachTeam.Name, eachTeam.Segment__c);
+			if(groupName.length() <= 40){
+				if(!allCollaborationGroupMapByName.containsKey(groupName)){
+					CollaborationGroup newGroup = SME_GroupChatterService.createGroupChatter(groupName);
+					listCreateCollaborationGroup.add(newGroup);
+				}
 			}
 		}
-		CollaborationGroup newMeGroup = GroupChatterService.createGroupChatter(GlobalConstants.SEGMENT_ME);
-		CollaborationGroup newSeGroup = GroupChatterService.createGroupChatter(GlobalConstants.SEGMENT_SE);
+		CollaborationGroup newMeGroup = SME_GroupChatterService.createGroupChatter(GlobalConstants.SEGMENT_ME);
+		CollaborationGroup newSeGroup = SME_GroupChatterService.createGroupChatter(GlobalConstants.SEGMENT_SE);
 		listCreateCollaborationGroup.add(newMeGroup);
 		listCreateCollaborationGroup.add(newSeGroup);
 		return listCreateCollaborationGroup;

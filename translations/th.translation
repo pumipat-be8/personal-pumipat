@@ -297,6 +297,18 @@
         <name>System_Section</name>
     </customLabels>
     <customLabels>
+        <label><!-- TeamStructure Dup Name Error --></label>
+        <name>TeamStructure_Dup_Name_Error</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- TeamStructure Name Error --></label>
+        <name>TeamStructure_Name_Error</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- TeamStructure Segment Error --></label>
+        <name>TeamStructure_Segment_Error</name>
+    </customLabels>
+    <customLabels>
         <label><!-- USERROLE_BLANK --></label>
         <name>USERROLE_BLANK</name>
     </customLabels>

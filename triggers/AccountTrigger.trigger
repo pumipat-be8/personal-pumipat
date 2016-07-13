@@ -14,8 +14,9 @@ trigger AccountTrigger on Account(before insert,before update,after update) {
         }*/
     }
     else if(Account_OwnerChange_Service.accountTriggerMap==null){
-        new AccountTriggerHandler().run();
+       
     } 
+    new AccountTriggerHandler().run(); 
     if(trigger.isBefore && trigger.isInsert) {
         SME_Admin__c sa = SME_Admin__c.getOrgDefaults();
         if(sa!=null){

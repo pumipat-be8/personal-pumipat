@@ -43,13 +43,14 @@ public without sharing class SME_GroupChatterService {
     	}
 
         Team_Structure__c teamStructure = getNhTeamStructure(userWithProfile);
-
+        System.debug('teamStructure = '+teamStructure);
         if(teamStructure != null && teamStructure.Type__c == 'Network'){
             groupName = createGroupNameFromTeamNameAndSegment(teamStructure.Name,teamStructure.Segment__c);
 
             CollaborationGroup collaborationGroup = mapCollaborationGroupMapByName.get(groupName);
             CollaborationGroupMember member;
             CollaborationGroupMember nhMember;
+            System.debug('collaborationGroup = '+collaborationGroup);
             if(isAddMember){
             	if(collaborationGroup == null){
 	            	collaborationGroup = createGroupChatter(groupName);
@@ -57,6 +58,7 @@ public without sharing class SME_GroupChatterService {
 	            	mapCollaborationGroupMapByName.put(collaborationGroup.Name, collaborationGroup);
 	            	collaborationGroupMemberList.addAll(getListManager(collaborationGroup));
 	            }
+
 				member = createMemberGroup(user,collaborationGroup);
 				nhMember = createNhUserToAllNhGroup(userWithProfile,collaborationGroupMemberList);
                 mapAllGroupMembersByGroupIdAndMemberId.put(collaborationGroup.Id,new Map<String,CollaborationGroupMember>{member.MemberId => member});
@@ -77,22 +79,31 @@ public without sharing class SME_GroupChatterService {
 	}
 
 	public static String createGroupNameFromTeamNameAndSegment(String teamName,String segment){
-		String groupName;
+		String groupName = teamName;
+		Map<String, String> mapReplaceTeamNameMapBySegment = new Map<String, String>();
 		for(Chatter_Group_Name__c replaceGroupName : Chatter_Group_Name__c.getall().values()){
-			groupName = teamName.replace(replaceGroupName.replace_from__c ,replaceGroupName.Name);
+			//groupName = teamName.replace(replaceGroupName.replace_from__c ,replaceGroupName.Name);
+			//mapReplaceTeamNameMapBySegment.put(replaceGroupName.Name, replaceGroupName.replace_from__c);
+			if(teamName.contains(replaceGroupName.replace_from__c + ' ')){
+				groupName = teamName.replace(replaceGroupName.replace_from__c + ' ',replaceGroupName.Name + ' ');
+				groupName = groupName.replace('(','');
+        		groupName = groupName.replace(')','');
+				break;
+			}
 		}
 		//if(segment == GlobalConstants.SEGMENT_SE || segment == 'Small'){
-  //          groupName = teamName.replace('เครือข่ายลูกค้าผู้ประกอบการ 2','SE');
+  //          groupName = teamName.replace(mapReplaceTeamNameMapBySegment.get(GlobalConstants.SEGMENT_SE) + ' ',' '+GlobalConstants.SEGMENT_SE);
   //      }else if(segment == GlobalConstants.SEGMENT_ME || segment == 'Medium'){
-  //          groupName = teamName.replace('เครือข่ายลูกค้าผู้ประกอบการ 1','ME');
+  //          groupName = teamName.replace(mapReplaceTeamNameMapBySegment.get(GlobalConstants.SEGMENT_ME) + ' ',' '+GlobalConstants.SEGMENT_ME);
   //      }
-        groupName = groupName.replace('(','');
-        groupName = groupName.replace(')','');
 		return groupName;
 	}
 
 	private static Team_Structure__c getNhTeamStructure(User userWithProfile){
 		String nhRcCode = getNhRcCodeFromUser(userWithProfile);
+		System.debug('nhRcCode = '+nhRcCode);
+		System.debug('User_Service.teamMapByRC = '+User_Service.teamMapByRC);
+		
 		Team_Structure__c ts = User_Service.teamMapByRC.get(nhRcCode);
 		return ts;
 	}
@@ -143,9 +154,15 @@ public without sharing class SME_GroupChatterService {
     	return collaborationGroupMember;
 	}
 
-	public static Boolean isUserChangeRcCode(User newUser , User oldUser){
-		if(newUser.RC_Code__c != oldUser.RC_Code__c){
-			return true;
+	public static Boolean isUserChangeNhRcCode(User newUser , User oldUser){
+		if(newUser.Profile.Name == GlobalConstants.SME_NH){
+			if(newUser.RC_Code__c != oldUser.RC_Code__c){
+				return true;
+			}
+		}else{
+			if(newUser.NH_RC_Code__c != oldUser.NH_RC_Code__c){
+				return true;
+			}
 		}
 		return false;
 	}

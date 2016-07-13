@@ -61,7 +61,7 @@
         <titleSize>18</titleSize>
     </chart>
     <columns>
-        <field>Target_List__c.Associated_Leads__r$Call_Plan_Call_Report__c</field>
+        <field>Target_List__c.Call_Reports_Leads__r$Call_Plan_Call_Report__c</field>
     </columns>
     <columns>
         <field>Target_List__c$CIS_ID_Prospect_Name__c</field>
@@ -91,10 +91,10 @@
         <field>Target_List__c$Personalised_Message__c</field>
     </columns>
     <columns>
-        <field>Target_List__c.Associated_Leads__r$Call_Plan_Call_Report__c.Offer_Interest__c</field>
+        <field>Target_List__c.Call_Reports_Leads__r$Call_Plan_Call_Report__c.Offer_Interest__c</field>
     </columns>
     <columns>
-        <field>Target_List__c.Associated_Leads__r$Status__c</field>
+        <field>Target_List__c.Call_Reports_Leads__r$Status__c</field>
     </columns>
     <filter>
         <criteriaItems>

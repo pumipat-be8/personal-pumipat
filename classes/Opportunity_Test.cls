@@ -481,7 +481,7 @@ private class Opportunity_Test {
 
 	@isTest static void testTrashPoolFlagWhenCreateOpportunity(){
 		TriggerHandler.bypass('AccountTriggerHandler');
-        Account customer = [SELECT Id, Name, Trash_Pool_Flag__c FROM Account WHERE Name =: accountNameTM];
+        Account customer = [SELECT Id, Name, Trash_Pool_Flag__c FROM Account WHERE Name =: accountNameRM];
         customer.Trash_Pool_Flag__c = true;
         update customer;
         TriggerHandler.clearByPass('AccountTriggerHandler');
@@ -502,7 +502,7 @@ private class Opportunity_Test {
 
 	@isTest static void testLatestStageModifiedDateWhenChangeStage(){
 		TriggerHandler.bypass('AccountTriggerHandler');
-        Account customer = [SELECT Id, Name, Trash_Pool_Flag__c FROM Account WHERE Name =: accountNameTM];
+        Account customer = [SELECT Id, Name, Trash_Pool_Flag__c FROM Account WHERE Name =: accountNameRM];
         customer.Trash_Pool_Flag__c = true;
         update customer;
         TriggerHandler.clearByPass('AccountTriggerHandler');
@@ -529,7 +529,7 @@ private class Opportunity_Test {
 
 	@isTest static void testPreviousStageWhenChangeStage(){
 		TriggerHandler.bypass('AccountTriggerHandler');
-        Account customer = [SELECT Id, Name, Trash_Pool_Flag__c FROM Account WHERE Name =: accountNameTM];
+        Account customer = [SELECT Id, Name, Trash_Pool_Flag__c FROM Account WHERE Name =: accountNameRM];
         customer.Trash_Pool_Flag__c = true;
         update customer;
         TriggerHandler.clearByPass('AccountTriggerHandler');
@@ -553,7 +553,7 @@ private class Opportunity_Test {
 
 	@isTest static void testPreviousRecordTypeWhenChangeStage(){
 		TriggerHandler.bypass('AccountTriggerHandler');
-        Account customer = [SELECT Id, Name, Trash_Pool_Flag__c FROM Account WHERE Name =: accountNameTM];
+        Account customer = [SELECT Id, Name, Trash_Pool_Flag__c FROM Account WHERE Name =: accountNameRM];
         customer.Trash_Pool_Flag__c = true;
         update customer;
         TriggerHandler.clearByPass('AccountTriggerHandler');
@@ -582,7 +582,7 @@ private class Opportunity_Test {
 
 	@isTest static void testActiveOpportunityInitialBatch(){
 		
-		Account customer = [SELECT Id, Name, Trash_Pool_Flag__c FROM Account WHERE Name =: accountNameTM];
+		Account customer = [SELECT Id, Name FROM Account WHERE Name =: accountNameRM];
         Opportunity opportunityTest = Mockup_Test.newOpportunity(customer.Id, 'TestOPP1', 'Waiting for Credit Setup', GlobalConstants.NON_CMAS);
 		insert opportunityTest;
 
@@ -598,24 +598,12 @@ private class Opportunity_Test {
 	}
 
 	@isTest static void testCurrentAHWhenInsertingOpportunity(){
-		String ahEmployeeId = '0123456789012345678';
 		Opportunity opportunityTest;
-		Account customer = [SELECT Id, Name, Trash_Pool_Flag__c FROM Account WHERE Name =: accountNameTM];
+		Account customer = [SELECT Id, Name FROM Account WHERE Name =: accountNameRM];
 
-		User currentUserRM = [SELECT Id, ManagerId, Manager.ManagerId, AH_Employee_ID__c FROM User WHERE Firstname =: Mockup_Test.userFirstNameRM LIMIT 1];
-        currentUserRM.AH_Employee_ID__c = ahEmployeeId;
-        update currentUserRM;
-
-        System.debug('RM AH1 Id: '+currentUserRM.Manager.ManagerId);
-
-        User currentUserAH = [SELECT Id, ManagerId, Manager.ManagerId, Employee_ID__c FROM User WHERE Id =: currentUserRM.Manager.ManagerId LIMIT 1];
-        currentUserAH.Employee_ID__c = ahEmployeeId;
-        currentUserAH.IsActive = true;
-        update currentUserAH;
-
-        System.debug('RM AH2 Id: '+ currentUserAH.Id);
-
-		Test.startTest();
+        User currentUserRM = [SELECT Id, ManagerId, Manager.ManagerId,Manager.Manager.ManagerId FROM User WHERE FirstName =: Mockup_Test.userFirstNameRM];
+        User currentUserAH = [SELECT Id, ManagerId, Manager.ManagerId FROM User WHERE Id =: currentUserRM.Manager.ManagerId LIMIT 1];
+        Test.startTest();
 		System.runAs([SELECT Id FROM User WHERE Firstname=:Mockup_Test.userFirstNameRM LIMIT 1][0]){
             opportunityTest = Mockup_Test.newOpportunity(customer.Id, 'TestOPP1', 'Waiting for Credit Setup', GlobalConstants.NON_CMAS);
 			insert opportunityTest;
@@ -628,27 +616,10 @@ private class Opportunity_Test {
 	}
     //Not in use yet
 	@isTest static void testCurrentNHWhenInsertingOpportunity(){
-		String ahEmployeeId = '0123456789012345678';
-		String nhEmployeeId = '1234567890123456789';
 		Opportunity opportunityTest;
-		Account customer = [SELECT Id, Name, Trash_Pool_Flag__c FROM Account WHERE Name =: accountNameTM];
-
-		User currentUserRM = [SELECT Id, ManagerId, Manager.ManagerId, Manager.Manager.ManagerId, AH_Employee_ID__c, NH_Employee_ID__c FROM User WHERE Firstname =: Mockup_Test.userFirstNameRM LIMIT 1];
-        currentUserRM.AH_Employee_ID__c = ahEmployeeId;
-        currentUserRM.NH_Employee_ID__c = nhEmployeeId;
-        update currentUserRM;
-
-        System.debug('RM AH1 Id: '+currentUserRM.Manager.ManagerId);
-
-        User currentUserAH = [SELECT Id, IsActive, ManagerId, Manager.ManagerId, Employee_ID__c FROM User WHERE Id =: currentUserRM.Manager.ManagerId LIMIT 1];
-        currentUserAH.Employee_ID__c = ahEmployeeId;
-        currentUserAH.IsActive = false;
-        update currentUserAH;
-
-        System.debug('RM AH2 Id: '+ currentUserAH.Id);
-
+		Account customer = [SELECT Id, Name, Trash_Pool_Flag__c FROM Account WHERE Name =: accountNameRM];
+        User currentUserRM = [SELECT Id, ManagerId, Manager.ManagerId,Manager.Manager.ManagerId FROM User WHERE FirstName =: Mockup_Test.userFirstNameRM];
         User currentUserNH = [SELECT Id, Employee_ID__c, IsActive FROM User WHERE Id =: currentUserRM.Manager.Manager.ManagerId LIMIT 1];
-        currentUserNH.Employee_ID__c = nhEmployeeId;
         currentUserNH.IsActive = true;
         update currentUserNH;
 
@@ -665,47 +636,65 @@ private class Opportunity_Test {
 		
 		System.assertEquals(currentUserNH.Id,opportunityTest.Current_NH__c);
 	}
-    /*
-    //Not in use yet
-	@isTest static void testCurrentAHInactiveAndNHInactiveWhenInsertingOpportunity(){
-		String ahEmployeeId = '0123456789012345678';
-		String nhEmployeeId = '1234567890123456789';
-		Opportunity opportunityTest;
-		Account customer = [SELECT Id, Name, Trash_Pool_Flag__c FROM Account WHERE Name =: accountNameTM];
-
-		User currentUserRM = [SELECT Id, ManagerId, Manager.ManagerId, Manager.Manager.ManagerId, AH_Employee_ID__c, NH_Employee_ID__c FROM User WHERE Firstname =: Mockup_Test.userFirstNameRM LIMIT 1];
-        currentUserRM.AH_Employee_ID__c = ahEmployeeId;
-        currentUserRM.NH_Employee_ID__c = nhEmployeeId;
-        update currentUserRM;
-
-        System.debug('RM AH1 Id: '+currentUserRM.Manager.ManagerId);
-
-        User currentUserAH = [SELECT Id, IsActive, ManagerId, Manager.ManagerId, Employee_ID__c FROM User WHERE Id =: currentUserRM.Manager.ManagerId LIMIT 1];
-        currentUserAH.Employee_ID__c = ahEmployeeId;
-        currentUserAH.IsActive = false;
-        update currentUserAH;
-
-        System.debug('RM AH2 Id: '+ currentUserAH.Id);
-
-        User currentUserNH = [SELECT Id, Employee_ID__c, IsActive FROM User WHERE Id =: currentUserRM.Manager.Manager.ManagerId LIMIT 1];
-        currentUserNH.Employee_ID__c = nhEmployeeId;
-        currentUserNH.IsActive = false;
-        update currentUserNH;
-
-        System.debug('RM NH Id: '+ currentUserNH.Id);
-
-		Test.startTest();
-		System.runAs([SELECT Id FROM User WHERE Firstname=:Mockup_Test.userFirstNameRM LIMIT 1][0]){
+    
+    @isTest static void testCurrentAHAndNHWhenChangeAccountOwnerAssociatedWithOpportunityToTM(){
+        
+        Opportunity opportunityTest;
+        Account customer = [SELECT Id, Name FROM Account WHERE Name =: accountNameRM];
+        User currentUserRM = [SELECT Id, ManagerId, Manager.ManagerId,Manager.Manager.ManagerId FROM User WHERE FirstName =: Mockup_Test.userFirstNameRM];
+        User currentUserTM = [SELECT Id, ManagerId, Manager.ManagerId FROM User WHERE Id =: currentUserRM.ManagerId LIMIT 1];
+        
+        System.runAs([SELECT Id FROM User WHERE Firstname=:Mockup_Test.userFirstNameRM LIMIT 1][0]){
             opportunityTest = Mockup_Test.newOpportunity(customer.Id, 'TestOPP1', 'Waiting for Credit Setup', GlobalConstants.NON_CMAS);
-			insert opportunityTest;
+            insert opportunityTest;
         }
-        Test.stopTest();
+        
+        opportunityTest = [SELECT Id, Current_AH__c, Current_NH__c, OwnerId FROM Opportunity WHERE Id =: opportunityTest.Id];
+        opportunityTest.Current_AH__c = null;
+        opportunityTest.Current_NH__c = null;
+        update opportunityTest;
 
         opportunityTest = [SELECT Id, Current_AH__c, Current_NH__c, OwnerId FROM Opportunity WHERE Id =: opportunityTest.Id];
-		
-		//System.assertEquals(null,opportunityTest.Current_NH__c);
-	}
-    */
+        System.assertEquals(null, opportunityTest.Current_AH__c);
+        System.assertEquals(null, opportunityTest.Current_NH__c);
 
-    
+        System.runAs([SELECT Id FROM User WHERE Firstname=:Mockup_Test.userFirstNameAdmin LIMIT 1][0]){
+            customer.OwnerChangeExecutedByTrigger__c = true;
+            customer.OwnerId = currentUserTM.Id;
+            System.debug('Before update customer');
+            Account_OwnerChange_Service.accountTriggerMap = null;
+            Test.startTest();
+            update customer;
+            Test.stopTest();
+            System.debug('After update customer');
+        }
+
+        opportunityTest = [SELECT Id, Current_AH__c, Current_NH__c, OwnerId FROM Opportunity WHERE Id =: opportunityTest.Id];
+        System.assertEquals(currentUserTM.Manager.ManagerId,opportunityTest.Current_NH__c);
+        System.assertEquals(currentUserTM.ManagerId,opportunityTest.Current_AH__c);
+    }
+
+    @isTest static void testChangeTeamOfOwnerOfOpportunity(){
+        Opportunity opportunityTest;
+        Account customer = [SELECT Id, Name FROM Account WHERE Name =: accountNameRM];
+        User currentUserRM = [SELECT Id, ManagerId, Manager.ManagerId,Manager.Manager.ManagerId FROM User WHERE FirstName =: Mockup_Test.userFirstNameRM];
+        User currentUserTM = [SELECT Id, ManagerId, Manager.ManagerId FROM User WHERE Id =: currentUserRM.ManagerId LIMIT 1];
+
+        System.runAs([SELECT Id FROM User WHERE Firstname=:Mockup_Test.userFirstNameRM LIMIT 1][0]){
+            opportunityTest = Mockup_Test.newOpportunity(customer.Id, 'TestOPP1', 'Waiting for Credit Setup', GlobalConstants.NON_CMAS);
+            insert opportunityTest;
+        }
+
+        opportunityTest = [SELECT Id, Current_AH__c, Current_NH__c, OwnerId FROM Opportunity WHERE Id =: opportunityTest.Id];
+        opportunityTest.Current_AH__c = null;
+        opportunityTest.Current_NH__c = null;
+        update opportunityTest;
+
+        currentUserRM.RC_Code__c = Mockup_Test.AH_RC_CODE;
+        update currentUserRM;
+
+        opportunityTest = [SELECT Id, Current_AH__c, Current_NH__c, OwnerId FROM Opportunity WHERE Id =: opportunityTest.Id];
+        System.assertEquals(currentUserTM.ManagerId, opportunityTest.Current_AH__c);
+        System.assertEquals(currentUserTM.Manager.ManagerId, opportunityTest.Current_NH__c);
+    }
 }

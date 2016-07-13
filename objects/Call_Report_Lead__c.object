@@ -225,7 +225,7 @@
         </lookupFilter>
         <referenceTo>Target_List__c</referenceTo>
         <relationshipLabel>Call Reports / Leads</relationshipLabel>
-        <relationshipName>Associated_Leads</relationshipName>
+        <relationshipName>Call_Reports_Leads</relationshipName>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>

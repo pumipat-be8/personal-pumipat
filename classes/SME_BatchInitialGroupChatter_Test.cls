@@ -5,15 +5,16 @@ private class SME_BatchInitialGroupChatter_Test {
 		TriggerHandler.bypass('TeamStructureTriggerHandler');
 		TriggerHandler.bypass('UserTriggerHandler');
         Mockup_Test mt = new Mockup_Test().setUpTestWithRCCode();
-        Chatter_Group_Manager__c customSetting = new Chatter_Group_Manager__c(Name = Mockup_Test.userFirstNameRM + ' ' + Mockup_Test.userLastNameRM);
-        insert customSetting;
+        Chatter_Group_Manager__c customSettingGroupManager = new Chatter_Group_Manager__c(Name = Mockup_Test.userFirstNameRM + ' ' + Mockup_Test.userLastNameRM);
+        insert customSettingGroupManager;
     }
 
 	@isTest static void testCreate1Nh1Ah1Tm1RmTeamAnd4UsersThenInitial1NhGroupAnd2AllNhGroup() {
 		Test.startTest();
-			Database.executeBatch(new BatchInitialGroupChatter());
+			Database.executeBatch(new SME_BatchInitialGroupChatter());
 		Test.stopTest();
-		CollaborationGroup nhGroup = [SELECT Id,Name,MemberCount FROM CollaborationGroup WHERE Name = :Mockup_Test.nhRoleDeveloperName];
+		String groupName = SME_GroupChatterService.createGroupNameFromTeamNameAndSegment(Mockup_Test.nhTeamName, GlobalConstants.SEGMENT_SE);
+		CollaborationGroup nhGroup = [SELECT Id,Name,MemberCount FROM CollaborationGroup WHERE Name = :groupName];
 	    CollaborationGroup allNhSeGroup = [SELECT Id,Name,MemberCount FROM CollaborationGroup WHERE Name = :GlobalConstants.SEGMENT_SE];
 	    CollaborationGroup allNhMeGroup = [SELECT Id,Name,MemberCount FROM CollaborationGroup WHERE Name = :GlobalConstants.SEGMENT_ME];
 		List<CollaborationGroup> allGroup = [SELECT Id,Name,MemberCount FROM CollaborationGroup];
@@ -31,6 +32,7 @@ private class SME_BatchInitialGroupChatter_Test {
 		String userFirstNameNH = '2nhUser';
 		String userLastNameNH = 'nh team';
 		String userEmpIdNH = '4321';
+		String secondNhTeamName = 'เครือข่ายลูกค้าผู้ประกอบการ 2 2nhTeam';
 		Profile nhProfile = [SELECT Id, Name FROM Profile WHERE Name = :GlobalConstants.SME_NH LIMIT 1];
 		UserRole nhRole = [SELECT Id FROM UserRole WHERE Name = :Mockup_Test.NH_RC_CODE LIMIT 1];
 
@@ -39,7 +41,7 @@ private class SME_BatchInitialGroupChatter_Test {
             RC_Code__c = NH_RC_CODE,
             AH_RC_Code__c = null,
             NH_RC_Code__c = null,
-            Name = '2nhTeam',
+            Name = secondNhTeamName,
             Segment__c = GlobalConstants.SEGMENT_ME,
             Type__c = 'Network'
         );
@@ -65,11 +67,13 @@ private class SME_BatchInitialGroupChatter_Test {
         insert nhUser;
 
         Test.startTest();
-			Database.executeBatch(new BatchInitialGroupChatter());
+			Database.executeBatch(new SME_BatchInitialGroupChatter());
 		Test.stopTest();
 
-		CollaborationGroup nhFirstGroup = [SELECT Id,Name,MemberCount FROM CollaborationGroup WHERE Name = :Mockup_Test.nhRoleDeveloperName];
-		CollaborationGroup nhSecondGroup = [SELECT Id,Name,MemberCount FROM CollaborationGroup WHERE Name = '2nhTeam'];
+		String nhFirstGroupName = SME_GroupChatterService.createGroupNameFromTeamNameAndSegment(Mockup_Test.nhTeamName, GlobalConstants.SEGMENT_SE);
+		String nhSecondGroupName = SME_GroupChatterService.createGroupNameFromTeamNameAndSegment(secondNhTeamName, GlobalConstants.SEGMENT_ME);
+		CollaborationGroup nhFirstGroup = [SELECT Id,Name,MemberCount FROM CollaborationGroup WHERE Name = :nhFirstGroupName];
+		CollaborationGroup nhSecondGroup = [SELECT Id,Name,MemberCount FROM CollaborationGroup WHERE Name = :nhSecondGroupName];
 	    CollaborationGroup allNhSeGroup = [SELECT Id,Name,MemberCount FROM CollaborationGroup WHERE Name = :GlobalConstants.SEGMENT_SE];
 	    CollaborationGroup allNhMeGroup = [SELECT Id,Name,MemberCount FROM CollaborationGroup WHERE Name = :GlobalConstants.SEGMENT_ME];
 		List<CollaborationGroup> allGroup = [SELECT Id,Name,MemberCount FROM CollaborationGroup];

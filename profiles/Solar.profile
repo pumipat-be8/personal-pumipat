@@ -223,6 +223,10 @@
         <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>CampaignLead_Service</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>CampaignMemberTriggerHandler</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -397,6 +401,10 @@
     <classAccesses>
         <apexClass>GlobalUtility_Test</apexClass>
         <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>HelloWorldTestClass</apexClass>
+        <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>InteractionHistory_Model</apexClass>
@@ -913,6 +921,10 @@
     <classAccesses>
         <apexClass>ValueChain_Controller_Test</apexClass>
         <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>VisibleSampleClass</apexClass>
+        <enabled>true</enabled>
     </classAccesses>
     <classAccesses>
         <apexClass>YearEndAssignmentTriggerHandler</apexClass>
@@ -5999,6 +6011,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Opportunity.Allow_Backward_Stage__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Opportunity.Amount</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -6614,6 +6631,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>Opportunity.Opp_Owner__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>Opportunity.Opportunity_Amount_s__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -6760,6 +6782,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Opportunity.Request_Lastest_Amount_By_SP__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Request_Process_Name__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

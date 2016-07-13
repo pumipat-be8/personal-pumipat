@@ -33,6 +33,11 @@ public class Mockup_Test {
     public static String tmRoleDeveloperName = 'tmAreaRole';
     public static String rmRoleDeveloperName = 'rmAreaRole';
 
+    public static String nhTeamName = 'เครือข่ายลูกค้าผู้ประกอบการ 2 nhTeam';
+    public static String ahTeamName = 'ahTeamName';
+    public static String tmTeamName = 'tmTeamName';
+    public static String rmTeamName = 'rmTeamName';
+
     public static String ahRoleDeveloperNameDiff = 'ahAreaRoleDiff';
     public static String tmRoleDeveloperNameDiff = 'tmAreaRoleDiff';
     public static String rmRoleDeveloperNameDiff = 'rmAreaRoleDiff';
@@ -99,10 +104,17 @@ public class Mockup_Test {
     public static void setUpCustomSetting() {       
         List<User_Management__c> umList = new List<User_Management__c>();
         System.runAs(new User(Id=UserInfo.getUserId())){
-            Id ahProfileId = [SELECT Id FROM Profile WHERE Name = :GlobalConstants.SME_AH LIMIT 1].Id;
-            Id tmProfileId = [SELECT Id FROM Profile WHERE Name = :GlobalConstants.SME_TM LIMIT 1].Id;
-            Id rmProfileId = [SELECT Id FROM Profile WHERE Name = :GlobalConstants.SME_RM LIMIT 1].Id;
-            Id adminProfileId = [SELECT Id FROM Profile WHERE Name = :GlobalConstants.SME_ADMIN LIMIT 1].Id;
+            List<Profile> listProfile = new List<Profile>();
+            listProfile = [SELECT Id,Name FROM Profile];
+
+            Map<String,Profile> mapProfileByName = new Map<String,Profile>();
+            for(Profile eachProfile : listProfile){
+                mapProfileByName.put(eachProfile.Name, eachProfile);
+            }
+            Id ahProfileId = mapProfileByName.get(GlobalConstants.SME_AH).Id;//[SELECT Id FROM Profile WHERE Name = :GlobalConstants.SME_AH LIMIT 1].Id;
+            Id tmProfileId = mapProfileByName.get(GlobalConstants.SME_TM).Id;//[SELECT Id FROM Profile WHERE Name = :GlobalConstants.SME_TM LIMIT 1].Id;
+            Id rmProfileId = mapProfileByName.get(GlobalConstants.SME_RM).Id;//[SELECT Id FROM Profile WHERE Name = :GlobalConstants.SME_RM LIMIT 1].Id;
+            Id adminProfileId = mapProfileByName.get(GlobalConstants.SME_ADMIN).Id;//[SELECT Id FROM Profile WHERE Name = :GlobalConstants.SME_ADMIN LIMIT 1].Id;
             
             umList.add(new User_Management__c(
                     SetupOwnerId = UserInfo.getProfileId(),
@@ -130,6 +142,13 @@ public class Mockup_Test {
                     Allow_Change_Opportunity__c = true
                 ));
             insert umList;
+
+            List<Chatter_Group_Name__c> listCustomSettingGroupName = new List<Chatter_Group_Name__c>();
+            Chatter_Group_Name__c customSettingGroupMeName = new Chatter_Group_Name__c(Name = GlobalConstants.SEGMENT_ME, Replace_from__c = 'เครือข่ายลูกค้าผู้ประกอบการ 1');
+            Chatter_Group_Name__c customSettingGroupSeName = new Chatter_Group_Name__c(Name = GlobalConstants.SEGMENT_SE, Replace_from__c = 'เครือข่ายลูกค้าผู้ประกอบการ 2');
+            listCustomSettingGroupName.add(customSettingGroupMeName);
+            listCustomSettingGroupName.add(customSettingGroupSeName);
+            insert listCustomSettingGroupName;
         }
     }
     public static void setUpCustomSettingAdmin() {
@@ -153,16 +172,25 @@ public class Mockup_Test {
         Mockup_Test.setUpCustomSetting();
         
         System.runAs(new User(Id=UserInfo.getUserId())){
-            Profile nhProfile = [SELECT Id, Name FROM Profile WHERE Name = :GlobalConstants.SME_NH LIMIT 1];
-            insert new Job_Code__c(Name = 'ME1A', Profile_Name__c = nhProfile.Name);
+            List<Profile> listProfile = new List<Profile>();
+            listProfile = [SELECT Id, Name FROM Profile];
 
-            Profile ahProfile = [SELECT Id, Name FROM Profile WHERE Name = :GlobalConstants.SME_AH LIMIT 1];
+            Map<String,Profile> mapProfileByName = new Map<String,Profile>();
+            for(Profile eachProfile : listProfile){
+                mapProfileByName.put(eachProfile.Name, eachProfile);
+            }
+
+            List<Job_Code__c> listJobCode = new List<Job_Code__c>();
+            Profile nhProfile = mapProfileByName.get(GlobalConstants.SME_NH);//[SELECT Id, Name FROM Profile WHERE Name = :GlobalConstants.SME_NH LIMIT 1];
+            insert new Job_Code__c(Name = 'ME1A', Profile_Name__c = nhProfile.Name);
+            
+            Profile ahProfile = mapProfileByName.get(GlobalConstants.SME_AH);//[SELECT Id, Name FROM Profile WHERE Name = :GlobalConstants.SME_AH LIMIT 1];
             insert new Job_Code__c(Name = 'ME2A', Profile_Name__c = ahProfile.Name);
         
-            Profile tmProfile = [SELECT Id, Name FROM Profile WHERE Name = :GlobalConstants.SME_TM LIMIT 1];
+            Profile tmProfile = mapProfileByName.get(GlobalConstants.SME_TM);//[SELECT Id, Name FROM Profile WHERE Name = :GlobalConstants.SME_TM LIMIT 1];
             insert new Job_Code__c(Name = 'ME3A', Profile_Name__c = tmProfile.Name);
           
-            Profile rmProfile = [SELECT Id, Name FROM Profile WHERE Name = :GlobalConstants.SME_RM LIMIT 1];
+            Profile rmProfile = mapProfileByName.get(GlobalConstants.SME_RM);//[SELECT Id, Name FROM Profile WHERE Name = :GlobalConstants.SME_RM LIMIT 1];
             insert new Job_Code__c(Name = 'ME4A', Profile_Name__c = rmProfile.Name);
 
             UserRole adminRole = [SELECT Id FROM UserRole WHERE DeveloperName = 'SME_Admin'];
@@ -180,7 +208,7 @@ public class Mockup_Test {
                 RC_Code__c = NH_RC_CODE,
                 AH_RC_Code__c = null,
                 NH_RC_Code__c = null,
-                Name = nhRoleDeveloperName,
+                Name = nhTeamName,
                 Segment__c = GlobalConstants.SEGMENT_SE,
                 Type__c = 'Network'
             );
@@ -193,7 +221,7 @@ public class Mockup_Test {
                 NH_RC_Code__c = NH_RC_CODE,
                 AH_Name__c = null,
                 NH_Name__c = tsNh.Id,
-                Name = ahRoleDeveloperName,
+                Name = ahTeamName,
                 Segment__c = GlobalConstants.SEGMENT_SE,
                 Type__c = 'Area'
             );
@@ -206,7 +234,7 @@ public class Mockup_Test {
                 NH_RC_Code__c = NH_RC_CODE,
                 AH_Name__c = tsAh.Id,
                 NH_Name__c = tsNh.Id,
-                Name = tmRoleDeveloperName,
+                Name = tmTeamName,
                 Segment__c = GlobalConstants.SEGMENT_SE,
                 Type__c = 'Team'
             );

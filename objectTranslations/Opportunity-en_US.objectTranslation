@@ -50,6 +50,10 @@
         <name>Actual_Visit_Date__c</name>
     </fields>
     <fields>
+        <label><!-- Allow Backward Stage --></label>
+        <name>Allow_Backward_Stage__c</name>
+    </fields>
+    <fields>
         <label><!-- Amount_report --></label>
         <name>Amount_Report__c</name>
     </fields>
@@ -697,6 +701,10 @@
         <name>OppID__c</name>
     </fields>
     <fields>
+        <label><!-- Opp Owner --></label>
+        <name>Opp_Owner__c</name>
+    </fields>
+    <fields>
         <label><!-- Opportunity_Amount_s --></label>
         <name>Opportunity_Amount_s__c</name>
     </fields>
@@ -819,6 +827,26 @@
         <name>Request_Lastest_Amount_By_SP__c</name>
     </fields>
     <fields>
+        <label><!-- Request Process Name --></label>
+        <name>Request_Process_Name__c</name>
+        <picklistValues>
+            <masterLabel>Backward Stage</masterLabel>
+            <translation><!-- Backward Stage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed Lost</masterLabel>
+            <translation><!-- Closed Lost --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Deleted Opportunity</masterLabel>
+            <translation><!-- Deleted Opportunity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Override Setup</masterLabel>
+            <translation><!-- Override Setup --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
         <label><!-- Requested Amount --></label>
         <name>Requested_Amount__c</name>
     </fields>
@@ -856,6 +884,10 @@
         <picklistValues>
             <masterLabel>Auto Closed</masterLabel>
             <translation><!-- Auto Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Backward Stage</masterLabel>
+            <translation><!-- Backward Stage --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Case is Rejected</masterLabel>

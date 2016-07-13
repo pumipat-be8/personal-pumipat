@@ -569,6 +569,30 @@
         <value>System Information</value>
     </labels>
     <labels>
+        <fullName>TeamStructure_Dup_Name_Error</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TeamStructure Dup Name Error</shortDescription>
+        <value>Team Structure Name already exists</value>
+    </labels>
+    <labels>
+        <fullName>TeamStructure_Name_Error</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TeamStructure Name Error</shortDescription>
+        <value>Team structure name is not in defined segment / Team structure name is too long (over 40 characters)</value>
+    </labels>
+    <labels>
+        <fullName>TeamStructure_Segment_Error</fullName>
+        <categories>Error Message</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TeamStructure Segment Error</shortDescription>
+        <value>Team structure name and segment does not match</value>
+    </labels>
+    <labels>
         <fullName>USERROLE_BLANK</fullName>
         <categories>Error Message</categories>
         <language>en_US</language>
